@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#111110">
-<meta name="description" content="KIMIX is a space for sound, experimentation, and creative expression. It explores the overlap between audio and digital creativity, with room for unexpected directions.">
+<meta name="description" content="KIMIX brings music playback and multitrack editing into one audio workspace. Switch between a visual Now Playing screen, a queue-style Playlist, and an Editor for arranging clips and building a mix.">
 <title>KIMIX — Robbie Calvin</title>
 <link rel="stylesheet" href="../assets/styles/overview.css">
 <script src="../assets/scripts/overview.js" defer>
 </script>
 </head>
-<body>
+<body data-palette="purple">
 <header>
 <nav class="wrap" aria-label="Main navigation">
 <a class="logo" href="../">robbiecalvin<span>.</span>
@@ -27,12 +27,12 @@
 <a href="../">Home</a> / <a href="../#applications">Applications</a> / KIMIX</div>
 <section class="hero" aria-labelledby="title">
 <div>
-<p class="eyebrow">Audio &amp; creativity</p>
+<p class="eyebrow">Audio player &amp; multitrack editor</p>
 <h1 id="title">KIMIX</h1>
-<p class="intro">Find a different frequency.</p>
+<p class="intro">Listen. Layer. Make it yours.</p>
 <div class="actions">
-<a class="button primary" href="#overview">Explore the idea ↗</a>
-<a class="button" href="../#applications">Back to applications ↑</a>
+<a class="button primary" href="#overview">Explore the features ↗</a>
+<a class="button" href="https://github.com/robbiecalvin/KIMIX">View project on GitHub ↗</a>
 </div>
 </div>
 <div class="art" aria-hidden="true">
@@ -43,60 +43,72 @@
 <div class="orbit">
 </div>
 <span class="symbol">≋</span>
-<span class="art-label">KIMIX / Audio &amp; creativity</span>
+<span class="art-label">KIMIX / Audio player &amp; multitrack editor</span>
 </div>
 </section>
 <div class="facts">
 <div class="fact">
-<small>Discipline</small>
-<strong>Audio &amp; creativity</strong>
+<small>Format</small>
+<strong>Three-mode audio workspace</strong>
 </div>
 <div class="fact">
-<small>Status</small>
-<strong>Project overview</strong>
+<small>Focus</small>
+<strong>Desktop + browser build</strong>
 </div>
 <div class="fact">
-<small>Access</small>
-<strong>Access details to come</strong>
+<small>Project</small>
+<strong>Playback, editing, export</strong>
 </div>
 </div>
 <section class="content" id="overview">
 <div class="section-head">
 <div>
-<p class="kicker">01 / The idea</p>
-<h2>Find a different frequency.</h2>
+<p class="kicker">01 / The experience</p>
+<h2>Listen. Layer. Make it yours.</h2>
 </div>
-<p>KIMIX is a space for sound, experimentation, and creative expression. It explores the overlap between audio and digital creativity, with room for unexpected directions.</p>
+<p>KIMIX brings music playback and multitrack editing into one audio workspace. Switch between a visual Now Playing screen, a queue-style Playlist, and an Editor for arranging clips and building a mix.</p>
 </div>
 <div class="grid">
 <article class="card">
 <span class="number">01 /</span>
-<h3>Sound as a medium</h3>
-<p>A project direction that starts with listening, texture, and expression.</p>
+<h3>Set the listening session</h3>
+<p>Add local tracks or scan a folder, filter favorites, resume a listening session, and choose optional crossfade transitions in the desktop app.</p>
 </article>
 <article class="card">
 <span class="number">02 /</span>
-<h3>Creative experiments</h3>
-<p>Room for exploring ideas without forcing every experiment into the same format.</p>
+<h3>Build on the timeline</h3>
+<p>Split, copy, paste, and move clips across tracks. Use per-track and per-clip volume, undo and redo, and microphone recording in the desktop editor.</p>
 </article>
 <article class="card">
 <span class="number">03 /</span>
-<h3>Digital possibilities</h3>
-<p>An ongoing interest in how tools can shape the way sound is created and experienced.</p>
+<h3>Bring the mix together</h3>
+<p>Layer audio and export from the desktop app with progress and cancellation. A browser implementation also supports local audio import, timeline editing, and local mix playback.</p>
 </article>
 </div>
 </section>
 <section class="content">
 <div class="split">
 <div>
-<p class="kicker">02 / Project notes</p>
-<h2>An idea with<br>room to grow.</h2>
+<p class="kicker">02 / How it fits together</p>
+<h2>Two ways into the same idea.</h2>
+</div>
+<div>
+<p class="intro">The Python desktop app offers the fuller editing and export workflow. The browser build shares the three-mode shell and multi-row timeline, including a dedicated Final Product row.</p>
+</div>
+</div>
+</section>
+<section class="content" id="access">
+<div class="split">
+<div>
+<p class="kicker">03 / Explore the project</p>
+<h2>Choose your workspace</h2>
 </div>
 <div class="status">
-<h3>Overview, for now.</h3>
-<p class="muted">This page introduces the project’s direction. A working application, public launch date, and access details are not available here yet.</p>
-<p class="muted">App pricing and subscriptions have not been announced. There is nothing to purchase on this page.</p>
-<a class="button" href="../#applications">Explore the collection ↗</a>
+<p class="muted">The repository includes desktop setup, standalone build scripts, and browser setup. Desktop setup recommends Python 3.11 or 3.12 and FFmpeg; browser capabilities differ from the desktop feature set.</p>
+<div class="actions">
+<a class="button primary" href="https://github.com/robbiecalvin/KIMIX">View the repository ↗</a>
+<a class="button" href="https://github.com/robbiecalvin/KIMIX/blob/1525a135726dc6c6285353b5a31f566393934a89/README.md">Read the documentation ↗</a>
+</div>
 </div>
 </div>
 </section>
