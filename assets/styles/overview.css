@@ -7,3 +7,18 @@ body[data-palette="red"] { --accent: #ff6268; --card-background: #480019; --card
 body[data-palette="purple"] { --accent: #e88aff; --card-background: #300d35; --card-highlight: #4b1553; }
 body[data-palette] .art { background: radial-gradient(ellipse, var(--card-highlight), transparent 70%); }
 body[data-palette] .card { background: linear-gradient(145deg, color-mix(in srgb, var(--card-background) 50%, var(--bg)), var(--bg)); }
+
+/* Generated Codex Master hero artwork. */
+.hero-artwork { width: 100%; min-width: 0; }
+.hero-artwork img { display: block; width: 100%; height: auto; border-radius: 18px; }
+
+/* Personal pages and site-wide navigation. */
+nav .nav-links { flex-wrap: wrap; justify-content: flex-end; gap: 12px 18px; }
+.about-biography > p { color: var(--muted); font-size: 18px; }
+.principles { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 32px; }
+.principles p { color: var(--muted); font-size: 14px; }
+.social-links { display: flex; align-items: center; gap: 12px; }
+.social-link { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 50%; }
+.social-link svg { width: 19px; height: 19px; fill: currentColor; }
+.contact-channels { margin-top: 30px; }
+@media (max-width: 760px) { nav { flex-wrap: wrap; padding-block: 14px; gap: 14px; } .nav-links a:last-child { display: inline; } .principles { grid-template-columns: 1fr; } }

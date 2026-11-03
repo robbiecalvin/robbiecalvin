@@ -653,6 +653,17 @@ footer {
   .project-icon * { animation: none !important; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* Homepage photography and compact biography. */
+.hero { background: linear-gradient(90deg, #111110e8 0%, #111110a8 50%, #11111035 100%), url("./assets/images/hero-bg.png") center / cover no-repeat; border-radius: 0 0 24px 24px; padding-inline: 32px; }
+.home-about { align-items: center; padding-block: 65px; }
+.home-about h2 { font-size: clamp(36px, 5vw, 64px); margin-bottom: 0; }
+.home-about .about-copy > p { margin-bottom: 24px; }
+.portrait-slot img { display: block; width: min(320px, 100%); aspect-ratio: 1; object-fit: cover; border-radius: 20px; margin-bottom: 24px; }
+.social-links { display: flex; align-items: center; gap: 12px; }
+.social-link { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 50%; }
+.social-link svg { width: 19px; height: 19px; fill: currentColor; }
+@media (max-width: 650px) { .hero { padding-inline: 20px; } footer { flex-wrap: wrap; gap: 20px; } }
 </style>
 </head>
 
@@ -667,7 +678,8 @@ footer {
       <a href="#applications">Applications</a>
       <a href="#services">Services</a>
       <a href="#sites">Sites</a>
-      <a href="#about">About</a>
+      <a href="./about/">About me</a>
+      <a href="./contact/">Contact</a>
     </nav>
   </div>
 </header>
@@ -696,7 +708,7 @@ footer {
         <a class="button primary" href="#applications">
           Explore my world <span aria-hidden="true">↗</span>
         </a>
-        <a class="button" href="#about">
+        <a class="button" href="./about/">
           Meet the human <span aria-hidden="true">↓</span>
         </a>
       </div>
@@ -773,42 +785,9 @@ footer {
     </noscript>
   </section>
 
-  <section id="about" class="about" aria-labelledby="about-title">
-    <div>
-      <p class="kicker">02 / Behind the screen</p>
-      <h2 id="about-title">
-        The medium<br>keeps changing.<br>The curiosity<br>doesn’t.
-      </h2>
-    </div>
-
-    <div class="about-copy">
-      <p>
-        I’m a <strong>tech artist, web developer, and AI enthusiast</strong>.
-        My work lives where practical tools meet creative expression.
-      </p>
-      <p>
-        Sometimes that means writing code. Sometimes it means designing
-        an identity, building an AI workflow, or telling a story.
-        I’m interested in what happens when those disciplines
-        start talking to each other.
-      </p>
-      <p>
-        This is the home for that work: the ideas taking shape,
-        the experiments worth following, and the things
-        I’m still figuring out.
-      </p>
-
-      <div class="principles">
-        <div>
-          <h3>Make it useful.</h3>
-          <p>Good technology should earn its place in someone’s life.</p>
-        </div>
-        <div>
-          <h3>Make it feel.</h3>
-          <p>Function matters. So does the experience of being there.</p>
-        </div>
-      </div>
-    </div>
+  <section id="about" class="about home-about" aria-labelledby="about-title">
+    <div class="portrait-slot"><p class="kicker">Behind the screen</p><h2 id="about-title">Robbie Calvin.</h2></div>
+    <div class="about-copy"><p>Tech artist. Web developer. Curious human.</p><a class="button primary" href="./about/">About me <span aria-hidden="true">↗</span></a></div>
   </section>
 
   <div class="closing">
@@ -823,8 +802,9 @@ footer {
 
   <footer>
     <span>© <span id="year"></span> Robbie Calvin</span>
-    <span>Human imagination. Digital possibilities.</span>
-    <a href="#top">Back to top ↑</a>
+    <span><a href="./about/">About me</a> · <a href="./contact/">Contact</a></span>
+    <a class="social-link" href="https://www.linkedin.com/in/robbie-calvin-50710b386/" aria-label="Robbie Calvin on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.4-.76 1.36-1.56 2.79-1.56 2.98 0 3.58 1.96 3.58 4.51v5.3Z"/></svg></a>
+<a href="#top">Back to top ↑</a>
   </footer>
 </main>
 
