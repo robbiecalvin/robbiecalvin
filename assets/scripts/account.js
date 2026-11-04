@@ -37,16 +37,16 @@
       const orderStatus={requested:'Awaiting scope review',approved:'Scope approved',checkout:'Checkout started',paid:'Paid',cancelled:'Cancelled',refunded:'Refunded'}[order.status]||order.status;
       card.append(node('h3',name),node('p',`${service?.planLabels?.[order.plan]||order.plan} × ${order.quantity} · ${money(order.totalCents)} CAD`),node('p',`Status: ${orderStatus}`),node('p',order.brief,'muted'));
       if(order.customer)card.append(node('p',`${order.customer.name} — ${order.customer.email}`,'muted'));
-      if(!result.admin&&['requested','approved'].includes(order.status))card.append(action('Cancel request',async()=>{await request(`/api/orders/${order.id}/cancel`,'POST',{});await refresh();}));
+      if(!result.admin&&order.status==='requested')card.append(action('Cancel request',async()=>{await request(`/api/orders/${order.id}/cancel`,'POST',{});await refresh();}));
       if(result.admin&&order.status==='requested')card.append(action('Approve this scope',async()=>{await request(`/api/orders/${order.id}/approve`,'POST',{});await refresh();}));
       if(['approved','checkout'].includes(order.status)&&!result.admin)card.append(action('Continue to secure checkout',async()=>{const checkout=await request(`/api/orders/${order.id}/checkout`,'POST',{});location.assign(checkout.url);}));
       list.append(card);
     }
     const products=document.getElementById('library');products.replaceChildren();
-    if(!library.products.length)products.append(node('p','Purchased plugin and app downloads will appear here when the product catalog and release files are connected.','muted'));
+    if(!library.products.length)products.append(node('p','WordPress plugins are temporarily free. Download them from the plugin directory.','muted'));
     for(const product of library.products){const link=node('a',`Download ${product.product}`,'button');link.href=(window.RC_ACCOUNT.apiBaseUrl||'')+`/api/downloads/${encodeURIComponent(product.product)}`;products.append(link);}
     const history=document.getElementById('activity');history.replaceChildren();
-    if(!library.activity.length)history.append(node('p','No recorded activity yet. Public app visits made while signed out are not attached to your profile.','muted'));
+    if(!library.activity.length)history.append(node('p','Activity history is not enabled for this account service.','muted'));
     for(const item of library.activity){history.append(node('li',`${catalog.applications[item.product]?.name||item.product} — ${item.kind==='launch'?'app or project opened':'file downloaded'} · ${new Date(item.created_at).toLocaleDateString()}`));}
   }
   function bind(id,handler){document.getElementById(id).addEventListener('submit',async event=>{event.preventDefault();const button=event.target.querySelector('button');button.disabled=true;try{await handler(new FormData(event.target));}catch(error){message(error.message);}finally{button.disabled=false;}});}
@@ -63,11 +63,12 @@
   let resetToken='';
   function readEmailAction(){
     const fragment=new URLSearchParams(location.hash.slice(1));
-    if(fragment.has('verify')||fragment.has('reset'))history.replaceState(null,'',location.pathname);
+    if(fragment.has('verify')||fragment.has('reset')||fragment.has('access_token'))history.replaceState(null,'',location.pathname);
     return fragment;
   }
   const initialAction=readEmailAction();
   async function handleEmailAction(fragment){
+    if(fragment.has('access_token')){await request('/api/auth/callback','POST',{access_token:fragment.get('access_token'),refresh_token:fragment.get('refresh_token')});if(fragment.get('type')==='recovery'){resetToken='supabase-recovery';document.getElementById('reset-section').hidden=false;auth.hidden=true;message('Choose a new password.');return true;}await refresh();return true;}
     const verifyToken=fragment.get('verify');
     if(verifyToken){message((await request('/api/auth/verify','POST',{token:verifyToken})).message);return true;}
     if(fragment.has('reset')){resetToken=fragment.get('reset');document.getElementById('reset-section').hidden=false;message('Choose a new password.');return true;}
@@ -77,9 +78,10 @@
   try{
     const health=await request('/api/health');if(!health.accounts)throw Error('Account email delivery is not configured yet.');
     catalog=await request('/api/catalog');disableAuth(false);
+    if(!health.registrationReady){document.querySelector('#register-form button').disabled=true;document.querySelector('#forgot-form button').disabled=true;document.getElementById('registration-note').textContent='New registrations and password reset emails are being configured. Existing accounts can sign in.';}
     const productSelect=document.getElementById('order-product');
     for(const [key,service]of Object.entries(catalog.services)){const option=node('option',service.name);option.value=key;productSelect.append(option);}fillPlans();
-    if(!await handleEmailAction(initialAction))message('Create an account or sign in. Verify your email to make a service request.');
+    if(!await handleEmailAction(initialAction))message(health.registrationReady?'Create an account or sign in. Verify your email to make a service request.':'Account backend connected. New registrations are waiting for email setup.');
     try{await refresh();}catch{}
   }catch(error){message(error.message);disableAuth(true);}
 })();

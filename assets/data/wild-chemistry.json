@@ -1,0 +1,42 @@
+{
+  "issues": [
+    {
+      "id": "issue-1",
+      "title": "Issue 1 — We Meet",
+      "cover": {
+        "src": "/assets/images/wild-chemistry/issue-1/cover.webp",
+        "alt": "Wild Chemistry Issue 1 cover, with Robbie and Brenden against the Vancouver skyline."
+      },
+      "pages": [
+        {
+          "src": "/assets/images/wild-chemistry/issue-1/page-01.webp",
+          "alt": "Page 1: Robbie and Brenden meet at a government office and decide to spend time together."
+        },
+        {
+          "src": "/assets/images/wild-chemistry/issue-1/page-02.webp",
+          "alt": "Page 2: Robbie and Brenden get to know each other at Robbie’s home."
+        },
+        {
+          "src": "/assets/images/wild-chemistry/issue-1/page-03.webp",
+          "alt": "Page 3: Robbie introduces Brenden to his roommate Darcie."
+        },
+        {
+          "src": "/assets/images/wild-chemistry/issue-1/page-04.webp",
+          "alt": "Page 4: Darcie transforms into a monster as Robbie and Brenden react."
+        },
+        {
+          "src": "/assets/images/wild-chemistry/issue-1/page-05.webp",
+          "alt": "Page 5: Robbie and Brenden combine their magic in a battle."
+        },
+        {
+          "src": "/assets/images/wild-chemistry/issue-1/page-06.webp",
+          "alt": "Page 6: Robbie and Brenden discover their different powers."
+        },
+        {
+          "src": "/assets/images/wild-chemistry/issue-1/page-07.webp",
+          "alt": "Page 7: Robbie and Brenden reflect on their powers and their connection."
+        }
+      ]
+    }
+  ]
+}

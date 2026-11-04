@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /server/
+Disallow: /supabase/
+Disallow: /payments-test/
+
+Sitemap: https://robbiecalvin.com/sitemap.xml

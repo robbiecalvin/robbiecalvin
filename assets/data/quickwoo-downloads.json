@@ -1,0 +1,145 @@
+{
+  "mode": "temporary-free",
+  "packages": {
+    "quick-accountant": {
+      "url": "/downloads/wordpress/quick-accountant.zip",
+      "sha256": "38b25f7faba0805774a8eec0f6ed6ee4192ff82dceb9569e22614f758de5914b",
+      "bytes": 508071,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": true
+    },
+    "quick-add": {
+      "url": "/downloads/wordpress/quick-add.zip",
+      "sha256": "4c441fccd43422e4ecb0532bb38c05b3f4ce6e1e6195bde4753f92284d88d4ca",
+      "bytes": 444627,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": true
+    },
+    "quick-audit": {
+      "url": "/downloads/wordpress/quick-audit.zip",
+      "sha256": "ff38849594aad8cf780ad52522e0b23c073e4b699da412a61d393def2bfec2d3",
+      "bytes": 605446,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": true
+    },
+    "quick-code": {
+      "url": "/downloads/wordpress/quick-code.zip",
+      "sha256": "433fd851bb8175a0b2ddcc7c794ec4c2d4afece54bc5bf9370a996a9d1966f20",
+      "bytes": 520222,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": true
+    },
+    "quick-course-builder": {
+      "url": "/downloads/wordpress/quick-course-builder.zip",
+      "sha256": "43dc5ba91579c9aa4c8e4fccfad1c46e9eb93739ffd81f64b4111cf1d93dc101",
+      "bytes": 486116,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": true
+    },
+    "quick-edit": {
+      "url": "/downloads/wordpress/quick-edit.zip",
+      "sha256": "44900fdf9d38d03faaaddfa02043c1bdc44dd982ca94283df3859734e16a8a92",
+      "bytes": 642568,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": true
+    },
+    "quick-forms": {
+      "url": "/downloads/wordpress/quick-forms.zip",
+      "sha256": "ba433fbea3071a2e7bbf69a0f3d9145fa6dc7e8455d278cd26f96e1bba553439",
+      "bytes": 405544,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": true
+    },
+    "quick-images": {
+      "url": "/downloads/wordpress/quick-images.zip",
+      "sha256": "029004c53232023f7bacf84f7956cd8a119e3184afc8559bfbd40fc7b1c5aab2",
+      "bytes": 694665,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": true
+    },
+    "quick-importer": {
+      "url": "/downloads/wordpress/quick-importer.zip",
+      "sha256": "69095004913fddb16ab5717a9eccdbf76f6e3f947ab504f8926615ebf8c7d657",
+      "bytes": 447680,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": true
+    },
+    "quick-license": {
+      "url": "/downloads/wordpress/quick-license.zip",
+      "sha256": "997e87a4b75902478d6420dcb62e2d196c9e8fdc3605b3aa21fef0bdcbae2ca6",
+      "bytes": 508388,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": false
+    },
+    "quick-mail": {
+      "url": "/downloads/wordpress/quick-mail.zip",
+      "sha256": "86799f813e8578d1be4e35e3a69f28e0afbb2dc882eea15d7eb736263bfde527",
+      "bytes": 473173,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": true
+    },
+    "quick-points": {
+      "url": "/downloads/wordpress/quick-points.zip",
+      "sha256": "3afbc4c40a797a176a8be7b81df3abb0f3067500f6610dde3b12d8d3f5f0fd14",
+      "bytes": 403057,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": true
+    },
+    "quick-quotes": {
+      "url": "/downloads/wordpress/quick-quotes.zip",
+      "sha256": "1a509d7cd869a44f95720b85d157ff7f459b37a337e9c0ef4acf10b35f9ea161",
+      "bytes": 532477,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": true
+    },
+    "quick-schedule": {
+      "url": "/downloads/wordpress/quick-schedule.zip",
+      "sha256": "e372b0240130810d483d80ec9df3362c139ad55eb493684d2393089c7f8fb1c1",
+      "bytes": 445865,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": true
+    },
+    "quick-seo": {
+      "url": "/downloads/wordpress/quick-seo.zip",
+      "sha256": "2e207a98953a173b9a495f576b3a7794ca35d26809fce2246547e84412a58336",
+      "bytes": 2609830,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": true
+    },
+    "quick-ship": {
+      "url": "/downloads/wordpress/quick-ship.zip",
+      "sha256": "0f983e235c6fb33df75d6f7bcd825ba1470d51377cf658394694dad5250b14bb",
+      "bytes": 424983,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": true
+    },
+    "quick-site": {
+      "url": "/downloads/wordpress/quick-site.zip",
+      "sha256": "9358f25cbcafbcf523cce1af5fdcb4c67a6846d2de24317d4f4517af87c40641",
+      "bytes": 644399,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": true
+    },
+    "quick-traffic": {
+      "url": "/downloads/wordpress/quick-traffic.zip",
+      "sha256": "5ecac1c5d8b53e2f63e6f65e6cb70968a986b8d819da5c4c910d7cae5cda650b",
+      "bytes": 381157,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": true
+    },
+    "quick-variations": {
+      "url": "/downloads/wordpress/quick-variations.zip",
+      "sha256": "6a2d31d268c0186c6701720847812c5c0fc91a8146493b9c9419593800c6dc1c",
+      "bytes": 461723,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": true
+    },
+    "quick-connector": {
+      "url": "/downloads/wordpress/quick-connector.zip",
+      "sha256": "75103cad7c596b81e628c545a3471ceb1979eb5d671d7316075cfb32116c0773",
+      "bytes": 91067,
+      "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
+      "freePromotion": false
+    }
+  }
+}

@@ -3,8 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Your Robbie Calvin account: profile, service requests, purchases, and downloads.">
-<title>Your account — Robbie Calvin</title>
 <link rel="stylesheet" href="../assets/styles/overview.css">
 <link rel="stylesheet" href="../assets/styles/pages.css">
 <script src="../assets/scripts/overview.js" defer>
@@ -15,6 +13,13 @@
 </script>
 <script src="../assets/scripts/account.js" defer>
 </script>
+
+<title>Your account — Robbie Calvin</title>
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="referrer" content="same-origin">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48 64x64">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 </head>
 <body data-palette="orange">
 <header>
@@ -34,7 +39,7 @@
 <section class="content">
 <p class="eyebrow">Your Robbie Calvin account</p>
 <h1>Your projects.<br>One place.</h1>
-<p class="intro">Manage your profile, service requests, purchases, and available downloads.</p>
+<p class="intro">Manage your profile and service requests.</p><p class="note">Payment checkout is being tested in a Stripe sandbox. Real payments are not enabled.</p>
 <noscript><p class="note">Accounts require JavaScript and a connected account service. Please contact Robbie if you need assistance.</p></noscript>
 <p id="account-status" class="account-status" role="status" aria-live="polite">Connecting to the account service…</p>
 </section>
@@ -49,7 +54,8 @@
 <label for="register-password">Password (12–128 characters)</label>
 <input id="register-password" name="password" type="password" required minlength="12" maxlength="128" autocomplete="new-password">
 <button disabled class="button primary" type="submit">Create account</button>
-<p class="note">Verification is required before ordering. No payment information is collected here.</p>
+<p id="registration-note" class="note">Verification is required before ordering. No payment information is collected here.</p>
+<label><input type="checkbox" name="accept_terms" required> I accept the <a href="/terms/">Terms</a> and acknowledge the <a href="/privacy/">Privacy Policy</a>.</label>
 </form>
 <form method="post" id="login-form">
 <h2>Welcome back</h2>
@@ -115,14 +121,14 @@
 <p id="order-price-note" class="note">
 </p>
 <label for="order-brief">What would you like help with?</label>
-<textarea id="order-brief" name="brief" minlength="10" maxlength="4000" required>
+<textarea id="order-brief" name="brief" minlength="5" maxlength="3000" required>
 </textarea>
 <button class="button primary" type="submit">Save service request</button>
 </form>
 </section>
 <section class="content">
 <h2>Your download library</h2>
-<p class="muted">QuickWoo plugin plans are listed in USD, separately from CAD services. License checkout and release delivery are still being prepared.</p><a class="button" href="../wp-plugins/">Explore QuickWoo plugins & pricing ↗</a>
+<p class="muted">WordPress plugins are temporarily free. No account or payment is required to download them.</p><a class="button" href="../wp-plugins/">Download free WordPress plugins ↗</a>
 <div id="library">
 </div>
 </section>
@@ -130,7 +136,7 @@
 <h2>Your activity</h2>
 <ul id="activity">
 </ul>
-<p class="note">Opening a browser app is recorded as a launch, not a file download. Plugin files will need a confirmed product entitlement.</p>
+<p class="note">App launches are not recorded by this account service. Public free plugin downloads do not require an entitlement.</p>
 </section>
 </div>
 </main>
@@ -145,6 +151,7 @@
 </svg>
 </a>
 <a href="../">Back to the work ↗</a>
+<span class="legal-links"><a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/legal/">Legal & copyright</a></span>
 </footer>
 </body>
 </html>

@@ -1,0 +1,652 @@
+{
+  "currency": "USD",
+  "siteLimits": [
+    1,
+    5,
+    10,
+    25
+  ],
+  "billingPeriods": [
+    "monthly",
+    "annual"
+  ],
+  "annualDiscountPercent": 20,
+  "annualPrepaid": true,
+  "lifetimeOffered": false,
+  "status": "proposed-launch",
+  "source": {
+    "filename": "QuickWoo_Revised_Pricing (1).xlsx",
+    "sha256": "abb1f84301c54946786d339bf77f6f7f84e523a812aa39770b98a2832d3b1ac4"
+  },
+  "categories": [
+    {
+      "id": "inventory-control",
+      "name": "Inventory Control",
+      "palette": "orange"
+    },
+    {
+      "id": "revenue-customer-operations",
+      "name": "Revenue & Customer Operations",
+      "palette": "purple"
+    },
+    {
+      "id": "admin-control",
+      "name": "Admin Control",
+      "palette": "red"
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "palette": "purple"
+    }
+  ],
+  "products": [
+    {
+      "id": "quick-add",
+      "name": "Quick Add",
+      "category": "inventory-control",
+      "palette": "orange",
+      "lite": "Free",
+      "prices": {
+        "monthly": [
+          799,
+          1199,
+          1798,
+          2697
+        ],
+        "annual": [
+          7670,
+          11510,
+          17261,
+          25891
+        ]
+      },
+      "sourceRow": 4
+    },
+    {
+      "id": "quick-edit",
+      "name": "Quick Edit",
+      "category": "inventory-control",
+      "palette": "orange",
+      "lite": "Free",
+      "prices": {
+        "monthly": [
+          999,
+          1499,
+          2248,
+          3372
+        ],
+        "annual": [
+          9590,
+          14390,
+          21581,
+          32371
+        ]
+      },
+      "sourceRow": 5
+    },
+    {
+      "id": "quick-variations",
+      "name": "Quick Variations",
+      "category": "inventory-control",
+      "palette": "orange",
+      "lite": "Free",
+      "prices": {
+        "monthly": [
+          999,
+          1499,
+          2248,
+          3372
+        ],
+        "annual": [
+          9590,
+          14390,
+          21581,
+          32371
+        ]
+      },
+      "sourceRow": 6
+    },
+    {
+      "id": "quick-images",
+      "name": "Quick Images",
+      "category": "inventory-control",
+      "palette": "orange",
+      "lite": "Free",
+      "prices": {
+        "monthly": [
+          799,
+          1199,
+          1798,
+          2697
+        ],
+        "annual": [
+          7670,
+          11510,
+          17261,
+          25891
+        ]
+      },
+      "sourceRow": 7
+    },
+    {
+      "id": "quick-ship",
+      "name": "Quick Ship",
+      "category": "inventory-control",
+      "palette": "orange",
+      "lite": "Free",
+      "prices": {
+        "monthly": [
+          999,
+          1499,
+          2248,
+          3372
+        ],
+        "annual": [
+          9590,
+          14390,
+          21581,
+          32371
+        ]
+      },
+      "sourceRow": 8
+    },
+    {
+      "id": "quick-points",
+      "name": "Quick Points",
+      "category": "inventory-control",
+      "palette": "orange",
+      "lite": "Free",
+      "prices": {
+        "monthly": [
+          999,
+          1499,
+          2248,
+          3372
+        ],
+        "annual": [
+          9590,
+          14390,
+          21581,
+          32371
+        ]
+      },
+      "sourceRow": 9
+    },
+    {
+      "id": "quick-forms",
+      "name": "Quick Forms",
+      "category": "revenue-customer-operations",
+      "palette": "purple",
+      "lite": "Free",
+      "prices": {
+        "monthly": [
+          999,
+          1499,
+          2248,
+          3372
+        ],
+        "annual": [
+          9590,
+          14390,
+          21581,
+          32371
+        ]
+      },
+      "sourceRow": 12
+    },
+    {
+      "id": "quick-schedule",
+      "name": "Quick Schedule",
+      "category": "revenue-customer-operations",
+      "palette": "purple",
+      "lite": "Free",
+      "prices": {
+        "monthly": [
+          999,
+          1499,
+          2248,
+          3372
+        ],
+        "annual": [
+          9590,
+          14390,
+          21581,
+          32371
+        ]
+      },
+      "sourceRow": 13
+    },
+    {
+      "id": "quick-importer",
+      "name": "Quick Importer",
+      "category": "revenue-customer-operations",
+      "palette": "purple",
+      "lite": "Free",
+      "prices": {
+        "monthly": [
+          999,
+          1499,
+          2248,
+          3372
+        ],
+        "annual": [
+          9590,
+          14390,
+          21581,
+          32371
+        ]
+      },
+      "sourceRow": 14
+    },
+    {
+      "id": "quick-quotes",
+      "name": "Quick Quotes",
+      "category": "revenue-customer-operations",
+      "palette": "purple",
+      "lite": "Free",
+      "prices": {
+        "monthly": [
+          999,
+          1499,
+          2248,
+          3372
+        ],
+        "annual": [
+          9590,
+          14390,
+          21581,
+          32371
+        ]
+      },
+      "sourceRow": 15
+    },
+    {
+      "id": "quick-accountant",
+      "name": "Quick Accountant",
+      "category": "revenue-customer-operations",
+      "palette": "purple",
+      "lite": "Free",
+      "prices": {
+        "monthly": [
+          1299,
+          1949,
+          2923,
+          4384
+        ],
+        "annual": [
+          12470,
+          18710,
+          28061,
+          42086
+        ]
+      },
+      "sourceRow": 16
+    },
+    {
+      "id": "quick-mail",
+      "name": "Quick Mail",
+      "category": "revenue-customer-operations",
+      "palette": "purple",
+      "lite": "Free",
+      "prices": {
+        "monthly": [
+          1299,
+          1949,
+          2923,
+          4384
+        ],
+        "annual": [
+          12470,
+          18710,
+          28061,
+          42086
+        ]
+      },
+      "sourceRow": 17
+    },
+    {
+      "id": "quick-site",
+      "name": "Quick Site",
+      "category": "admin-control",
+      "palette": "red",
+      "lite": "Free",
+      "prices": {
+        "monthly": [
+          1299,
+          1949,
+          2923,
+          4384
+        ],
+        "annual": [
+          12470,
+          18710,
+          28061,
+          42086
+        ]
+      },
+      "sourceRow": 20
+    },
+    {
+      "id": "quick-seo",
+      "name": "Quick SEO",
+      "category": "admin-control",
+      "palette": "red",
+      "lite": "Free",
+      "prices": {
+        "monthly": [
+          1299,
+          1949,
+          2923,
+          4384
+        ],
+        "annual": [
+          12470,
+          18710,
+          28061,
+          42086
+        ]
+      },
+      "sourceRow": 21
+    },
+    {
+      "id": "quick-audit",
+      "name": "Quick Audit",
+      "category": "admin-control",
+      "palette": "red",
+      "lite": "Free",
+      "prices": {
+        "monthly": [
+          999,
+          1499,
+          2248,
+          3372
+        ],
+        "annual": [
+          9590,
+          14390,
+          21581,
+          32371
+        ]
+      },
+      "sourceRow": 22
+    },
+    {
+      "id": "quick-traffic",
+      "name": "Quick Traffic",
+      "category": "admin-control",
+      "palette": "red",
+      "lite": "Free",
+      "prices": {
+        "monthly": [
+          999,
+          1499,
+          2248,
+          3372
+        ],
+        "annual": [
+          9590,
+          14390,
+          21581,
+          32371
+        ]
+      },
+      "sourceRow": 23
+    },
+    {
+      "id": "quick-code",
+      "name": "Quick Code",
+      "category": "admin-control",
+      "palette": "red",
+      "lite": "Free",
+      "prices": {
+        "monthly": [
+          799,
+          1199,
+          1798,
+          2697
+        ],
+        "annual": [
+          7670,
+          11510,
+          17261,
+          25891
+        ]
+      },
+      "sourceRow": 24
+    },
+    {
+      "id": "quick-course-builder",
+      "name": "Quick Course Builder",
+      "category": "education",
+      "palette": "purple",
+      "lite": "Free",
+      "prices": {
+        "monthly": [
+          1499,
+          2249,
+          3373,
+          5059
+        ],
+        "annual": [
+          14390,
+          21590,
+          32381,
+          48566
+        ]
+      },
+      "sourceRow": 27
+    }
+  ],
+  "bundles": [
+    {
+      "id": "inventory-control",
+      "name": "Inventory Control Bundle",
+      "category": "inventory-control",
+      "palette": "orange",
+      "includes": [
+        "quick-add",
+        "quick-edit",
+        "quick-variations",
+        "quick-images",
+        "quick-ship",
+        "quick-points"
+      ],
+      "desktop": false,
+      "prices": {
+        "monthly": [
+          3999,
+          5999,
+          8998,
+          13497
+        ],
+        "annual": [
+          38390,
+          57590,
+          86381,
+          129571
+        ]
+      },
+      "sourceRow": 10
+    },
+    {
+      "id": "revenue-customer-operations",
+      "name": "Revenue & Customer Operations Bundle",
+      "category": "revenue-customer-operations",
+      "palette": "purple",
+      "includes": [
+        "quick-forms",
+        "quick-schedule",
+        "quick-importer",
+        "quick-quotes",
+        "quick-accountant",
+        "quick-mail"
+      ],
+      "desktop": false,
+      "prices": {
+        "monthly": [
+          4999,
+          7499,
+          11248,
+          16872
+        ],
+        "annual": [
+          47990,
+          71990,
+          107981,
+          161971
+        ]
+      },
+      "sourceRow": 18
+    },
+    {
+      "id": "admin-control",
+      "name": "Admin Control Bundle",
+      "category": "admin-control",
+      "palette": "red",
+      "includes": [
+        "quick-site",
+        "quick-seo",
+        "quick-audit",
+        "quick-traffic",
+        "quick-code"
+      ],
+      "desktop": false,
+      "prices": {
+        "monthly": [
+          3999,
+          5999,
+          8998,
+          13497
+        ],
+        "annual": [
+          38390,
+          57590,
+          86381,
+          129571
+        ]
+      },
+      "sourceRow": 25
+    },
+    {
+      "id": "education",
+      "name": "Education Bundle",
+      "category": "education",
+      "palette": "purple",
+      "includes": [
+        "quick-course-builder"
+      ],
+      "desktop": false,
+      "prices": {
+        "monthly": [
+          1499,
+          2249,
+          3373,
+          5059
+        ],
+        "annual": [
+          14390,
+          21590,
+          32381,
+          48566
+        ]
+      },
+      "sourceRow": 28
+    },
+    {
+      "id": "full-quickwoo-suite",
+      "name": "Full QuickWoo Suite",
+      "palette": "red",
+      "includes": [
+        "quick-add",
+        "quick-edit",
+        "quick-variations",
+        "quick-images",
+        "quick-ship",
+        "quick-points",
+        "quick-forms",
+        "quick-schedule",
+        "quick-importer",
+        "quick-quotes",
+        "quick-accountant",
+        "quick-mail",
+        "quick-site",
+        "quick-seo",
+        "quick-audit",
+        "quick-traffic",
+        "quick-code",
+        "quick-course-builder"
+      ],
+      "desktop": false,
+      "prices": {
+        "monthly": [
+          9999,
+          14998,
+          22498,
+          33747
+        ],
+        "annual": [
+          95990,
+          143981,
+          215981,
+          323971
+        ]
+      },
+      "sourceRow": 30
+    },
+    {
+      "id": "plus-desktop",
+      "name": "Full Suite + QuickWoo Desktop",
+      "palette": "orange",
+      "includes": [
+        "quick-add",
+        "quick-edit",
+        "quick-variations",
+        "quick-images",
+        "quick-ship",
+        "quick-points",
+        "quick-forms",
+        "quick-schedule",
+        "quick-importer",
+        "quick-quotes",
+        "quick-accountant",
+        "quick-mail",
+        "quick-site",
+        "quick-seo",
+        "quick-audit",
+        "quick-traffic",
+        "quick-code",
+        "quick-course-builder"
+      ],
+      "desktop": true,
+      "prices": {
+        "monthly": [
+          12999,
+          19499,
+          29248,
+          43872
+        ],
+        "annual": [
+          124790,
+          187190,
+          280781,
+          421171
+        ]
+      },
+      "sourceRow": 31
+    }
+  ],
+  "infrastructure": [
+    {
+      "id": "quick-connector",
+      "name": "Quick Connector",
+      "separatelyPriced": false
+    },
+    {
+      "id": "quick-license",
+      "name": "Quick License",
+      "separatelyPriced": false
+    }
+  ]
+}
+

@@ -13,7 +13,7 @@
   "annualDiscountPercent": 20,
   "annualPrepaid": true,
   "lifetimeOffered": false,
-  "status": "proposed-launch",
+  "status": "temporary-free-wordpress-plugins",
   "source": {
     "filename": "QuickWoo_Revised_Pricing (1).xlsx",
     "sha256": "abb1f84301c54946786d339bf77f6f7f84e523a812aa39770b98a2832d3b1ac4"
@@ -49,19 +49,21 @@
       "lite": "Free",
       "prices": {
         "monthly": [
-          799,
-          1199,
-          1798,
-          2697
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          7670,
-          11510,
-          17261,
-          25891
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 4
+      "sourceRow": 4,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-add.zip"
     },
     {
       "id": "quick-edit",
@@ -71,19 +73,21 @@
       "lite": "Free",
       "prices": {
         "monthly": [
-          999,
-          1499,
-          2248,
-          3372
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          9590,
-          14390,
-          21581,
-          32371
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 5
+      "sourceRow": 5,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-edit.zip"
     },
     {
       "id": "quick-variations",
@@ -93,19 +97,21 @@
       "lite": "Free",
       "prices": {
         "monthly": [
-          999,
-          1499,
-          2248,
-          3372
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          9590,
-          14390,
-          21581,
-          32371
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 6
+      "sourceRow": 6,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-variations.zip"
     },
     {
       "id": "quick-images",
@@ -115,19 +121,21 @@
       "lite": "Free",
       "prices": {
         "monthly": [
-          799,
-          1199,
-          1798,
-          2697
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          7670,
-          11510,
-          17261,
-          25891
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 7
+      "sourceRow": 7,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-images.zip"
     },
     {
       "id": "quick-ship",
@@ -137,19 +145,21 @@
       "lite": "Free",
       "prices": {
         "monthly": [
-          999,
-          1499,
-          2248,
-          3372
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          9590,
-          14390,
-          21581,
-          32371
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 8
+      "sourceRow": 8,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-ship.zip"
     },
     {
       "id": "quick-points",
@@ -159,19 +169,21 @@
       "lite": "Free",
       "prices": {
         "monthly": [
-          999,
-          1499,
-          2248,
-          3372
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          9590,
-          14390,
-          21581,
-          32371
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 9
+      "sourceRow": 9,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-points.zip"
     },
     {
       "id": "quick-forms",
@@ -181,19 +193,21 @@
       "lite": "Free",
       "prices": {
         "monthly": [
-          999,
-          1499,
-          2248,
-          3372
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          9590,
-          14390,
-          21581,
-          32371
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 12
+      "sourceRow": 12,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-forms.zip"
     },
     {
       "id": "quick-schedule",
@@ -203,19 +217,21 @@
       "lite": "Free",
       "prices": {
         "monthly": [
-          999,
-          1499,
-          2248,
-          3372
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          9590,
-          14390,
-          21581,
-          32371
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 13
+      "sourceRow": 13,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-schedule.zip"
     },
     {
       "id": "quick-importer",
@@ -225,19 +241,21 @@
       "lite": "Free",
       "prices": {
         "monthly": [
-          999,
-          1499,
-          2248,
-          3372
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          9590,
-          14390,
-          21581,
-          32371
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 14
+      "sourceRow": 14,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-importer.zip"
     },
     {
       "id": "quick-quotes",
@@ -247,19 +265,21 @@
       "lite": "Free",
       "prices": {
         "monthly": [
-          999,
-          1499,
-          2248,
-          3372
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          9590,
-          14390,
-          21581,
-          32371
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 15
+      "sourceRow": 15,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-quotes.zip"
     },
     {
       "id": "quick-accountant",
@@ -269,19 +289,21 @@
       "lite": "Free",
       "prices": {
         "monthly": [
-          1299,
-          1949,
-          2923,
-          4384
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          12470,
-          18710,
-          28061,
-          42086
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 16
+      "sourceRow": 16,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-accountant.zip"
     },
     {
       "id": "quick-mail",
@@ -291,19 +313,21 @@
       "lite": "Free",
       "prices": {
         "monthly": [
-          1299,
-          1949,
-          2923,
-          4384
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          12470,
-          18710,
-          28061,
-          42086
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 17
+      "sourceRow": 17,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-mail.zip"
     },
     {
       "id": "quick-site",
@@ -313,19 +337,21 @@
       "lite": "Free",
       "prices": {
         "monthly": [
-          1299,
-          1949,
-          2923,
-          4384
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          12470,
-          18710,
-          28061,
-          42086
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 20
+      "sourceRow": 20,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-site.zip"
     },
     {
       "id": "quick-seo",
@@ -335,19 +361,21 @@
       "lite": "Free",
       "prices": {
         "monthly": [
-          1299,
-          1949,
-          2923,
-          4384
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          12470,
-          18710,
-          28061,
-          42086
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 21
+      "sourceRow": 21,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-seo.zip"
     },
     {
       "id": "quick-audit",
@@ -357,19 +385,21 @@
       "lite": "Free",
       "prices": {
         "monthly": [
-          999,
-          1499,
-          2248,
-          3372
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          9590,
-          14390,
-          21581,
-          32371
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 22
+      "sourceRow": 22,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-audit.zip"
     },
     {
       "id": "quick-traffic",
@@ -379,19 +409,21 @@
       "lite": "Free",
       "prices": {
         "monthly": [
-          999,
-          1499,
-          2248,
-          3372
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          9590,
-          14390,
-          21581,
-          32371
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 23
+      "sourceRow": 23,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-traffic.zip"
     },
     {
       "id": "quick-code",
@@ -401,19 +433,21 @@
       "lite": "Free",
       "prices": {
         "monthly": [
-          799,
-          1199,
-          1798,
-          2697
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          7670,
-          11510,
-          17261,
-          25891
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 24
+      "sourceRow": 24,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-code.zip"
     },
     {
       "id": "quick-course-builder",
@@ -423,19 +457,21 @@
       "lite": "Free",
       "prices": {
         "monthly": [
-          1499,
-          2249,
-          3373,
-          5059
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          14390,
-          21590,
-          32381,
-          48566
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 27
+      "sourceRow": 27,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-course-builder.zip"
     }
   ],
   "bundles": [
@@ -455,19 +491,21 @@
       "desktop": false,
       "prices": {
         "monthly": [
-          3999,
-          5999,
-          8998,
-          13497
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          38390,
-          57590,
-          86381,
-          129571
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 10
+      "sourceRow": 10,
+      "promotionApplied": true,
+      "downloadUrl": null
     },
     {
       "id": "revenue-customer-operations",
@@ -485,19 +523,21 @@
       "desktop": false,
       "prices": {
         "monthly": [
-          4999,
-          7499,
-          11248,
-          16872
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          47990,
-          71990,
-          107981,
-          161971
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 18
+      "sourceRow": 18,
+      "promotionApplied": true,
+      "downloadUrl": null
     },
     {
       "id": "admin-control",
@@ -514,19 +554,21 @@
       "desktop": false,
       "prices": {
         "monthly": [
-          3999,
-          5999,
-          8998,
-          13497
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          38390,
-          57590,
-          86381,
-          129571
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 25
+      "sourceRow": 25,
+      "promotionApplied": true,
+      "downloadUrl": null
     },
     {
       "id": "education",
@@ -539,19 +581,21 @@
       "desktop": false,
       "prices": {
         "monthly": [
-          1499,
-          2249,
-          3373,
-          5059
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          14390,
-          21590,
-          32381,
-          48566
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 28
+      "sourceRow": 28,
+      "promotionApplied": true,
+      "downloadUrl": null
     },
     {
       "id": "full-quickwoo-suite",
@@ -580,19 +624,21 @@
       "desktop": false,
       "prices": {
         "monthly": [
-          9999,
-          14998,
-          22498,
-          33747
+          0,
+          0,
+          0,
+          0
         ],
         "annual": [
-          95990,
-          143981,
-          215981,
-          323971
+          0,
+          0,
+          0,
+          0
         ]
       },
-      "sourceRow": 30
+      "sourceRow": 30,
+      "promotionApplied": true,
+      "downloadUrl": null
     },
     {
       "id": "plus-desktop",
@@ -633,19 +679,32 @@
           421171
         ]
       },
-      "sourceRow": 31
+      "sourceRow": 31,
+      "promotionApplied": false,
+      "downloadUrl": null
     }
   ],
   "infrastructure": [
     {
       "id": "quick-connector",
       "name": "Quick Connector",
-      "separatelyPriced": false
+      "separatelyPriced": false,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-connector.zip"
     },
     {
       "id": "quick-license",
       "name": "Quick License",
-      "separatelyPriced": false
+      "separatelyPriced": false,
+      "promotionApplied": true,
+      "downloadUrl": "/downloads/wordpress/quick-license.zip"
     }
-  ]
+  ],
+  "promotion": {
+    "active": true,
+    "type": "temporary-free-wordpress-plugins",
+    "endsAt": null,
+    "desktopIncluded": false,
+    "standardPricing": "quickwoo-pricing-standard.json"
+  }
 }
