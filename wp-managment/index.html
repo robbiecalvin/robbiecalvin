@@ -9,8 +9,12 @@
 <link rel="stylesheet" href="../assets/styles/overview.css">
 <script src="../assets/scripts/overview.js" defer>
 </script>
+<link rel="stylesheet" href="../assets/styles/pages.css">
+<link rel="preload" as="image" href="../assets/images/wp-managment-hero.webp">
+<script src="../assets/scripts/pages.js" defer>
+</script>
 </head>
-<body data-palette="orange">
+<body data-palette="orange" data-page="wp-managment">
 <header>
 <nav class="wrap" aria-label="Main navigation">
 <a class="logo" href="../">robbiecalvin<span>.</span>
@@ -28,7 +32,7 @@
 <div class="breadcrumb">
 <a href="../">Home</a> / <a href="../#services">Services</a> / WordPress Management</div>
 <section class="hero" aria-labelledby="title">
-<div>
+<div class="hero-copy">
 <p class="eyebrow">Website support</p>
 <h1 id="title">WordPress Management</h1>
 <p class="intro">Keep your site cared for.</p>
@@ -36,16 +40,6 @@
 <a class="button primary" href="#pricing">Explore pricing ↗</a>
 <a class="button" href="../#services">Back to services ↑</a>
 </div>
-</div>
-<div class="art" aria-hidden="true">
-<div class="orbit">
-</div>
-<div class="orbit">
-</div>
-<div class="orbit">
-</div>
-<span class="symbol">W</span>
-<span class="art-label">WordPress Management / Website support</span>
 </div>
 </section>
 <div class="facts">
@@ -62,37 +56,31 @@
 <strong>Draft packages in CAD</strong>
 </div>
 </div>
-<section class="content" id="overview">
-<div class="section-head">
-<div>
-<p class="kicker">01 / The service</p>
-<h2>Keep your site cared for.</h2>
-</div>
-<p>Practical help keeping a WordPress website organized and maintained. Choose a defined maintenance scope or a focused support task based on the site you already have.</p>
-</div>
-<div class="grid">
-<article class="card">
-<span class="number">01 /</span>
-<h3>Routine maintenance</h3>
-<p>Plan updates and maintenance around the site’s theme, plugins, and hosting setup.</p>
+<section id="overview" class="content distinctive care-section">
+<p class="kicker">Quietly keeping things current</p>
+<h2>A little regular attention.</h2>
+<p class="section-summary">Practical help keeping a WordPress website organized and maintained. Choose a defined maintenance scope or a focused support task based on the site you already have.</p>
+<div class="care-cycle">
+<article>
+<span>Review</span>
+<p>Check the update scope and the site’s existing setup.</p>
 </article>
-<article class="card">
-<span class="number">02 /</span>
-<h3>Content housekeeping</h3>
-<p>Keep supplied content, links, and page information organized and current.</p>
+<article>
+<span>Maintain</span>
+<p>Work through the agreed updates and content tasks.</p>
 </article>
-<article class="card">
-<span class="number">03 /</span>
-<h3>Clear communication</h3>
-<p>Know what work was completed and which issues need a separate decision.</p>
+<article>
+<span>Report</span>
+<p>Know what changed and what needs a separate decision.</p>
 </article>
 </div>
 </section>
-<section class="content" id="pricing">
+
+<section class="content pricing-care" id="pricing">
 <div class="section-head">
 <div>
 <p class="kicker">02 / Scope & pricing</p>
-<h2>Clear work.<br>Considered prices.</h2>
+<h2>Regular care.<br>A clearer monthly scope.</h2>
 </div>
 <p>Suggested packages for a defined scope. Confirm availability, deliverables, and the final quote before work begins.</p>
 </div>
@@ -106,7 +94,7 @@
 <li>Core, theme, and plugin update review</li>
 <li>Backup check using an existing backup setup</li>
 </ul>
-<a class="button" href="#brief">Plan this project ↗</a>
+<button type="button" class="button" data-select-plan="60">Estimate this option ↗</button>
 </article>
 <article class="card">
 <h3>Care + content</h3>
@@ -117,7 +105,7 @@
 <li>Up to one hour of supplied content edits</li>
 <li>Monthly work summary</li>
 </ul>
-<a class="button" href="#brief">Plan this project ↗</a>
+<button type="button" class="button" data-select-plan="120">Estimate this option ↗</button>
 </article>
 <article class="card">
 <h3>Focused support</h3>
@@ -128,17 +116,48 @@
 <li>One-hour minimum</li>
 <li>Estimate after reviewing the issue</li>
 </ul>
-<a class="button" href="#brief">Plan this project ↗</a>
+<button type="button" class="button" data-select-plan="120">Estimate this option ↗</button>
 </article>
 </div>
 <p class="note">Draft pricing in Canadian dollars (CAD), subject to confirmation. Taxes, if applicable, are additional. Revisions cover the agreed direction; new deliverables need a new estimate. No payment or booking is taken on this page.</p>
 <p class="note">One website per plan. Hosting, premium licenses, malware removal, emergency response, and major repairs are separate. Backup and staging access must be confirmed before updates.</p>
 </section>
+<section class="content estimate-section" id="estimate">
+<div class="estimate-layout">
+<div>
+<p class="kicker">Your scope / Your estimate</p>
+<h2>Choose your care.</h2>
+<p class="muted">Monthly estimate = selected care plan × number of websites. Licenses, hosting, and major repairs are separate.</p>
+</div>
+<form class="estimate-tool" data-estimator="wp-managment">
+<label for="estimate-plan">Monthly plan</label>
+<select id="estimate-plan" name="plan">
+<option value="60">Essential care / $60 per site monthly</option>
+<option value="120">Care + content / $120 per site monthly</option>
+</select>
+<label for="estimate-quantity">Number of websites</label>
+<input id="estimate-quantity" name="quantity" type="number" min="1" max="10" step="1" value="1">
+<div class="estimate-result">
+<span>Estimated monthly total</span>
+<output data-estimate-total aria-live="polite">
+</output>
+<small>CAD / month, before applicable tax</small>
+</div>
+<p data-estimate-breakdown class="note">
+</p>
+<button type="button" class="button primary" data-use-estimate>Use this in my brief ↓</button>
+<p class="note">A planning estimate, not a booking or final quote. Confirm scope and availability before work begins.</p>
+<noscript>
+<p>The interactive estimate requires JavaScript. The published prices above remain available.</p>
+</noscript>
+</form>
+</div>
+</section>
 <section class="content" id="brief">
 <div class="split">
 <div>
 <p class="kicker">03 / Start with a brief</p>
-<h2>What do you<br>have in mind?</h2>
+<h2>Let’s look at<br>your existing site.</h2>
 <p class="muted">Write down the essentials and download a project brief to keep or share through your existing contact channel with Robbie. This form does not send your information.</p>
 </div>
 <form class="brief" data-brief>
@@ -158,22 +177,26 @@
 </form>
 </div>
 </section>
-<section class="closing">
-<p class="kicker">Keep exploring</p>
-<h2>Another direction<br>worth following.</h2>
-<div class="related">
-<a class="button" href="../personal-assistant/">Personal Assistant ↗</a>
-<a class="button" href="../rtb-advocacy/">RTB Advocacy ↗</a>
-<a class="button" href="../web-design/">Web Design ↗</a>
-<a class="button" href="../graphic-design/">Graphic Design ↗</a>
-<a class="button" href="../resume-building/">Resume Building ↗</a>
+<section class="closing page-finale finale-wp-managment">
+<div>
+<p class="kicker">Your next step</p>
+<h2>Give your website a little breathing room.</h2>
+<p class="muted">Choose a care scope that fits the site you have and the time you need back.</p>
 </div>
+<a class="button primary" href="../contact/">Ask about site care ↗</a>
+<a class="quiet-link" href="../">Back to the collection ↑</a>
 </section>
 </main>
 <footer class="wrap">
 <span>© <span id="year">2026</span> Robbie Calvin</span>
-<span><a href="../about/">About me</a> · <a href="../contact/">Contact</a></span>
-<a class="social-link" href="https://www.linkedin.com/in/robbie-calvin-50710b386/" aria-label="Robbie Calvin on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.4-.76 1.36-1.56 2.79-1.56 2.98 0 3.58 1.96 3.58 4.51v5.3Z"/></svg></a>
+<span>
+<a href="../about/">About me</a> · <a href="../contact/">Contact</a>
+</span>
+<a class="social-link" href="https://www.linkedin.com/in/robbie-calvin-50710b386/" aria-label="Robbie Calvin on LinkedIn">
+<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.4-.76 1.36-1.56 2.79-1.56 2.98 0 3.58 1.96 3.58 4.51v5.3Z"/>
+</svg>
+</a>
 <a href="#top">Back to top ↑</a>
 </footer>
 </body>

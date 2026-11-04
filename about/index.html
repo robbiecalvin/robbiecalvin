@@ -4,13 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#111110">
-<meta name="description" content="Meet Robbie Calvin: tech artist, web developer, and AI enthusiast working across practical tools and creative expression.">
+<meta name="description" content="Robbie Calvin’s story: a self-taught Vancouver programmer and artist, finding a way forward through creativity, technology, recovery, and advocacy.">
 <title>About me — Robbie Calvin</title>
 <link rel="stylesheet" href="../assets/styles/overview.css">
+<link rel="stylesheet" href="../assets/styles/pages.css">
+<link rel="preload" as="image" href="../assets/images/about-hero.webp">
 <script src="../assets/scripts/overview.js" defer>
 </script>
+<script src="../assets/scripts/pages.js" defer>
+</script>
 </head>
-<body>
+<body data-palette="orange" data-page="about">
 <header>
 <nav class="wrap" aria-label="Main navigation">
 <a class="logo" href="../">robbiecalvin<span>.</span>
@@ -26,82 +30,95 @@
 <main class="wrap" id="top">
 <div class="breadcrumb">
 <a href="../">Home</a> / About me</div>
-<section class="hero">
-<div>
-<p class="eyebrow">Behind the screen</p>
-<h1>Hi, I’m Robbie.</h1>
-<p class="intro">The medium keeps changing.<br>The curiosity doesn’t.</p>
+<section class="hero" aria-labelledby="title">
+<div class="hero-copy">
+<p class="eyebrow">Vancouver / Self-taught / Still becoming</p>
+<h1 id="title">I found my way<br>by making things.</h1>
+<p class="intro">I’m Robbie Calvin. Programmer, artist, and a believer in what people can build when they get another chance.</p>
 <div class="actions">
-<a class="button primary" href="../#applications">Explore my work ↗</a>
-<a class="button" href="../contact/">Get in touch ↗</a>
+<a class="button primary" href="#story">This is my story ↓</a>
+<a class="button" href="../contact/">Say hello ↗</a>
 </div>
-</div>
-<div class="art" aria-hidden="true">
-<div class="orbit">
-</div>
-<div class="orbit">
-</div>
-<div class="orbit">
-</div>
-<span class="symbol">rc.</span>
-<span class="art-label">Code. Create. Question everything.</span>
 </div>
 </section>
-<section class="content">
-<div class="split">
+<div class="story-intro">
+<span class="kicker">No straight line</span>
+<p>I didn’t arrive here with a degree, a plan, or a tidy story.<br>I arrived with curiosity—and the need to find a way forward.</p>
+</div>
+<section class="content story-chapter" id="story">
+<div class="chapter-label">
+<span>01</span>
+<p>The uncertain part</p>
+</div>
+<div class="story-copy">
+<h2>I didn’t always know<br>where I was going.</h2>
+<p>School wasn’t a place where I really applied myself. There was a lot of dysfunction in my life, and for a long time I didn’t know what I wanted to do with it.</p>
+<p>College wasn’t something I could afford, and I didn’t have family to lean on. I had to find a direction I could begin with what I had.</p>
+<p>I wanted something I could teach myself. Something with enough room to keep changing, where I could learn at my own pace and keep finding new possibilities.</p>
+</div>
+</section>
+<section class="content story-chapter">
+<div class="chapter-label">
+<span>02</span>
+<p>The first websites</p>
+</div>
+<div class="story-copy">
+<h2>It started with a couple<br>of cannabis websites.</h2>
+<p>Running those sites gave me a reason to figure things out. I needed to understand how websites worked, how to change them, and how to make them do something useful.</p>
+<p>That curiosity snowballed. A question led to something to learn. Learning led to another idea. Eventually, I found myself programming—building the tools and experiences I once wouldn’t have known how to begin.</p>
+<p>I’m self-taught. That means I’m used to asking questions, trying things, and staying with a problem until I understand it a little better.</p>
+</div>
+</section>
+<blockquote class="story-pullquote">There was no perfect starting point.<br>There was something I could learn next.</blockquote>
+<section class="content artist-chapter">
 <div>
-<p class="kicker">01 / A little about me</p>
-<h2>Practical tools.<br>Creative expression.</h2>
+<p class="kicker">03 / The artist never left</p>
+<h2>Code is another medium.</h2>
 </div>
-<div class="about-biography">
-      <p>
-        I’m a <strong>tech artist, web developer, and AI enthusiast</strong>.
-        My work lives where practical tools meet creative expression.
-      </p>
-      <p>
-        Sometimes that means writing code. Sometimes it means designing
-        an identity, building an AI workflow, or telling a story.
-        I’m interested in what happens when those disciplines
-        start talking to each other.
-      </p>
-      <p>
-        This is the home for that work: the ideas taking shape,
-        the experiments worth following, and the things
-        I’m still figuring out.
-      </p>
-
-      <div class="principles">
-        <div>
-          <h3>Make it useful.</h3>
-          <p>Good technology should earn its place in someone’s life.</p>
-        </div>
-        <div>
-          <h3>Make it feel.</h3>
-          <p>Function matters. So does the experience of being there.</p>
-        </div>
-      </div>
+<div class="artist-materials">
+<span>Drawing</span>
+<span>Painting</span>
+<span>Pastels</span>
+<span>Programming</span>
 </div>
+<div class="story-copy">
+<p>I draw, paint, and work with pastels. Making art has its own way of helping me explore an idea, follow a feeling, or notice something I might otherwise pass by.</p>
+<p>Programming gives me another way to make things. I can work with structure and interaction as well as colour and form. That overlap is where a lot of my curiosity lives.</p>
 </div>
 </section>
-<section class="content">
-<p class="kicker">02 / Different mediums. Same imagination.</p>
-<h2>Follow a thread.</h2>
-<div class="grid">
-<article class="card">
-<h3>Applications</h3>
-<p>From a virtual sommelier to visual thinking and audio tools, each project starts with a different question.</p>
-<a class="button" href="../#applications">Explore the apps ↗</a>
+<section class="content beliefs-section">
+<p class="kicker">04 / What I keep coming back to</p>
+<h2>Build something<br>that helps someone.</h2>
+<div class="beliefs-grid">
+<article>
+<span>01 / Possibility</span>
+<h3>AI used for good.</h3>
+<p>I believe AI is part of the future. I’m interested in what people can do with it: learn, create, solve problems, and build things that make life better.</p>
 </article>
-<article class="card">
-<h3>Creative services</h3>
-<p>Web development, visual design, and practical digital support, shaped around the work that needs doing.</p>
-<a class="button" href="../#services">Explore services ↗</a>
+<article>
+<span>02 / Another chance</span>
+<h3>Recovery matters.</h3>
+<p>I believe in recovery, in people’s ability to change, and in the value of having a way forward. A difficult chapter shouldn’t get to define the whole story.</p>
 </article>
-<article class="card">
-<h3>Independent sites</h3>
-<p>Focused places for ideas to take on a life of their own, from keyboard practice to local services.</p>
-<a class="button" href="../#sites">Explore the sites ↗</a>
+<article>
+<span>03 / A voice</span>
+<h3>Help and advocacy.</h3>
+<p>Helping people and standing up for them matter to me. I want that care to show up in the work I choose and in how I work with others.</p>
 </article>
+<article>
+<span>04 / Expression</span>
+<h3>Keep making.</h3>
+<p>Creativity is a thread through all of it. A drawing, a useful website, a new tool—different ways to turn an idea into something someone else can experience.</p>
+</article>
+</div>
+</section>
+<section class="closing page-finale about-finale">
+<p class="kicker">Vancouver is home. Curiosity is the direction.</p>
+<h2>I’m still learning.<br>I’m still making things.</h2>
+<p class="intro">If something here speaks to you, I’d like to hear about it.</p>
+<div class="actions">
+<a class="button primary" href="../contact/">Let’s talk ↗</a>
+<a class="button" href="../#applications">Explore my work ↗</a>
 </div>
 </section>
 </main>
@@ -110,7 +127,11 @@
 <span>
 <a href="../about/">About me</a> · <a href="../contact/">Contact</a>
 </span>
-<a class="social-link" href="https://www.linkedin.com/in/robbie-calvin-50710b386/" aria-label="Robbie Calvin on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.4-.76 1.36-1.56 2.79-1.56 2.98 0 3.58 1.96 3.58 4.51v5.3Z"/></svg></a>
+<a class="social-link" href="https://www.linkedin.com/in/robbie-calvin-50710b386/" aria-label="Robbie Calvin on LinkedIn">
+<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.4-.76 1.36-1.56 2.79-1.56 2.98 0 3.58 1.96 3.58 4.51v5.3Z"/>
+</svg>
+</a>
 <a href="../">Back to the work ↗</a>
 </footer>
 </body>

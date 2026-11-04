@@ -9,8 +9,12 @@
 <link rel="stylesheet" href="../assets/styles/overview.css">
 <script src="../assets/scripts/overview.js" defer>
 </script>
+<link rel="stylesheet" href="../assets/styles/pages.css">
+<link rel="preload" as="image" href="../assets/images/quickwoo-hero.webp">
+<script src="../assets/scripts/pages.js" defer>
+</script>
 </head>
-<body data-palette="orange">
+<body data-palette="orange" data-page="quickwoo">
 <header>
 <nav class="wrap" aria-label="Main navigation">
 <a class="logo" href="../">robbiecalvin<span>.</span>
@@ -28,25 +32,17 @@
 <div class="breadcrumb">
 <a href="../">Home</a> / <a href="../#applications">Applications</a> / QuickWoo Desktop</div>
 <section class="hero" aria-labelledby="title">
-<div>
+<div class="hero-copy">
 <p class="eyebrow">WordPress &amp; WooCommerce control center</p>
 <h1 id="title">QuickWoo Desktop</h1>
 <p class="intro">Your sites and stores. One desktop workspace.</p>
 <div class="actions">
+<button type="button" class="button try-button" disabled aria-describedby="try-status">Try it out</button>
 <a class="button primary" href="#overview">Explore the features ↗</a>
 <a class="button" href="https://github.com/robbiecalvin/QuickWoo-Desktop">View project on GitHub ↗</a>
 </div>
 </div>
-<div class="art" aria-hidden="true">
-<div class="orbit">
-</div>
-<div class="orbit">
-</div>
-<div class="orbit">
-</div>
-<span class="symbol">QW</span>
-<span class="art-label">QuickWoo Desktop / WordPress &amp; WooCommerce control center</span>
-</div>
+<p class="launch-note" id="try-status">The launch link is on its way. Explore the project below.</p>
 </section>
 <div class="facts">
 <div class="fact">
@@ -62,6 +58,20 @@
 <strong>Multi-site workspace</strong>
 </div>
 </div>
+<section class="content distinctive workspace-section">
+<p class="kicker">Two modes / One workspace</p>
+<h2>Look after the whole operation.</h2>
+<div class="mode-switch" role="group" aria-label="Preview workspace modes">
+<button type="button" class="mode-button" data-mode="store" aria-pressed="true">Store Mode</button>
+<button type="button" class="mode-button" data-mode="site" aria-pressed="false">Site Mode</button>
+</div>
+<div class="mode-preview" data-mode-preview aria-live="polite">
+<p class="kicker">Store Mode overview</p>
+<h3>Orders. Products. The bigger picture.</h3>
+<p>Bring orders, products, customer insights, and store notifications into a configurable dashboard.</p>
+</div>
+<p class="note">An overview of the desktop interface. WordPress-side module actions require the bundled Quick Connector.</p>
+</section>
 <section class="content" id="overview">
 <div class="section-head">
 <div>
@@ -70,7 +80,7 @@
 </div>
 <p>QuickWoo Desktop brings WordPress and WooCommerce operations into one desktop app. Switch between Site Mode and Store Mode, move between connected sites, and shape a dashboard around the work you need to do.</p>
 </div>
-<div class="grid">
+<div class="grid feature-dashboard">
 <article class="card">
 <span class="number">01 /</span>
 <h3>See the store clearly</h3>
@@ -114,23 +124,26 @@
 </div>
 </div>
 </section>
-<section class="closing">
-<p class="kicker">Keep exploring</p>
-<h2>Another direction<br>worth following.</h2>
-<div class="related">
-<a class="button" href="../codex-master/">Codex Master ↗</a>
-<a class="button" href="../myra/">Myra ↗</a>
-<a class="button" href="../red-door/">Red Door ↗</a>
-<a class="button" href="../speechflow/">Speechflow ↗</a>
-<a class="button" href="../kimix/">KIMIX ↗</a>
-<a class="button" href="../wp-plugins/">WordPress Plugins ↗</a>
+<section class="closing page-finale finale-quickwoo">
+<div>
+<p class="kicker">Your next step</p>
+<h2>A clearer view of the work.</h2>
+<p class="muted">Explore the desktop project and its connection requirements.</p>
 </div>
+<a class="button primary" href="https://github.com/robbiecalvin/QuickWoo-Desktop">View the desktop project ↗</a>
+<a class="quiet-link" href="../">Back to the collection ↑</a>
 </section>
 </main>
 <footer class="wrap">
 <span>© <span id="year">2026</span> Robbie Calvin</span>
-<span><a href="../about/">About me</a> · <a href="../contact/">Contact</a></span>
-<a class="social-link" href="https://www.linkedin.com/in/robbie-calvin-50710b386/" aria-label="Robbie Calvin on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.4-.76 1.36-1.56 2.79-1.56 2.98 0 3.58 1.96 3.58 4.51v5.3Z"/></svg></a>
+<span>
+<a href="../about/">About me</a> · <a href="../contact/">Contact</a>
+</span>
+<a class="social-link" href="https://www.linkedin.com/in/robbie-calvin-50710b386/" aria-label="Robbie Calvin on LinkedIn">
+<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.4-.76 1.36-1.56 2.79-1.56 2.98 0 3.58 1.96 3.58 4.51v5.3Z"/>
+</svg>
+</a>
 <a href="#top">Back to top ↑</a>
 </footer>
 </body>

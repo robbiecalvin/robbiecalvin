@@ -9,8 +9,12 @@
 <link rel="stylesheet" href="../assets/styles/overview.css">
 <script src="../assets/scripts/overview.js" defer>
 </script>
+<link rel="stylesheet" href="../assets/styles/pages.css">
+<link rel="preload" as="image" href="../assets/images/speechflow-hero.webp">
+<script src="../assets/scripts/pages.js" defer>
+</script>
 </head>
-<body data-palette="purple">
+<body data-palette="purple" data-page="speechflow">
 <header>
 <nav class="wrap" aria-label="Main navigation">
 <a class="logo" href="../">robbiecalvin<span>.</span>
@@ -28,24 +32,16 @@
 <div class="breadcrumb">
 <a href="../">Home</a> / <a href="../#applications">Applications</a> / SpeechFlow</div>
 <section class="hero" aria-labelledby="title">
-<div>
+<div class="hero-copy">
 <p class="eyebrow">Visual thinking workspace</p>
 <h1 id="title">SpeechFlow</h1>
 <p class="intro">Speak it. Map it. Play it back.</p>
 <div class="actions">
+<a class="button primary try-button" href="https://robbiecalvin.github.io/speechflow/">Try it out <span aria-hidden="true">↗</span>
+</a>
 <a class="button primary" href="#overview">Explore the features ↗</a>
 <a class="button" href="https://github.com/robbiecalvin/speechflow">View project on GitHub ↗</a>
 </div>
-</div>
-<div class="art" aria-hidden="true">
-<div class="orbit">
-</div>
-<div class="orbit">
-</div>
-<div class="orbit">
-</div>
-<span class="symbol">≈</span>
-<span class="art-label">SpeechFlow / Visual thinking workspace</span>
 </div>
 </section>
 <div class="facts">
@@ -62,6 +58,39 @@
 <strong>Version 0.1</strong>
 </div>
 </div>
+<section class="content distinctive mindmap-section">
+<p class="kicker">From a thought to a map</p>
+<h2>Some ideas need room.</h2>
+<div class="thought-board" aria-label="Illustration of a connected thought map">
+<span class="thought">A thought</span>
+<span class="thought">A question</span>
+<span class="thought">A connection</span>
+<span class="thought">A next step</span>
+</div>
+<ol class="journey">
+<li>
+<span>01</span>
+<div>
+<h3>Capture</h3>
+<p>Start with voice capture.</p>
+</div>
+</li>
+<li>
+<span>02</span>
+<div>
+<h3>Connect</h3>
+<p>Arrange bubbles and create directed links.</p>
+</div>
+</li>
+<li>
+<span>03</span>
+<div>
+<h3>Revisit</h3>
+<p>Use playback to follow the structure of your thinking.</p>
+</div>
+</li>
+</ol>
+</section>
 <section class="content" id="overview">
 <div class="section-head">
 <div>
@@ -70,7 +99,7 @@
 </div>
 <p>SpeechFlow turns voice capture into a visual thinking workspace. Arrange draggable bubbles, connect ideas with directed links, and use playback to follow your thinking through the map.</p>
 </div>
-<div class="grid">
+<div class="grid feature-threads">
 <article class="card">
 <span class="number">01 /</span>
 <h3>Capture a thought</h3>
@@ -114,23 +143,26 @@
 </div>
 </div>
 </section>
-<section class="closing">
-<p class="kicker">Keep exploring</p>
-<h2>Another direction<br>worth following.</h2>
-<div class="related">
-<a class="button" href="../codex-master/">Codex Master ↗</a>
-<a class="button" href="../myra/">Myra ↗</a>
-<a class="button" href="../red-door/">Red Door ↗</a>
-<a class="button" href="../quickwoo/">QuickWoo ↗</a>
-<a class="button" href="../kimix/">KIMIX ↗</a>
-<a class="button" href="../wp-plugins/">WordPress Plugins ↗</a>
+<section class="closing page-finale finale-speechflow">
+<div>
+<p class="kicker">Your next step</p>
+<h2>Follow that thought.</h2>
+<p class="muted">Give the next idea a little space to grow.</p>
 </div>
+<a class="button primary" href="https://robbiecalvin.github.io/speechflow/">Try it out ↗</a>
+<a class="quiet-link" href="../">Back to the collection ↑</a>
 </section>
 </main>
 <footer class="wrap">
 <span>© <span id="year">2026</span> Robbie Calvin</span>
-<span><a href="../about/">About me</a> · <a href="../contact/">Contact</a></span>
-<a class="social-link" href="https://www.linkedin.com/in/robbie-calvin-50710b386/" aria-label="Robbie Calvin on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.4-.76 1.36-1.56 2.79-1.56 2.98 0 3.58 1.96 3.58 4.51v5.3Z"/></svg></a>
+<span>
+<a href="../about/">About me</a> · <a href="../contact/">Contact</a>
+</span>
+<a class="social-link" href="https://www.linkedin.com/in/robbie-calvin-50710b386/" aria-label="Robbie Calvin on LinkedIn">
+<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.4-.76 1.36-1.56 2.79-1.56 2.98 0 3.58 1.96 3.58 4.51v5.3Z"/>
+</svg>
+</a>
 <a href="#top">Back to top ↑</a>
 </footer>
 </body>

@@ -9,8 +9,12 @@
 <link rel="stylesheet" href="../assets/styles/overview.css">
 <script src="../assets/scripts/overview.js" defer>
 </script>
+<link rel="stylesheet" href="../assets/styles/pages.css">
+<link rel="preload" as="image" href="../assets/images/kimix-hero.webp">
+<script src="../assets/scripts/pages.js" defer>
+</script>
 </head>
-<body data-palette="purple">
+<body data-palette="purple" data-page="kimix">
 <header>
 <nav class="wrap" aria-label="Main navigation">
 <a class="logo" href="../">robbiecalvin<span>.</span>
@@ -28,24 +32,16 @@
 <div class="breadcrumb">
 <a href="../">Home</a> / <a href="../#applications">Applications</a> / KIMIX</div>
 <section class="hero" aria-labelledby="title">
-<div>
+<div class="hero-copy">
 <p class="eyebrow">Audio player &amp; multitrack editor</p>
 <h1 id="title">KIMIX</h1>
 <p class="intro">Listen. Layer. Make it yours.</p>
 <div class="actions">
+<a class="button primary try-button" href="https://robbiecalvin.github.io/KIMIX/">Try it out <span aria-hidden="true">↗</span>
+</a>
 <a class="button primary" href="#overview">Explore the features ↗</a>
 <a class="button" href="https://github.com/robbiecalvin/KIMIX">View project on GitHub ↗</a>
 </div>
-</div>
-<div class="art" aria-hidden="true">
-<div class="orbit">
-</div>
-<div class="orbit">
-</div>
-<div class="orbit">
-</div>
-<span class="symbol">≋</span>
-<span class="art-label">KIMIX / Audio player &amp; multitrack editor</span>
 </div>
 </section>
 <div class="facts">
@@ -62,6 +58,44 @@
 <strong>Playback, editing, export</strong>
 </div>
 </div>
+<section class="content distinctive studio-section">
+<p class="kicker">One workspace / Three modes</p>
+<h2>Let the sound take shape.</h2>
+<div class="audio-strip" aria-label="Illustrated multitrack arrangement, not live audio">
+<div>
+<span>Playback</span>
+<i style="--track-offset:0%">
+</i>
+</div>
+<div>
+<span>Playlist</span>
+<i style="--track-offset:12%">
+</i>
+</div>
+<div>
+<span>Editor</span>
+<i style="--track-offset:24%">
+</i>
+</div>
+</div>
+<div class="feature-layout audio-notes">
+<article>
+<span class="index">01</span>
+<h3>Listen</h3>
+<p>Build a local queue, browse favorites, and resume a listening session.</p>
+</article>
+<article>
+<span class="index">02</span>
+<h3>Arrange</h3>
+<p>Work across tracks with clip editing and volume control in the desktop editor.</p>
+</article>
+<article>
+<span class="index">03</span>
+<h3>Finish</h3>
+<p>Layer and export on desktop, or explore local mixing in the browser build.</p>
+</article>
+</div>
+</section>
 <section class="content" id="overview">
 <div class="section-head">
 <div>
@@ -70,7 +104,7 @@
 </div>
 <p>KIMIX brings music playback and multitrack editing into one audio workspace. Switch between a visual Now Playing screen, a queue-style Playlist, and an Editor for arranging clips and building a mix.</p>
 </div>
-<div class="grid">
+<div class="grid feature-tracks">
 <article class="card">
 <span class="number">01 /</span>
 <h3>Set the listening session</h3>
@@ -114,23 +148,26 @@
 </div>
 </div>
 </section>
-<section class="closing">
-<p class="kicker">Keep exploring</p>
-<h2>Another direction<br>worth following.</h2>
-<div class="related">
-<a class="button" href="../codex-master/">Codex Master ↗</a>
-<a class="button" href="../myra/">Myra ↗</a>
-<a class="button" href="../red-door/">Red Door ↗</a>
-<a class="button" href="../speechflow/">Speechflow ↗</a>
-<a class="button" href="../quickwoo/">QuickWoo ↗</a>
-<a class="button" href="../wp-plugins/">WordPress Plugins ↗</a>
+<section class="closing page-finale finale-kimix">
+<div>
+<p class="kicker">Your next step</p>
+<h2>There’s a mix in there somewhere.</h2>
+<p class="muted">Start with a track and see where it takes you.</p>
 </div>
+<a class="button primary" href="https://robbiecalvin.github.io/KIMIX/">Try it out ↗</a>
+<a class="quiet-link" href="../">Back to the collection ↑</a>
 </section>
 </main>
 <footer class="wrap">
 <span>© <span id="year">2026</span> Robbie Calvin</span>
-<span><a href="../about/">About me</a> · <a href="../contact/">Contact</a></span>
-<a class="social-link" href="https://www.linkedin.com/in/robbie-calvin-50710b386/" aria-label="Robbie Calvin on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.4-.76 1.36-1.56 2.79-1.56 2.98 0 3.58 1.96 3.58 4.51v5.3Z"/></svg></a>
+<span>
+<a href="../about/">About me</a> · <a href="../contact/">Contact</a>
+</span>
+<a class="social-link" href="https://www.linkedin.com/in/robbie-calvin-50710b386/" aria-label="Robbie Calvin on LinkedIn">
+<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.4-.76 1.36-1.56 2.79-1.56 2.98 0 3.58 1.96 3.58 4.51v5.3Z"/>
+</svg>
+</a>
 <a href="#top">Back to top ↑</a>
 </footer>
 </body>
