@@ -25,6 +25,7 @@
 <a href="../#sites">Sites</a>
 <a href="../about/">About me</a>
 <a href="../contact/">Contact</a>
+<a href="../account/">Account</a>
 </div>
 </nav>
 </header>
@@ -87,36 +88,36 @@
 <div class="grid">
 <article class="card">
 <h3>Essential care</h3>
-<div class="price">$60 <small>CAD / month</small>
+<div class="price">$40 <small>CAD / month</small>
 </div>
 <ul>
 <li>One scheduled maintenance visit monthly</li>
 <li>Core, theme, and plugin update review</li>
 <li>Backup check using an existing backup setup</li>
 </ul>
-<button type="button" class="button" data-select-plan="60">Estimate this option ↗</button>
+<button type="button" class="button" data-select-plan="40">Estimate this option ↗</button>
 </article>
 <article class="card">
 <h3>Care + content</h3>
-<div class="price">$120 <small>CAD / month</small>
+<div class="price">$90 <small>CAD / month</small>
 </div>
 <ul>
 <li>Essential care scope</li>
 <li>Up to one hour of supplied content edits</li>
 <li>Monthly work summary</li>
 </ul>
-<button type="button" class="button" data-select-plan="120">Estimate this option ↗</button>
+<button type="button" class="button" data-select-plan="90">Estimate this option ↗</button>
 </article>
 <article class="card">
 <h3>Focused support</h3>
-<div class="price">$45 <small>CAD / hour</small>
+<div class="price">$35 <small>CAD / hour</small>
 </div>
 <ul>
 <li>A defined WordPress support task</li>
 <li>One-hour minimum</li>
 <li>Estimate after reviewing the issue</li>
 </ul>
-<button type="button" class="button" data-select-plan="120">Estimate this option ↗</button>
+<button type="button" class="button" data-select-plan="hourly">Estimate this option ↗</button>
 </article>
 </div>
 <p class="note">Draft pricing in Canadian dollars (CAD), subject to confirmation. Taxes, if applicable, are additional. Revisions cover the agreed direction; new deliverables need a new estimate. No payment or booking is taken on this page.</p>
@@ -130,18 +131,19 @@
 <p class="muted">Monthly estimate = selected care plan × number of websites. Licenses, hosting, and major repairs are separate.</p>
 </div>
 <form class="estimate-tool" data-estimator="wp-managment">
-<label for="estimate-plan">Monthly plan</label>
+<label for="estimate-plan">Care or support option</label>
 <select id="estimate-plan" name="plan">
-<option value="60">Essential care / $60 per site monthly</option>
-<option value="120">Care + content / $120 per site monthly</option>
+<option value="40">Essential care / $40 per site monthly</option>
+<option value="90">Care + content / $90 per site monthly</option>
+<option value="hourly">Focused support / $35 per hour</option>
 </select>
-<label for="estimate-quantity">Number of websites</label>
+<label id="quantity-label" for="estimate-quantity">Number of websites</label>
 <input id="estimate-quantity" name="quantity" type="number" min="1" max="10" step="1" value="1">
 <div class="estimate-result">
-<span>Estimated monthly total</span>
+<span data-estimate-heading>Estimated monthly total</span>
 <output data-estimate-total aria-live="polite">
 </output>
-<small>CAD / month, before applicable tax</small>
+<small data-estimate-period>CAD / month, before applicable tax</small>
 </div>
 <p data-estimate-breakdown class="note">
 </p>

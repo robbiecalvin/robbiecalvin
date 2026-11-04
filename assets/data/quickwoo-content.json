@@ -1,0 +1,266 @@
+{
+  "quick-add": {
+    "headline": "Build the catalog. Skip the repetition.",
+    "summary": "Create WooCommerce products in batches using a table or JSON input, with validation and reusable templates.",
+    "features": [
+      "Add products in bulk",
+      "Validate the input before processing",
+      "Reuse product-entry templates"
+    ],
+    "fit": "A useful starting point when you have new stock to turn into product listings.",
+    "requirements": [
+      "WordPress 6.0+",
+      "PHP 7.4+"
+    ],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-add/quick-add.php"
+  },
+  "quick-edit": {
+    "headline": "A clearer way to change the catalog.",
+    "summary": "A bulk-editing workspace for existing WooCommerce products, bringing product lists and updates into a focused interface.",
+    "features": [
+      "Browse existing products",
+      "Update individual products",
+      "Apply bulk changes"
+    ],
+    "fit": "For the product information that needs to change after the catalog is already in place.",
+    "requirements": [
+      "WordPress 6.0+",
+      "PHP 7.4+"
+    ],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-edit/quick-edit.php"
+  },
+  "quick-variations": {
+    "headline": "Let the attributes do the multiplying.",
+    "summary": "Generate WooCommerce variable-product combinations from configured attributes, then work with the resulting variations.",
+    "features": [
+      "Choose product attributes",
+      "Generate variation combinations",
+      "Create and update variations"
+    ],
+    "fit": "For stores working with sizes, colours, and other attribute-based product choices.",
+    "requirements": [
+      "WordPress 6.0+",
+      "PHP 7.4+"
+    ],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-variations/quick-variations.php"
+  },
+  "quick-images": {
+    "headline": "Give the catalog a consistent look.",
+    "summary": "Batch-process product imagery with saved branding assets and WordPress Media Library integration.",
+    "features": [
+      "Apply logo and watermark overlays",
+      "Process a batch of images",
+      "Save results to the Media Library"
+    ],
+    "fit": "For repeatable image preparation. Available formats and text rendering depend on the server\u2019s image libraries.",
+    "requirements": [],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-images/quick-images.php"
+  },
+  "quick-ship": {
+    "headline": "Make shipping rules easier to follow.",
+    "summary": "A WooCommerce shipping setup wizard for structured zones and methods, with connected shipment and rule operations.",
+    "features": [
+      "Configure shipping zones and methods",
+      "Apply shipping presets and rules",
+      "Work with shipment records"
+    ],
+    "fit": "For giving a store\u2019s shipping setup a more structured starting point.",
+    "requirements": [],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-ship/quick-ship.php"
+  },
+  "quick-points": {
+    "headline": "Give returning customers a reason to stay.",
+    "summary": "A WooCommerce points-and-rewards system covering awards, redemptions, tiers, and expiry rules.",
+    "features": [
+      "Award and redeem points",
+      "Configure reward tiers and expiry",
+      "Review transaction history"
+    ],
+    "fit": "For stores building a rewards workflow around their own customers.",
+    "requirements": [],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-points/quick-points.php"
+  },
+  "quick-forms": {
+    "headline": "A form should lead somewhere useful.",
+    "summary": "Build self-hosted forms with shortcode rendering, an administrative inbox, submissions, and notifications.",
+    "features": [
+      "Create and manage forms",
+      "Collect and organize submissions",
+      "Export submission records"
+    ],
+    "fit": "For keeping form creation and the resulting enquiries in the WordPress workflow.",
+    "requirements": [],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-forms/quick-forms.php"
+  },
+  "quick-schedule": {
+    "headline": "Give appointments a little structure.",
+    "summary": "Appointment scheduling and consultation fee handling, with appointment records and scheduled-job operations.",
+    "features": [
+      "Record and review appointments",
+      "Change appointment status",
+      "Configure scheduled jobs"
+    ],
+    "fit": "For organizing appointment-based work and its related administrative tasks.",
+    "requirements": [],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-schedule/quick-schedule.php"
+  },
+  "quick-importer": {
+    "headline": "Move the data. Keep the structure.",
+    "summary": "CSV import and export for WordPress content and WooCommerce products, including taxonomy and custom-field workflows.",
+    "features": [
+      "Import and export CSV data",
+      "Save reusable import templates",
+      "Review logs and configuration"
+    ],
+    "fit": "For moving repeatable content and product data without rebuilding the process each time.",
+    "requirements": [],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-importer/quick-importer.php"
+  },
+  "quick-quotes": {
+    "headline": "Turn an enquiry into a clearer quote.",
+    "summary": "A quote-building workflow with administrative management and a frontend quote-request form.",
+    "features": [
+      "Create and update quotes",
+      "Track quote status",
+      "Export quote records"
+    ],
+    "fit": "For work that needs a defined proposal before it becomes an order.",
+    "requirements": [],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-quotes/quick-quotes.php"
+  },
+  "quick-accountant": {
+    "headline": "Keep the small numbers in view.",
+    "summary": "An accounting-lite workspace for recording income, expenses, categories, budgets, and reports within WordPress.",
+    "features": [
+      "Record income and expense entries",
+      "Organize categories and budgets",
+      "Review reports and CSV exports"
+    ],
+    "fit": "For operational tracking. It does not replace professional accounting or tax advice.",
+    "requirements": [
+      "WordPress 6.0+",
+      "PHP 7.4+"
+    ],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-accountant/quick-accountant.php"
+  },
+  "quick-mail": {
+    "headline": "Keep the message and the delivery together.",
+    "summary": "A self-hosted email-template and delivery layer for WordPress, using SMTP or supported provider APIs.",
+    "features": [
+      "Create and reuse email templates",
+      "Queue and run deliveries",
+      "Review logs and test providers"
+    ],
+    "fit": "For managing site email workflows. Delivery requires an appropriately configured mail provider.",
+    "requirements": [],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-mail/quick-mail.php"
+  },
+  "quick-site": {
+    "headline": "Give the site some breathing room.",
+    "summary": "Self-hosted WordPress caching and optimization, with settings, cache controls, and database-cleanup tools.",
+    "features": [
+      "Purge caches and manage settings",
+      "Preview database-cleanup actions",
+      "Import and export configuration"
+    ],
+    "fit": "For maintenance and optimization around the WordPress site you already run.",
+    "requirements": [
+      "WordPress 5.8+",
+      "PHP 7.4+"
+    ],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-site/quick-site.php"
+  },
+  "quick-seo": {
+    "headline": "Work on the details that search engines read.",
+    "summary": "A WordPress and WooCommerce SEO workspace with spreadsheet-style metadata editing and structured-data tools.",
+    "features": [
+      "Edit metadata in bulk",
+      "Manage schema and canonical settings",
+      "Work with sitemaps, redirects, and link scans"
+    ],
+    "fit": "For hands-on SEO administration. Search rankings and indexing outcomes are not guaranteed.",
+    "requirements": [],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-seo/quick-seo.php"
+  },
+  "quick-audit": {
+    "headline": "Look at the site in front of you.",
+    "summary": "An internal SEO-audit tool for the current WordPress site, with scan and crawl operations and exportable results.",
+    "features": [
+      "Run internal scans",
+      "Explore crawl results",
+      "Export findings as CSV"
+    ],
+    "fit": "For reviewing your own site. It is not presented as a competitor-research or external-site auditing service.",
+    "requirements": [],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-audit/quick-audit.php"
+  },
+  "quick-traffic": {
+    "headline": "See the traffic. Keep the context.",
+    "summary": "Lightweight, self-hosted traffic monitoring with administrative analytics, UTM tools, and configurable exclusions.",
+    "features": [
+      "Review traffic reports",
+      "Generate tagged UTM URLs",
+      "Export reporting data"
+    ],
+    "fit": "For understanding site activity within a self-hosted WordPress workflow.",
+    "requirements": [],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-traffic/quick-traffic.php"
+  },
+  "quick-code": {
+    "headline": "A place for the small pieces of code.",
+    "summary": "Admin-controlled HTML, CSS, and JavaScript injection with global and per-page targeting.",
+    "features": [
+      "Create and enable snippets",
+      "Choose conditions and page targeting",
+      "Review change history"
+    ],
+    "fit": "For authorized site administrators. Test custom snippets carefully before applying them to a live site.",
+    "requirements": [],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-code/quick-code.php"
+  },
+  "quick-course-builder": {
+    "headline": "Give knowledge a path to follow.",
+    "summary": "A WordPress course-creation and delivery system organized around courses, modules, tests, and certificates.",
+    "features": [
+      "Build courses and modules",
+      "Create tests and manage course status",
+      "Organize a learning-delivery workflow"
+    ],
+    "fit": "For structured educational content. The plugin header requires WordPress 6.2+ and PHP 8.0+.",
+    "requirements": [
+      "WordPress 6.2+",
+      "PHP 8.0+"
+    ],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-course-builder/quick-course-builder.php"
+  },
+  "quick-connector": {
+    "headline": "One bridge between the site and the desktop.",
+    "summary": "The server-side control plane connecting WordPress and WooCommerce operations with QuickWoo Desktop.",
+    "features": [
+      "Connect through authenticated site access",
+      "Expose supported module operations",
+      "Provide site, store, and plugin management endpoints"
+    ],
+    "fit": "Required on each connected WordPress site. Use HTTPS and an authorized WordPress user with an Application Password.",
+    "requirements": [
+      "WordPress 6.5+",
+      "PHP 8.1+"
+    ],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/wordpress-plugin/quick-connector/quick-connector.php"
+  },
+  "quick-license": {
+    "headline": "The licensing layer behind the suite.",
+    "summary": "The self-hosted license-generation and activation authority used by the QuickWoo ecosystem.",
+    "features": [
+      "Generate license records",
+      "Handle activation and product scope",
+      "Support the suite\u2019s entitlement infrastructure"
+    ],
+    "fit": "Infrastructure, not a separately priced Pro plugin in this matrix. A standalone customer-facing price is not specified.",
+    "requirements": [
+      "WordPress 6.0+",
+      "PHP 7.4+"
+    ],
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-license/quick-license.php"
+  }
+}

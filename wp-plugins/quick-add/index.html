@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111110">
+<meta name="description" content="Create WooCommerce products in batches using a table or JSON input, with validation and reusable templates.">
+<title>Quick Add — QuickWoo by Robbie Calvin</title>
+<link rel="stylesheet" href="../../assets/styles/overview.css">
+<link rel="stylesheet" href="../../assets/styles/pages.css">
+<link rel="stylesheet" href="../../assets/styles/plugins.css">
+<script src="../../assets/scripts/overview.js" defer>
+</script>
+<script src="../../assets/scripts/plugins.js" defer>
+</script>
+</head>
+<body data-palette="orange" data-page="plugin-detail" data-quickwoo-catalog="../../assets/data/quickwoo-catalog.json">
+<header>
+<nav class="wrap" aria-label="Main navigation">
+<a class="logo" href="../../">robbiecalvin<span>.</span>
+</a>
+<div class="nav-links">
+<a href="../../#applications">Apps</a>
+<a href="../../#services">Services</a>
+<a href="../../#sites">Sites</a>
+<a href="../../about/">About me</a>
+<a href="../../contact/">Contact</a>
+<a href="../../account/">Account</a>
+</div>
+</nav>
+</header>
+<main class="wrap" id="top">
+<div class="breadcrumb">
+<a href="../../">Home</a> / <a href="../../wp-plugins/">QuickWoo Plugins</a> / Quick Add</div>
+<section class="hero" aria-labelledby="title">
+<div class="hero-copy">
+<p class="eyebrow">Inventory Control / Pro plugin</p>
+<h1 id="title">Quick Add</h1>
+<p class="intro">Build the catalog. Skip the repetition.</p>
+<div class="actions">
+<a class="button primary" href="#pricing">Explore pricing ↗</a>
+<a class="button" href="../../wp-plugins/#plugins">Explore the suite ↗</a>
+</div>
+</div>
+</section>
+<div class="plugin-lead">
+<p>Create WooCommerce products in batches using a table or JSON input, with validation and reusable templates.</p>
+</div>
+<section class="content plugin-capabilities">
+<div class="section-head">
+<div>
+<p class="kicker">Inside the full build</p>
+<h2>Build the catalog. Skip the repetition.</h2>
+</div>
+<p>A useful starting point when you have new stock to turn into product listings.</p>
+</div>
+<div class="capability-grid">
+<article>
+<span>01</span>
+<h3>Add products in bulk</h3>
+</article>
+<article>
+<span>02</span>
+<h3>Validate the input before processing</h3>
+</article>
+<article>
+<span>03</span>
+<h3>Reuse product-entry templates</h3>
+</article>
+</div>
+</section>
+<section class="content license-section" id="pricing">
+<p class="kicker">Choose the allowance that fits</p>
+<h2>One site, or a wider operation.</h2>
+<form class="license-controls" data-license-controls>
+<div>
+<label for="license-billing">Billing</label>
+<select id="license-billing" name="billing" disabled>
+<option value="monthly">Monthly</option>
+<option value="annual">Annual — prepaid, 20% off</option>
+</select>
+</div>
+<div>
+<label for="license-sites">Production sites</label>
+<select id="license-sites" name="sites" disabled>
+<option value="1">1 site</option>
+<option value="5">Up to 5 sites</option>
+<option value="10">Up to 10 sites</option>
+<option value="25">Agency — up to 25 sites</option>
+</select>
+</div>
+<p>USD, before tax. Annual amounts are the full prepaid yearly price. Agency is capped at 25 sites. No lifetime plans.</p>
+</form>
+<p class="license-status" data-license-status role="status" aria-live="polite">
+</p>
+<div class="license-layout">
+<div class="license-quote" data-price-id="quick-add">
+<span class="kicker">Pro license / <span data-site-label>1 site</span>
+</span>
+<div class="license-amount">
+<strong data-price-amount>$7.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p data-price-detail>Monthly price for one production site.</p>
+<a class="button primary" data-plan-inquiry="quick-add" href="mailto:robbiecalvin8@gmail.com?subject=Quick%20Add%20license%20enquiry">Ask about this plan ↗</a>
+<p class="note">Proposed launch pricing. Checkout and release downloads are not connected yet.</p>
+</div>
+<div>
+<div class="license-table-scroll" tabindex="0" role="region" aria-label="All Quick Add prices in USD">
+<table class="license-table">
+<caption>Quick Add — all prices in USD, excluding tax</caption>
+<thead>
+<tr>
+<th scope="col">Site allowance</th>
+<th scope="col">Monthly</th>
+<th scope="col">Annual / prepaid</th>
+</tr>
+</thead>
+<tbody>
+<tr data-site-count="1" data-monthly-cents="799" data-annual-cents="7670">
+<th scope="row">1 site</th>
+<td>$7.99</td>
+<td>$76.70</td>
+</tr>
+<tr data-site-count="5" data-monthly-cents="1199" data-annual-cents="11510">
+<th scope="row">Up to 5 sites</th>
+<td>$11.99</td>
+<td>$115.10</td>
+</tr>
+<tr data-site-count="10" data-monthly-cents="1798" data-annual-cents="17261">
+<th scope="row">Up to 10 sites</th>
+<td>$17.98</td>
+<td>$172.61</td>
+</tr>
+<tr data-site-count="25" data-monthly-cents="2697" data-annual-cents="25891">
+<th scope="row">Up to 25 sites</th>
+<td>$26.97</td>
+<td>$258.91</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="lite-note">
+<span class="kicker">A free starting point</span>
+<h3>Lite / Free</h3>
+<p>The matrix lists a free Lite edition. Its final feature limits and release download are not specified here. The capabilities above describe the documented full build.</p>
+</aside>
+</div>
+</div>
+<p class="note">Site limits apply to the selected license. Annual plans are prepaid; lifetime licenses are not offered at launch. Prices are proposed launch prices, not a guarantee of release availability.</p>
+</section>
+<section class="content">
+<p class="kicker">Already part of a larger plan</p>
+<h2>Choose a bundle when it fits.</h2>
+<p class="muted">This plugin is included in the following options. Avoid adding a standalone license on top of a bundle that already covers it.</p>
+<div class="membership-links">
+<a href="../../wp-plugins/bundles/inventory-control/" data-product-page>Inventory Control Bundle ↗</a>
+<a href="../../wp-plugins/bundles/full-quickwoo-suite/" data-product-page>Full QuickWoo Suite ↗</a>
+<a href="../../wp-plugins/bundles/plus-desktop/" data-product-page>Full Suite + QuickWoo Desktop ↗</a>
+</div>
+</section>
+<section class="content">
+<div class="split">
+<div>
+<p class="kicker">The connected workflow</p>
+<h2>On your site.<br>Connected to your tools.</h2>
+</div>
+<div>
+<p class="muted">WordPress 6.0+ · PHP 7.4+</p>
+<p class="muted">Install and configure the plugin in WordPress. Quick Connector is required on each connected site; QuickWoo Desktop uses the licensed connector/server functionality for supported desktop actions.</p>
+<div class="actions">
+<a class="button" href="../../wp-plugins/quick-connector/">About Quick Connector ↗</a>
+<a class="button" href="https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-add/quick-add.php">View plugin source ↗</a>
+</div>
+</div>
+</div>
+</section>
+<section class="closing page-finale">
+<div>
+<p class="kicker">Start with your workflow</p>
+<h2>Ask the question before choosing the plan.</h2>
+<p class="muted">Tell me what your site needs and how many sites you manage.</p>
+</div>
+<a class="button primary" href="../../contact/">Talk about Quick Add ↗</a>
+</section>
+</main>
+<footer class="wrap">
+<span>© <span id="year">2026</span> Robbie Calvin</span>
+<span>
+<a href="../../about/">About me</a> · <a href="../../contact/">Contact</a>
+</span>
+<a class="social-link" href="https://www.linkedin.com/in/robbie-calvin-50710b386/" aria-label="Robbie Calvin on LinkedIn">
+<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.4-.76 1.36-1.56 2.79-1.56 2.98 0 3.58 1.96 3.58 4.51v5.3Z"/>
+</svg>
+</a>
+<a href="#top">Back to top ↑</a>
+</footer>
+</body>
+</html>

@@ -47,3 +47,16 @@ body[data-page="about"] .hero { --hero-image: url("../images/about-hero.webp"); 
 body[data-page="red-door"] .hero { --hero-image: url("../images/red-door-hero.webp"); }
 
 .section-summary { max-width: 760px; color: var(--muted); font-size: 18px; line-height: 1.8; margin: 25px 0 35px; }
+
+.code-block { overflow-x: auto; white-space: pre; padding: 24px; border: 1px solid var(--line); border-radius: 12px; background: #191817; color: var(--accent); font-size: 13px; line-height: 1.8; }
+
+.account-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 65px; }
+.account-columns form, #order-form, #profile-form, #forgot-form, #reset-form { max-width: 600px; }
+#account-status { border-left: 3px solid var(--accent); padding: 18px 22px; background: #ffffff04; margin-top: 30px; }
+#dashboard button, #auth-forms button, #reset-section button { margin-top: 22px; }
+.account-orders { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+.account-orders p { overflow-wrap: anywhere; white-space: pre-wrap; }
+[hidden] { display: none !important; }
+@media (max-width: 760px) { .account-columns, .account-orders { grid-template-columns: 1fr; gap: 35px; } }
+.split > *, .account-columns > * { min-width: 0; }
+.code-block { max-width: 100%; }

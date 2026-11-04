@@ -678,8 +678,10 @@ footer {
       <a href="#applications">Applications</a>
       <a href="#services">Services</a>
       <a href="#sites">Sites</a>
+      <a href="#creative">Creative</a>
       <a href="./about/">About me</a>
       <a href="./contact/">Contact</a>
+<a href="./account/">Account</a>
     </nav>
   </div>
 </header>
@@ -747,7 +749,7 @@ footer {
         <h2 id="work-title">One mind.<br>Many rabbit holes.</h2>
       </div>
       <p class="section-note">
-        Applications, creative services, and independent sites.
+        Applications, creative services, independent sites, and art.
         Choose a direction and follow your curiosity.
       </p>
     </div>
@@ -756,6 +758,7 @@ footer {
       <a href="#applications">Applications ↗</a>
       <a href="#services">Services ↗</a>
       <a href="#sites">Sites ↗</a>
+      <a href="#creative">Creative ↗</a>
     </div>
 
     <div id="project-sections"></div>
@@ -771,7 +774,7 @@ footer {
           <a href="./speechflow/">SpeechFlow</a> ·
           <a href="./quickwoo/">QuickWoo Desktop</a> ·
           <a href="./kimix/">KIMIX</a> ·
-          <a href="./wp-plugins/">WordPress Plugins</a> ·
+          <a href="./wp-plugins/">QuickWoo Plugins</a> ·
           <a href="./personal-assistant/">Personal Assistant</a> ·
           <a href="./rtb-advocacy/">RTB Advocacy</a> ·
           <a href="./web-design/">Web Design</a> ·
@@ -779,7 +782,9 @@ footer {
           <a href="./graphic-design/">Graphic Design</a> ·
           <a href="./resume-building/">Resume Building</a> ·
           <a href="./typing-school/">Typing School</a> ·
-          <a href="./fobfather/">FobFather</a>
+          <a href="https://thefobfather.ca/">FobFather</a> ·
+          <a href="https://www.instagram.com/pastelpowerranger/">Instagram</a> ·
+          <a href="./wild-chemistry/">Wild Chemistry</a>
         </p>
       </div>
     </noscript>
@@ -825,6 +830,8 @@ footer {
 
   /* PROJECT ICONS */
   const icons = {
+    instagram: `<g class="icon-float"><rect x="15" y="15" width="70" height="70" rx="20"/><circle class="icon-pulse" cx="50" cy="50" r="17"/><circle class="icon-spark" cx="72" cy="29" r="3"/></g>`,
+    comic: `<g class="icon-float"><rect x="12" y="12" width="76" height="76" rx="4"/><path d="M12 48h76M49 12v36M39 48v40"/><path class="icon-spark" d="m61 57 6 8 12-4-6 10 4 10-11-4-8 7 1-13-8-6Z"/></g>`,
     code: `
       <g class="icon-float">
         <path d="M32 30 12 50 32 70M68 30 88 50 68 70"/>
@@ -984,8 +991,8 @@ footer {
           "A desktop control center for WordPress sites and WooCommerce stores.", "commerce", "orange"],
         ["KIMIX", "kimix", "Audio & creativity",
           "Play local audio, arrange multitrack edits, and build your mix.", "audio", "purple"],
-        ["WordPress Plugins", "wp-plugins", "Tools & extensions",
-          "Purpose-built additions for better WordPress experiences.", "plugins", "red"]
+        ["QuickWoo Plugins", "wp-plugins", "WordPress plugin suite",
+          "18 Pro plugins, focused bundles, and a connected desktop workspace.", "plugins", "red"]
       ]
     },
     {
@@ -1016,6 +1023,12 @@ footer {
           "Apartment RFID fob copies in downtown Vancouver, by appointment.", "fob", "orange"]
       ]
     }
+    ,{
+      id: "creative", name: "Creative", projects: [
+        ["Instagram", "instagram", "Art & process", "Drawings, paintings, pastels, and the creative process.", "instagram", "purple"],
+        ["Wild Chemistry", "wild-chemistry", "An original comic", "An independent comic book by Robbie Calvin.", "comic", "red"]
+      ]
+    }
   ];
 
   const mount = document.getElementById("project-sections");
@@ -1033,7 +1046,7 @@ footer {
           const [name, folder, label, description, icon, palette] = project;
           return `
             <a class="project-card"
-               href="./${folder}/"
+               href="${folder === 'fobfather' ? 'https://thefobfather.ca/' : folder === 'instagram' ? 'https://www.instagram.com/pastelpowerranger/' : './' + folder + '/'}"
                data-palette="${palette}">
               <div class="project-visual">
                 <svg class="project-icon" viewBox="0 0 100 100"
@@ -1058,7 +1071,7 @@ footer {
 
   function applyLayout() {
     sections.forEach((section, i) => {
-      section.open = !mobile.matches || i === 0;
+      section.open = true;
     });
   }
 

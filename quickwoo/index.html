@@ -13,6 +13,8 @@
 <link rel="preload" as="image" href="../assets/images/quickwoo-hero.webp">
 <script src="../assets/scripts/pages.js" defer>
 </script>
+<script src="../assets/scripts/account-config.js" defer></script>
+<script src="../assets/scripts/account-api.js" defer></script>
 </head>
 <body data-palette="orange" data-page="quickwoo">
 <header>
@@ -25,6 +27,7 @@
 <a href="../#sites">Sites</a>
 <a href="../about/">About me</a>
 <a href="../contact/">Contact</a>
+<a href="../account/">Account</a>
 </div>
 </nav>
 </header>
@@ -37,12 +40,10 @@
 <h1 id="title">QuickWoo Desktop</h1>
 <p class="intro">Your sites and stores. One desktop workspace.</p>
 <div class="actions">
-<button type="button" class="button try-button" disabled aria-describedby="try-status">Try it out</button>
 <a class="button primary" href="#overview">Explore the features ↗</a>
-<a class="button" href="https://github.com/robbiecalvin/QuickWoo-Desktop">View project on GitHub ↗</a>
+<a class="button primary" href="https://github.com/robbiecalvin/QuickWoo-Desktop" data-track-app="quickwoo">View project on GitHub ↗</a>
 </div>
 </div>
-<p class="launch-note" id="try-status">The launch link is on its way. Explore the project below.</p>
 </section>
 <div class="facts">
 <div class="fact">
@@ -118,19 +119,22 @@
 <div class="status">
 <p class="muted">The README documents desktop setup and the required connector for WordPress-side module actions. The current testing tier allows five sites; that is an implementation limit, not an announced paid plan. Auxil and Opera remain coming-soon placeholders.</p>
 <div class="actions">
-<a class="button primary" href="https://github.com/robbiecalvin/QuickWoo-Desktop">View the repository ↗</a>
-<a class="button" href="https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/README.md">Read the documentation ↗</a>
+<a class="button primary" href="https://github.com/robbiecalvin/QuickWoo-Desktop" data-track-app="quickwoo">View the repository ↗</a>
+<a class="button" href="https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/README.md" data-track-app="quickwoo">Read the documentation ↗</a>
 </div>
 </div>
 </div>
 </section>
-<section class="closing page-finale finale-quickwoo">
+<section class="content" id="download"><p class="kicker">Run it on your computer</p><h2>Start with the GitHub project.</h2><div class="split"><div><h3>1. Check Releases first</h3><p class="muted">Open the repository’s Releases page. If an installer is published for your operating system, read its release notes and download that installer. Availability depends on what has been released.</p><a class="button" href="https://github.com/robbiecalvin/QuickWoo-Desktop/releases" data-track-app="quickwoo">View GitHub releases ↗</a><h3>2. Or run the source</h3><p class="muted">The documented project currently provides a development workflow. You’ll need Git and a supported Node.js version (22.12+ or 24). A source ZIP is project code, not an installer.</p></div><div><pre class="code-block"><code>git clone https://github.com/robbiecalvin/QuickWoo-Desktop.git
+cd QuickWoo-Desktop
+npm install
+npm run dev</code></pre><h3>3. Connect your own site</h3><p class="muted">Use your WooCommerce REST credentials. WordPress-side actions need WordPress access and the bundled Quick Connector installed on your site. Follow the repository’s current setup and compatibility instructions.</p><p class="note">Only use sites you are authorized to manage. Downloading the project does not include hosting or a managed setup service.</p></div></div></section><section class="content"><p class="kicker">The full connected license</p><h2>All 18 Pro plugins.<br>Plus Desktop.</h2><p class="intro">The supplied pricing matrix lists a Full Suite + QuickWoo Desktop plan from $129.99 USD per month for one site, with larger site allowances and annual prepaid options. Downloading source from GitHub and licensing the full connector/server functionality are separate steps.</p><div class="actions"><a class="button primary" href="../wp-plugins/bundles/plus-desktop/">Explore the Desktop bundle ↗</a><a class="button" href="../wp-plugins/">Explore all QuickWoo plugins ↗</a></div><p class="note">Proposed launch pricing in USD, excluding tax. License checkout is not connected yet.</p></section><section class="closing page-finale finale-quickwoo">
 <div>
 <p class="kicker">Your next step</p>
 <h2>A clearer view of the work.</h2>
 <p class="muted">Explore the desktop project and its connection requirements.</p>
 </div>
-<a class="button primary" href="https://github.com/robbiecalvin/QuickWoo-Desktop">View the desktop project ↗</a>
+<a class="button primary" href="https://github.com/robbiecalvin/QuickWoo-Desktop" data-track-app="quickwoo">View the desktop project ↗</a>
 <a class="quiet-link" href="../">Back to the collection ↑</a>
 </section>
 </main>

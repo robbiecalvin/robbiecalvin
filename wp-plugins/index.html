@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#111110">
-<meta name="description" content="Purpose-built additions for better WordPress experiences. This collection is focused on practical needs: the kinds of improvements that help a website earn its place in someone’s day.">
-<title>WordPress Plugins — Robbie Calvin</title>
+<meta name="description" content="Explore 18 QuickWoo Pro plugins, six bundle options, exact USD launch pricing, and the connected WordPress and WooCommerce ecosystem.">
+<title>QuickWoo Plugins — QuickWoo by Robbie Calvin</title>
 <link rel="stylesheet" href="../assets/styles/overview.css">
+<link rel="stylesheet" href="../assets/styles/pages.css">
+<link rel="stylesheet" href="../assets/styles/plugins.css">
 <script src="../assets/scripts/overview.js" defer>
 </script>
-<link rel="stylesheet" href="../assets/styles/pages.css">
-<link rel="preload" as="image" href="../assets/images/wp-plugins-hero.webp">
-<script src="../assets/scripts/pages.js" defer>
+<script src="../assets/scripts/plugins.js" defer>
 </script>
 </head>
-<body data-palette="red" data-page="wp-plugins">
+<body data-palette="red" data-page="plugin-suite" data-quickwoo-catalog="../assets/data/quickwoo-catalog.json">
 <header>
 <nav class="wrap" aria-label="Main navigation">
 <a class="logo" href="../">robbiecalvin<span>.</span>
@@ -25,98 +25,659 @@
 <a href="../#sites">Sites</a>
 <a href="../about/">About me</a>
 <a href="../contact/">Contact</a>
+<a href="../account/">Account</a>
 </div>
 </nav>
 </header>
 <main class="wrap" id="top">
 <div class="breadcrumb">
-<a href="../">Home</a> / <a href="../#applications">Applications</a> / WordPress Plugins</div>
+<a href="../">Home</a> / QuickWoo Plugins</div>
 <section class="hero" aria-labelledby="title">
 <div class="hero-copy">
-<p class="eyebrow">Tools &amp; extensions</p>
-<h1 id="title">WordPress Plugins</h1>
-<p class="intro">Small tools. Useful changes.</p>
+<p class="eyebrow">QuickWoo / The connected WordPress toolkit</p>
+<h1 id="title">A whole toolkit.<br>One connected world.</h1>
+<p class="intro">18 Pro plugins for WordPress and WooCommerce. Focused bundles when you need a few. A full suite when you need the wider picture.</p>
 <div class="actions">
-<button type="button" class="button try-button" disabled aria-describedby="try-status">Try it out</button>
-<a class="button primary" href="#overview">Explore the idea ↗</a>
-<a class="button" href="../#applications">Back to applications ↑</a>
+<a class="button primary" href="#plugins">Explore the plugins ↗</a>
+<a class="button" href="#bundles">Compare the bundles ↗</a>
 </div>
 </div>
-<p class="launch-note" id="try-status">The launch link is on its way. Explore the project below.</p>
 </section>
-<div class="facts">
-<div class="fact">
-<small>Discipline</small>
-<strong>Tools &amp; extensions</strong>
+<div class="suite-facts">
+<div>
+<strong>18</strong>
+<span>Pro modules</span>
 </div>
-<div class="fact">
-<small>Status</small>
-<strong>Project overview</strong>
+<div>
+<strong>4</strong>
+<span>focused collections</span>
 </div>
-<div class="fact">
-<small>Access</small>
-<strong>Access details to come</strong>
+<div>
+<strong>6</strong>
+<span>bundle options</span>
+</div>
+<div>
+<strong>25</strong>
+<span>maximum agency sites</span>
 </div>
 </div>
-<section class="content distinctive module-section">
-<p class="kicker">Focused extensions</p>
-<h2>One useful improvement at a time.</h2>
-<div class="module-wall">
-<span>Purpose</span>
-<span>Experience</span>
-<span>Maintenance</span>
-<span>Compatibility</span>
-</div>
-<p class="intro">Small tools should solve a clear problem. Individual release details and compatibility belong with each plugin’s documentation.</p>
-</section>
 <section class="content" id="overview">
 <div class="section-head">
 <div>
-<p class="kicker">01 / The idea</p>
-<h2>Small tools. Useful changes.</h2>
+<p class="kicker">The ecosystem</p>
+<h2>On the site.<br>At your desk.<br>Working together.</h2>
 </div>
-<p>Purpose-built additions for better WordPress experiences. This collection is focused on practical needs: the kinds of improvements that help a website earn its place in someone’s day.</p>
+<p>The plugins do their work in WordPress. Quick Connector provides the authenticated control surface. Quick License handles licensing infrastructure. QuickWoo Desktop brings supported site and store operations into a single app shell.</p>
 </div>
-<div class="grid feature-modules">
-<article class="card">
-<span class="number">01 /</span>
-<h3>A focused purpose</h3>
-<p>Start with a specific website problem and keep the intended improvement clear.</p>
+<div class="ecosystem-map">
+<a href="../wp-plugins/#plugins">
+<strong>Pro plugins</strong>
+<span>The focused tools</span>
+</a>
+<a href="../wp-plugins/quick-connector/">
+<strong>Quick Connector</strong>
+<span>The site-to-desktop bridge</span>
+</a>
+<a href="../quickwoo/">
+<strong>QuickWoo Desktop</strong>
+<span>The workspace</span>
+</a>
+<a href="../wp-plugins/quick-license/">
+<strong>Quick License</strong>
+<span>The licensing layer</span>
+</a>
+</div>
+</section>
+<section class="content" id="pricing">
+<p class="kicker">Choose once / Explore everything</p>
+<h2>Find the right scope.</h2>
+<form class="license-controls" data-license-controls>
+<div>
+<label for="license-billing">Billing</label>
+<select id="license-billing" name="billing" disabled>
+<option value="monthly">Monthly</option>
+<option value="annual">Annual — prepaid, 20% off</option>
+</select>
+</div>
+<div>
+<label for="license-sites">Production sites</label>
+<select id="license-sites" name="sites" disabled>
+<option value="1">1 site</option>
+<option value="5">Up to 5 sites</option>
+<option value="10">Up to 10 sites</option>
+<option value="25">Agency — up to 25 sites</option>
+</select>
+</div>
+<p>USD, before tax. Annual amounts are the full prepaid yearly price. Agency is capped at 25 sites. No lifetime plans.</p>
+</form>
+<p class="license-status" data-license-status role="status" aria-live="polite">
+</p>
+<p class="note">Plugin and bundle prices below are in USD. Robbie’s service prices elsewhere on this site remain in CAD. Changing billing or site allowance updates every price on this page.</p>
+</section>
+<section class="content" id="plugins">
+<div class="section-head">
+<div>
+<p class="kicker">The individual tools</p>
+<h2>Start with the work<br>you need to do.</h2>
+</div>
+<div class="plugin-search">
+<label for="plugin-search">Find a plugin</label>
+<input id="plugin-search" type="search" placeholder="Try forms, products, SEO…" disabled>
+<p id="plugin-count" aria-live="polite">18 plugins across four categories</p>
+</div>
+</div>
+<div class="plugin-group" id="inventory-control">
+<div class="group-heading">
+<h3>Inventory Control</h3>
+<a href="../wp-plugins/bundles/inventory-control/">Explore the bundle ↗</a>
+</div>
+<div class="plugin-grid">
+<article class="plugin-tile" data-price-id="quick-add" data-search="quick add create woocommerce products in batches using a table or json input, with validation and reusable templates." data-palette="orange">
+<div class="tile-heading">
+<span>Pro plugin</span>
+<span>Lite: Free</span>
+</div>
+<h3>
+<a href="../wp-plugins/quick-add/" data-product-page>Quick Add ↗</a>
+</h3>
+<p>Create WooCommerce products in batches using a table or JSON input, with validation and reusable templates.</p>
+<div class="tile-price">
+<strong data-price-amount>$7.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/quick-add/#pricing" data-product-page>Explore plugin & pricing ↗</a>
 </article>
-<article class="card">
-<span class="number">02 /</span>
-<h3>Thoughtful experiences</h3>
-<p>Consider the people using and maintaining the site alongside the underlying functionality.</p>
+<article class="plugin-tile" data-price-id="quick-edit" data-search="quick edit a bulk-editing workspace for existing woocommerce products, bringing product lists and updates into a focused interface." data-palette="orange">
+<div class="tile-heading">
+<span>Pro plugin</span>
+<span>Lite: Free</span>
+</div>
+<h3>
+<a href="../wp-plugins/quick-edit/" data-product-page>Quick Edit ↗</a>
+</h3>
+<p>A bulk-editing workspace for existing WooCommerce products, bringing product lists and updates into a focused interface.</p>
+<div class="tile-price">
+<strong data-price-amount>$9.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/quick-edit/#pricing" data-product-page>Explore plugin & pricing ↗</a>
 </article>
-<article class="card">
-<span class="number">03 /</span>
-<h3>A growing direction</h3>
-<p>Individual plugins, compatibility details, and release information will be listed when available.</p>
+<article class="plugin-tile" data-price-id="quick-variations" data-search="quick variations generate woocommerce variable-product combinations from configured attributes, then work with the resulting variations." data-palette="orange">
+<div class="tile-heading">
+<span>Pro plugin</span>
+<span>Lite: Free</span>
+</div>
+<h3>
+<a href="../wp-plugins/quick-variations/" data-product-page>Quick Variations ↗</a>
+</h3>
+<p>Generate WooCommerce variable-product combinations from configured attributes, then work with the resulting variations.</p>
+<div class="tile-price">
+<strong data-price-amount>$9.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/quick-variations/#pricing" data-product-page>Explore plugin & pricing ↗</a>
 </article>
+<article class="plugin-tile" data-price-id="quick-images" data-search="quick images batch-process product imagery with saved branding assets and wordpress media library integration." data-palette="orange">
+<div class="tile-heading">
+<span>Pro plugin</span>
+<span>Lite: Free</span>
+</div>
+<h3>
+<a href="../wp-plugins/quick-images/" data-product-page>Quick Images ↗</a>
+</h3>
+<p>Batch-process product imagery with saved branding assets and WordPress Media Library integration.</p>
+<div class="tile-price">
+<strong data-price-amount>$7.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/quick-images/#pricing" data-product-page>Explore plugin & pricing ↗</a>
+</article>
+<article class="plugin-tile" data-price-id="quick-ship" data-search="quick ship a woocommerce shipping setup wizard for structured zones and methods, with connected shipment and rule operations." data-palette="orange">
+<div class="tile-heading">
+<span>Pro plugin</span>
+<span>Lite: Free</span>
+</div>
+<h3>
+<a href="../wp-plugins/quick-ship/" data-product-page>Quick Ship ↗</a>
+</h3>
+<p>A WooCommerce shipping setup wizard for structured zones and methods, with connected shipment and rule operations.</p>
+<div class="tile-price">
+<strong data-price-amount>$9.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/quick-ship/#pricing" data-product-page>Explore plugin & pricing ↗</a>
+</article>
+<article class="plugin-tile" data-price-id="quick-points" data-search="quick points a woocommerce points-and-rewards system covering awards, redemptions, tiers, and expiry rules." data-palette="orange">
+<div class="tile-heading">
+<span>Pro plugin</span>
+<span>Lite: Free</span>
+</div>
+<h3>
+<a href="../wp-plugins/quick-points/" data-product-page>Quick Points ↗</a>
+</h3>
+<p>A WooCommerce points-and-rewards system covering awards, redemptions, tiers, and expiry rules.</p>
+<div class="tile-price">
+<strong data-price-amount>$9.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/quick-points/#pricing" data-product-page>Explore plugin & pricing ↗</a>
+</article>
+</div>
+</div>
+<div class="plugin-group" id="revenue-customer-operations">
+<div class="group-heading">
+<h3>Revenue &amp; Customer Operations</h3>
+<a href="../wp-plugins/bundles/revenue-customer-operations/">Explore the bundle ↗</a>
+</div>
+<div class="plugin-grid">
+<article class="plugin-tile" data-price-id="quick-forms" data-search="quick forms build self-hosted forms with shortcode rendering, an administrative inbox, submissions, and notifications." data-palette="purple">
+<div class="tile-heading">
+<span>Pro plugin</span>
+<span>Lite: Free</span>
+</div>
+<h3>
+<a href="../wp-plugins/quick-forms/" data-product-page>Quick Forms ↗</a>
+</h3>
+<p>Build self-hosted forms with shortcode rendering, an administrative inbox, submissions, and notifications.</p>
+<div class="tile-price">
+<strong data-price-amount>$9.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/quick-forms/#pricing" data-product-page>Explore plugin & pricing ↗</a>
+</article>
+<article class="plugin-tile" data-price-id="quick-schedule" data-search="quick schedule appointment scheduling and consultation fee handling, with appointment records and scheduled-job operations." data-palette="purple">
+<div class="tile-heading">
+<span>Pro plugin</span>
+<span>Lite: Free</span>
+</div>
+<h3>
+<a href="../wp-plugins/quick-schedule/" data-product-page>Quick Schedule ↗</a>
+</h3>
+<p>Appointment scheduling and consultation fee handling, with appointment records and scheduled-job operations.</p>
+<div class="tile-price">
+<strong data-price-amount>$9.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/quick-schedule/#pricing" data-product-page>Explore plugin & pricing ↗</a>
+</article>
+<article class="plugin-tile" data-price-id="quick-importer" data-search="quick importer csv import and export for wordpress content and woocommerce products, including taxonomy and custom-field workflows." data-palette="purple">
+<div class="tile-heading">
+<span>Pro plugin</span>
+<span>Lite: Free</span>
+</div>
+<h3>
+<a href="../wp-plugins/quick-importer/" data-product-page>Quick Importer ↗</a>
+</h3>
+<p>CSV import and export for WordPress content and WooCommerce products, including taxonomy and custom-field workflows.</p>
+<div class="tile-price">
+<strong data-price-amount>$9.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/quick-importer/#pricing" data-product-page>Explore plugin & pricing ↗</a>
+</article>
+<article class="plugin-tile" data-price-id="quick-quotes" data-search="quick quotes a quote-building workflow with administrative management and a frontend quote-request form." data-palette="purple">
+<div class="tile-heading">
+<span>Pro plugin</span>
+<span>Lite: Free</span>
+</div>
+<h3>
+<a href="../wp-plugins/quick-quotes/" data-product-page>Quick Quotes ↗</a>
+</h3>
+<p>A quote-building workflow with administrative management and a frontend quote-request form.</p>
+<div class="tile-price">
+<strong data-price-amount>$9.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/quick-quotes/#pricing" data-product-page>Explore plugin & pricing ↗</a>
+</article>
+<article class="plugin-tile" data-price-id="quick-accountant" data-search="quick accountant an accounting-lite workspace for recording income, expenses, categories, budgets, and reports within wordpress." data-palette="purple">
+<div class="tile-heading">
+<span>Pro plugin</span>
+<span>Lite: Free</span>
+</div>
+<h3>
+<a href="../wp-plugins/quick-accountant/" data-product-page>Quick Accountant ↗</a>
+</h3>
+<p>An accounting-lite workspace for recording income, expenses, categories, budgets, and reports within WordPress.</p>
+<div class="tile-price">
+<strong data-price-amount>$12.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/quick-accountant/#pricing" data-product-page>Explore plugin & pricing ↗</a>
+</article>
+<article class="plugin-tile" data-price-id="quick-mail" data-search="quick mail a self-hosted email-template and delivery layer for wordpress, using smtp or supported provider apis." data-palette="purple">
+<div class="tile-heading">
+<span>Pro plugin</span>
+<span>Lite: Free</span>
+</div>
+<h3>
+<a href="../wp-plugins/quick-mail/" data-product-page>Quick Mail ↗</a>
+</h3>
+<p>A self-hosted email-template and delivery layer for WordPress, using SMTP or supported provider APIs.</p>
+<div class="tile-price">
+<strong data-price-amount>$12.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/quick-mail/#pricing" data-product-page>Explore plugin & pricing ↗</a>
+</article>
+</div>
+</div>
+<div class="plugin-group" id="admin-control">
+<div class="group-heading">
+<h3>Admin Control</h3>
+<a href="../wp-plugins/bundles/admin-control/">Explore the bundle ↗</a>
+</div>
+<div class="plugin-grid">
+<article class="plugin-tile" data-price-id="quick-site" data-search="quick site self-hosted wordpress caching and optimization, with settings, cache controls, and database-cleanup tools." data-palette="red">
+<div class="tile-heading">
+<span>Pro plugin</span>
+<span>Lite: Free</span>
+</div>
+<h3>
+<a href="../wp-plugins/quick-site/" data-product-page>Quick Site ↗</a>
+</h3>
+<p>Self-hosted WordPress caching and optimization, with settings, cache controls, and database-cleanup tools.</p>
+<div class="tile-price">
+<strong data-price-amount>$12.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/quick-site/#pricing" data-product-page>Explore plugin & pricing ↗</a>
+</article>
+<article class="plugin-tile" data-price-id="quick-seo" data-search="quick seo a wordpress and woocommerce seo workspace with spreadsheet-style metadata editing and structured-data tools." data-palette="red">
+<div class="tile-heading">
+<span>Pro plugin</span>
+<span>Lite: Free</span>
+</div>
+<h3>
+<a href="../wp-plugins/quick-seo/" data-product-page>Quick SEO ↗</a>
+</h3>
+<p>A WordPress and WooCommerce SEO workspace with spreadsheet-style metadata editing and structured-data tools.</p>
+<div class="tile-price">
+<strong data-price-amount>$12.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/quick-seo/#pricing" data-product-page>Explore plugin & pricing ↗</a>
+</article>
+<article class="plugin-tile" data-price-id="quick-audit" data-search="quick audit an internal seo-audit tool for the current wordpress site, with scan and crawl operations and exportable results." data-palette="red">
+<div class="tile-heading">
+<span>Pro plugin</span>
+<span>Lite: Free</span>
+</div>
+<h3>
+<a href="../wp-plugins/quick-audit/" data-product-page>Quick Audit ↗</a>
+</h3>
+<p>An internal SEO-audit tool for the current WordPress site, with scan and crawl operations and exportable results.</p>
+<div class="tile-price">
+<strong data-price-amount>$9.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/quick-audit/#pricing" data-product-page>Explore plugin & pricing ↗</a>
+</article>
+<article class="plugin-tile" data-price-id="quick-traffic" data-search="quick traffic lightweight, self-hosted traffic monitoring with administrative analytics, utm tools, and configurable exclusions." data-palette="red">
+<div class="tile-heading">
+<span>Pro plugin</span>
+<span>Lite: Free</span>
+</div>
+<h3>
+<a href="../wp-plugins/quick-traffic/" data-product-page>Quick Traffic ↗</a>
+</h3>
+<p>Lightweight, self-hosted traffic monitoring with administrative analytics, UTM tools, and configurable exclusions.</p>
+<div class="tile-price">
+<strong data-price-amount>$9.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/quick-traffic/#pricing" data-product-page>Explore plugin & pricing ↗</a>
+</article>
+<article class="plugin-tile" data-price-id="quick-code" data-search="quick code admin-controlled html, css, and javascript injection with global and per-page targeting." data-palette="red">
+<div class="tile-heading">
+<span>Pro plugin</span>
+<span>Lite: Free</span>
+</div>
+<h3>
+<a href="../wp-plugins/quick-code/" data-product-page>Quick Code ↗</a>
+</h3>
+<p>Admin-controlled HTML, CSS, and JavaScript injection with global and per-page targeting.</p>
+<div class="tile-price">
+<strong data-price-amount>$7.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/quick-code/#pricing" data-product-page>Explore plugin & pricing ↗</a>
+</article>
+</div>
+</div>
+<div class="plugin-group" id="education">
+<div class="group-heading">
+<h3>Education</h3>
+<a href="../wp-plugins/bundles/education/">Explore the bundle ↗</a>
+</div>
+<div class="plugin-grid">
+<article class="plugin-tile" data-price-id="quick-course-builder" data-search="quick course builder a wordpress course-creation and delivery system organized around courses, modules, tests, and certificates." data-palette="purple">
+<div class="tile-heading">
+<span>Pro plugin</span>
+<span>Lite: Free</span>
+</div>
+<h3>
+<a href="../wp-plugins/quick-course-builder/" data-product-page>Quick Course Builder ↗</a>
+</h3>
+<p>A WordPress course-creation and delivery system organized around courses, modules, tests, and certificates.</p>
+<div class="tile-price">
+<strong data-price-amount>$14.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/quick-course-builder/#pricing" data-product-page>Explore plugin & pricing ↗</a>
+</article>
+</div>
+</div>
+<p id="plugin-empty" class="muted" hidden>No plugins match that search. Try another name or workflow.</p>
+</section>
+<section class="content" id="bundles">
+<p class="kicker">The collections</p>
+<h2>Go wider.<br>Keep the scope clear.</h2>
+<div class="plugin-grid bundle-grid">
+<article class="plugin-tile" data-price-id="inventory-control" data-search="inventory control bundle six pro plugins for adding, editing, varying, branding, shipping, and rewarding around a woocommerce store." data-palette="orange">
+<div class="tile-heading">
+<span>Bundle</span>
+<span>6 plugins</span>
+</div>
+<h3>
+<a href="../wp-plugins/bundles/inventory-control/" data-product-page>Inventory Control Bundle ↗</a>
+</h3>
+<p>Six Pro plugins for adding, editing, varying, branding, shipping, and rewarding around a WooCommerce store.</p>
+<div class="tile-price">
+<strong data-price-amount>$39.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/bundles/inventory-control/#pricing" data-product-page>Explore bundle & pricing ↗</a>
+</article>
+<article class="plugin-tile" data-price-id="revenue-customer-operations" data-search="revenue &amp; customer operations bundle six pro plugins covering forms, scheduling, imports, quotes, operational accounting, and site email." data-palette="purple">
+<div class="tile-heading">
+<span>Bundle</span>
+<span>6 plugins</span>
+</div>
+<h3>
+<a href="../wp-plugins/bundles/revenue-customer-operations/" data-product-page>Revenue &amp; Customer Operations Bundle ↗</a>
+</h3>
+<p>Six Pro plugins covering forms, scheduling, imports, quotes, operational accounting, and site email.</p>
+<div class="tile-price">
+<strong data-price-amount>$49.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/bundles/revenue-customer-operations/#pricing" data-product-page>Explore bundle & pricing ↗</a>
+</article>
+<article class="plugin-tile" data-price-id="admin-control" data-search="admin control bundle five pro plugins for caching, seo, internal audits, traffic reporting, and controlled code snippets." data-palette="red">
+<div class="tile-heading">
+<span>Bundle</span>
+<span>5 plugins</span>
+</div>
+<h3>
+<a href="../wp-plugins/bundles/admin-control/" data-product-page>Admin Control Bundle ↗</a>
+</h3>
+<p>Five Pro plugins for caching, SEO, internal audits, traffic reporting, and controlled code snippets.</p>
+<div class="tile-price">
+<strong data-price-amount>$39.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/bundles/admin-control/#pricing" data-product-page>Explore bundle & pricing ↗</a>
+</article>
+<article class="plugin-tile" data-price-id="education" data-search="education bundle quick course builder pro, grouped as the education bundle. this one-plugin bundle has the same price as the individual plugin." data-palette="purple">
+<div class="tile-heading">
+<span>Bundle</span>
+<span>1 plugin</span>
+</div>
+<h3>
+<a href="../wp-plugins/bundles/education/" data-product-page>Education Bundle ↗</a>
+</h3>
+<p>Quick Course Builder Pro, grouped as the Education Bundle. This one-plugin bundle has the same price as the individual plugin.</p>
+<div class="tile-price">
+<strong data-price-amount>$14.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/bundles/education/#pricing" data-product-page>Explore bundle & pricing ↗</a>
+</article>
+<article class="plugin-tile" data-price-id="full-quickwoo-suite" data-search="full quickwoo suite all 18 pro plugins across inventory, customer operations, site administration, and education. desktop is not included in this option." data-palette="red">
+<div class="tile-heading">
+<span>Bundle</span>
+<span>18 plugins</span>
+</div>
+<h3>
+<a href="../wp-plugins/bundles/full-quickwoo-suite/" data-product-page>Full QuickWoo Suite ↗</a>
+</h3>
+<p>All 18 Pro plugins across inventory, customer operations, site administration, and education. Desktop is not included in this option.</p>
+<div class="tile-price">
+<strong data-price-amount>$99.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/bundles/full-quickwoo-suite/#pricing" data-product-page>Explore bundle & pricing ↗</a>
+</article>
+<article class="plugin-tile" data-price-id="plus-desktop" data-search="full suite + quickwoo desktop the full pro plugin suite plus quickwoo desktop, with licensed connector/server functionality for the selected site allowance." data-palette="orange">
+<div class="tile-heading">
+<span>Bundle</span>
+<span>18 + Desktop</span>
+</div>
+<h3>
+<a href="../wp-plugins/bundles/plus-desktop/" data-product-page>Full Suite + QuickWoo Desktop ↗</a>
+</h3>
+<p>The full Pro plugin suite plus QuickWoo Desktop, with licensed connector/server functionality for the selected site allowance.</p>
+<div class="tile-price">
+<strong data-price-amount>$129.99</strong>
+<span>USD <span data-price-period>/ month</span>
+</span>
+</div>
+<p class="tile-scope">
+<span data-site-label>1 site</span> · <span data-price-detail>Monthly plan</span>
+</p>
+<a class="button" href="../wp-plugins/bundles/plus-desktop/#pricing" data-product-page>Explore bundle & pricing ↗</a>
+</article>
+</div>
+</section>
+<section class="content" id="compare">
+<div class="split">
+<div>
+<p class="kicker">A closer look</p>
+<h2>What’s inside<br>the bundle?</h2>
+<p class="muted">Compare a collection with its individual plugins at the billing period and site allowance selected above. Don’t buy a standalone plugin if your chosen bundle already includes it.</p>
+</div>
+<div class="bundle-comparison">
+<label for="bundle-select">Bundle to compare</label>
+<select id="bundle-select" disabled>
+<option value="inventory-control">Inventory Control Bundle</option>
+<option value="revenue-customer-operations">Revenue &amp; Customer Operations Bundle</option>
+<option value="admin-control">Admin Control Bundle</option>
+<option value="education">Education Bundle</option>
+<option value="full-quickwoo-suite">Full QuickWoo Suite</option>
+<option value="plus-desktop">Full Suite + QuickWoo Desktop</option>
+</select>
+<div id="bundle-comparison" aria-live="polite">
+<p>Select a bundle to explore its contents. The individual bundle pages list every included module and all prices.</p>
+</div>
+</div>
 </div>
 </section>
 <section class="content">
-<div class="split">
-<div>
-<p class="kicker">02 / Project notes</p>
-<h2>An idea with<br>room to grow.</h2>
-</div>
-<div class="status">
-<h3>Overview, for now.</h3>
-<p class="muted">This page introduces the project’s direction. A working application, public launch date, and access details are not available here yet.</p>
-<p class="muted">App pricing and subscriptions have not been announced. There is nothing to purchase on this page.</p>
-<a class="button" href="../#applications">Explore the collection ↗</a>
-</div>
-</div>
+<p class="kicker">Before choosing a plan</p>
+<h2>A few useful distinctions.</h2>
+<details>
+<summary>What does Lite include?</summary>
+<p>Each individual module is listed with a free Lite edition. The matrix does not specify its exact feature limits or release downloads. Feature descriptions on these pages refer to the documented full builds; they are not a promise that every feature is included in Lite.</p>
+</details>
+<details>
+<summary>How are annual prices shown?</summary>
+<p>Annual plans show the full prepaid USD total for a year, using the workbook’s stated 20% discount. They are not monthly charges. Agency covers up to 25 sites, not unlimited sites. Taxes are excluded.</p>
+</details>
+<details>
+<summary>What is included with Desktop?</summary>
+<p>The Full Suite + QuickWoo Desktop plan includes all 18 Pro modules and the desktop app. It requires licensed connector/server functionality. The plugin-only Full Suite does not include Desktop in the matrix.</p>
+</details>
+<details>
+<summary>Can I buy or download a license now?</summary>
+<p>These are proposed launch prices. Live subscription checkout, license delivery, and the final release downloads have not been connected yet. You can enquire about a plan using the links on its page.</p>
+</details>
+<details>
+<summary>Why is Education the same price as Course Builder?</summary>
+<p>The Education Bundle contains Quick Course Builder alone in this matrix. Its prices are identical to that plugin’s individual prices; no additional bundle discount is claimed.</p>
+</details>
+<details>
+<summary>What about lifetime licenses?</summary>
+<p>Lifetime licenses are not offered at launch. The available paid billing options are monthly and prepaid annual.</p>
+</details>
 </section>
-<section class="closing page-finale finale-wp-plugins">
-<div>
-<p class="kicker">Your next step</p>
-<h2>Keep the purpose clear.</h2>
-<p class="muted">Find a focused addition for the way your site works.</p>
-</div>
-<a class="button primary" href="../contact/">Ask about a plugin ↗</a>
-<a class="quiet-link" href="../">Back to the collection ↑</a>
+<section class="closing page-finale">
+<p class="kicker">Choose a useful starting point</p>
+<h2>Tell me how you run your site.</h2>
+<p class="muted">One tool, a focused collection, or the whole connected workspace.</p>
+<a class="button primary" href="../contact/">Ask about QuickWoo ↗</a>
 </section>
 </main>
 <footer class="wrap">

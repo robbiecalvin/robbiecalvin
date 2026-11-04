@@ -17,22 +17,30 @@
       let amount = Number(value);
       let detail = plan.selectedOptions[0].textContent;
       if (kind === 'personal-assistant') {
-        amount = ({1:35,5:160,10:300})[value];
+        amount = ({1:25,5:100,10:190})[value];
         detail = `${value} hour${value === '1' ? '' : 's'} of support: ${money(amount)}.`;
       } else if (kind === 'rtb-advocacy' && value === '40') {
         amount = 40 * q;
         detail = `${q} hour${q === 1 ? '' : 's'} × $40 = ${money(amount)}.`;
       } else if (kind === 'wp-managment') {
-        amount *= q;
-        detail = `${q} website${q === 1 ? '' : 's'} × ${money(Number(value))} per month = ${money(amount)} monthly.`;
+        if (value === 'hourly') {
+          amount = 35 * q;
+          detail = `${q} hour${q === 1 ? '' : 's'} × $35 = ${money(amount)}.`;
+        } else {
+          amount *= q;
+          detail = `${q} website${q === 1 ? '' : 's'} × ${money(Number(value))} per month = ${money(amount)} monthly.`;
+        }
+        form.querySelector('[data-estimate-heading]').textContent = value === 'hourly' ? 'Estimated total' : 'Estimated monthly total';
+        form.querySelector('[data-estimate-period]').textContent = value === 'hourly' ? 'CAD, before applicable tax' : 'CAD / month, before applicable tax';
+        form.querySelector('#quantity-label').textContent = value === 'hourly' ? 'Hours of support' : 'Number of websites';
       } else if (kind === 'web-design') {
         if (value === 'hourly') {
-          amount = 50 * q;
-          detail = `${q} hour${q === 1 ? '' : 's'} × $50 = ${money(amount)}.`;
+          amount = 35 * q;
+          detail = `${q} hour${q === 1 ? '' : 's'} × $35 = ${money(amount)}.`;
         } else {
           const pages = Number(value);
-          amount = pages === 1 ? 500 : 1250 + Math.max(0, pages - 5) * 250;
-          detail = pages === 1 ? 'One landing page, up to six sections: from $500.' : `Up to ${pages} informational pages: $1,250 base${pages > 5 ? ` + ${pages - 5} additional page${pages === 6 ? '' : 's'} × $250` : ''}.`;
+          amount = pages === 1 ? 100 : 500;
+          detail = pages === 1 ? 'One landing page, up to six sections: from $100.' : 'Up to five informational pages: from $500.';
         }
       }
       if (kind === 'rtb-advocacy' && quantity) {
@@ -45,7 +53,7 @@
       }
       total.textContent = money(amount);
       breakdown.textContent = detail;
-      currentEstimate = `${detail} Estimate: ${money(amount)} CAD${kind === 'wp-managment' ? ' / month' : ''}, before applicable tax. Final scope and price to be confirmed.`;
+      currentEstimate = `${detail} Estimate: ${money(amount)} CAD${kind === 'wp-managment' && value !== 'hourly' ? ' / month' : ''}, before applicable tax. Final scope and price to be confirmed.`;
     }
     form.addEventListener('input',update);
     form.addEventListener('change',update);
