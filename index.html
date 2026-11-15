@@ -662,6 +662,7 @@ footer {
 .social-link svg { width: 19px; height: 19px; fill: currentColor; }
 @media (max-width: 650px) { .hero { padding-inline: 20px; } footer { flex-wrap: wrap; gap: 20px; } }
 </style>
+<link rel="stylesheet" href="./assets/styles/home.css">
 
 <title>Robbie Calvin | Vancouver Web Developer &amp; Tech Artist</title>
 <meta name="description" content="Explore Robbie Calvin’s web design, WordPress tools, AI applications, graphic design, and practical digital services. Based in Vancouver, BC.">
@@ -733,6 +734,7 @@ footer {
 </head>
 
 <body>
+<a class="skip-link" href="#work">Skip to projects</a>
 <header>
   <div class="wrap nav">
     <a class="logo" href="#top" aria-label="Robbie Calvin home">
@@ -740,11 +742,11 @@ footer {
     </a>
 
     <nav aria-label="Main navigation">
-      <a href="#applications">Applications</a>
+      <a href="#applications">Apps</a>
       <a href="#services">Services</a>
       <a href="#sites">Sites</a>
       <a href="#creative">Creative</a>
-      <a href="./about/">About me</a>
+      <a href="./about/">About</a>
       <a href="./contact/">Contact</a>
 <a href="./account/">Account</a>
     </nav>
@@ -759,24 +761,23 @@ footer {
         Code. Create. Question everything.
       </div>
 
-      <h1 id="hero-title">Tech<br><em>Artist.</em></h1>
+      <h1 id="hero-title">Ideas into<br><em>something real.</em></h1>
 
       <p class="intro">
-        I’m Robbie Calvin. I turn ideas into digital things
-        you can use, feel, and get a little lost in.
+        I’m Robbie Calvin, a tech artist building websites, useful tools,
+        and creative experiences.
       </p>
 
       <p class="intro">
-        Websites. AI experiments. Tools. Stories.
-        Different mediums. Same restless imagination.
+        Explore the things I make, or tell me what you’d like to create together.
       </p>
 
       <div class="actions">
-        <a class="button primary" href="#applications">
-          Explore my world <span aria-hidden="true">↗</span>
+        <a class="button primary" href="#work">
+          Explore my work <svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 18 18 6M6 6h12v12"/></svg>
         </a>
-        <a class="button" href="./about/">
-          Meet the human <span aria-hidden="true">↓</span>
+        <a class="button" href="./contact/">
+          Work with me <svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 18 18 6M6 6h12v12"/></svg>
         </a>
       </div>
     </div>
@@ -785,7 +786,7 @@ footer {
       <canvas
         id="artwork"
         role="img"
-        aria-label="A neon-orange rotating energy globe with orbital rings and luminous satellites"
+        aria-label="A neon-orange energy globe with orbital rings and luminous satellites"
       ></canvas>
 
       <span class="art-label">Study 001 / Creative connections</span>
@@ -795,7 +796,7 @@ footer {
         class="motion-button"
         type="button"
         aria-pressed="false"
-        aria-label="Pause all animated artwork"
+        aria-label="Pause the animated globe"
       >Pause motion</button>
     </div>
   </section>
@@ -811,20 +812,22 @@ footer {
     <div class="section-top">
       <div>
         <p class="kicker">01 / The work</p>
-        <h2 id="work-title">One mind.<br>Many rabbit holes.</h2>
+        <h2 id="work-title">Selected work.<br>Follow an idea.</h2>
       </div>
       <p class="section-note">
-        Applications, creative services, independent sites, and art.
-        Choose a direction and follow your curiosity.
+        A few places to start: a toolkit for WordPress, a different way to think, and an original comic.
       </p>
     </div>
 
-    <div class="category-nav" aria-label="Explore project categories">
+    <div id="featured-projects" class="projects featured-projects" aria-label="Featured projects"></div>
+
+    <div class="collection-heading"><p class="kicker">The whole collection</p><h2>Find your direction.</h2><p>Browse apps, services, websites, and creative work.</p></div>
+    <nav class="category-nav" aria-label="Explore project categories">
       <a href="#applications">Applications ↗</a>
       <a href="#services">Services ↗</a>
       <a href="#sites">Sites ↗</a>
       <a href="#creative">Creative ↗</a>
-    </div>
+    </nav>
 
     <div id="project-sections"></div>
 
@@ -848,6 +851,8 @@ footer {
           <a href="./resume-building/">Resume Building</a> ·
           <a href="./typing-school/">Typing School</a> ·
           <a href="https://fobfather.ca/">FobFather</a> ·
+          <a href="https://robbiecalvin.github.io/crystaleye/">Crystal Eye</a> ·
+          <a href="https://robbiecalvin.github.io/TrustedCashLoans/">Trusted Cash Loans</a> ·
           <a href="https://www.instagram.com/pastelpowerranger/">Instagram</a> ·
           <a href="./wild-chemistry/">Wild Chemistry</a>
         </p>
@@ -857,16 +862,16 @@ footer {
 
   <section id="about" class="about home-about" aria-labelledby="about-title">
     <div class="portrait-slot"><p class="kicker">Behind the screen</p><h2 id="about-title">Robbie Calvin.</h2></div>
-    <div class="about-copy"><p>Tech artist. Web developer. Curious human.</p><a class="button primary" href="./about/">About me <span aria-hidden="true">↗</span></a></div>
+    <div class="about-copy"><p>Tech artist. Web developer. Curious human.</p><a class="button primary" href="./about/">About me <svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div>
   </section>
 
   <div class="closing">
     <div>
-      <h2>Curiosity built this.</h2>
-      <p>Stick around. There’s always another idea.</p>
+      <h2>Have an idea in mind?</h2>
+      <p>Let’s find the right shape for your website, tool, or creative project.</p>
     </div>
-    <a class="button primary" href="#applications">
-      Find your rabbit hole <span aria-hidden="true">↗</span>
+    <a class="button primary" href="./contact/">
+      Discuss a project <svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 18 18 6M6 6h12v12"/></svg>
     </a>
   </div>
 
@@ -1087,10 +1092,10 @@ footer {
           "Targeted typing practice, rhythm analysis, games, and local progress tracking.", "typing", "purple"],
         ["FobFather", "fobfather", "Vancouver fob copying",
           "Apartment RFID fob copies in downtown Vancouver, by appointment.", "fob", "orange"],
-        ["Crystal Eye", "crystaleye", "Website",
-          "Explore Crystal Eye online.", "browser", "purple", "https://robbiecalvin.github.io/crystaleye/"],
-        ["Trusted Cash Loans", "trusted-cash-loans", "Website",
-          "Visit Trusted Cash Loans online.", "browser", "orange", "https://robbiecalvin.github.io/TrustedCashLoans/"]
+        ["Crystal Eye", "crystaleye", "Symbols & self-discovery",
+          "Explore numerology, astrology, and tarot in an illustrated digital space.", "browser", "purple", "https://robbiecalvin.github.io/crystaleye/"],
+        ["Trusted Cash Loans", "trusted-cash-loans", "Loan calculators",
+          "Loan payment calculators and borrowing resources for Canadians.", "browser", "orange", "https://robbiecalvin.github.io/TrustedCashLoans/"]
       ]
     }
     ,{
@@ -1103,38 +1108,49 @@ footer {
 
   const mount = document.getElementById("project-sections");
 
-  // These templates use only the fixed, local definitions above.
+  const previews = {
+    "codex-master": ["codex-master", "Project page preview"],
+    "myra": ["myra", "Project page preview"],
+    "speechflow": ["speechflow", "Project page preview"],
+    "quickwoo": ["quickwoo", "Project page preview"],
+    "kimix": ["kimix", "Project page preview"],
+    "wp-plugins": ["wp-plugins", "Plugin directory preview"],
+    "typing-school": ["typing-school", "Project page preview"],
+    "crystaleye": ["crystaleye", "Website preview"],
+    "trusted-cash-loans": ["trusted-cash-loans", "Website preview"],
+    "wild-chemistry": ["wild-chemistry", "Comic cover"]
+  };
+  const introductions = {
+    applications: "Explore each app’s purpose, features, and available ways to try it.",
+    services: "Practical support for your website, business, and next creative project.",
+    sites: "Independent websites. Choose a card to visit or learn more.",
+    creative: "Stories, artwork, and the ideas behind them."
+  };
+  function projectCard(project, groupId) {
+    const [name, folder, label, description, icon, palette, externalUrl] = project;
+    const href = externalUrl || (folder === "fobfather" ? "https://fobfather.ca/" : folder === "instagram" ? "https://www.instagram.com/pastelpowerranger/" : "./" + folder + "/");
+    const cta = groupId === "services" ? "Discuss a project" : groupId === "sites" && (externalUrl || folder === "fobfather") ? "Visit website" : folder === "wp-plugins" ? "View plugins" : folder === "wild-chemistry" ? "Read the comic" : folder === "instagram" ? "View artwork" : groupId === "sites" ? "Explore website" : "Explore app";
+    const preview = previews[folder];
+    const image = folder === "wild-chemistry" ? "./assets/images/wild-chemistry/issue-1/cover.webp" : preview ? `./assets/images/previews/${preview[0]}.webp` : "";
+    return `<a class="project-card" href="${href}" data-palette="${palette}">
+      <div class="project-visual${preview ? " has-preview" : ""}">
+        ${preview ? `<img src="${image}" width="1200" height="800" alt="${name}: ${preview[1].toLowerCase()}" loading="lazy" decoding="async"><span class="preview-caption">${preview[1]}</span>` : `<svg class="project-icon" viewBox="0 0 100 100" aria-hidden="true" focusable="false">${icons[icon]}</svg>`}
+      </div>
+      <div class="project-copy"><span class="project-label">${label}</span><h3>${name}</h3><p>${description}</p><span class="project-cta">${cta} <svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 18 18 6M6 6h12v12"/></svg></span></div>
+    </a>`;
+  }
+  // All card content is supplied by the fixed project definitions above.
   mount.innerHTML = groups.map(group => `
     <details class="project-group" id="${group.id}" open>
-      <summary>
-        <span class="group-title">${group.name}</span>
-        <span class="group-count">${group.projects.length} projects</span>
-        <span class="group-toggle" aria-hidden="true">+</span>
-      </summary>
-      <div class="projects">
-        ${group.projects.map(project => {
-          const [name, folder, label, description, icon, palette, externalUrl] = project;
-          return `
-            <a class="project-card"
-               href="${externalUrl || (folder === 'fobfather' ? 'https://fobfather.ca/' : folder === 'instagram' ? 'https://www.instagram.com/pastelpowerranger/' : './' + folder + '/')}"
-               data-palette="${palette}">
-              <div class="project-visual">
-                <svg class="project-icon" viewBox="0 0 100 100"
-                     aria-hidden="true" focusable="false">
-                  ${icons[icon]}
-                </svg>
-              </div>
-              <div class="project-copy">
-                <span class="project-label">${label}</span>
-                <h3>${name}</h3>
-                <p>${description}</p>
-                <span class="project-cta">Explore ↗</span>
-              </div>
-            </a>`;
-        }).join("")}
-      </div>
-    </details>
-  `).join("");
+      <summary><span class="group-title">${group.name}</span><span class="group-count">${group.projects.length} projects</span><span class="group-toggle" aria-hidden="true">+</span></summary>
+      <p class="group-intro">${introductions[group.id]}</p>
+      <div class="projects">${group.projects.map(project => projectCard(project, group.id)).join("")}</div>
+    </details>`).join("");
+  const featured = ["wp-plugins", "speechflow", "wild-chemistry"];
+  document.getElementById("featured-projects").innerHTML = featured.map(folder => {
+    const group = groups.find(item => item.projects.some(project => project[1] === folder));
+    return projectCard(group.projects.find(project => project[1] === folder), group.id);
+  }).join("");
 
   /* MOBILE SECTIONS AND ANCHOR NAVIGATION */
   const sections = [...mount.querySelectorAll(".project-group")];
@@ -1471,7 +1487,7 @@ footer {
     motionButton.setAttribute("aria-pressed", String(paused));
     motionButton.setAttribute(
       "aria-label",
-      paused ? "Play animated artwork" : "Pause all animated artwork"
+      paused ? "Play the animated globe" : "Pause the animated globe"
     );
 
     drawGlobe();

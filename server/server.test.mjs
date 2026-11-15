@@ -33,6 +33,13 @@ test('account, order, payment, and entitlement boundaries',async t=>{
   assert.equal((await fetch(base+'/release-input/quick-seo/part-000.b64')).status,404);
   assert.equal((await fetch(base+'/downloads/wordpress/not-a-plugin.zip')).status,404);
  });
+ await t.test('UI modules and public site icons have browser-compatible responses',async()=>{
+  const module=await fetch(base+'/assets/scripts/comic-reader-state.mjs');
+  assert.equal(module.status,200);assert.match(module.headers.get('content-type'),/^text\/javascript/);
+  for(const icon of ['/favicon.svg','/favicon.ico','/apple-touch-icon.png']){
+   const response=await fetch(base+icon);assert.equal(response.status,200);assert.match(response.headers.get('content-type'),/^image\//);
+  }
+ });
  await t.test('server prices and service scope approval; other users cannot see or pay the order',async()=>{
   const r=await api('/api/orders',{method:'POST',cookie:customer,body:{product:'personal-assistant',plan:'five',quantity:1,total:1,brief:'Five hours of administrative support.'}});assert.equal(r.response.status,201);order=r.data.order;assert.equal(order.totalCents,10000);
   assert.equal((await api(`/api/orders/${order.id}/checkout`,{method:'POST',cookie:customer,body:{}})).response.status,409);

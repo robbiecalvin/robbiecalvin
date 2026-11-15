@@ -60,3 +60,39 @@ body[data-page="red-door"] .hero { --hero-image: url("../images/red-door-hero.we
 @media (max-width: 760px) { .account-columns, .account-orders { grid-template-columns: 1fr; gap: 35px; } }
 .split > *, .account-columns > * { min-width: 0; }
 .code-block { max-width: 100%; }
+
+/* Shared UI rhythm across project, service, account, and policy pages. */
+:root { --ui-radius: 18px; --muted: #b7b5ac; }
+.wrap { width: min(1200px, calc(100% - 48px)); }
+body { line-height: 1.7; }
+html { scroll-padding-top: 110px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.skip-link { position: fixed; top: 12px; left: 24px; z-index: 100; padding: 12px 20px; border-radius: 10px; background: var(--text); color: var(--bg); transform: translateY(-160%); }
+.skip-link:focus { transform: none; }
+body[data-page] .button { min-height: 46px; padding: 12px 20px; border-radius: 12px; font-weight: 600; gap: 14px; transition: background-color .18s, border-color .18s; }
+body[data-page] .button:hover { border-color: var(--accent); }
+body[data-page] .button.primary:hover { filter: brightness(1.1); }
+body[data-page] .card, body[data-page] .page-finale { border-radius: var(--ui-radius); }
+body[data-page] .hero { border-radius: 24px; }
+body[data-page] .hero-copy h1 { line-height: 1.08; }
+.actions { gap: 12px; }
+section.content { padding-block: clamp(48px, 6vw, 80px); }
+.section-head { gap: 32px; }
+.split { gap: clamp(24px, 5vw, 60px); }
+input, select, textarea { border-radius: 10px; }
+input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]), select { min-height: 46px; }
+nav .nav-links a { display: inline-flex; min-height: 40px; align-items: center; }
+nav .nav-links a[aria-current="page"] { color: var(--text); text-decoration: underline; text-underline-offset: 7px; text-decoration-color: var(--accent); }
+footer a:hover { color: var(--text); text-decoration: underline; text-underline-offset: 4px; }
+body[data-page="terms"] .hero, body[data-page="privacy"] .hero, body[data-page="legal"] .hero { min-height: 0; padding: 40px 0; background: none; border: 0; }
+@media (max-width: 760px) {
+  .wrap { width: calc(100% - 32px); }
+  body[data-page] .hero { border-radius: 18px; }
+  body[data-page] .hero-copy { width: 100%; }
+  .section-head { margin-bottom: 24px; }
+  footer { gap: 18px 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+.button .cta-arrow { display: inline-block; width: 16px; height: 16px; flex: 0 0 16px; }

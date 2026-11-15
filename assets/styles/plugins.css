@@ -30,3 +30,36 @@ body[data-page="plugin-bundle"] .hero{border-radius:0 45px 0 45px}
 .bundle-comparison{border:1px solid var(--line);padding:30px;border-radius:16px}.bundle-comparison label{margin-top:0}#bundle-comparison>h3{margin-top:28px;font-size:26px}#bundle-comparison p,#bundle-comparison li{color:var(--muted);font-size:14px}.comparison-money{color:var(--accent)!important;font-size:21px!important}.bundle-comparison ul{columns:2;column-gap:30px;list-style:none;padding:0}.bundle-comparison li{break-inside:avoid;margin:12px 0}.bundle-comparison li:first-child{margin-top:0}.bundle-comparison li a{text-decoration:underline;text-underline-offset:4px}
 @media(max-width:1000px){.plugin-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.license-layout{grid-template-columns:1fr}.license-quote{display:block;max-width:none}.license-amount>strong{font-size:55px}}
 @media(max-width:760px){body[data-page^="plugin-"] .hero{min-height:660px}body[data-page^="plugin-"] .hero-copy{width:100%}body[data-page^="plugin-"] .hero h1{font-size:clamp(39px,10vw,57px)}body[data-page="plugin-infrastructure"] .hero{min-height:570px}.suite-facts{grid-template-columns:1fr 1fr;gap:25px}.suite-facts strong{font-size:40px}.ecosystem-map{grid-template-columns:1fr}.ecosystem-map a:last-child{display:block}.ecosystem-map a:last-child span{margin-top:15px}.license-controls{grid-template-columns:1fr;padding:22px}.license-controls p{grid-column:auto}.plugin-search{min-width:0;width:100%;margin-top:25px}.group-heading{align-items:flex-start;flex-direction:column;gap:12px}.group-heading h3{font-size:25px}.plugin-grid,.capability-grid,.included-grid{grid-template-columns:1fr}.plugin-tile{padding:25px}.plugin-tile h3{font-size:27px}.license-layout{gap:25px}.license-quote{padding:25px}.license-amount>strong{font-size:48px}.license-table{font-size:12px;min-width:370px}.license-table th,.license-table td{padding:17px 10px}.plugin-lead{padding-top:35px;font-size:22px}.membership-links{flex-direction:column;align-items:flex-start}.membership-links a{border-radius:15px}.bundle-comparison{padding:23px}.bundle-comparison ul{columns:1}.capability-grid{gap:5px}.capability-grid h3{font-size:24px}}
+
+/* Put the current plan first; keep the complete comparison below it. */
+body[data-page^="plugin-"] .hero { min-height: 500px; border-radius: 24px; }
+body[data-page^="plugin-"] .hero-copy { width: min(720px, 80%); }
+.pricing-intro { max-width: 700px; color: var(--muted); }
+.plan-picker { display: grid; grid-template-columns: 1.15fr 1fr; gap: 28px; align-items: start; margin-block: 30px; }
+.plan-picker > * { min-width: 0; }
+.plan-picker .license-controls { margin-top: 0; background: #191918; border-radius: 18px; }
+.plan-picker .license-quote { padding: 30px; border-radius: 18px; background: linear-gradient(145deg, color-mix(in srgb, var(--accent) 9%, #191918), #191918); }
+.plan-picker .license-amount { margin: 24px 0 16px; }
+.plan-picker .license-amount > strong { font-size: clamp(44px, 4.5vw, 64px); }
+.plan-picker .license-quote .note { margin-bottom: 0; line-height: 1.7; }
+.all-prices { padding: 0; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
+.all-prices > summary { padding: 22px 26px; font-size: 18px; }
+.all-prices[open] > summary { border-bottom: 1px solid var(--line); }
+.all-prices .license-table-scroll { padding: 20px 24px; margin: 0; }
+.lite-note { padding: 24px; margin-top: 24px; border-radius: 18px; }
+body[data-page] .package-panel { padding: 32px; margin-block: 36px; border: 1px solid var(--line); border-radius: 18px; background: #191918; }
+.package-panel h2 { font-size: clamp(28px, 3vw, 40px); }
+.package-panel > p { max-width: 760px; color: var(--muted); }
+.package-panel .kicker { color: var(--accent); }
+.plugin-tile { border-radius: 18px; background: #191918; border-top-width: 2px; }
+.plugin-tile:hover { border-color: var(--tile-accent); }
+.plugin-tile .button { border-radius: 12px; min-height: 44px; }
+@media (max-width: 760px) {
+  body[data-page^="plugin-"] .hero { min-height: 420px; }
+  body[data-page^="plugin-"] .hero-copy { width: 100%; }
+  .plan-picker { grid-template-columns: 1fr; gap: 16px; }
+  .plan-picker .license-controls, .plan-picker .license-quote { padding: 24px; }
+  .all-prices > summary { padding: 20px; }
+  .all-prices .license-table-scroll { padding: 12px; }
+  body[data-page] .package-panel { padding: 24px; }
+}

@@ -1,6 +1,22 @@
 (() => {
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
+  const main = document.querySelector('main');
+  if (main) main.tabIndex = -1;
+  if (main && !document.querySelector('.skip-link')) {
+    if (!main.id) main.id = 'main-content';
+    const skip = document.createElement('a');
+    skip.className = 'skip-link';
+    skip.href = '#' + main.id;
+    skip.textContent = 'Skip to content';
+    document.body.prepend(skip);
+  }
+  document.querySelectorAll('header .nav-links a').forEach(link => {
+    const url = new URL(link.href, location.href);
+    if (url.origin === location.origin && !url.hash && url.pathname === location.pathname) {
+      link.setAttribute('aria-current', 'page');
+    }
+  });
   const form = document.querySelector('[data-brief]');
   if (!form) return;
   form.addEventListener('submit', (event) => {
