@@ -1,6 +1,22 @@
-# Site UI refresh
+# Site UI status
 
-## Changes
+## Homepage restored
+
+At the owner’s request, the homepage now uses the previous layout and animated
+SVG cards again. The Crystal Eye and Trusted Cash Loans cards and their supplied
+URLs remain. The screenshot cards and featured-project section are no longer
+used on the homepage. Shared interior-page styling, accessibility improvements,
+and plugin pricing remain in place.
+
+The previous preview assets are retained for cached pages; the current homepage
+does not reference them. `tools/test-site-ui.cjs` now verifies the original card
+animations, pause/resume control, reduced-motion support, and both external URLs
+at four screen widths, in addition to the shared-page and pricing checks.
+
+The original refresh is documented below for reference; its homepage design has
+been superseded by this restoration.
+
+## Original refresh
 
 - A concise homepage introduction with “Explore my work” and “Work with me” actions.
 - Three featured projects before the complete collection: QuickWoo Plugins,
