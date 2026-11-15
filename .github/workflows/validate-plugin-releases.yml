@@ -1,0 +1,24 @@
+name: Validate plugin pages and releases
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Validate prices, pages, ZIP integrity and release fixes
+        run: python3 tools/test-plugin-release.py
+      - name: Check generated releases and pages are current
+        run: |
+          python3 tools/end-plugin-promotion.py
+          python3 tools/build-plugin-pages.py
+          git diff --exit-code
+      - name: Test local accounts, downloads and payment boundaries
+        run: node --test server/server.test.mjs supabase/functions/rc-payments/core.test.mjs supabase/functions/rc-payments/handler.test.mjs

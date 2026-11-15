@@ -25,6 +25,14 @@ test('account, order, payment, and entitlement boundaries',async t=>{
   assert.equal((await api('/api/me',{method:'PATCH',cookie:customer,body:{name:'Updated'}})).data.user.name,'Updated');
   assert.equal((await api('/.local-data/accounts.sqlite')).response.status,404);assert.equal((await api('/server/server.mjs')).response.status,404);
  });
+ await t.test('published plugin ZIPs download without exposing private release inputs',async()=>{
+  const response=await fetch(base+'/downloads/wordpress/quick-add.zip');
+  assert.equal(response.status,200);assert.equal(response.headers.get('content-type'),'application/zip');
+  assert.equal(Buffer.from(await response.arrayBuffer()).subarray(0,2).toString(),'PK');
+  assert.equal((await fetch(base+'/downloads/wordpress/quick-add.zip',{method:'HEAD'})).status,200);
+  assert.equal((await fetch(base+'/release-input/quick-seo/part-000.b64')).status,404);
+  assert.equal((await fetch(base+'/downloads/wordpress/not-a-plugin.zip')).status,404);
+ });
  await t.test('server prices and service scope approval; other users cannot see or pay the order',async()=>{
   const r=await api('/api/orders',{method:'POST',cookie:customer,body:{product:'personal-assistant',plan:'five',quantity:1,total:1,brief:'Five hours of administrative support.'}});assert.equal(r.response.status,201);order=r.data.order;assert.equal(order.totalCents,10000);
   assert.equal((await api(`/api/orders/${order.id}/checkout`,{method:'POST',cookie:customer,body:{}})).response.status,409);

@@ -48,6 +48,6 @@ The generated routes are lowercase, with no `index.html` in navigation:
 
 ## Accounts and checkout
 
-The local account API exposes this catalog as `pluginLicenses` metadata. It is deliberately separate from the CAD service order catalog and one-time download pricing. No USD subscriptions have been activated or inserted into the CAD checkout path. Release files, subscription lifecycle, license provisioning, entitlements, and real hosting/payment configuration remain work to connect before sales can open.
+The local account API exposes this catalog as `pluginLicenses` metadata. It is deliberately separate from the CAD service order catalog and one-time download pricing. No USD subscriptions have been activated or inserted into the CAD checkout path. Public WordPress ZIPs are available; subscription lifecycle, automatic license provisioning, entitlements, and real hosting/payment configuration remain work to connect before online sales can open.
 
-Current calls to action are plan enquiries. No button represents a working purchase or release download.
+Paid-plan calls to action are enquiries. Individual plugin pages also link to the published ZIPs; downloading a package does not activate a Pro license. The temporary $0 promotion has ended. See [the plugin review](plugin-review.md) for release versions, validation, and remaining limits.

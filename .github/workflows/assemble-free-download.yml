@@ -1,8 +1,10 @@
-name: Assemble approved free plugin download
+name: Assemble approved plugin download
 on:
   push:
     paths:
       - 'release-input/quick-seo/**'
+      - 'tools/end-plugin-promotion.py'
+      - 'tools/plugin-release-fixes.json'
       - '.github/workflows/assemble-free-download.yml'
   workflow_dispatch:
 permissions:
@@ -31,11 +33,13 @@ jobs:
           out=Path('downloads/wordpress/quick-seo.zip');out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(data)
           print('Verified original Quick SEO package:',len(data),'bytes')
           PY
+      - name: Restore standard license checks and refresh integrity metadata
+        run: python3 tools/end-plugin-promotion.py --plugin quick-seo
       - name: Commit validated binary to the public website
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add downloads/wordpress/quick-seo.zip
+          git add downloads/wordpress/quick-seo.zip assets/data/quickwoo-downloads.json
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'Assemble approved free Quick SEO download'
+          git commit -m 'Assemble approved Quick SEO download with standard licensing'
           git push origin HEAD:main

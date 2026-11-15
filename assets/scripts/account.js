@@ -43,7 +43,7 @@
       list.append(card);
     }
     const products=document.getElementById('library');products.replaceChildren();
-    if(!library.products.length)products.append(node('p','WordPress plugins are temporarily free. Download them from the plugin directory.','muted'));
+    if(!library.products.length)products.append(node('p','Browse plugin packages and Pro license plans in the plugin directory.','muted'));
     for(const product of library.products){const link=node('a',`Download ${product.product}`,'button');link.href=(window.RC_ACCOUNT.apiBaseUrl||'')+`/api/downloads/${encodeURIComponent(product.product)}`;products.append(link);}
     const history=document.getElementById('activity');history.replaceChildren();
     if(!library.activity.length)history.append(node('p','Activity history is not enabled for this account service.','muted'));

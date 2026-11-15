@@ -1,0 +1,236 @@
+{
+  "quick-license/quick-license.php": [
+    {
+      "before": "add_filter('qwoo_has_active_license', 'qlic_filter_qwoo_has_active_license', 10, 2);",
+      "after": "add_filter('qwoo_has_active_license', 'qlic_filter_qwoo_has_active_license', 10, 2);\n\nif (!function_exists('qwoo_has_active_license')) {\n    function qwoo_has_active_license($products = array())\n    {\n        if (empty($products)) {\n            return false;\n        }\n        return (bool) apply_filters('qwoo_has_active_license', false, (array) $products);\n    }\n}"
+    },
+    {
+      "before": "    $expanded[] = 'quick-bundle';",
+      "after": "    $expanded[] = 'quick-bundle';\n    $expanded[] = 'full-quickwoo-suite';\n    $expanded[] = 'plus-desktop';\n\n    // Current website bundle IDs; retain the legacy bundle aliases below.\n    $bundles = array(\n        'inventory-control' => array('quick-add', 'quick-edit', 'quick-variations', 'quick-images', 'quick-ship', 'quick-points'),\n        'revenue-customer-operations' => array('quick-forms', 'quick-schedule', 'quick-importer', 'quick-quotes', 'quick-accountant', 'quick-mail'),\n        'admin-control' => array('quick-site', 'quick-seo', 'quick-audit', 'quick-traffic', 'quick-code'),\n        'education' => array('quick-course-builder'),\n    );\n    foreach ($bundles as $bundle => $members) {\n        if (array_intersect($requested, $members)) {\n            $expanded[] = $bundle;\n        }\n    }"
+    }
+  ],
+  "quick-license/includes/class-ql-license-generator.php": [
+    {
+      "before": "strtoupper(preg_replace('/[^A-Z0-9]/', '', (string) $license_key))",
+      "after": "preg_replace('/[^A-Z0-9]/', '', strtoupper((string) $license_key))"
+    }
+  ],
+  "quick-mail/quick-mail.php": [
+    {
+      "before": "define( 'QMAIL_IS_PREMIUM', true );",
+      "after": "if ( ! defined( 'QMAIL_IS_PREMIUM' ) ) {\n    define( 'QMAIL_IS_PREMIUM', false );\n}"
+    },
+    {
+      "before": "Lmail License",
+      "after": "Quick Mail License"
+    }
+  ],
+  "quick-mail/includes/helpers.php": [
+    {
+      "before": "    return (bool) apply_filters( 'quick_mail_is_premium', defined( 'QMAIL_IS_PREMIUM' ) ? QMAIL_IS_PREMIUM : false );",
+      "after": "    $licensed = function_exists( 'qwoo_has_active_license' ) && qwoo_has_active_license( array( 'quick-mail' ) );\n    $override = defined( 'QMAIL_IS_PREMIUM' ) && QMAIL_IS_PREMIUM;\n    return (bool) apply_filters( 'quick_mail_is_premium', $licensed || $override );"
+    }
+  ],
+  "quick-variations/includes/class-qv-admin.php": [
+    {
+      "before": "$name_map[ $slug ] = $attr_name;",
+      "after": "$name_map[ $slug ] = sanitize_title( $attr_name );"
+    },
+    {
+      "before": "$name_map[ $slug ] = (string) $attribute->get_name();",
+      "after": "$name_map[ $slug ] = sanitize_title( (string) $attribute->get_name() );"
+    },
+    {
+      "before": "$name_map[ $slug ] = $def['name'];",
+      "after": "$name_map[ $slug ] = sanitize_title( $def['name'] );"
+    }
+  ],
+  "quick-images/quick-images.php": [
+    {
+      "before": "    return (bool) apply_filters( 'quick_images_is_premium', false );",
+      "after": "    $licensed = function_exists( 'qwoo_has_active_license' ) && qwoo_has_active_license( array( 'quick-images' ) );\n    return (bool) apply_filters( 'quick_images_is_premium', $licensed );"
+    },
+    {
+      "before": "Limages License",
+      "after": "Quick Images License"
+    }
+  ],
+  "quick-ship/includes/helpers.php": [
+    {
+      "before": "    return (bool) apply_filters( 'quick_ship_is_premium', false );",
+      "after": "    $licensed = function_exists( 'qwoo_has_active_license' ) && qwoo_has_active_license( array( 'quick-ship' ) );\n    return (bool) apply_filters( 'quick_ship_is_premium', $licensed );"
+    }
+  ],
+  "quick-points/includes/helpers.php": [
+    {
+      "before": "    return (bool) apply_filters( 'quick_points_is_premium', false );",
+      "after": "    $licensed = function_exists( 'qwoo_has_active_license' ) && qwoo_has_active_license( array( 'quick-points' ) );\n    return (bool) apply_filters( 'quick_points_is_premium', $licensed );"
+    }
+  ],
+  "quick-importer/includes/helpers.php": [
+    {
+      "before": "    return (bool) apply_filters( 'quick_importer_is_premium', false );",
+      "after": "    $licensed = function_exists( 'qwoo_has_active_license' ) && qwoo_has_active_license( array( 'quick-importer' ) );\n    return (bool) apply_filters( 'quick_importer_is_premium', $licensed );"
+    }
+  ],
+  "quick-ship/includes/class-qs-wizard.php": [
+    {
+      "before": "$zone = new WC_Shipping_Zone( $zone_id );",
+      "after": "$zone = $zone_id ? new WC_Shipping_Zone( $zone_id ) : new WC_Shipping_Zone();"
+    },
+    {
+      "before": "$zone->set_zone_locations( $locations );",
+      "after": "$zone->set_zone_locations( array_map( static function( $location ) { return (object) $location; }, $locations ) );"
+    }
+  ],
+  "quick-importer/quick-importer.php": [
+    {
+      "before": "Limporter License",
+      "after": "Quick Importer License"
+    }
+  ],
+  "quick-audit/quick-audit.php": [
+    {
+      "before": "Laudit License",
+      "after": "Quick Audit License"
+    }
+  ],
+  "quick-forms/quick-forms.php": [
+    {
+      "before": "Lforms License",
+      "after": "Quick Forms License"
+    }
+  ],
+  "quick-site/quick-site.php": [
+    {
+      "before": "Lsite License",
+      "after": "Quick Site License"
+    },
+    {
+      "before": "register_activation_hook(QUICK_SITE_FILE, ['QSIT_Activator', 'activate']);",
+      "after": "add_action('update_option_active_plugins', 'qsit_refresh_dropin_config', 10, 0);\nadd_action('update_site_option_active_sitewide_plugins', 'qsit_refresh_dropin_config', 10, 0);\n\nregister_activation_hook(QUICK_SITE_FILE, ['QSIT_Activator', 'activate']);"
+    }
+  ],
+  "quick-quotes/quick-quotes.php": [
+    {
+      "before": "Lquotes License",
+      "after": "Quick Quotes License"
+    }
+  ],
+  "quick-accountant/quick-accountant.php": [
+    {
+      "before": "Laccountant License",
+      "after": "Quick Accountant License"
+    }
+  ],
+  "quick-edit/quick-edit.php": [
+    {
+      "before": "Ledit License",
+      "after": "Quick Edit License"
+    }
+  ],
+  "quick-traffic/quick-traffic.php": [
+    {
+      "before": "Ltraffic License",
+      "after": "Quick Traffic License"
+    }
+  ],
+  "quick-points/quick-points.php": [
+    {
+      "before": "Lpoints License",
+      "after": "Quick Points License"
+    }
+  ],
+  "quick-variations/quick-variations.php": [
+    {
+      "before": "Lvariations License",
+      "after": "Quick Variations License"
+    }
+  ],
+  "quick-add/quick-add.php": [
+    {
+      "before": "Ladd License",
+      "after": "Quick Add License"
+    }
+  ],
+  "quick-code/quick-code.php": [
+    {
+      "before": "Lcode License",
+      "after": "Quick Code License"
+    }
+  ],
+  "quick-schedule/quick-schedule.php": [
+    {
+      "before": "Lschedule License",
+      "after": "Quick Schedule License"
+    }
+  ],
+  "quick-ship/quick-ship.php": [
+    {
+      "before": "Lship License",
+      "after": "Quick Ship License"
+    }
+  ],
+  "quick-seo/quick-seo.php": [
+    {
+      "before": "Lseo License",
+      "after": "Quick SEO License"
+    }
+  ],
+  "quick-quotes/includes/class-qq-shortcode.php": [
+    {
+      "before": "\t\twp_enqueue_style( 'qq-frontend-css' );",
+      "after": "\t\t$this->register_assets();\n\t\twp_enqueue_style( 'qq-frontend-css' );"
+    }
+  ],
+  "quick-schedule/includes/class-qs-shortcode.php": [
+    {
+      "before": "\t\twp_enqueue_script( 'qws-frontend-js' );",
+      "after": "\t\t$this->register_assets();\n\t\twp_enqueue_script( 'qws-frontend-js' );"
+    }
+  ],
+  "quick-schedule/includes/class-qs-ajax.php": [
+    {
+      "before": "\t\t$appointment_mysql = gmdate( 'Y-m-d H:i:s', strtotime( $appointment_at ) );\n\t\tif ( false === strtotime( $appointment_mysql ) ) {\n\t\t\twp_send_json_error( array( 'message' => __( 'Invalid appointment time.', 'quick-schedule' ) ), 400 );\n\t\t}",
+      "after": "\t\t$appointment = false;\n\t\tforeach ( array( '!Y-m-d\\TH:i', '!Y-m-d\\TH:i:s', '!Y-m-d H:i:s' ) as $format ) {\n\t\t\t$candidate = DateTimeImmutable::createFromFormat( $format, $appointment_at, wp_timezone() );\n\t\t\tif ( $candidate && $candidate->format( substr( $format, 1 ) ) === $appointment_at ) {\n\t\t\t\t$appointment = $candidate;\n\t\t\t\tbreak;\n\t\t\t}\n\t\t}\n\t\tif ( ! $appointment || $appointment->getTimestamp() <= time() ) {\n\t\t\twp_send_json_error( array( 'message' => __( 'Choose a valid future appointment time.', 'quick-schedule' ) ), 400 );\n\t\t}\n\t\t$appointment_mysql = $appointment->format( 'Y-m-d H:i:s' );"
+    }
+  ],
+  "quick-traffic/includes/class-qt-tracker.php": [
+    {
+      "before": "add_action('template_redirect', [__CLASS__, 'track'], 1);",
+      "after": "// Count visits before Quick Site can serve a cached response at priority 0.\n        add_action('template_redirect', [__CLASS__, 'track'], -1);"
+    }
+  ],
+  "quick-site/includes/class-qs-cache.php": [
+    {
+      "before": "        if (is_search() && empty($settings['cache_search'])) {",
+      "after": "        // Unknown query values may change content or prefill personal details.\n        // Cache only explicitly allowed parameters and ignored tracking prefixes.\n        $query = [];\n        parse_str((string) wp_parse_url((string) ($_SERVER['REQUEST_URI'] ?? '/'), PHP_URL_QUERY), $query);\n        foreach ($query as $key => $value) {\n            $allowed = in_array((string) $key, qsit_normalize_lines((string) $settings['query_whitelist']), true);\n            foreach (qsit_normalize_lines((string) $settings['ignore_query_prefixes']) as $prefix) {\n                if ($prefix !== '' && strpos((string) $key, $prefix) === 0) {\n                    $allowed = true;\n                }\n            }\n            if (!$allowed) {\n                return false;\n            }\n        }\n\n        if (is_search() && empty($settings['cache_search'])) {"
+    }
+  ],
+  "quick-site/includes/helpers.php": [
+    {
+      "before": "        'ttl'                   => (int) $settings['cache_ttl'],",
+      "after": "        // PHP traffic tracking needs the WordPress bootstrap, including on hits.\n        'require_bootstrap'     => in_array('quick-traffic/quick-traffic.php', (array) get_option('active_plugins', []), true)\n            || isset(((array) get_site_option('active_sitewide_plugins', []))['quick-traffic/quick-traffic.php']),\n        'ttl'                   => (int) $settings['cache_ttl'],"
+    },
+    {
+      "before": "function qsit_write_dropin_config(): bool",
+      "after": "function qsit_refresh_dropin_config(): void\n{\n    $settings = qsit_get_settings();\n    $active = in_array('quick-site/quick-site.php', (array) get_option('active_plugins', []), true)\n        || isset(((array) get_site_option('active_sitewide_plugins', []))['quick-site/quick-site.php']);\n    if (!$active) {\n        $settings['page_cache_enabled'] = 0;\n    }\n    qsit_write_dropin_config_from_settings($settings);\n}\n\nfunction qsit_write_dropin_config(): bool"
+    }
+  ],
+  "quick-site/dropins/advanced-cache.php": [
+    {
+      "before": "if (!is_array($qsConfig) || empty($qsConfig['enabled'])) {",
+      "after": "if (!is_array($qsConfig) || empty($qsConfig['enabled']) || !empty($qsConfig['require_bootstrap'])) {"
+    },
+    {
+      "before": "$qsKept = [];",
+      "after": "// Do not merge page IDs, searches, or personalized query URLs into another page.\nforeach ($qsParams as $qsKey => $qsValue) {\n    $qsAllowed = in_array((string) $qsKey, $qsWhitelist, true);\n    foreach ($qsIgnorePrefixes as $qsPrefix) {\n        if ($qsPrefix !== '' && strpos((string) $qsKey, $qsPrefix) === 0) {\n            $qsAllowed = true;\n        }\n    }\n    if (!$qsAllowed) {\n        return;\n    }\n}\n$qsKept = [];"
+    }
+  ],
+  "quick-site/includes/class-qs-activator.php": [
+    {
+      "before": "    public static function deactivate(): void\n    {\n        qsit_write_dropin_config();\n    }",
+      "after": "    public static function deactivate(): void\n    {\n        $settings = qsit_get_settings();\n        $settings['page_cache_enabled'] = 0;\n        qsit_write_dropin_config_from_settings($settings);\n    }"
+    }
+  ]
+}
