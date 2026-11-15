@@ -1086,7 +1086,11 @@ footer {
         ["Typing School", "typing-school", "Learning & practice",
           "Targeted typing practice, rhythm analysis, games, and local progress tracking.", "typing", "purple"],
         ["FobFather", "fobfather", "Vancouver fob copying",
-          "Apartment RFID fob copies in downtown Vancouver, by appointment.", "fob", "orange"]
+          "Apartment RFID fob copies in downtown Vancouver, by appointment.", "fob", "orange"],
+        ["Crystal Eye", "crystaleye", "Website",
+          "Explore Crystal Eye online.", "browser", "purple", "https://robbiecalvin.github.io/crystaleye/"],
+        ["Trusted Cash Loans", "trusted-cash-loans", "Website",
+          "Visit Trusted Cash Loans online.", "browser", "orange", "https://robbiecalvin.github.io/TrustedCashLoans/"]
       ]
     }
     ,{
@@ -1109,10 +1113,10 @@ footer {
       </summary>
       <div class="projects">
         ${group.projects.map(project => {
-          const [name, folder, label, description, icon, palette] = project;
+          const [name, folder, label, description, icon, palette, externalUrl] = project;
           return `
             <a class="project-card"
-               href="${folder === 'fobfather' ? 'https://fobfather.ca/' : folder === 'instagram' ? 'https://www.instagram.com/pastelpowerranger/' : './' + folder + '/'}"
+               href="${externalUrl || (folder === 'fobfather' ? 'https://fobfather.ca/' : folder === 'instagram' ? 'https://www.instagram.com/pastelpowerranger/' : './' + folder + '/')}"
                data-palette="${palette}">
               <div class="project-visual">
                 <svg class="project-icon" viewBox="0 0 100 100"
