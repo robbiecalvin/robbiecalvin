@@ -26,7 +26,7 @@ On November 25, 2026, I ran the task-manager workflow on Docker Desktop using de
 
 In a separate run, I started the reference app with SQLite on a Docker volume, added three synthetic tasks, and restarted the container. The task IDs, titles, descriptions, and completion states matched before and after the restart.
 
-![Task Manager showing three synthetic tasks after the Docker restart](assets/productivity-suite-after-restart.jpg)
+![Task Manager showing three synthetic tasks after the Docker restart](../assets/images/productivity-suite-after-restart.jpg)
 
 ## Engineering decision
 
