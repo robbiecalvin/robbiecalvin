@@ -24,7 +24,7 @@ The public Productivity Suite summary and architecture are in [productivity-suit
 - **Published to source.** `index.html` commit `f4fe8a9fb8df` adds a static six-project section. Static checks found six articles and 17 distinct labelled links. All 17 destinations returned HTTP 200.
 - **Live deployment verified.** Cloudflare lists `robbiecalvin-site` on the apex and `www` routes. The live apex homepage returned HTML identical to the published candidate. Desktop Chrome at 1,363 CSS pixels rendered six cards in three columns with 17 links, and Enter activated the portfolio anchor.
 - **Responsive and keyboard checks passed on the release candidate.** Chromium rendered one, two, and three columns as expected at 320, 390, 768, 1,024, and 1,363 CSS pixels without horizontal overflow. The jump link now moves keyboard focus into the portfolio, and Tab reaches its links. A scoped axe-core WCAG 2.0/2.1 A/AA scan found zero violations at those widths. Fix: `270fbac52200`.
-- **Latest rollout and recruiter audit pending.** `6b73842d4b9d` adds the verified Myra and Crystal Eye demos and SpeechFlow screenshot. At the last check the public homepage still served the earlier six-card revision. Recheck the latest live HTML, public case-study pages, and remaining project screenshots before closing Phase 3.
+- **Latest rollout verified.** The live homepage Git blob hash matches the tested `270fbac52200` source, including the verified Myra and Crystal Eye demos and SpeechFlow screenshot from `6b73842d4b9d`. The remaining recruiter audit covers public GitHub case-study availability and additional project screenshots.
 
 ## Other phases
 
