@@ -17,7 +17,7 @@ Acceptance requires a published engineering explanation, reproducible inputs and
 
 SEO Auditor's report fix is `32924d352ccc`. The previously failing HTML report fixture now passes with a crawled 404. The other five projects retain their linked historical run results.
 
-The public Productivity Suite summary and architecture are in [productivity-suite-case-study.md](productivity-suite-case-study.md). The source repository and the workflow remain private.
+The public Productivity Suite summary and architecture are in [productivity-suite-case-study.md](productivity-suite-case-study.md). The source repository and the workflow remain private. The case study also records 28 backend and four Chromium checks from a local Docker run with simulated Ollama responses, plus a screenshot from a separate SQLite restart check that preserved three synthetic tasks. The static browser demo uses browser storage.
 
 ## Portfolio homepage
 

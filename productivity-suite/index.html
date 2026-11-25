@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Manager Demo · Robbie Calvin</title>
+  <link rel="stylesheet" href="./demo.css">
+  <script src="./demo.js" defer></script>
+</head>
+<body>
+  <main>
+    <nav aria-label="Portfolio"><a href="/">Robbie Calvin</a> <a href="https://github.com/robbiecalvin/robbiecalvin/blob/main/docs/productivity-suite-case-study.md">Case study</a></nav>
+    <h1>Task Manager</h1>
+    <p>Try the Productivity Suite task manager workflow. Changes are saved in this browser.</p>
+    <form id="task-form">
+      <label for="title">Task title</label>
+      <input id="title" name="title" required maxlength="200">
+      <label for="description">Description (optional)</label>
+      <textarea id="description" name="description" maxlength="5000" rows="2"></textarea>
+      <button type="submit">Add task</button>
+    </form>
+    <section aria-labelledby="tasks-heading">
+      <h2 id="tasks-heading">Tasks</h2>
+      <p id="status" role="status"></p>
+      <ul id="tasks"></ul>
+    </section>
+  </main>
+</body>
+</html>
