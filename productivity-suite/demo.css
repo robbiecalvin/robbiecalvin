@@ -1,0 +1,24 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #16242b;
+  background: #eef5f3;
+}
+
+body { margin: 0; }
+main { max-width: 42rem; margin: auto; padding: 2rem 1rem 4rem; }
+nav { display: flex; justify-content: space-between; gap: 1rem; }
+a { color: #14544a; }
+h1 { font-size: clamp(2rem, 8vw, 3.5rem); margin-bottom: .25rem; }
+form { display: grid; gap: .65rem; }
+form, li { padding: 1rem; background: white; border: 1px solid #b4cbc6; border-radius: .65rem; }
+input, textarea, button { font: inherit; }
+input, textarea { min-width: 0; padding: .55rem; border: 1px solid #657d77; border-radius: .3rem; }
+button { justify-self: start; cursor: pointer; padding: .5rem .85rem; border: 1px solid #14544a; border-radius: .3rem; background: #14544a; color: white; }
+ul { display: grid; gap: .65rem; padding: 0; list-style: none; }
+li { display: flex; flex-wrap: wrap; align-items: start; gap: .75rem; }
+li > div { flex: 1 1 15rem; min-width: 0; overflow-wrap: anywhere; }
+li p { margin: .35rem 0 0 1.5rem; white-space: pre-wrap; }
+li input { margin: 0 .45rem 0 0; }
+li button { color: #14544a; background: white; }
+:checked + span { text-decoration: line-through; }
+:focus-visible { outline: 3px solid #1c7b69; outline-offset: 3px; }
