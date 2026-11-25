@@ -42,3 +42,17 @@ These independent projects are at varying stages of development; individual repo
 ## Quality practices
 
 Selected repositories include architecture guides, security reporting policies, agent instructions, pull request checklists and automated verification workflows. Workflow configuration is not evidence of passing tests; consult each repository's Actions history for actual results.
+
+
+## Technical case studies
+
+| Project | Engineering evidence |
+|---|---|
+| [Codex Master](https://github.com/robbiecalvin/codexmaster/blob/HEAD/CASE_STUDY.md) | Agent governance and acceptance criteria |
+| [Productivity Suite](https://github.com/robbiecalvin/productivitysuite/blob/HEAD/CASE_STUDY.md) | Generation, independent tests and bounded repair |
+| [SpeechFlow](https://github.com/robbiecalvin/speechflow/blob/HEAD/CASE_STUDY.md) | Voice intent and graph state |
+| [Myra](https://github.com/robbiecalvin/myra/blob/HEAD/CASE_STUDY.md) | Recommendation and retailer ranking |
+| [Crystal Eye](https://github.com/robbiecalvin/crystaleye/blob/HEAD/CASE_STUDY.md) | Reference calculations and content pipelines |
+| [SEO Auditor](https://github.com/robbiecalvin/seo-auditor/blob/HEAD/CASE_STUDY.md) | Crawling and structured reports |
+
+Case studies distinguish implemented features, historical evidence, proposed checks and known limitations.
