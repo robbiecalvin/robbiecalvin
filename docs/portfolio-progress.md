@@ -22,8 +22,8 @@ The public Productivity Suite summary and architecture are in [productivity-suit
 ## Portfolio homepage
 
 - **Published to source.** `index.html` commit `f4fe8a9fb8df` adds a static six-project section. Static checks found six articles and 17 distinct labelled links. All 17 destinations returned HTTP 200.
-- **Deployment verification pending.** GitHub raw serves the updated source. The live homepage returned older markup during the checks. The documented deployment uses a Cloudflare Worker that reads from repository `main`. The connected Cloudflare account returned a missing-scope error for the zone and worker route inspection. Restore read access to compare the active route and upstream response before changing deployment configuration.
-- **Recruiter audit pending.** Verify live navigation and mobile/tablet layout after rollout. Myra has an existing desktop image. Capture real sessions for other runnable applications and document the runtime prerequisites. Verify scope and roadmap statements per project.
+- **Live deployment verified.** Cloudflare lists `robbiecalvin-site` on the apex and `www` routes. The live apex homepage returned HTML identical to the published candidate. Desktop Chrome at 1,363 CSS pixels rendered six cards in three columns with 17 links, and Enter activated the portfolio anchor.
+- **Recruiter audit pending.** Verify the mobile and tablet layout and complete the remaining accessibility checks. Myra has an existing desktop image. Capture real sessions for other runnable applications and document the runtime prerequisites. Verify scope and roadmap statements per project.
 
 ## Other phases
 
