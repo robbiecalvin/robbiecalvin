@@ -856,7 +856,7 @@ footer {
     </noscript>
   </section>
 
-  <section id="technical-portfolio" aria-labelledby="technical-portfolio-title">
+  <section id="technical-portfolio" tabindex="-1" aria-labelledby="technical-portfolio-title">
     <div class="section-top">
       <h2 id="technical-portfolio-title">Technical portfolio</h2>
       <p class="section-note">Six engineering projects with reproducible examples and test results tied to specific revisions.</p>
@@ -1264,6 +1264,7 @@ footer {
         event.shiftKey || event.altKey || event.button !== 0) return;
 
     const hash = link.getAttribute("href");
+    if (hash === "#technical-portfolio") return;
     if (!navigate(hash)) return;
 
     event.preventDefault();
