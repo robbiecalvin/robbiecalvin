@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+  <defs>
+    <radialGradient id="halo">
+      <stop stop-color="#b89968" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#493523" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="planet" cx=".3" cy=".22" r=".78">
+      <stop stop-color="#fff1ce"/>
+      <stop offset=".36" stop-color="#b89968"/>
+      <stop offset=".74" stop-color="#967346"/>
+      <stop offset="1" stop-color="#493523"/>
+    </radialGradient>
+    <linearGradient id="orbit" x2="90%" y2="85%">
+      <stop stop-color="#493523"/>
+      <stop offset=".28" stop-color="#b89968"/>
+      <stop offset=".52" stop-color="#fff1ce"/>
+      <stop offset="1" stop-color="#967346"/>
+    </linearGradient>
+  </defs>
+  <circle cx="320" cy="320" r="300" fill="url(#halo)"/>
+  <g fill="none" stroke="url(#orbit)" stroke-width="3">
+    <ellipse cx="320" cy="320" rx="128" ry="117"/>
+    <ellipse cx="320" cy="320" rx="158" ry="119" transform="rotate(49 320 320)"/>
+    <ellipse cx="320" cy="320" rx="186" ry="94" transform="rotate(97 320 320)"/>
+    <ellipse cx="320" cy="320" rx="216" ry="51" transform="rotate(146 320 320)"/>
+    <ellipse cx="320" cy="320" rx="241" ry="20" transform="rotate(195 320 320)"/>
+  </g>
+  <g fill="url(#planet)">
+    <circle cx="320" cy="320" r="49"/>
+    <circle cx="438" cy="363" r="11"/>
+    <circle cx="216" cy="254" r="10"/>
+    <circle cx="296" cy="148" r="9"/>
+    <circle cx="139" cy="430" r="8"/>
+    <circle cx="529" cy="387" r="7"/>
+  </g>
+  <g fill="#fff1ce" opacity=".66">
+    <circle cx="150" cy="199" r="2"/><circle cx="461" cy="128" r="1"/>
+    <circle cx="178" cy="331" r="2"/><circle cx="97" cy="370" r="1"/>
+    <circle cx="202" cy="474" r="2"/><circle cx="383" cy="201" r="1"/>
+    <circle cx="475" cy="487" r="2"/><circle cx="552" cy="261" r="1"/>
+    <circle cx="428" cy="526" r="2"/><circle cx="122" cy="258" r="1"/>
+    <circle cx="314" cy="555" r="1"/><circle cx="370" cy="96" r="2"/>
+  </g>
+</svg>

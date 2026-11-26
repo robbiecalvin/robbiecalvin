@@ -1,0 +1,14 @@
+[
+  {
+    "product_name": "Demo Canvas Tote",
+    "regular_price": "18.00",
+    "sku": "DEMO-TOTE-001",
+    "stock_quantity": 12
+  },
+  {
+    "product_name": "Demo Notebook",
+    "regular_price": "9.50",
+    "sku": "DEMO-NOTE-001",
+    "stock_quantity": 20
+  }
+]

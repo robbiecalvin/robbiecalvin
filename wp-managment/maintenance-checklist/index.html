@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="theme-color" content="#08090d">
+<title>WordPress Maintenance Checklist | Robbie Calvin</title>
+<meta name="description" content="Use this WordPress maintenance checklist to review backups, test updates on staging, and check important pages, forms, and checkout before and after release.">
+<link rel="canonical" href="https://robbiecalvin.com/wp-managment/maintenance-checklist/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WordPress Maintenance Checklist">
+<meta property="og:description" content="A practical checklist for backups, staging, updates, and post-update checks.">
+<meta property="og:url" content="https://robbiecalvin.com/wp-managment/maintenance-checklist/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/styles/overview.css">
+<link rel="stylesheet" href="/assets/styles/digital-matter-tokens.css">
+<link rel="stylesheet" href="/assets/styles/digital-matter.css">
+<link rel="stylesheet" href="/assets/styles/how-to-guide.css">
+</head>
+<body data-design-page="wordpress-management">
+<a class="skip-link" href="#guide">Skip to content</a>
+<header>
+<nav class="wrap" aria-label="Main navigation">
+<a class="logo" href="/">robbiecalvin<span>.</span></a>
+<div class="nav-links"><a href="/services/">Services</a><a href="/wp-managment/">WordPress Maintenance</a><a href="/contact/">Contact</a></div>
+</nav>
+</header>
+<main class="wrap guide" id="guide">
+<article aria-labelledby="title">
+<p><a href="/wp-managment/">WordPress Maintenance</a> / Checklist</p>
+<h1 id="title">WordPress maintenance checklist</h1>
+<p class="intro">Before updating WordPress, confirm you can restore the site, test the planned changes on staging, and write down the workflows you’ll check afterward. Use this checklist for a maintenance visit or handoff.</p>
+
+<section aria-labelledby="before">
+<h2 id="before">Before the update</h2>
+<ul>
+<li><strong>Write down the starting versions.</strong> Record WordPress, PHP, the active theme, and plugins involved in this update. Check release notes for compatibility requirements and database changes. Plan the update order around those dependencies.</li>
+<li><strong>Confirm the backup and restore procedure.</strong> Make sure the backup includes files and the database. Note when it was taken, where it’s stored, and who can restore it. On a critical site, test the restore with an isolated copy.</li>
+<li><strong>Identify the pages that matter.</strong> Open the homepage, a representative interior page, and any form or store workflow you’re responsible for. Record anything already broken so it can be distinguished from a new issue.</li>
+</ul>
+<p>Reference the official WordPress guides for <a href="https://wordpress.org/documentation/article/updating-wordpress/">updates and compatibility</a> and <a href="https://developer.wordpress.org/advanced-administration/security/backup/">file and database backups</a>.</p>
+</section>
+
+<section aria-labelledby="staging">
+<h2 id="staging">Test the updates on staging</h2>
+<p>Use a staging copy that reflects the live theme, plugins, PHP version, and relevant settings. Keep test submissions, payment activity, and notification emails away from real visitors and customers.</p>
+<ul>
+<li>Apply the planned updates and check for warnings or required database updates.</li>
+<li>Check the same pages and workflows on a phone-sized screen and a desktop screen.</li>
+<li>For a WooCommerce store, use test mode to check a product, cart totals, and checkout. Record anything affected by caching, shipping, or taxes that the site relies on.</li>
+<li>Write down each change and its result. Resolve unexpected failures before scheduling the live update.</li>
+</ul>
+<p>WooCommerce documents staging and backup considerations in its <a href="https://woocommerce.com/document/how-to-update-woocommerce/">update guide</a>.</p>
+</section>
+
+<section aria-labelledby="live">
+<h2 id="live">Repeat the checks after the live update</h2>
+<ol>
+<li>Take or confirm a fresh backup before applying updates during the agreed maintenance window.</li>
+<li>Apply the verified changes and clear the relevant caches. Open the live site in a fresh browser session and repeat the agreed checks.</li>
+<li>If a critical workflow breaks, pause further changes and use the agreed rollback plan. For an active WooCommerce store, account for orders or other changes recorded since the backup before restoring a database.</li>
+<li>Record the final versions, what passed, any deferred items, and who owns the next step.</li>
+</ol>
+</section>
+
+<section aria-labelledby="notes">
+<h2 id="notes">What to record after a maintenance visit</h2>
+<dl>
+<dt><strong>Changes</strong></dt><dd>Component, previous version, updated version, and reason.</dd>
+<dt><strong>Checks</strong></dt><dd>Page or workflow, result, and any evidence link.</dd>
+<dt><strong>Follow-up</strong></dt><dd>Open issue, priority, and the next person responsible.</dd>
+</dl>
+<p>Need help applying this process to your site? <a href="/wp-managment/#enquire">Ask about WordPress maintenance in Vancouver</a>.</p>
+</section>
+</article>
+</main>
+<footer class="wrap">
+<a href="/">Robbie Calvin</a>
+<span><a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/legal/">Legal &amp; copyright</a></span>
+</footer>
+</body>
+</html>

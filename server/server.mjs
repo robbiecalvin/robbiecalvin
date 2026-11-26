@@ -182,11 +182,22 @@ export async function createApp(options={}) {
       // Serve only public site routes and static assets; never backend files or private data.
       if(route==='/assets/scripts/account-config.js'){res.writeHead(200,{'Content-Type':'text/javascript; charset=utf-8','Cache-Control':'no-store'});return res.end('window.RC_ACCOUNT = {enabled: true, apiBaseUrl: ""};');}
       const decoded=decodeURIComponent(route);if(decoded.split('/').some(v=>v.startsWith('.')||v==='server'||v==='docs'))fail(404,'Not found.');
+      if(decoded==='/home'||decoded==='/home/'){res.writeHead(308,{Location:'/'+url.search});return res.end();}
       const publicPluginZip=/^\/downloads\/wordpress\/[a-z0-9-]+\.zip$/.test(decoded);
       const publicSiteIcon=/^\/(?:favicon[^/]*\.(?:svg|ico|png)|apple-touch-icon\.png)$/.test(decoded);
-      if(decoded!=='/'&&!decoded.startsWith('/assets/')&&!publicSiteIcon&&!publicPluginZip&&!/^\/(?:[a-z0-9-]+\/){1,3}(?:index\.html)?$/.test(decoded))fail(404,'Not found.');
+      const publicDiscoveryFile=decoded==='/robots.txt'||decoded==='/sitemap.xml';
+      if(decoded!=='/'&&!decoded.startsWith('/assets/')&&!publicSiteIcon&&!publicPluginZip&&!publicDiscoveryFile&&!/^\/(?:[a-z0-9-]+\/){1,3}(?:index\.html)?$/.test(decoded))fail(404,'Not found.');
       let file=path.resolve(ROOT,'.'+decoded);if(!file.startsWith(ROOT+path.sep)&&file!==ROOT)fail(404,'Not found.');let info=await stat(file);if(info.isDirectory()){file=path.join(file,'index.html');info=await stat(file);}const resolved=await realpath(file);if(!resolved.startsWith(ROOT+path.sep))fail(404,'Not found.');
-      const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.ico':'image/x-icon','.webp':'image/webp','.png':'image/png','.svg':'image/svg+xml','.json':'application/json; charset=utf-8','.zip':'application/zip'};res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'application/octet-stream','Content-Length':info.size,'Cache-Control':'no-cache'});if(req.method==='HEAD')return res.end();createReadStream(file).pipe(res);
+      const mime={
+        '.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8',
+        '.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8',
+        '.ico':'image/x-icon','.webp':'image/webp','.png':'image/png','.svg':'image/svg+xml',
+        '.webm':'video/webm','.json':'application/json; charset=utf-8',
+        '.txt':'text/plain; charset=utf-8','.xml':'application/xml; charset=utf-8','.zip':'application/zip'
+      };
+      res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'application/octet-stream','Content-Length':info.size,'Cache-Control':'no-cache'});
+      if(req.method==='HEAD')return res.end();
+      createReadStream(file).pipe(res);
     }catch(error){if(res.headersSent){res.destroy();return;}const status=error.status||(error.code==='ENOENT'?404:500);json(res,status,{error:status===500?'The service is temporarily unavailable.':error.message});}
   };
   const server=http.createServer(handler);

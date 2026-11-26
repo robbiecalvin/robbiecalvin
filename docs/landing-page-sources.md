@@ -20,3 +20,12 @@ KIMIX is the project the user referred to as “Chemix.” QuickWoo Desktop uses
 Warder remains unidentified: no matching repository was found at the tested names, and its URL has not been supplied. No capabilities or new page were invented for it.
 
 Overview palettes use the homepage card tokens: red `#ff6268` / `#480019` / `#71001e`; purple `#e88aff` / `#300d35` / `#4b1553`; orange `#ffb000` / `#501b00` / `#742900`.
+
+## Portfolio editorial revision
+
+The homepage uses SpeechFlow's current workspace captured locally with its built-in four-node project plan. The screenshot and optional silent recording show sample data. The recording captures the real workspace entering Present mode and advancing through the first thoughts. SpeechFlow's source README documents typed and voice capture, directed connections, presentation, browser storage, and JSON export.
+
+- QuickWoo Desktop's local README documents the Electron shell, Site and Store modes, and server-side execution through Quick Connector.
+- [Intelligent Productivity Suite](productivity-suite-case-study.md) documents the local generation and acceptance pipeline. The public task manager saves changes in the browser. Docker acceptance evidence used simulated Ollama responses.
+- [Launchboard](https://github.com/robbiecalvin/launchboard) documents public job filtering and applications, an admin workflow for companies and jobs, and Rails request tests.
+- [SEO Auditor](https://github.com/robbiecalvin/seo-auditor) documents internal crawling, metadata and image checks, broken links, and CSV and HTML exports.

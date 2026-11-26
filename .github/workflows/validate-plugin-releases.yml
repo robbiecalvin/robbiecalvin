@@ -15,6 +15,8 @@ jobs:
           node-version: '24'
       - name: Validate prices, pages, ZIP integrity and release fixes
         run: python3 tools/test-plugin-release.py
+      - name: Validate sitemap pages, canonicals and internal links
+        run: python3 tools/test-site-discovery.py
       - name: Check generated releases and pages are current
         run: |
           python3 tools/end-plugin-promotion.py

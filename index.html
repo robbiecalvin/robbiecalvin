@@ -3,685 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#111110">
-<style>
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
-
-:root {
-  color-scheme: dark;
-  --bg: #111110;
-  --text: #f0efe8;
-  --muted: #aaa99f;
-  --line: #ffffff24;
-  --accent: #ff7900;
-}
-
-* { box-sizing: border-box; }
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 120px;
-}
-
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: "DM Sans", sans-serif;
-  line-height: 1.6;
-}
-
-a { color: inherit; text-decoration: none; }
-button { font: inherit; }
-button, a, summary { -webkit-tap-highlight-color: transparent; }
-button, summary { cursor: pointer; }
-
-:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 5px;
-}
-
-::selection { background: var(--accent); color: #111; }
-
-h1, h2, h3, p { margin-top: 0; }
-h1, h2, h3 { font-family: "Space Grotesk", sans-serif; }
-
-.wrap {
-  width: min(1280px, 90%);
-  margin-inline: auto;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 30;
-  background: #111110ed;
-  border-bottom: 1px solid var(--line);
-  backdrop-filter: blur(18px);
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px 30px;
-  min-height: 82px;
-  padding-block: 15px;
-}
-
-.logo {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: -1.1px;
-  white-space: nowrap;
-}
-
-.logo span { color: var(--accent); }
-
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px 27px;
-  font-size: 13px;
-}
-
-nav a { color: var(--muted); }
-nav a:hover { color: var(--accent); }
-
-/* HERO */
-.hero {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  align-items: center;
-  gap: 30px;
-  min-height: 730px;
-  padding-block: 75px;
-}
-
-.eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-}
-
-.dot {
-  width: 7px;
-  height: 7px;
-  flex-shrink: 0;
-  background: var(--accent);
-  border-radius: 50%;
-  box-shadow: 0 0 13px var(--accent);
-}
-
-h1 {
-  margin-block: 27px;
-  font-size: clamp(75px, 9vw, 125px);
-  font-weight: 500;
-  line-height: .94;
-  letter-spacing: -7px;
-}
-
-h1 em {
-  color: var(--accent);
-  font-style: normal;
-  text-shadow: 0 0 45px #ff6a0024;
-}
-
-.intro {
-  max-width: 450px;
-  color: var(--muted);
-  font-size: 18px;
-}
-
-.actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 30px;
-}
-
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 22px;
-  padding: 13px 21px;
-  border: 1px solid var(--line);
-  border-radius: 100px;
-  font-size: 14px;
-  transition: transform .2s, box-shadow .2s;
-}
-
-.button:hover { transform: translateY(-3px); }
-
-.button.primary {
-  color: #111;
-  background: var(--accent);
-  border-color: var(--accent);
-  box-shadow: 0 0 25px #ff6a0020;
-}
-
-.button.primary:hover { box-shadow: 0 0 35px #ff6a0040; }
-
-.art {
-  position: relative;
-  min-width: 0;
-  height: 510px;
-  overflow: hidden;
-  background: transparent;
-  border: none;
-}
-
-#artwork { display: block; width: 100%; height: 100%; }
-
-.art-label {
-  position: absolute;
-  left: 15px;
-  bottom: 20px;
-  color: var(--muted);
-  font-size: 9px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  pointer-events: none;
-}
-
-.motion-button {
-  position: absolute;
-  right: 15px;
-  bottom: 14px;
-  padding: 8px 12px;
-  border: 1px solid var(--line);
-  border-radius: 30px;
-  background: #111110cc;
-  color: var(--text);
-  font-size: 10px;
-  letter-spacing: 1px;
-}
-
-.disciplines {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 15px 25px;
-  padding-block: 24px;
-  border-block: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 11px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.disciplines span::before {
-  content: "✳";
-  color: var(--accent);
-  margin-right: 10px;
-}
-
-/* SECTION HEADINGS */
-section { padding-block: 90px; }
-
-.section-top {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 30px;
-  margin-bottom: 38px;
-}
-
-.kicker {
-  margin-bottom: 16px;
-  color: var(--accent);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-}
-
-h2 {
-  margin-bottom: 0;
-  font-size: clamp(36px, 5vw, 61px);
-  font-weight: 500;
-  line-height: 1.08;
-  letter-spacing: -2.5px;
-}
-
-.section-note {
-  max-width: 285px;
-  margin-bottom: 0;
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.category-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-}
-
-.category-nav a {
-  padding: 8px 17px;
-  border: 1px solid var(--line);
-  border-radius: 30px;
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.category-nav a:hover {
-  color: #111;
-  background: var(--text);
-}
-
-/* PROJECT SECTIONS */
-.project-group {
-  margin-top: 42px;
-  scroll-margin-top: 115px;
-}
-
-.project-group > summary {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding-bottom: 20px;
-  list-style: none;
-}
-
-.project-group > summary::-webkit-details-marker { display: none; }
-
-.group-title {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: -1px;
-}
-
-.group-count { color: var(--muted); font-size: 11px; }
-
-.group-toggle {
-  margin-left: auto;
-  color: var(--accent);
-  font-size: 25px;
-  transition: transform .2s;
-}
-
-.project-group[open] .group-toggle { transform: rotate(45deg); }
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
-
-/* ORANGE / CRIMSON / PURPLE CARDS */
-.project-card {
-  --card-background: #501b00;
-  --card-highlight: #742900;
-  --icon-color: #ffb000;
-
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  overflow: hidden;
-  background: #101010;
-  border: 1px solid #ffffff30;
-  border-radius: 18px;
-  transition: transform .22s, border-color .22s;
-}
-
-.project-card[data-palette="red"] {
-  --card-background: #480019;
-  --card-highlight: #71001e;
-  --icon-color: #ff6268;
-}
-
-.project-card[data-palette="purple"] {
-  --card-background: #300d35;
-  --card-highlight: #4b1553;
-  --icon-color: #e88aff;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--icon-color);
-}
-
-.project-visual {
-  display: grid;
-  place-items: center;
-  height: 195px;
-  flex-shrink: 0;
-  overflow: hidden;
-  color: var(--icon-color);
-  background: radial-gradient(
-    ellipse at center,
-    var(--card-highlight),
-    var(--card-background) 80%
-  );
-}
-
-.project-icon {
-  width: 135px;
-  height: 135px;
-  overflow: visible;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  filter: drop-shadow(0 0 7px currentColor);
-}
-
-.project-icon text {
-  fill: currentColor;
-  stroke: none;
-  font-family: "Space Grotesk", sans-serif;
-}
-
-.project-copy {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding: 24px;
-}
-
-.project-label {
-  margin-bottom: 12px;
-  color: #aaa9a2;
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-}
-
-.project-copy h3 {
-  margin-bottom: 11px;
-  font-size: 23px;
-  line-height: 1.2;
-  letter-spacing: -.7px;
-}
-
-.project-copy p {
-  margin-bottom: 23px;
-  color: #c0bfb8;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.project-cta {
-  margin-top: auto;
-  color: var(--accent);
-  font-size: 12px;
-  font-weight: 600;
-}
-
-/* SVG ANIMATION */
-.icon-float { animation: float 4s ease-in-out infinite; }
-
-.icon-turn,
-.icon-rock,
-.icon-pulse,
-.icon-wave {
-  transform-box: fill-box;
-  transform-origin: center;
-}
-
-.icon-turn { animation: turn 18s linear infinite; }
-.icon-rock { animation: rock 4s ease-in-out infinite; }
-.icon-pulse { animation: pulse 2.4s ease-in-out infinite; }
-
-.icon-wave {
-  animation: wave 1.2s ease-in-out infinite alternate;
-  animation-delay: var(--delay, 0s);
-}
-
-.icon-spark {
-  animation: spark 2s ease-in-out infinite;
-  animation-delay: var(--delay, 0s);
-}
-
-body.motion-paused .project-icon * {
-  animation-play-state: paused !important;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(3px); }
-  50% { transform: translateY(-5px); }
-}
-
-@keyframes turn { to { transform: rotate(360deg); } }
-
-@keyframes rock {
-  0%, 100% { transform: rotate(-6deg); }
-  50% { transform: rotate(6deg); }
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: .55; transform: scale(.95); }
-  50% { opacity: 1; transform: scale(1.05); }
-}
-
-@keyframes wave {
-  from { transform: scaleY(.35); opacity: .55; }
-  to { transform: scaleY(1); opacity: 1; }
-}
-
-@keyframes spark {
-  0%, 100% { opacity: .35; }
-  50% { opacity: 1; }
-}
-
-/* ABOUT / FOOTER */
-.about {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 80px;
-  border-top: 1px solid var(--line);
-}
-
-.about-copy > p { color: var(--muted); font-size: 18px; }
-.about-copy strong { color: var(--text); font-weight: 500; }
-
-.principles {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-  margin-top: 32px;
-}
-
-.principles h3 { margin-bottom: 8px; font-size: 17px; }
-.principles p { color: var(--muted); font-size: 14px; }
-
-.closing {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  padding-block: 55px;
-  border-block: 1px solid var(--line);
-}
-
-.closing p { margin: 12px 0 0; color: var(--muted); }
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 15px;
-  padding-block: 26px;
-  color: var(--muted);
-  font-size: 11px;
-}
-
-.noscript {
-  padding: 20px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-}
-
-.noscript a { color: var(--accent); }
-
-/* TABLET */
-@media (max-width: 950px) {
-  .hero { min-height: auto; }
-  h1 { font-size: 85px; letter-spacing: -5px; }
-  .art { height: 430px; }
-  .projects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .about { gap: 35px; }
-  nav { gap: 15px; }
-}
-
-/* MOBILE */
-@media (max-width: 650px) {
-  html { scroll-padding-top: 140px; }
-
-  .nav {
-    flex-wrap: wrap;
-    gap: 10px;
-    padding-block: 13px;
-  }
-
-  .logo { font-size: 22px; }
-
-  nav {
-    width: 100%;
-    justify-content: space-between;
-    gap: 8px;
-    font-size: 12px;
-  }
-
-  .hero {
-    grid-template-columns: 1fr;
-    gap: 18px;
-    padding-block: 48px 25px;
-  }
-
-  h1 {
-    font-size: clamp(76px, 20vw, 110px);
-    letter-spacing: -5px;
-  }
-
-  .intro { font-size: 16px; }
-  .eyebrow { font-size: 8px; letter-spacing: 1.3px; }
-  .art { height: 340px; }
-  .art-label { font-size: 8px; left: 0; }
-  .motion-button { right: 0; font-size: 9px; }
-  .disciplines { font-size: 9px; justify-content: flex-start; }
-
-  section { padding-block: 60px; }
-
-  .section-top {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    margin-bottom: 25px;
-  }
-
-  h2 { letter-spacing: -1.5px; }
-  .section-note { max-width: 100%; font-size: 13px; }
-  .category-nav a { font-size: 11px; padding: 7px 13px; }
-
-  .project-group {
-    margin-top: 22px;
-    scroll-margin-top: 140px;
-  }
-
-  .project-group > summary {
-    padding: 15px 0;
-    border-top: 1px solid var(--line);
-  }
-
-  .group-title { font-size: 25px; }
-  .group-count { font-size: 10px; }
-
-  .projects {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding-top: 8px;
-  }
-
-  .project-card {
-    flex-direction: row;
-    border-radius: 13px;
-  }
-
-  .project-card:hover { transform: none; }
-
-  .project-visual {
-    width: 94px;
-    height: auto;
-    min-height: 128px;
-  }
-
-  .project-icon { width: 72px; height: 82px; }
-
-  .project-copy { min-width: 0; padding: 15px; }
-
-  .project-label {
-    margin-bottom: 5px;
-    font-size: 8px;
-    letter-spacing: .8px;
-  }
-
-  .project-copy h3 {
-    margin-bottom: 6px;
-    font-size: 18px;
-    letter-spacing: -.4px;
-  }
-
-  .project-copy p {
-    margin-bottom: 10px;
-    font-size: 12px;
-    line-height: 1.4;
-  }
-
-  .project-cta { font-size: 10px; }
-  .about { grid-template-columns: 1fr; gap: 30px; }
-  .about-copy > p { font-size: 16px; }
-  .closing { flex-direction: column; align-items: flex-start; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  .project-icon * { animation: none !important; }
-  *, *::before, *::after { transition: none !important; }
-}
-
-/* Homepage photography and compact biography. */
-.hero { background: linear-gradient(90deg, #111110e8 0%, #111110a8 50%, #11111035 100%), url("./assets/images/hero-bg.png") center / cover no-repeat; border-radius: 0 0 24px 24px; padding-inline: 32px; }
-.home-about { align-items: center; padding-block: 65px; }
-.home-about h2 { font-size: clamp(36px, 5vw, 64px); margin-bottom: 0; }
-.home-about .about-copy > p { margin-bottom: 24px; }
-.portrait-slot img { display: block; width: min(320px, 100%); aspect-ratio: 1; object-fit: cover; border-radius: 20px; margin-bottom: 24px; }
-.social-links { display: flex; align-items: center; gap: 12px; }
-.social-link { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 50%; }
-.social-link svg { width: 19px; height: 19px; fill: currentColor; }
-@media (max-width: 650px) { .hero { padding-inline: 20px; } footer { flex-wrap: wrap; gap: 20px; } }
-</style>
-
-<title>Robbie Calvin | Vancouver Web Developer &amp; Tech Artist</title>
-<meta name="description" content="Explore Robbie Calvin’s web design, WordPress tools, AI applications, graphic design, and practical digital services. Based in Vancouver, BC.">
-<meta name="keywords" content="Robbie Calvin, Vancouver web developer, web design, WordPress tools, AI applications, tech artist">
+<meta name="theme-color" content="#08090d">
+<title>Robbie Calvin | Vancouver Web Developer &amp; Software Portfolio</title>
+<meta name="description" content="Robbie Calvin builds web applications, WordPress tools and AI-assisted workflows in Vancouver. Explore project demos, technical case studies and web services.">
 <meta name="author" content="Robbie Calvin">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Robbie Calvin | Vancouver Web Developer &amp; Tech Artist">
-<meta name="twitter:description" content="Explore Robbie Calvin’s web design, WordPress tools, AI applications, graphic design, and practical digital services. Based in Vancouver, BC.">
-<meta name="twitter:image" content="https://robbiecalvin.com/assets/images/hero-bg.png">
-<meta name="twitter:image:alt" content="Robbie Calvin — Robbie Calvin">
+<meta name="twitter:title" content="Robbie Calvin | Vancouver Web Developer &amp; Software Portfolio">
+<meta name="twitter:description" content="Robbie Calvin builds web applications, WordPress tools and AI-assisted workflows in Vancouver. Explore project demos, technical case studies and web services.">
+<meta name="twitter:image" content="https://robbiecalvin.com/assets/images/speechflow-workspace.png">
+<meta name="twitter:image:alt" content="SpeechFlow visual workspace by Robbie Calvin">
 <link rel="canonical" href="https://robbiecalvin.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Robbie Calvin">
 <meta property="og:locale" content="en_CA">
-<meta property="og:title" content="Robbie Calvin | Vancouver Web Developer &amp; Tech Artist">
-<meta property="og:description" content="Explore Robbie Calvin’s web design, WordPress tools, AI applications, graphic design, and practical digital services. Based in Vancouver, BC.">
+<meta property="og:title" content="Robbie Calvin | Vancouver Web Developer &amp; Software Portfolio">
+<meta property="og:description" content="Robbie Calvin builds web applications, WordPress tools and AI-assisted workflows in Vancouver. Explore project demos, technical case studies and web services.">
 <meta property="og:url" content="https://robbiecalvin.com/">
-<meta property="og:image" content="https://robbiecalvin.com/assets/images/hero-bg.png">
-<meta property="og:image:alt" content="Robbie Calvin — Robbie Calvin">
+<meta property="og:image" content="https://robbiecalvin.com/assets/images/speechflow-workspace.png">
+<meta property="og:image:alt" content="SpeechFlow visual workspace by Robbie Calvin">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -702,15 +42,16 @@ footer {
       "name": "Robbie Calvin",
       "url": "https://robbiecalvin.com/about/",
       "sameAs": [
-        "https://www.linkedin.com/in/robbie-calvin-50710b386/"
+        "https://www.linkedin.com/in/robbie-calvin-50710b386/",
+        "https://github.com/robbiecalvin"
       ]
     },
     {
       "@type": "WebPage",
       "@id": "https://robbiecalvin.com/#webpage",
       "url": "https://robbiecalvin.com/",
-      "name": "Robbie Calvin | Vancouver Web Developer & Tech Artist",
-      "description": "Explore Robbie Calvin’s web design, WordPress tools, AI applications, graphic design, and practical digital services. Based in Vancouver, BC.",
+      "name": "Robbie Calvin | Vancouver Web Developer & Software Portfolio",
+      "description": "Robbie Calvin builds web applications, WordPress tools and AI-assisted workflows in Vancouver. Explore project demos, technical case studies and web services.",
       "inLanguage": "en-CA",
       "isPartOf": {
         "@id": "https://robbiecalvin.com/#website"
@@ -718,10 +59,38 @@ footer {
       "author": {
         "@id": "https://robbiecalvin.com/#person"
       },
-      "keywords": "Robbie Calvin, Vancouver web developer, web design, WordPress tools, AI applications, tech artist",
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://robbiecalvin.com/assets/images/hero-bg.png"
+        "url": "https://robbiecalvin.com/assets/images/speechflow-workspace.png"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "SpeechFlow",
+            "url": "https://robbiecalvin.com/speechflow/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "QuickWoo Desktop",
+            "url": "https://robbiecalvin.com/quickwoo/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Intelligent Productivity Suite",
+            "url": "https://robbiecalvin.com/productivity-suite/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "SEO Auditor",
+            "url": "https://robbiecalvin.com/seo-auditor/"
+          }
+        ]
       }
     }
   ]
@@ -730,879 +99,143 @@ footer {
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48 64x64">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/styles/portfolio-home.css">
+<link rel="stylesheet" href="/assets/styles/digital-matter-tokens.css">
+<link rel="stylesheet" href="/assets/styles/home-brand.css">
 </head>
-
-<body>
-<header>
-  <div class="wrap nav">
-    <a class="logo" href="#top" aria-label="Robbie Calvin home">
-      robbiecalvin<span>.</span>
-    </a>
-
+<body data-design-page="homepage">
+<a class="skip-link" href="#top">Skip to content</a>
+<header class="site-header">
+  <div class="wrap masthead">
+    <a class="wordmark" href="/">Robbie Calvin<span>.</span></a>
     <nav aria-label="Main navigation">
-      <a href="#applications">Applications</a>
+      <a href="#work">Work</a>
       <a href="#services">Services</a>
-      <a href="#sites">Sites</a>
-      <a href="#creative">Creative</a>
-      <a href="./about/">About me</a>
-      <a href="./contact/">Contact</a>
-<a href="./account/">Account</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+      <a href="/account/">Account</a>
     </nav>
   </div>
 </header>
+<main id="top">
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow">Vancouver, BC</p>
+      <h1 id="hero-title">Web developer <em>&amp; creative technologist.</em></h1>
+      <p class="lede">I’m Robbie Calvin. I build web applications, WordPress tools, and AI-assisted workflows. My projects range from a voice-controlled idea map to a desktop toolkit for WooCommerce.</p>
+      <div class="actions"><a class="button primary" href="#work">See selected work <span aria-hidden="true">↓</span></a><a class="button" href="/contact/">Get in touch</a></div>
+    </div>
+    <figure class="hero-project">
+      <a class="project-image" href="/speechflow/" aria-label="See the SpeechFlow project">
+        <img src="/assets/images/speechflow-workspace-640.webp"
+          srcset="/assets/images/speechflow-workspace-640.webp 640w, /assets/images/speechflow-workspace-1100.webp 1100w"
+          sizes="(max-width: 540px) calc(100vw - 3.5rem), (max-width: 800px) calc(100vw - 5rem), (max-width: 1250px) 45vw, 540px"
+          width="1300" height="860" fetchpriority="high" alt="SpeechFlow showing a sample project plan with four connected thoughts">
+      </a>
+      <figcaption><span>SpeechFlow · Sample project plan</span><a href="/speechflow/">View project <span aria-hidden="true">↗</span></a></figcaption>
+      <details class="demo-preview">
+        <summary>Watch the project plan in Present mode</summary>
+        <video controls playsinline preload="none" width="1200" height="800"
+          poster="/assets/images/speechflow-workspace-640.webp" aria-describedby="speechflow-preview-description">
+          <source src="/assets/images/speechflow-project-plan.webm" type="video/webm">
+          <a href="/assets/images/speechflow-project-plan.webm">Open the SpeechFlow recording</a>
+        </video>
+        <p id="speechflow-preview-description">Silent recording. SpeechFlow switches from the map to Present mode and steps through connected thoughts.</p>
+      </details>
+    </figure>
+  </section>
 
-<main id="top" class="wrap">
-  <section class="hero" aria-labelledby="hero-title">
+  <section class="work wrap" id="work" aria-labelledby="work-title">
+    <div class="section-heading" id="technical-portfolio">
+      <h2 id="work-title">Selected work</h2>
+      <a href="/applications/">All applications <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="work-grid">
+      <article class="work-card">
+        <p class="eyebrow">Voice interface · Web app</p>
+        <h3><a href="/speechflow/">SpeechFlow</a></h3>
+        <p>Capture ideas by voice or keyboard, connect them on a canvas, and present them in sequence. Maps are saved in the browser and can be exported as JSON.</p>
+        <a href="https://github.com/robbiecalvin/speechflow/blob/main/CASE_STUDY.md">SpeechFlow case study <span aria-hidden="true">↗</span></a>
+      </article>
+      <article class="work-card">
+        <p class="eyebrow">Electron · WordPress</p>
+        <h3><a href="/quickwoo/">QuickWoo Desktop</a></h3>
+        <p>Manage WordPress content and WooCommerce operations in one desktop app. The Quick Connector plugin executes supported actions on connected sites.</p>
+        <div class="work-card-links">
+          <a href="/wp-plugins/">Browse QuickWoo plugins <span aria-hidden="true">↗</span></a>
+          <a href="/wp-plugins/quick-add/bulk-add-woocommerce-products-from-json/">Quick Add JSON guide <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      <article class="work-card">
+        <p class="eyebrow">Python · Docker</p>
+        <h3><a href="/productivity-suite/">Intelligent Productivity Suite</a></h3>
+        <p>A local app-generation pipeline that checks generated software against an explicit contract. A separate browser demo shows the task manager workflow and saves tasks locally.</p>
+        <a href="/productivity-suite/">Try the task manager <span aria-hidden="true">↗</span></a>
+      </article>
+      <article class="work-card">
+        <p class="eyebrow">Python · Technical SEO</p>
+        <h3><a href="/seo-auditor/">SEO Auditor</a></h3>
+        <p>A command-line website crawler that turns on-page SEO findings into CSV and HTML reports for review.</p>
+        <a href="https://github.com/robbiecalvin/seo-auditor">Browse the source <span aria-hidden="true">↗</span></a>
+      </article>
+    </div>
+  </section>
+
+  <section class="directory" aria-labelledby="directory-title">
+    <div class="wrap">
+      <div class="section-heading"><h2 id="directory-title">Explore the portfolio</h2></div>
+      <div class="directory-grid">
+        <article id="applications">
+          <h3><a href="/applications/">Applications <span aria-hidden="true">↗</span></a></h3>
+          <p>Tools for visual thinking, audio editing, WooCommerce, and AI-assisted development.</p>
+          <ul><li><a href="/codex-master/">Codex Master</a></li><li><a href="/myra/">Myra</a></li><li><a href="/kimix/">KIMIX</a></li></ul>
+        </article>
+        <article id="sites">
+          <h3><a href="/websites/">Websites <span aria-hidden="true">↗</span></a></h3>
+          <p>Independent sites for learning, local business, and publishing.</p>
+          <ul><li><a href="/typing-school/">Typing School</a></li><li><a href="https://fobfather.ca/">FobFather</a></li><li><a href="/crystal-eye/">Crystal Eye</a></li><li><a href="/trusted-cash-loans/">Trusted Cash Loans</a></li></ul>
+        </article>
+        <article id="lab">
+          <h3><a href="/lab/">Lab <span aria-hidden="true">↗</span></a></h3>
+          <p>Engineering experiments, technical case studies, and working demos.</p>
+          <ul><li><a href="/launchboard/">Launchboard</a></li><li><a href="/seo-auditor/">SEO Auditor</a></li></ul>
+        </article>
+        <article id="creative">
+          <h3><a href="/creative/">Creative work <span aria-hidden="true">↗</span></a></h3>
+          <p>Comics, drawings, paintings, and work in progress.</p>
+          <ul><li><a href="/wild-chemistry/">Read Wild Chemistry</a></li><li><a href="/instagram/">Art &amp; process</a></li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="services wrap" id="services" aria-labelledby="services-title">
     <div>
-      <div class="eyebrow">
-        <span class="dot"></span>
-        Code. Create. Question everything.
-      </div>
-
-      <h1 id="hero-title">Tech<br><em>Artist.</em></h1>
-
-      <p class="intro">
-        I’m Robbie Calvin. I turn ideas into digital things
-        you can use, feel, and get a little lost in.
-      </p>
-
-      <p class="intro">
-        Websites. AI experiments. Tools. Stories.
-        Different mediums. Same restless imagination.
-      </p>
-
-      <div class="actions">
-        <a class="button primary" href="#applications">
-          Explore my world <span aria-hidden="true">↗</span>
-        </a>
-        <a class="button" href="./about/">
-          Meet the human <span aria-hidden="true">↓</span>
-        </a>
-      </div>
+      <p class="eyebrow">Work with me</p>
+      <h2 id="services-title">Need a site, or help with the one you have?</h2>
+      <p class="lede">I offer web design and development, WordPress maintenance, and custom software support.</p>
+      <div class="actions"><a class="button primary" href="/contact/">Tell me about your project</a><a class="button" href="/services/">All services</a></div>
     </div>
-
-    <div class="art">
-      <canvas
-        id="artwork"
-        role="img"
-        aria-label="A neon-orange rotating energy globe with orbital rings and luminous satellites"
-      ></canvas>
-
-      <span class="art-label">Study 001 / Creative connections</span>
-
-      <button
-        id="motion"
-        class="motion-button"
-        type="button"
-        aria-pressed="false"
-        aria-label="Pause all animated artwork"
-      >Pause motion</button>
-    </div>
+    <ul class="service-links">
+      <li><a href="/web-design/">Web design <span aria-hidden="true">↗</span></a></li>
+      <li><a href="/wp-managment/">WordPress management <span aria-hidden="true">↗</span></a></li>
+      <li><a href="/custom-software/">Custom software <span aria-hidden="true">↗</span></a></li>
+      <li><a href="/graphic-design/">Graphic design <span aria-hidden="true">↗</span></a></li>
+    </ul>
   </section>
-
-  <div class="disciplines" aria-label="Creative disciplines">
-    <span>Web development</span>
-    <span>Artificial intelligence</span>
-    <span>Digital design</span>
-    <span>Storytelling</span>
-  </div>
-
-  <section id="work" aria-labelledby="work-title">
-    <div class="section-top">
-      <div>
-        <p class="kicker">01 / The work</p>
-        <h2 id="work-title">One mind.<br>Many rabbit holes.</h2>
-      </div>
-      <p class="section-note">
-        Applications, creative services, independent sites, and art.
-        Choose a direction and follow your curiosity.
-      </p>
-    </div>
-
-    <div class="category-nav" aria-label="Explore project categories">
-      <a href="#applications">Applications ↗</a>
-      <a href="#services">Services ↗</a>
-      <a href="#sites">Sites ↗</a>
-      <a href="#creative">Creative ↗</a>
-      <a href="#technical-portfolio">Technical portfolio ↗</a>
-    </div>
-
-    <div id="project-sections"></div>
-
-    <noscript>
-      <div class="noscript">
-        <p>Enable JavaScript for the animated project collection,
-          or explore these links directly.</p>
-        <p>
-          <a href="./codex-master/">Codex Master</a> ·
-          <a href="./myra/">Myra</a> ·
-          <a href="./red-door/">Red Door</a> ·
-          <a href="./speechflow/">SpeechFlow</a> ·
-          <a href="./quickwoo/">QuickWoo Desktop</a> ·
-          <a href="./kimix/">KIMIX</a> ·
-          <a href="./wp-plugins/">QuickWoo Plugins</a> ·
-          <a href="./personal-assistant/">Personal Assistant</a> ·
-          <a href="./rtb-advocacy/">RTB Advocacy</a> ·
-          <a href="./web-design/">Web Design</a> ·
-          <a href="./wp-managment/">WordPress Management</a> ·
-          <a href="./graphic-design/">Graphic Design</a> ·
-          <a href="./resume-building/">Resume Building</a> ·
-          <a href="./typing-school/">Typing School</a> ·
-          <a href="https://fobfather.ca/">FobFather</a> ·
-          <a href="https://www.instagram.com/pastelpowerranger/">Instagram</a> ·
-          <a href="./wild-chemistry/">Wild Chemistry</a>
-        </p>
-      </div>
-    </noscript>
-  </section>
-
-  <section id="technical-portfolio" tabindex="-1" aria-labelledby="technical-portfolio-title">
-    <div class="section-top">
-      <h2 id="technical-portfolio-title">Technical portfolio</h2>
-      <p class="section-note">Six engineering projects with reproducible examples and test results tied to specific revisions.</p>
-    </div>
-    <div class="projects">
-      <article class="project-card">
-        <div class="project-copy">
-          <h3>Codex Master</h3>
-          <p>Role contracts and acceptance criteria for AI-assisted software development.</p>
-          <p>3 configuration and documentation checks passed.</p>
-          <div class="category-nav" style="margin-top: auto">
-            <a href="https://github.com/robbiecalvin/codexmaster/blob/main/CASE_STUDY.md" aria-label="Codex Master case study">Case study</a>
-            <a href="https://github.com/robbiecalvin/codexmaster" aria-label="Codex Master source on GitHub">Source</a>
-            <a href="https://github.com/robbiecalvin/codexmaster/actions/runs/45642841023" aria-label="Codex Master CI evidence">CI evidence</a>
-          </div>
-        </div>
-      </article>
-      <article class="project-card">
-        <div class="project-copy">
-          <h3>Intelligent Productivity Suite</h3>
-          <p>A local Python application generator with deterministic contracts and bounded repair.</p>
-          <p>28 backend and 4 Chromium checks passed in Docker with simulated Ollama responses.</p>
-          <div class="category-nav" style="margin-top: auto">
-            <a href="https://github.com/robbiecalvin/robbiecalvin/blob/main/docs/productivity-suite-case-study.md" aria-label="Intelligent Productivity Suite case study">Case study</a>
-            <a href="/productivity-suite/" aria-label="Intelligent Productivity Suite task manager demo">Try demo</a>
-          </div>
-        </div>
-      </article>
-      <article class="project-card">
-        <div class="project-copy">
-          <h3>SpeechFlow</h3>
-          <p>A graph workspace with typed and spoken commands, local persistence, and confirmation for destructive actions.</p>
-          <p>17 voice and packaging tests passed. Web build passed.</p>
-          <div class="category-nav" style="margin-top: auto">
-            <a href="https://github.com/robbiecalvin/speechflow/blob/main/CASE_STUDY.md" aria-label="SpeechFlow case study">Case study</a>
-            <a href="https://github.com/robbiecalvin/speechflow" aria-label="SpeechFlow source on GitHub">Source</a>
-            <a href="https://github.com/robbiecalvin/speechflow/actions/runs/45641425924" aria-label="SpeechFlow CI evidence">CI evidence</a>
-            <a href="https://github.com/robbiecalvin/speechflow/blob/main/assets/images/sidebar-screenshot.png" aria-label="SpeechFlow screenshot">Screenshot</a>
-          </div>
-        </div>
-      </article>
-      <article class="project-card">
-        <div class="project-copy">
-          <h3>Myra</h3>
-          <p>A beverage recommendation app with an automated test for retailer placement.</p>
-          <p>Backend lint, build, and one ranking test passed.</p>
-          <div class="category-nav" style="margin-top: auto">
-            <a href="https://github.com/robbiecalvin/myra/blob/main/CASE_STUDY.md" aria-label="Myra case study">Case study</a>
-            <a href="https://github.com/robbiecalvin/myra" aria-label="Myra source on GitHub">Source</a>
-            <a href="https://github.com/robbiecalvin/myra/actions/runs/45641441984" aria-label="Myra CI evidence">CI evidence</a>
-            <a href="https://robbiecalvin.github.io/myra/" aria-label="Myra live demo">Live demo</a>
-            <a href="https://github.com/robbiecalvin/myra/blob/main/assets/images/desktopfrontpagescreenshot.png" aria-label="Myra desktop screenshot">Screenshot</a>
-          </div>
-        </div>
-      </article>
-      <article class="project-card">
-        <div class="project-copy">
-          <h3>Crystal Eye</h3>
-          <p>A static numerology site with structured content generation and reference-based calculator tests.</p>
-          <p>5 calculator tests passed.</p>
-          <div class="category-nav" style="margin-top: auto">
-            <a href="https://github.com/robbiecalvin/crystaleye/blob/main/CASE_STUDY.md" aria-label="Crystal Eye case study">Case study</a>
-            <a href="https://github.com/robbiecalvin/crystaleye" aria-label="Crystal Eye source on GitHub">Source</a>
-            <a href="https://github.com/robbiecalvin/crystaleye/actions/runs/45641450245" aria-label="Crystal Eye CI evidence">CI evidence</a>
-            <a href="https://robbiecalvin.github.io/crystaleye/" aria-label="Crystal Eye live demo">Live demo</a>
-          </div>
-        </div>
-      </article>
-      <article class="project-card">
-        <div class="project-copy">
-          <h3>SEO Auditor</h3>
-          <p>A Python crawler that checks metadata and broken links and generates CSV and HTML reports.</p>
-          <p>5 offline crawler and reporting tests passed.</p>
-          <div class="category-nav" style="margin-top: auto">
-            <a href="https://github.com/robbiecalvin/seo-auditor/blob/main/CASE_STUDY.md" aria-label="SEO Auditor case study">Case study</a>
-            <a href="https://github.com/robbiecalvin/seo-auditor" aria-label="SEO Auditor source on GitHub">Source</a>
-            <a href="https://github.com/robbiecalvin/seo-auditor/actions/runs/45644423442" aria-label="SEO Auditor CI evidence">CI evidence</a>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section id="about" class="about home-about" aria-labelledby="about-title">
-    <div class="portrait-slot"><p class="kicker">Behind the screen</p><h2 id="about-title">Robbie Calvin.</h2></div>
-    <div class="about-copy"><p>Tech artist. Web developer. Curious human.</p><a class="button primary" href="./about/">About me <span aria-hidden="true">↗</span></a></div>
-  </section>
-
-  <div class="closing">
-    <div>
-      <h2>Curiosity built this.</h2>
-      <p>Stick around. There’s always another idea.</p>
-    </div>
-    <a class="button primary" href="#applications">
-      Find your rabbit hole <span aria-hidden="true">↗</span>
-    </a>
-  </div>
-
-  <footer>
-    <span>© <span id="year"></span> Robbie Calvin</span>
-    <span><a href="./about/">About me</a> · <a href="./contact/">Contact</a></span>
-    <a class="social-link" href="https://www.linkedin.com/in/robbie-calvin-50710b386/" aria-label="Robbie Calvin on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.4-.76 1.36-1.56 2.79-1.56 2.98 0 3.58 1.96 3.58 4.51v5.3Z"/></svg></a>
-<a href="#top">Back to top ↑</a>
-  <span class="legal-links"><a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/legal/">Legal & copyright</a></span>
-</footer>
 </main>
-
-<script>
-(() => {
-  "use strict";
-
-  document.getElementById("year").textContent = new Date().getFullYear();
-
-  const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
-  const mobile = matchMedia("(max-width: 650px)");
-  const motionButton = document.getElementById("motion");
-
-  let paused = reducedMotion.matches;
-  let frame = null;
-  let lastTime = null;
-  let time = 0;
-
-  /* PROJECT ICONS */
-  const icons = {
-    instagram: `<g class="icon-float"><rect x="15" y="15" width="70" height="70" rx="20"/><circle class="icon-pulse" cx="50" cy="50" r="17"/><circle class="icon-spark" cx="72" cy="29" r="3"/></g>`,
-    comic: `<g class="icon-float"><rect x="12" y="12" width="76" height="76" rx="4"/><path d="M12 48h76M49 12v36M39 48v40"/><path class="icon-spark" d="m61 57 6 8 12-4-6 10 4 10-11-4-8 7 1-13-8-6Z"/></g>`,
-    code: `
-      <g class="icon-float">
-        <path d="M32 30 12 50 32 70M68 30 88 50 68 70"/>
-        <path class="icon-rock" d="m58 20-16 60"/>
-        <g class="icon-spark">
-          <circle cx="35" cy="90" r="1"/>
-          <circle cx="45" cy="90" r="1"/>
-          <circle cx="55" cy="90" r="1"/>
-          <circle cx="65" cy="90" r="1"/>
-        </g>
-      </g>`,
-
-    alcohol: `
-      <g class="icon-rock">
-        <path d="M27 14h14v20l8 13v36q0 5-5 5H24q-5 0-5-5V47l8-13Z"/>
-        <path d="M27 21h14M20 56h28M20 73h28M28 63h12"/>
-      </g>
-      <g class="icon-float">
-        <path d="M61 36h24v18a12 12 0 0 1-24 0ZM73 66v19M64 85h18M62 47h22"/>
-      </g>
-      <circle class="icon-spark" cx="76" cy="24" r="2"/>
-      <circle class="icon-spark" style="--delay:-1s" cx="87" cy="17" r="1.5"/>`,
-
-    door: `
-      <g class="icon-float">
-        <rect x="28" y="10" width="46" height="78" rx="3"/>
-        <g class="icon-pulse">
-          <path d="m32 14 37 5v62l-37 3Z"/>
-          <circle cx="62" cy="50" r="1.5"/>
-        </g>
-        <path d="M14 93h74"/>
-      </g>`,
-
-    speech: `
-      <g class="icon-float">
-        <path d="M19 20h62a9 9 0 0 1 9 9v34a9 9 0 0 1-9 9H45L26 87V72h-7a9 9 0 0 1-9-9V29a9 9 0 0 1 9-9Z"/>
-        <circle class="icon-spark" cx="32" cy="46" r="3"/>
-        <circle class="icon-spark" style="--delay:-.4s" cx="50" cy="46" r="3"/>
-        <circle class="icon-spark" style="--delay:-.8s" cx="68" cy="46" r="3"/>
-      </g>`,
-
-    commerce: `
-      <g class="icon-float">
-        <path class="icon-spark" d="m25 12-15 30h14l-8 25 27-37H28l10-18Z"/>
-        <path class="icon-spark" style="--delay:-1s" d="m76 35-14 27h13l-7 25 25-35H80l9-17Z"/>
-        <text class="icon-pulse" x="44" y="59" font-size="32">$</text>
-        <text class="icon-pulse" x="33" y="87" font-size="25">$</text>
-      </g>`,
-
-    audio: Array.from({length: 13}, (_, i) => {
-      const h = 20 + Math.sin(i / 12 * Math.PI) * 50;
-      return `<path class="icon-wave"
-        style="--delay:${-i * .13}s"
-        d="M${14 + i * 6} ${50 - h / 2}v${h}"/>`;
-    }).join(""),
-
-    plugins: `
-      <g class="icon-float">
-        <path d="M36 15v20M62 15v20"/>
-        <path class="icon-pulse" d="M28 35h42v14a21 21 0 0 1-42 0Z"/>
-        <path d="M49 70v12q0 10 13 10h13"/>
-        <circle class="icon-spark" cx="79" cy="92" r="3"/>
-      </g>`,
-
-    assistant: `
-      <g class="icon-float">
-        <circle cx="35" cy="24" r="12"/>
-        <path d="M13 66v-8a22 22 0 0 1 44 0"/>
-        <rect x="53" y="44" width="33" height="44" rx="4"/>
-        <path class="icon-spark" d="m60 57 3 3 6-7M73 57h6"/>
-        <path class="icon-spark" style="--delay:-.7s" d="m60 73 3 3 6-7M73 73h6"/>
-      </g>`,
-
-    advocacy: `
-      <g class="icon-float">
-        <path d="M50 14v71M30 89h40"/>
-        <g class="icon-rock">
-          <path d="M20 31h60M27 31 15 58h24ZM73 31 61 58h24Z"/>
-        </g>
-        <circle class="icon-pulse" cx="50" cy="23" r="4"/>
-      </g>`,
-
-    browser: `
-      <g class="icon-rock">
-        <rect x="7" y="20" width="86" height="62" rx="5"/>
-        <path d="M7 34h86"/>
-        <circle cx="15" cy="27" r="1"/>
-        <circle cx="22" cy="27" r="1"/>
-        <circle cx="29" cy="27" r="1"/>
-        <rect x="16" y="43" width="22" height="28" rx="2"/>
-        <path d="M46 45h36M46 54h27M46 63h31"/>
-        <path class="icon-spark" d="M47 72h12"/>
-      </g>`,
-
-    management: `
-      <g class="icon-float">
-        <rect x="10" y="14" width="80" height="64" rx="5"/>
-        <path d="M10 29h80M38 89h24M50 78v11"/>
-        <g class="icon-turn">
-          <circle cx="50" cy="53" r="12"/>
-          <path d="M50 35v6M50 65v6M32 53h6M62 53h6M37 40l5 5M58 61l5 5M37 66l5-5M58 45l5-5"/>
-        </g>
-      </g>`,
-
-    design: `
-      <g class="icon-turn">
-        <circle cx="38" cy="32" r="19"/>
-        <rect x="22" y="53" width="31" height="31" rx="2"/>
-        <path d="m62 45 27-16v32Z"/>
-      </g>
-      <path class="icon-spark" d="M12 15h8M16 11v8M77 84h8M81 80v8"/>`,
-
-    resume: `
-      <g class="icon-float">
-        <path d="M24 10h37l17 17v63H24ZM61 10v18h17"/>
-        <circle cx="41" cy="40" r="6"/>
-        <path d="M32 55q9-13 18 0M56 40h12M56 49h12M34 66h34M34 75h25"/>
-        <path class="icon-spark" d="m54 84 4 4 10-11"/>
-      </g>`,
-
-    typing: `
-      <g class="icon-rock">
-        <rect x="7" y="29" width="86" height="47" rx="6"/>
-        <path d="M17 41h5m8 0h5m8 0h5m8 0h5m8 0h5m8 0h2"/>
-        <path d="M17 52h5m8 0h5m8 0h5m8 0h5m8 0h5"/>
-        <path class="icon-spark" d="M29 65h41"/>
-      </g>
-      <path class="icon-spark" d="M43 13h14M50 6v14"/>`,
-
-    fob: `
-      <g class="icon-rock">
-        <rect x="27" y="19" width="40" height="66" rx="17"/>
-        <circle cx="47" cy="31" r="4"/>
-        <circle class="icon-pulse" cx="47" cy="58" r="10"/>
-        <path d="M43 58h8M47 54v8"/>
-      </g>
-      <g class="icon-spark">
-        <path d="M76 35q15 15 0 30M82 28q23 22 0 44"/>
-      </g>`
-  };
-
-  /* EDIT PROJECT CONTENT HERE */
-  const groups = [
-    {
-      id: "applications",
-      name: "Applications",
-      projects: [
-        ["Codex Master", "codex-master", "AI workflows",
-          "Structured Codex workflows and website blueprints for more intentional builds.", "code", "red"],
-        ["Myra", "myra", "Virtual sommelier",
-          "Wine and beer recommendations with guided discovery and top-three results.", "alcohol", "orange"],
-        ["Red Door", "red-door", "18+ social discovery",
-          "An adults-only, cruise-first social platform with maps, profiles, and chat.", "door", "red"],
-        ["SpeechFlow", "speechflow", "Visual thinking",
-          "Capture thoughts by voice, connect draggable ideas, and play back the flow.", "speech", "purple"],
-        ["QuickWoo Desktop", "quickwoo", "WordPress & commerce",
-          "A desktop control center for WordPress sites and WooCommerce stores.", "commerce", "orange"],
-        ["KIMIX", "kimix", "Audio & creativity",
-          "Play local audio, arrange multitrack edits, and build your mix.", "audio", "purple"],
-        ["QuickWoo Plugins", "wp-plugins", "WordPress plugin suite",
-          "18 Pro plugins, focused bundles, and a connected desktop workspace.", "plugins", "red"]
-      ]
-    },
-    {
-      id: "services",
-      name: "Services",
-      projects: [
-        ["Personal Assistant", "personal-assistant", "Administrative support",
-          "Practical help with organization, research, and digital tasks.", "assistant", "purple"],
-        ["RTB Advocacy", "rtb-advocacy", "Tenancy support",
-          "Help organizing tenancy records, evidence, and hearing preparation.", "advocacy", "red"],
-        ["Web Design", "web-design", "Design & development",
-          "Distinctive websites built around people and purpose.", "browser", "purple"],
-        ["WordPress Management", "wp-managment", "Website support",
-          "Help keeping your WordPress website organized and maintained.", "management", "orange"],
-        ["Graphic Design", "graphic-design", "Visual expression",
-          "Identity, imagery, and ideas made visible.", "design", "red"],
-        ["Resume Building", "resume-building", "Career documents",
-          "Clear, considered resumes that communicate your experience.", "resume", "purple"]
-      ]
-    },
-    {
-      id: "sites",
-      name: "Sites",
-      projects: [
-        ["Typing School", "typing-school", "Learning & practice",
-          "Targeted typing practice, rhythm analysis, games, and local progress tracking.", "typing", "purple"],
-        ["FobFather", "fobfather", "Vancouver fob copying",
-          "Apartment RFID fob copies in downtown Vancouver, by appointment.", "fob", "orange"],
-        ["Crystal Eye", "crystaleye", "Website",
-          "Explore Crystal Eye online.", "browser", "purple", "https://robbiecalvin.github.io/crystaleye/"],
-        ["Trusted Cash Loans", "trusted-cash-loans", "Website",
-          "Visit Trusted Cash Loans online.", "browser", "orange", "https://robbiecalvin.github.io/TrustedCashLoans/"]
-      ]
-    }
-    ,{
-      id: "creative", name: "Creative", projects: [
-        ["Instagram", "instagram", "Art & process", "Drawings, paintings, pastels, and the creative process.", "instagram", "purple"],
-        ["Wild Chemistry", "wild-chemistry", "An original comic", "An independent comic book by Robbie Calvin.", "comic", "red"]
-      ]
-    }
-  ];
-
-  const mount = document.getElementById("project-sections");
-
-  // These templates use only the fixed, local definitions above.
-  mount.innerHTML = groups.map(group => `
-    <details class="project-group" id="${group.id}" open>
-      <summary>
-        <span class="group-title">${group.name}</span>
-        <span class="group-count">${group.projects.length} projects</span>
-        <span class="group-toggle" aria-hidden="true">+</span>
-      </summary>
-      <div class="projects">
-        ${group.projects.map(project => {
-          const [name, folder, label, description, icon, palette, externalUrl] = project;
-          return `
-            <a class="project-card"
-               href="${externalUrl || (folder === 'fobfather' ? 'https://fobfather.ca/' : folder === 'instagram' ? 'https://www.instagram.com/pastelpowerranger/' : './' + folder + '/')}"
-               data-palette="${palette}">
-              <div class="project-visual">
-                <svg class="project-icon" viewBox="0 0 100 100"
-                     aria-hidden="true" focusable="false">
-                  ${icons[icon]}
-                </svg>
-              </div>
-              <div class="project-copy">
-                <span class="project-label">${label}</span>
-                <h3>${name}</h3>
-                <p>${description}</p>
-                <span class="project-cta">Explore ↗</span>
-              </div>
-            </a>`;
-        }).join("")}
-      </div>
-    </details>
-  `).join("");
-
-  /* MOBILE SECTIONS AND ANCHOR NAVIGATION */
-  const sections = [...mount.querySelectorAll(".project-group")];
-
-  function applyLayout() {
-    sections.forEach((section, i) => {
-      section.open = true;
-    });
-  }
-
-  function findTarget(hash) {
-    if (!hash || hash === "#") return null;
-    try {
-      return document.getElementById(decodeURIComponent(hash.slice(1)));
-    } catch {
-      return null;
-    }
-  }
-
-  function navigate(hash, scroll = true) {
-    const target = findTarget(hash);
-    if (!target) return false;
-
-    const group = target.closest(".project-group");
-    if (group) group.open = true;
-
-    if (scroll) {
-      requestAnimationFrame(() => {
-        target.scrollIntoView({
-          behavior: reducedMotion.matches ? "auto" : "smooth",
-          block: "start"
-        });
-      });
-    }
-    return true;
-  }
-
-  document.addEventListener("click", event => {
-    if (!(event.target instanceof Element)) return;
-
-    const link = event.target.closest('a[href^="#"]');
-    if (!link || event.ctrlKey || event.metaKey ||
-        event.shiftKey || event.altKey || event.button !== 0) return;
-
-    const hash = link.getAttribute("href");
-    if (hash === "#technical-portfolio") return;
-    if (!navigate(hash)) return;
-
-    event.preventDefault();
-    if (location.hash !== hash) history.pushState(null, "", hash);
-  });
-
-  window.addEventListener("hashchange", () => navigate(location.hash));
-  window.addEventListener("popstate", () => navigate(location.hash));
-
-  mobile.addEventListener("change", () => {
-    applyLayout();
-    navigate(location.hash, false);
-  });
-
-  applyLayout();
-  if (location.hash) navigate(location.hash);
-
-  /* HERO ENERGY GLOBE */
-  const canvas = document.getElementById("artwork");
-  const ctx = canvas.getContext("2d");
-  const art = canvas.parentElement;
-
-  const TAU = Math.PI * 2;
-  const orange = alpha => `rgba(255,106,0,${alpha})`;
-  const pale = alpha => `rgba(255,218,170,${alpha})`;
-
-  let width = 0;
-  let height = 0;
-  let heroVisible = true;
-  const pointer = { x: 0, y: 0 };
-  const follow = { x: 0, y: 0 };
-
-  const particles = Array.from({ length: 55 }, (_, i) => ({
-    angle: i * 2.399963,
-    distance: 1.3 + ((i * 37) % 100) / 100,
-    speed: .035 + (i % 7) * .009,
-    size: .6 + (i % 4) * .35
-  }));
-
-  function rotate(point, xAngle, yAngle, zAngle = 0) {
-    let { x, y, z } = point;
-
-    [x, z] = [
-      x * Math.cos(yAngle) - z * Math.sin(yAngle),
-      x * Math.sin(yAngle) + z * Math.cos(yAngle)
-    ];
-
-    [y, z] = [
-      y * Math.cos(xAngle) - z * Math.sin(xAngle),
-      y * Math.sin(xAngle) + z * Math.cos(xAngle)
-    ];
-
-    return {
-      x: x * Math.cos(zAngle) - y * Math.sin(zAngle),
-      y: x * Math.sin(zAngle) + y * Math.cos(zAngle),
-      z
-    };
-  }
-
-  function project(point, radius) {
-    const perspective = 3.8 / (3.8 - point.z);
-    return {
-      x: point.x * radius * perspective,
-      y: point.y * radius * perspective,
-      z: point.z
-    };
-  }
-
-  function drawGlobe() {
-    if (!ctx || !width || !height) return;
-
-    ctx.clearRect(0, 0, width, height);
-
-    const radius = Math.min(width, height) * .24;
-    const tilt = .35 + follow.y * .45;
-    const spin = time * .3 + follow.x * .65;
-
-    ctx.save();
-    ctx.translate(width / 2, height / 2);
-
-    const glow = ctx.createRadialGradient(
-      0, 0, 0, 0, 0, radius * 2.1
-    );
-    glow.addColorStop(0, orange(.13));
-    glow.addColorStop(.45, orange(.065));
-    glow.addColorStop(1, orange(0));
-
-    ctx.fillStyle = glow;
-    ctx.fillRect(-width / 2, -height / 2, width, height);
-
-    particles.forEach(particle => {
-      const angle = particle.angle + time * particle.speed;
-      const alpha = .2 + .4 *
-        (.5 + .5 * Math.sin(time + particle.angle));
-
-      ctx.fillStyle = pale(alpha);
-      ctx.beginPath();
-      ctx.arc(
-        Math.cos(angle) * radius * particle.distance,
-        Math.sin(angle) * radius * particle.distance * .77,
-        particle.size, 0, TAU
-      );
-      ctx.fill();
-    });
-
-    const segments = [];
-
-    function addCurve(points, orbital = false) {
-      for (let i = 1; i < points.length; i++) {
-        segments.push({
-          a: points[i - 1],
-          b: points[i],
-          depth: (points[i - 1].z + points[i].z) / 2,
-          orbital
-        });
-      }
-    }
-
-    for (let latitude = 1; latitude < 11; latitude++) {
-      const phi = latitude / 11 * Math.PI;
-      const points = [];
-
-      for (let step = 0; step <= 72; step++) {
-        const theta = step / 72 * TAU;
-        points.push(project(rotate({
-          x: Math.sin(phi) * Math.cos(theta),
-          y: Math.cos(phi),
-          z: Math.sin(phi) * Math.sin(theta)
-        }, tilt, spin), radius));
-      }
-      addCurve(points);
-    }
-
-    for (let longitude = 0; longitude < 14; longitude++) {
-      const theta = longitude / 14 * TAU;
-      const points = [];
-
-      for (let step = 0; step <= 48; step++) {
-        const phi = step / 48 * Math.PI;
-        points.push(project(rotate({
-          x: Math.sin(phi) * Math.cos(theta),
-          y: Math.cos(phi),
-          z: Math.sin(phi) * Math.sin(theta)
-        }, tilt, spin), radius));
-      }
-      addCurve(points);
-    }
-
-    const satellites = [];
-
-    for (let ring = 0; ring < 3; ring++) {
-      const ringRadius = 1.35 + ring * .13;
-
-      const orbitPoint = angle => project(rotate({
-        x: Math.cos(angle) * ringRadius,
-        y: Math.sin(angle) * ringRadius,
-        z: 0
-      },
-      .8 + ring * .6 + follow.y * .15,
-      time * .1 + ring * .9,
-      ring * .65 + follow.x * .15), radius);
-
-      addCurve(
-        Array.from({length: 97}, (_, i) => orbitPoint(i / 96 * TAU)),
-        true
-      );
-
-      satellites.push(orbitPoint(
-        time * (.55 + ring * .15) + ring * 2.1
-      ));
-    }
-
-    segments.sort((a, b) => a.depth - b.depth);
-
-    segments.forEach(segment => {
-      const brightness = Math.max(
-        0, Math.min(1, (segment.depth + 1.8) / 3.6)
-      );
-
-      ctx.strokeStyle = orange(segment.orbital
-        ? .14 + brightness * .48
-        : .035 + brightness * .4);
-      ctx.lineWidth = segment.orbital ? 1.15 : .75;
-      ctx.beginPath();
-      ctx.moveTo(segment.a.x, segment.a.y);
-      ctx.lineTo(segment.b.x, segment.b.y);
-      ctx.stroke();
-    });
-
-    ctx.shadowColor = "#ff6a00";
-
-    for (let i = 0; i < 20; i++) {
-      const y = 1 - (i / 19) * 2;
-      const r = Math.sqrt(1 - y * y);
-      const angle = i * 2.399963;
-      const point = project(rotate({
-        x: Math.cos(angle) * r,
-        y,
-        z: Math.sin(angle) * r
-      }, tilt, spin), radius);
-
-      if (point.z < -.15) continue;
-
-      ctx.shadowBlur = 12;
-      ctx.fillStyle = pale(.85);
-      ctx.beginPath();
-      ctx.arc(point.x, point.y, 1.7, 0, TAU);
-      ctx.fill();
-    }
-
-    satellites.forEach(point => {
-      ctx.shadowBlur = 18;
-      ctx.fillStyle = "#ffe5c9";
-      ctx.beginPath();
-      ctx.arc(point.x, point.y, 3, 0, TAU);
-      ctx.fill();
-    });
-
-    ctx.shadowBlur = 0;
-
-    const pulse = 1 + Math.sin(time * 1.8) * .1;
-    const coreRadius = radius * .38 * pulse;
-    const core = ctx.createRadialGradient(0, 0, 0, 0, 0, coreRadius);
-
-    core.addColorStop(0, pale(.95));
-    core.addColorStop(.08, orange(.85));
-    core.addColorStop(.3, orange(.3));
-    core.addColorStop(1, orange(0));
-
-    ctx.fillStyle = core;
-    ctx.beginPath();
-    ctx.arc(0, 0, coreRadius, 0, TAU);
-    ctx.fill();
-
-    ctx.strokeStyle = orange(.35);
-    ctx.lineWidth = 1;
-
-    for (let i = 0; i < 4; i++) {
-      const start = i * Math.PI / 2 + time * .035;
-      ctx.beginPath();
-      ctx.arc(0, 0, radius * 1.93, start, start + .23);
-      ctx.stroke();
-    }
-
-    ctx.restore();
-  }
-
-  function resizeGlobe() {
-    if (!ctx) return;
-
-    const rect = canvas.getBoundingClientRect();
-    const ratio = Math.min(devicePixelRatio || 1, 2);
-
-    width = rect.width;
-    height = rect.height;
-    canvas.width = Math.round(width * ratio);
-    canvas.height = Math.round(height * ratio);
-    ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
-
-    drawGlobe();
-  }
-
-  function animate(timestamp) {
-    frame = null;
-    if (paused || document.hidden || !heroVisible || !ctx) return;
-
-    const delta = lastTime === null
-      ? 0
-      : Math.min(timestamp - lastTime, 50) / 1000;
-
-    lastTime = timestamp;
-    time += delta;
-
-    const smoothing = 1 - Math.exp(-delta * 5);
-    follow.x += (pointer.x - follow.x) * smoothing;
-    follow.y += (pointer.y - follow.y) * smoothing;
-
-    drawGlobe();
-    frame = requestAnimationFrame(animate);
-  }
-
-  function syncMotion() {
-    if (frame !== null) cancelAnimationFrame(frame);
-    frame = null;
-    lastTime = null;
-
-    document.body.classList.toggle("motion-paused", paused);
-    motionButton.textContent = paused ? "Play motion" : "Pause motion";
-    motionButton.setAttribute("aria-pressed", String(paused));
-    motionButton.setAttribute(
-      "aria-label",
-      paused ? "Play animated artwork" : "Pause all animated artwork"
-    );
-
-    drawGlobe();
-
-    if (!paused && !document.hidden && heroVisible && ctx) {
-      frame = requestAnimationFrame(animate);
-    }
-  }
-
-  canvas.addEventListener("pointermove", event => {
-    if (paused) return;
-    const rect = canvas.getBoundingClientRect();
-    pointer.x = (event.clientX - rect.left) / rect.width - .5;
-    pointer.y = (event.clientY - rect.top) / rect.height - .5;
-  });
-
-  canvas.addEventListener("pointerleave", () => {
-    pointer.x = 0;
-    pointer.y = 0;
-  });
-
-  motionButton.addEventListener("click", () => {
-    paused = !paused;
-    syncMotion();
-  });
-
-  reducedMotion.addEventListener("change", event => {
-    paused = event.matches;
-    syncMotion();
-  });
-
-  document.addEventListener("visibilitychange", syncMotion);
-  window.addEventListener("resize", resizeGlobe);
-
-  if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver(entries => {
-      heroVisible = entries[0].isIntersecting;
-      syncMotion();
-    });
-    observer.observe(art);
-  }
-
-  resizeGlobe();
-  syncMotion();
-})();
-</script>
+<footer class="wrap site-footer">
+  <a class="wordmark" href="/about/">Robbie Calvin<span>.</span></a>
+  <nav aria-label="Profile and legal links">
+    <a href="https://github.com/robbiecalvin">GitHub</a>
+    <a href="https://www.linkedin.com/in/robbie-calvin-50710b386/">LinkedIn</a>
+    <a href="/terms/">Terms</a>
+    <a href="/privacy/">Privacy</a>
+    <a href="/legal/">Legal &amp; copyright</a>
+  </nav>
+</footer>
 </body>
 </html>

@@ -1,6 +1,7 @@
 name: Assemble approved plugin download
 on:
   push:
+    branches: [main]
     paths:
       - 'release-input/quick-seo/**'
       - 'tools/end-plugin-promotion.py'
@@ -14,7 +15,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   assemble:
-    if: github.repository == 'robbiecalvin/robbiecalvin'
+    if: github.repository == 'robbiecalvin/robbiecalvin' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

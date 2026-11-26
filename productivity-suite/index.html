@@ -3,15 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Task Manager Demo · Robbie Calvin</title>
+  <title>Intelligent Productivity Suite Task Manager Demo | Robbie Calvin</title>
+  <meta name="description" content="Try the Intelligent Productivity Suite task manager. Add and complete tasks in a browser demo that saves changes locally.">
+  <link rel="canonical" href="https://robbiecalvin.com/productivity-suite/">
   <link rel="stylesheet" href="/assets/styles/productivity-suite-demo.css">
   <script src="/assets/scripts/productivity-suite-demo.js" defer></script>
+<link rel="stylesheet" href="/assets/styles/digital-matter-tokens.css">
+<link rel="stylesheet" href="/assets/styles/digital-matter.css">
+<script type="module" src="/assets/scripts/digital-matter-portfolio.mjs"></script>
 </head>
-<body>
+<body data-design-page="intelligent-productivity-suite" data-scene-id="46">
   <main>
     <nav aria-label="Portfolio"><a href="/">Robbie Calvin</a> <a href="https://github.com/robbiecalvin/robbiecalvin/blob/main/docs/productivity-suite-case-study.md">Case study</a></nav>
+    <section class="portfolio-hero demo-hero">
+<div>
     <h1>Task Manager</h1>
     <p>Try the Productivity Suite task manager workflow. Changes are saved in this browser.</p>
+</div>
+<div class="cinematic-stage" data-cinematic-stage>
+  <img src="/assets/images/digital-matter-intelligent-productivity-suite.webp" alt="" width="480" height="480">
+  <canvas aria-hidden="true"></canvas>
+  <button class="cinematic-motion" type="button" aria-pressed="false" hidden>Pause motion</button>
+</div>
+    </section>
     <form id="task-form">
       <label for="title">Task title</label>
       <input id="title" name="title" required maxlength="200">

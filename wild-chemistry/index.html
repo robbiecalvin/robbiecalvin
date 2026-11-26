@@ -112,8 +112,11 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48 64x64">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/styles/digital-matter-tokens.css">
+<link rel="stylesheet" href="/assets/styles/digital-matter.css">
+<script type="module" src="/assets/scripts/digital-matter-portfolio.mjs"></script>
 </head>
-<body data-palette="red">
+<body data-design-page="wild-chemistry" data-scene-id="48" data-palette="red">
 <a class="skip-link" href="#top">Skip to content</a>
 <header>
 <nav class="wrap" aria-label="Main navigation">
@@ -129,10 +132,17 @@
 </nav>
 </header>
 <main class="wrap" id="top">
-<section class="content comic-heading">
+<section class="portfolio-hero">
+<div>
 <p class="eyebrow">Robbie Calvin / An original comic</p>
 <h1>Wild Chemistry</h1>
 <p class="intro">A chance meeting. An impossible connection. Open the cover and step into the story.</p>
+</div>
+<div class="cinematic-stage" data-cinematic-stage>
+  <img src="/assets/images/digital-matter-wild-chemistry.webp" alt="" width="480" height="480">
+  <canvas aria-hidden="true"></canvas>
+  <button class="cinematic-motion" type="button" aria-pressed="false" hidden>Pause motion</button>
+</div>
 </section>
 <section class="comic-reader" data-comic-reader aria-label="Wild Chemistry comic reader" tabindex="0">
 <div class="comic-toolbar">
