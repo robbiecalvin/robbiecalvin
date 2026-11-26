@@ -13,13 +13,13 @@
     },
     "quick-add": {
       "url": "/downloads/wordpress/quick-add.zip",
-      "sha256": "0c0747b325fb4311433cc6eb3cd8c9ef4d196d3ec2a19fe2a8299899df7789be",
-      "bytes": 443986,
+      "sha256": "84cf4b754e232f9b1fd77cc0d40ac90cec83f454d2ac72a4c496ee6940c1ce63",
+      "bytes": 444081,
       "sourceCommit": "d8514efa7d9049656bb86f7de330af607c80ac9d",
       "freePromotion": false,
       "sourceSha256": "4c441fccd43422e4ecb0532bb38c05b3f4ce6e1e6195bde4753f92284d88d4ca",
       "sourceVersion": "1.0.0",
-      "version": "1.0.1"
+      "version": "1.0.2"
     },
     "quick-audit": {
       "url": "/downloads/wordpress/quick-audit.zip",

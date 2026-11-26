@@ -1,0 +1,3427 @@
+{
+  "project": "RobbieCalvin.com",
+  "globalSettings": {
+    "typeface": "Preserve existing typography",
+    "motion": "Respect reduced-motion preferences",
+    "rendering": "Adaptive hybrid",
+    "intensity": "Balanced cinematic",
+    "navigation": "Preserve existing navigation",
+    "delivery": "Phased implementation",
+    "content": "Preserve existing content",
+    "notes": ""
+  },
+  "approvals": [
+    0,
+    1,
+    3,
+    4,
+    2
+  ],
+  "palettes": [
+    {
+      "name": "Solar Gold",
+      "colors": [
+        "#4c2005",
+        "#e89b17",
+        "#fff2a0",
+        "#a85c09"
+      ],
+      "angle": 135,
+      "finish": "Polished",
+      "spread": 60,
+      "stops": [
+        0,
+        28,
+        52,
+        100
+      ],
+      "metallic": 80,
+      "highlight": 85,
+      "shadow": 75
+    },
+    {
+      "name": "Burnished Copper",
+      "colors": [
+        "#36140e",
+        "#b65c36",
+        "#ffd0a0",
+        "#81351d"
+      ],
+      "angle": 135,
+      "finish": "Polished",
+      "spread": 60,
+      "stops": [
+        0,
+        28,
+        52,
+        100
+      ],
+      "metallic": 80,
+      "highlight": 85,
+      "shadow": 75
+    },
+    {
+      "name": "Golden Lime",
+      "colors": [
+        "#303b05",
+        "#9bbd16",
+        "#f6ff9a",
+        "#657b09"
+      ],
+      "angle": 135,
+      "finish": "Polished",
+      "spread": 60,
+      "stops": [
+        0,
+        28,
+        52,
+        100
+      ],
+      "metallic": 80,
+      "highlight": 85,
+      "shadow": 75
+    },
+    {
+      "name": "Emerald Jade",
+      "colors": [
+        "#032c22",
+        "#149b65",
+        "#b1ffd4",
+        "#076b55"
+      ],
+      "angle": 135,
+      "finish": "Polished",
+      "spread": 60,
+      "stops": [
+        0,
+        28,
+        52,
+        100
+      ],
+      "metallic": 80,
+      "highlight": 85,
+      "shadow": 75
+    },
+    {
+      "name": "Glacial Mint",
+      "colors": [
+        "#103b38",
+        "#65d7b7",
+        "#e1fff3",
+        "#328b90"
+      ],
+      "angle": 135,
+      "finish": "Polished",
+      "spread": 60,
+      "stops": [
+        0,
+        28,
+        52,
+        100
+      ],
+      "metallic": 80,
+      "highlight": 85,
+      "shadow": 75
+    },
+    {
+      "name": "Arctic Titanium",
+      "colors": [
+        "#202d3b",
+        "#859dad",
+        "#f0faff",
+        "#536775"
+      ],
+      "angle": 135,
+      "finish": "Polished",
+      "spread": 60,
+      "stops": [
+        0,
+        28,
+        52,
+        100
+      ],
+      "metallic": 80,
+      "highlight": 85,
+      "shadow": 75
+    },
+    {
+      "name": "Electric Sapphire",
+      "colors": [
+        "#081a50",
+        "#245fe8",
+        "#a5dfff",
+        "#292ba0"
+      ],
+      "angle": 135,
+      "finish": "Polished",
+      "spread": 60,
+      "stops": [
+        0,
+        28,
+        52,
+        100
+      ],
+      "metallic": 80,
+      "highlight": 85,
+      "shadow": 75
+    },
+    {
+      "name": "Royal Amethyst",
+      "colors": [
+        "#261044",
+        "#8641ca",
+        "#e5bcff",
+        "#53218c"
+      ],
+      "angle": 135,
+      "finish": "Polished",
+      "spread": 60,
+      "stops": [
+        0,
+        28,
+        52,
+        100
+      ],
+      "metallic": 80,
+      "highlight": 85,
+      "shadow": 75
+    },
+    {
+      "name": "Orchid Chrome",
+      "colors": [
+        "#37143e",
+        "#b65bc9",
+        "#ffd3fa",
+        "#7951bd"
+      ],
+      "angle": 135,
+      "finish": "Polished",
+      "spread": 60,
+      "stops": [
+        0,
+        28,
+        52,
+        100
+      ],
+      "metallic": 80,
+      "highlight": 85,
+      "shadow": 75
+    },
+    {
+      "name": "Magenta Rose",
+      "colors": [
+        "#430d32",
+        "#d3328b",
+        "#ffc1df",
+        "#9d205b"
+      ],
+      "angle": 135,
+      "finish": "Polished",
+      "spread": 60,
+      "stops": [
+        0,
+        28,
+        52,
+        100
+      ],
+      "metallic": 80,
+      "highlight": 85,
+      "shadow": 75
+    },
+    {
+      "name": "Crimson Ruby",
+      "colors": [
+        "#400810",
+        "#c41b39",
+        "#ffb4a9",
+        "#800b27"
+      ],
+      "angle": 135,
+      "finish": "Polished",
+      "spread": 60,
+      "stops": [
+        0,
+        28,
+        52,
+        100
+      ],
+      "metallic": 80,
+      "highlight": 85,
+      "shadow": 75
+    },
+    {
+      "name": "Champagne Bronze",
+      "colors": [
+        "#493523",
+        "#b89968",
+        "#fff1ce",
+        "#967346"
+      ],
+      "angle": 135,
+      "finish": "Polished",
+      "spread": 60,
+      "stops": [
+        0,
+        28,
+        52,
+        100
+      ],
+      "metallic": 80,
+      "highlight": 85,
+      "shadow": 75
+    },
+    {
+      "name": "Peacock Metal",
+      "colors": [
+        "#063b36",
+        "#159ca7",
+        "#b2ffe4",
+        "#2947a3"
+      ],
+      "angle": 135,
+      "finish": "Polished",
+      "spread": 60,
+      "stops": [
+        0,
+        28,
+        52,
+        100
+      ],
+      "metallic": 80,
+      "highlight": 85,
+      "shadow": 75
+    },
+    {
+      "name": "Midnight Cobalt",
+      "colors": [
+        "#080f31",
+        "#294ca5",
+        "#9bb7ff",
+        "#28266a"
+      ],
+      "angle": 135,
+      "finish": "Polished",
+      "spread": 60,
+      "stops": [
+        0,
+        28,
+        52,
+        100
+      ],
+      "metallic": 80,
+      "highlight": 85,
+      "shadow": 75
+    },
+    {
+      "name": "Platinum Lavender",
+      "colors": [
+        "#373044",
+        "#a69abf",
+        "#faf0ff",
+        "#77708d"
+      ],
+      "angle": 135,
+      "finish": "Polished",
+      "spread": 60,
+      "stops": [
+        0,
+        28,
+        52,
+        100
+      ],
+      "metallic": 80,
+      "highlight": 85,
+      "shadow": 75
+    },
+    {
+      "name": "Rose Gold",
+      "colors": [
+        "#502923",
+        "#cb887c",
+        "#ffe1ce",
+        "#b26977"
+      ],
+      "angle": 135,
+      "finish": "Polished",
+      "spread": 60,
+      "stops": [
+        0,
+        28,
+        52,
+        100
+      ],
+      "metallic": 80,
+      "highlight": 85,
+      "shadow": 75
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "name": "Homepage",
+      "palette": {
+        "name": "Platinum Lavender",
+        "colors": [
+          "#373044",
+          "#a69abf",
+          "#faf0ff",
+          "#77708d"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ]
+      },
+      "animationPalette": {
+        "mode": "independent",
+        "colors": [
+          "#493523",
+          "#b89968",
+          "#fff1ce",
+          "#967346"
+        ]
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A highly dimensional solar-system-inspired sculpture with rotating metallic orbital paths, glowing particles, a luminous central core and rich orange, yellow and gold variations.",
+        "retain": false,
+        "speed": 50,
+        "duration": 12,
+        "depth": 85,
+        "glow": 60,
+        "particles": 45,
+        "movement": 65,
+        "reflect": 85,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": false
+      }
+    },
+    {
+      "page": 2,
+      "name": "Applications",
+      "palette": {
+        "name": "Crimson Ruby",
+        "colors": [
+          "#400810",
+          "#c41b39",
+          "#ffb4a9",
+          "#800b27"
+        ],
+        "angle": 135,
+        "finish": "Satin",
+        "spread": 60,
+        "stops": [
+          0,
+          30,
+          75,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Electric Sapphire",
+        "colors": [
+          "#081a50",
+          "#245fe8",
+          "#a5dfff",
+          "#292ba0"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A suspended three-dimensional sculpture composed of precision-engineered metallic application modules. Individual geometric components emerge from darkness, rotate independently, and assemble into a luminous interconnected digital ecosystem. Streams of light travel between modules as the camera slowly orbits the structure. The sculpture then separates and seamlessly repeats.",
+        "retain": false,
+        "speed": 50,
+        "duration": 12,
+        "depth": 85,
+        "glow": 60,
+        "particles": 35,
+        "movement": 65,
+        "reflect": 85,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 3,
+      "name": "Websites",
+      "palette": {
+        "name": "Rose Gold",
+        "colors": [
+          "#502923",
+          "#cb887c",
+          "#ffe1ce",
+          "#b26977"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Solar Gold",
+        "colors": [
+          "#4c2005",
+          "#e89b17",
+          "#fff2a0",
+          "#a85c09"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental floating sculpture of layered metallic browser windows and translucent glass interfaces. The individual panels emerge from a luminous central plane, unfolding into three-dimensional architectural structures. The camera travels between the layers as intricate website layouts materialize, transform and dissolve into liquid metallic ribbons. The ribbons converge to reconstruct the original sculpture in a seamless cinematic loop.",
+        "retain": false,
+        "speed": 50,
+        "duration": 15,
+        "depth": 85,
+        "glow": 55,
+        "particles": 25,
+        "movement": 65,
+        "reflect": 85,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 4,
+      "name": "Services",
+      "palette": {
+        "name": "Emerald Jade",
+        "colors": [
+          "#032c22",
+          "#149b65",
+          "#b1ffd4",
+          "#076b55"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Golden Lime",
+        "colors": [
+          "#303b05",
+          "#9bbd16",
+          "#f6ff9a",
+          "#657b09"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, floating precision-engineered metallic sculpture consisting of seven interlocking architectural rings, each representing a professional service. The rings rotate independently on different axes, revealing intricate mechanical details and luminous pathways. Individual fragments emerge from darkness and connect to form a perfectly balanced dimensional structure surrounding a radiant central core. The camera moves elegantly around the sculpture as reflections travel across its polished surfaces. The structure gracefully disassembles and reforms in a seamless cinematic loop.",
+        "retain": false,
+        "speed": 40,
+        "duration": 15,
+        "depth": 90,
+        "glow": 50,
+        "particles": 25,
+        "movement": 60,
+        "reflect": 90,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 5,
+      "name": "Lab",
+      "palette": {
+        "name": "Magenta Rose",
+        "colors": [
+          "#430d32",
+          "#d3328b",
+          "#ffc1df",
+          "#9d205b"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Burnished Copper",
+        "colors": [
+          "#36140e",
+          "#b65c36",
+          "#ffd0a0",
+          "#81351d"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A futuristic experimental reactor suspended in a dark, weightless laboratory. A mass of reflective liquid metal floats inside a transparent dimensional containment chamber, continuously transforming between crystalline structures, intricate molecular lattices and impossible geometric forms. Electrical impulses travel through the material as fragments detach, levitate and recombine. The camera slowly approaches the reactor, revealing microscopic details, iridescent reflections and luminous energy within the material. The entire structure collapses into a single metallic droplet before expanding again in a seamless cinematic loop.",
+        "retain": false,
+        "speed": 45,
+        "duration": 18,
+        "depth": 95,
+        "glow": 65,
+        "particles": 40,
+        "movement": 75,
+        "reflect": 95,
+        "camera": "Dolly inward",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 6,
+      "name": "Creative",
+      "palette": {
+        "name": "Royal Amethyst",
+        "colors": [
+          "#261044",
+          "#8641ca",
+          "#e5bcff",
+          "#53218c"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Crimson Ruby",
+        "colors": [
+          "#400810",
+          "#c41b39",
+          "#ffb4a9",
+          "#800b27"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, impossibly fluid metallic sculpture suspended in darkness. Flowing ribbons of liquid chrome intertwine like fabric caught in a weightless environment, gradually forming an abstract human face before dissolving into expressive waves, crystalline fragments and sculptural brushstrokes. The material responds to an invisible musical rhythm, with luminous reflections travelling across its surfaces. The camera moves gracefully through the sculpture, revealing intricate textures and unexpected forms. All fragments ultimately converge into a single floating metallic ribbon, completing a seamless cinematic loop.",
+        "retain": false,
+        "speed": 40,
+        "duration": 20,
+        "depth": 95,
+        "glow": 45,
+        "particles": 30,
+        "movement": 80,
+        "reflect": 95,
+        "camera": "Floating",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 7,
+      "name": "About",
+      "palette": {
+        "name": "Champagne Bronze",
+        "colors": [
+          "#493523",
+          "#b89968",
+          "#fff1ce",
+          "#967346"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental metallic human bust suspended in a dark, cinematic environment. Hundreds of individually floating geometric fragments, architectural structures, circuitry and sculptural ribbons gradually assemble into an anonymous human likeness, symbolizing the convergence of creativity, technology and human ambition. One side of the sculpture is smooth polished metal while the other reveals an intricate internal network of luminous pathways. The camera slowly rotates around the sculpture as reflections sweep across its surfaces. The portrait dissolves into floating fragments before seamlessly reconstructing itself.",
+        "retain": false,
+        "speed": 35,
+        "duration": 20,
+        "depth": 95,
+        "glow": 40,
+        "particles": 30,
+        "movement": 55,
+        "reflect": 95,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 8,
+      "name": "Contact",
+      "palette": {
+        "name": "Platinum Lavender",
+        "colors": [
+          "#373044",
+          "#a69abf",
+          "#faf0ff",
+          "#77708d"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Solar Gold",
+        "colors": [
+          "#4c2005",
+          "#e89b17",
+          "#fff2a0",
+          "#a85c09"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "Two monumental, precision-sculpted metallic forms float opposite one another in a dark cinematic environment. Luminous strands of energy extend from each sculpture, reaching across the empty space and gradually intertwine into a complex dimensional bridge. Pulses of light travel in both directions, representing conversation, connection and the exchange of ideas. The bridge transforms into a radiant interconnected sphere, surrounded by rotating metallic filaments and suspended particles. The sphere gracefully separates back into the original two sculptures, completing a seamless cinematic loop.",
+        "retain": false,
+        "speed": 40,
+        "duration": 16,
+        "depth": 90,
+        "glow": 65,
+        "particles": 25,
+        "movement": 60,
+        "reflect": 90,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 9,
+      "name": "Codex Master",
+      "palette": {
+        "name": "Crimson Ruby",
+        "colors": [
+          "#400810",
+          "#c41b39",
+          "#ffb4a9",
+          "#800b27"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Midnight Cobalt",
+        "colors": [
+          "#080f31",
+          "#294ca5",
+          "#9bb7ff",
+          "#28266a"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A highly dimensional artificial intelligence brain gradually materializes in a dark cinematic environment. Individual metallic neural pathways emerge from a luminous central nucleus, branching outward and connecting to form an increasingly sophisticated three-dimensional neural architecture. Electrical impulses travel through interconnected pathways as thousands of microscopic nodes activate in coordinated sequences. Reflective metallic surfaces, translucent structures and suspended particles create an extraordinary sense of depth. The camera slowly orbits the growing brain, revealing its intricate internal architecture. Once fully formed, the brain pulses with synchronized intelligence before gracefully dissolving into its original nucleus and beginning the seamless loop again.",
+        "retain": false,
+        "speed": 45,
+        "duration": 20,
+        "depth": 95,
+        "glow": 70,
+        "particles": 40,
+        "movement": 65,
+        "reflect": 90,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 10,
+      "name": "Myra",
+      "palette": {
+        "name": "Rose Gold",
+        "colors": [
+          "#502923",
+          "#cb887c",
+          "#ffe1ce",
+          "#b26977"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Golden Lime",
+        "colors": [
+          "#303b05",
+          "#9bbd16",
+          "#f6ff9a",
+          "#657b09"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "An exquisitely polished, three-dimensional metallic serving tray emerges from darkness, carrying a sculptural wine bottle and an elegantly formed glass of beer. The tray floats effortlessly in a weightless cinematic environment, slowly approaching the visitor as though being presented by an invisible server. The bottle and glass feature intricate reflective surfaces, translucent details and sophisticated metallic finishes. Subtle reflections travel across the tray as it gently tilts and rotates, revealing its precision-crafted edges. Suspended luminous particles create an atmosphere of refined hospitality. The entire arrangement gracefully retreats into darkness before reappearing in a seamless cinematic loop.",
+        "retain": false,
+        "speed": 35,
+        "duration": 15,
+        "depth": 95,
+        "glow": 35,
+        "particles": 15,
+        "movement": 45,
+        "reflect": 95,
+        "camera": "Dolly inward",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 11,
+      "name": "Badehaus X",
+      "palette": {
+        "name": "Platinum Lavender",
+        "colors": [
+          "#373044",
+          "#a69abf",
+          "#faf0ff",
+          "#77708d"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Crimson Ruby",
+        "colors": [
+          "#400810",
+          "#c41b39",
+          "#ffb4a9",
+          "#800b27"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental metallic door stands alone within a dark, atmospheric architectural space. A narrow strip of luminous energy traces its edges before the door slowly swings inward, revealing a mysterious descending staircase. The camera moves forward through the doorway and begins descending into an underground environment of polished metallic walls, dramatic shadows, atmospheric haze and recessed architectural lighting. Each step becomes illuminated as the camera approaches. At the bottom of the staircase, an enormous sculptural X gradually emerges from darkness. The camera passes through its luminous centre, transitioning seamlessly back to the original closed door. The experience evokes secrecy, exclusivity, anticipation and discovery.",
+        "retain": false,
+        "speed": 35,
+        "duration": 22,
+        "depth": 100,
+        "glow": 45,
+        "particles": 20,
+        "movement": 65,
+        "reflect": 90,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 12,
+      "name": "SpeechFlow",
+      "palette": {
+        "name": "Solar Gold",
+        "colors": [
+          "#4c2005",
+          "#e89b17",
+          "#fff2a0",
+          "#a85c09"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Glacial Mint",
+        "colors": [
+          "#103b38",
+          "#65d7b7",
+          "#e1fff3",
+          "#328b90"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, translucent iridescent bubble floats effortlessly within a dark cinematic environment. Its surface ripples with liquid metallic reflections and shifting spectral colours. Subtle acoustic vibrations travel across its membrane, causing the sphere to gradually transform into a highly dimensional sculptural speech bubble. Luminous sound waves emerge within the bubble and progressively resolve into perfectly formed floating words and sentences. The typography appears suspended inside the transparent structure, illuminated by flowing pulses of energy. The camera gently orbits the sculpture, revealing its extraordinary depth and reflective surfaces. The words dissolve into microscopic particles, the speech bubble returns to its original spherical form, and the entire sequence repeats in a seamless cinematic loop.",
+        "retain": false,
+        "speed": 40,
+        "duration": 16,
+        "depth": 95,
+        "glow": 60,
+        "particles": 30,
+        "movement": 65,
+        "reflect": 95,
+        "camera": "Floating",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 13,
+      "name": "QuickWoo Desktop",
+      "palette": {
+        "name": "Champagne Bronze",
+        "colors": [
+          "#493523",
+          "#b89968",
+          "#fff1ce",
+          "#967346"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Electric Sapphire",
+        "colors": [
+          "#081a50",
+          "#245fe8",
+          "#a5dfff",
+          "#292ba0"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A precision-engineered metallic desktop computer floats in a dark, weightless cinematic environment. Its display gradually separates into multiple translucent dimensional layers, revealing an interconnected commerce ecosystem. Sculptural product cubes, shopping carts, order documents, inventory modules and luminous analytical graphs emerge from the screen and orbit the computer in perfectly synchronized motion. Streams of light connect each component, representing the seamless exchange of information between a digital storefront and its desktop command centre. The camera moves elegantly around the entire structure, revealing intricate reflections and mechanical details. All floating components converge and reassemble inside the original desktop display, completing a seamless cinematic loop.",
+        "retain": false,
+        "speed": 45,
+        "duration": 18,
+        "depth": 95,
+        "glow": 55,
+        "particles": 25,
+        "movement": 70,
+        "reflect": 95,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 14,
+      "name": "KIMIX",
+      "palette": {
+        "name": "Magenta Rose",
+        "colors": [
+          "#430d32",
+          "#d3328b",
+          "#ffc1df",
+          "#9d205b"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Emerald Jade",
+        "colors": [
+          "#032c22",
+          "#149b65",
+          "#b1ffd4",
+          "#076b55"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental three-dimensional audio waveform floats within a dark cinematic environment, composed of hundreds of highly reflective metallic ribbons. The ribbons oscillate and pulse in synchronization with an imagined deep electronic rhythm, gradually curling inward into concentric circular structures. Individual sound frequencies become intricately engraved grooves as the entire waveform transforms into a suspended metallic vinyl record. The record rotates elegantly on its axis while luminous pulses travel through its grooves and dimensional sound waves radiate from its edges. The camera moves around the sculpture, revealing microscopic surface details, dramatic reflections and the physical depth of the sound. The record gradually unravels into flowing metallic audio waves, returning to its original form in a seamless cinematic loop.",
+        "retain": false,
+        "speed": 55,
+        "duration": 16,
+        "depth": 95,
+        "glow": 55,
+        "particles": 25,
+        "movement": 85,
+        "reflect": 95,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 15,
+      "name": "WordPress Plugins — Catalogue",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Electric Sapphire",
+        "colors": [
+          "#081a50",
+          "#245fe8",
+          "#a5dfff",
+          "#292ba0"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental metallic WordPress emblem floats within a dark cinematic environment, surrounded by seventeen individually sculpted, precision-engineered plugin modules. Each module features a unique engraved symbol representing its function. The modules rotate independently, revealing intricate circuitry, mechanical connectors and translucent internal structures. One by one, they move toward the central WordPress sculpture, connecting through luminous pathways and interlocking metallic mechanisms. The entire assembly transforms into an extraordinary dimensional architectural sphere, representing a unified ecosystem of expandable functionality. The camera travels around and through the interconnected modules as pulses of energy illuminate their internal structures. The sculpture gracefully separates into its original individual components, completing a seamless cinematic loop.",
+        "retain": false,
+        "speed": 45,
+        "duration": 20,
+        "depth": 95,
+        "glow": 55,
+        "particles": 30,
+        "movement": 70,
+        "reflect": 95,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 16,
+      "name": "Launchboard",
+      "palette": {
+        "name": "Golden Lime",
+        "colors": [
+          "#303b05",
+          "#9bbd16",
+          "#f6ff9a",
+          "#657b09"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Solar Gold",
+        "colors": [
+          "#4c2005",
+          "#e89b17",
+          "#fff2a0",
+          "#a85c09"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "An extraordinary precision-engineered metallic launch platform floats within a dark cinematic environment. Multiple dimensional dashboard panels, geometric application modules and luminous interface elements emerge from the platform, rotating independently before aligning into a perfectly organized architectural command centre. A central sculptural arrow gradually rises through the structure, gathering energy from interconnected luminous pathways. Concentric metallic rings rotate around the ascending sculpture as streams of light accelerate upward, symbolizing momentum, organization and the transformation of ideas into action. The camera travels through the layered architecture before pulling back to reveal the complete floating launch system. The structure dissolves into suspended metallic fragments that descend and reconstruct the original platform in a seamless cinematic loop.",
+        "retain": false,
+        "speed": 45,
+        "duration": 18,
+        "depth": 95,
+        "glow": 60,
+        "particles": 30,
+        "movement": 75,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 17,
+      "name": "MeetDiscreet",
+      "palette": {
+        "name": "Emerald Jade",
+        "colors": [
+          "#032c22",
+          "#149b65",
+          "#b1ffd4",
+          "#076b55"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Crimson Ruby",
+        "colors": [
+          "#400810",
+          "#c41b39",
+          "#ffb4a9",
+          "#800b27"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "Two monumental, anonymous metallic faces emerge from opposite sides of a dark cinematic environment. Their surfaces are composed of intricately layered sculptural ribbons, polished metal and translucent crystalline fragments. The faces slowly turn toward one another without revealing identifiable features. As they approach, a delicate luminous filament forms between them, transforming into a complex network of interconnected metallic strands. Curved architectural shields gradually assemble around the connection, forming an elegant enclosed sculpture that symbolizes privacy, intimacy and discretion. The camera moves gracefully around the structure, revealing extraordinary reflections, deep shadows and subtle pulses of light. The sculpture separates into two anonymous silhouettes that retreat into darkness before seamlessly repeating the sequence.",
+        "retain": false,
+        "speed": 30,
+        "duration": 20,
+        "depth": 95,
+        "glow": 35,
+        "particles": 20,
+        "movement": 55,
+        "reflect": 95,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 18,
+      "name": "Typing School",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Champagne Bronze",
+        "colors": [
+          "#493523",
+          "#b89968",
+          "#fff1ce",
+          "#967346"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "An exquisitely engineered three-dimensional metallic keyboard floats within a dark cinematic environment. Individual keycaps rise from the keyboard's precision-crafted chassis, revealing intricate mechanical switches, translucent internal components and luminous circuitry beneath. The keys descend into their original positions and begin depressing and releasing independently in a rhythmic typing sequence. Each keystroke produces a reactive pulse of illumination that travels through neighbouring keys and across the metallic surface. Sculptural letters emerge from the activated keys, floating above the keyboard before assembling into perfectly formed words. The camera glides across the keyboard at a low cinematic angle, revealing extraordinary reflections, mechanical movement and microscopic surface details. The letters dissolve into luminous particles as the keyboard returns to its original suspended position, completing a seamless cinematic loop.",
+        "retain": false,
+        "speed": 55,
+        "duration": 16,
+        "depth": 95,
+        "glow": 65,
+        "particles": 25,
+        "movement": 75,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 19,
+      "name": "FobFather",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Burnished Copper",
+        "colors": [
+          "#36140e",
+          "#b65c36",
+          "#ffd0a0",
+          "#81351d"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, precision-engineered metallic key fob floats effortlessly within a dark cinematic environment. The camera slowly approaches the sculpture, revealing intricately machined edges, polished metallic surfaces, engraved details and translucent internal components. Concentric waves of luminous energy radiate from the fob as a second identical sculpture gradually materializes alongside it. The two fobs separate, rotating independently in perfect synchronization while delicate strands of light travel between their surfaces. Additional metallic fragments briefly emerge to reveal the extraordinary dimensional construction of each object. The camera elegantly orbits the suspended sculptures as reflections sweep across their polished surfaces. The two fobs gradually move toward one another, seamlessly merging into a single perfectly formed metallic key fob. The luminous energy subsides before the entire duplication sequence begins again in a seamless cinematic loop.",
+        "retain": false,
+        "speed": 40,
+        "duration": 16,
+        "depth": 95,
+        "glow": 45,
+        "particles": 20,
+        "movement": 65,
+        "reflect": 95,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 20,
+      "name": "Crystal Eye",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Orchid Chrome",
+        "colors": [
+          "#37143e",
+          "#b65bc9",
+          "#ffd3fa",
+          "#7951bd"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental three-dimensional crystalline eye emerges from darkness, suspended within an extraordinary cinematic environment. The eye is sculpted from hundreds of precision-cut gemstone facets, translucent crystalline structures and flowing polished metallic contours. Its intricately detailed iris consists of concentric layers of refractive crystal, each capturing and redirecting luminous energy toward a deep, mysterious central pupil. Subtle movements allow the eye to look naturally around its environment, while delicate reflections travel across its faceted surfaces. The crystalline eyelids gracefully close and reopen in a natural blinking motion. As the camera slowly approaches, microscopic details within the iris become visible, revealing an extraordinary architectural universe of crystalline geometry, shifting reflections and suspended luminous particles. The pupil expands and contracts subtly in response to changing illumination. The camera gradually retreats as the eye returns to its original position, completing a seamless cinematic loop.",
+        "retain": false,
+        "speed": 30,
+        "duration": 20,
+        "depth": 100,
+        "glow": 50,
+        "particles": 25,
+        "movement": 40,
+        "reflect": 100,
+        "camera": "Dolly inward",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 21,
+      "name": "Trusted Cash Loans",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Solar Gold",
+        "colors": [
+          "#4c2005",
+          "#e89b17",
+          "#fff2a0",
+          "#a85c09"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "\nA magnificent, precision-engineered metallic bird emerges from a dark cinematic environment, its expansive wings composed of intricately sculpted metallic feathers, polished crystalline components and luminous architectural details. Each feather moves independently as the bird gracefully spreads its wings, revealing extraordinary metallic reflections across its dimensional form.\n\nThe bird takes flight, carrying elegantly folded banknotes in its talons as polished metallic coins orbit around its body in fluid, synchronized formations. Additional banknotes trail behind its wings, flowing naturally through the air while shimmering particles of light accentuate its movements.\n\nThe camera dynamically follows the bird as it soars through the darkness, sweeping beneath its wings and circling its sculptural form to reveal intricate mechanical details, engraved metallic surfaces and spectacular reflections. With each powerful wingbeat, luminous streams of energy ripple through the surrounding currency, symbolizing financial freedom, prosperity, opportunity and trust.\n\nThe bird gradually ascends, spreading its wings to their full monumental span as the floating currency forms an elegant spiral around its body. The spiral dissolves into luminous fragments before seamlessly reassembling into the original formation, allowing the bird to return to its opening position and complete a continuous cinematic loop.\n\nThe overall aesthetic is luxurious, futuristic and sophisticated, featuring hyper-realistic metallic materials, dramatic directional lighting, deep atmospheric shadows, fluid motion and exceptional three-dimensional depth.",
+        "retain": false,
+        "speed": 35,
+        "duration": 20,
+        "depth": 95,
+        "glow": 45,
+        "particles": 25,
+        "movement": 60,
+        "reflect": 95,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 22,
+      "name": "Quick Accountant",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Emerald Jade",
+        "colors": [
+          "#032c22",
+          "#149b65",
+          "#b1ffd4",
+          "#076b55"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, precision-engineered metallic accounting machine floats within a dark cinematic environment. Hundreds of individually sculpted numbers, financial documents, polished coins and translucent ledger panels emerge from darkness, initially suspended in an extraordinary chaotic arrangement. A luminous central mechanism activates, drawing each component into a perfectly synchronized architectural structure. Metallic numbers travel through rotating mathematical rings, while individual transactions organize themselves into dimensional financial ledgers. Sculptural bar graphs rise from polished platforms and luminous analytical curves weave through the floating components. The camera travels between the intricate layers, revealing engraved numerical details, crystalline circuitry and extraordinary metallic reflections. Two opposing streams of financial information gradually converge into a perfectly balanced metallic scale, symbolizing accuracy, organization and financial clarity. The entire structure separates into thousands of suspended numerical fragments before reconstructing its original formation in a seamless cinematic loop.",
+        "retain": false,
+        "speed": 45,
+        "duration": 18,
+        "depth": 95,
+        "glow": 50,
+        "particles": 30,
+        "movement": 70,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 23,
+      "name": "Quick Add",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Electric Sapphire",
+        "colors": [
+          "#081a50",
+          "#245fe8",
+          "#a5dfff",
+          "#292ba0"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental three-dimensional metallic plus symbol floats within a dark cinematic environment, constructed from intricately machined architectural components and translucent crystalline layers. As the sculpture rotates, individual metallic cubes, document panels and geometric content modules emerge from its luminous central core. Each newly created object separates from the central sculpture, unfolds into a sophisticated dimensional structure and moves into a perfectly organized floating grid. Pulses of energy travel through the interconnected modules as additional objects materialize in rapid, synchronized sequences. The camera dynamically travels between the expanding structures, revealing extraordinary metallic reflections, precision-engineered surfaces and intricate mechanical details. The growing collection of objects gradually folds inward, transforming into streams of liquid metal that converge to reconstruct the original monumental plus symbol, completing a seamless cinematic loop. The animation symbolizes effortless creation, rapid expansion and the transformation of a single action into limitless possibilities.",
+        "retain": false,
+        "speed": 60,
+        "duration": 15,
+        "depth": 95,
+        "glow": 60,
+        "particles": 25,
+        "movement": 80,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 24,
+      "name": "Quick Audit",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Crimson Ruby",
+        "colors": [
+          "#400810",
+          "#c41b39",
+          "#ffb4a9",
+          "#800b27"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, precision-engineered metallic magnifying glass floats within a dark cinematic environment, surrounded by suspended architectural layers representing the internal structure of a digital website. Its extraordinary crystalline lens is composed of concentric optical elements, polished metallic rings and intricately machined mechanisms. The magnifying glass slowly travels across the floating structures, projecting a luminous scanning beam that penetrates each individual layer. As the beam passes through the architecture, hidden circuitry, fragmented code, structural irregularities and microscopic details become visible. Individual anomalies illuminate and separate from the surrounding structure, transforming into organized dimensional diagnostic panels. The camera moves through the crystalline lens itself, revealing an extraordinary magnified universe of digital components, reflective surfaces and interconnected pathways. The diagnostic panels converge into a precision-engineered metallic audit report, surrounded by luminous analytical rings. The entire sculpture gracefully disassembles into suspended fragments before reconstructing its original formation in a seamless cinematic loop. The overall aesthetic evokes precision, transparency, discovery and exceptional analytical intelligence.",
+        "retain": false,
+        "speed": 40,
+        "duration": 18,
+        "depth": 95,
+        "glow": 55,
+        "particles": 25,
+        "movement": 65,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 25,
+      "name": "Quick Code",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Peacock Metal",
+        "colors": [
+          "#063b36",
+          "#159ca7",
+          "#b2ffe4",
+          "#2947a3"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "Two monumental, three-dimensional metallic code brackets float opposite one another within a dark cinematic environment. Their surfaces are composed of intricately machined architectural layers, polished metallic contours and translucent crystalline circuitry. Thousands of individually sculpted programming characters emerge from the surrounding darkness, flowing between the brackets like streams of liquid intelligence. The characters rotate, align and interconnect, transforming abstract lines of code into extraordinary dimensional architectural structures. Geometric modules, luminous pathways and precision-engineered digital components assemble into a complex functioning sculpture suspended between the brackets. A radiant diagonal slash gradually materializes at the centre, completing an enormous sculptural coding symbol. The camera travels through the flowing characters and interconnected architecture, revealing microscopic engraved details, spectacular metallic reflections and extraordinary three-dimensional depth. Pulses of energy travel through the completed structure before it gracefully dissolves into individual programming characters, which spiral inward and reconstruct the original metallic brackets in a seamless cinematic loop. The animation symbolizes the transformation of abstract instructions into functional digital reality.",
+        "retain": false,
+        "speed": 50,
+        "duration": 18,
+        "depth": 95,
+        "glow": 60,
+        "particles": 35,
+        "movement": 75,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 26,
+      "name": "Quick Core",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Royal Amethyst",
+        "colors": [
+          "#261044",
+          "#8641ca",
+          "#e5bcff",
+          "#53218c"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, precision-engineered metallic energy core floats within a dark cinematic environment. Its exterior consists of intricately interlocking mechanical shells, concentric architectural rings and translucent crystalline components. The outer layers gradually separate and rotate independently, revealing an extraordinarily complex internal nucleus pulsating with luminous energy. Individual metallic modules emerge from the surrounding darkness and connect to the central core through precisely engineered mechanical interfaces and flowing streams of light. Each connection activates a new sequence of illuminated circuitry, transmitting energy throughout the expanding dimensional architecture. The camera travels through the rotating outer shells and penetrates the internal structure, revealing microscopic mechanical details, polished metallic surfaces and intricate interconnected pathways. The entire system reaches a moment of perfect synchronization, forming a monumental spherical engine of extraordinary complexity. A powerful but elegant pulse of energy radiates outward before the surrounding modules retract and the mechanical shells reconstruct the original sculpture in a seamless cinematic loop. The animation symbolizes foundational architecture, centralized intelligence, interconnected functionality and the invisible engine that powers an entire digital ecosystem.",
+        "retain": false,
+        "speed": 40,
+        "duration": 20,
+        "depth": 100,
+        "glow": 65,
+        "particles": 30,
+        "movement": 70,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 27,
+      "name": "Quick Course Builder",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Glacial Mint",
+        "colors": [
+          "#103b38",
+          "#65d7b7",
+          "#e1fff3",
+          "#328b90"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, precision-sculpted metallic book floats within a dark cinematic environment. Its intricately engraved covers slowly open, revealing hundreds of translucent crystalline pages illuminated by a radiant internal light. Individual pages detach from the book, levitate and unfold into extraordinary three-dimensional educational modules, sculptural diagrams, mathematical symbols and interconnected architectural structures. The floating components gradually assemble into a magnificent ascending spiral staircase, each step representing a new stage of knowledge and understanding. Luminous pathways connect the individual learning modules as pulses of energy travel upward through the structure. The camera moves through the open book and ascends the suspended staircase, revealing extraordinary metallic reflections, intricate engraved details and dimensional representations of knowledge. At the summit, the entire architecture converges into a radiant sculptural graduation cap surrounded by elegant orbital rings. The cap dissolves into thousands of luminous fragments that descend, transform into individual pages and reconstruct the original metallic book, completing a seamless cinematic loop. The animation symbolizes the transformation of information into structured education, intellectual growth and limitless learning possibilities.",
+        "retain": false,
+        "speed": 40,
+        "duration": 22,
+        "depth": 95,
+        "glow": 55,
+        "particles": 30,
+        "movement": 70,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 28,
+      "name": "Quick Edit",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Magenta Rose",
+        "colors": [
+          "#430d32",
+          "#d3328b",
+          "#ffc1df",
+          "#9d205b"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "An extraordinary, precision-engineered metallic stylus floats within a dark cinematic environment, surrounded by suspended crystalline interface panels and intricately sculpted digital content. The stylus gracefully approaches a monumental translucent document, its polished tip radiating a concentrated point of luminous energy. As the stylus moves across the surface, individual words, geometric components and architectural content blocks detach from the document, levitate and transform in real time. Entire sections rearrange themselves with extraordinary precision, while flowing metallic ribbons reshape into typography, images and perfectly aligned dimensional layouts. A sculptural cursor moves between the floating components, leaving elegant trails of light as each modification takes effect. The camera dynamically follows the stylus, travelling between the layers of the evolving document and revealing microscopic engraved details, sophisticated metallic reflections and extraordinary crystalline depth. The newly refined composition assembles into a perfectly polished architectural interface before dissolving into liquid metallic fragments. The fragments reconstruct the original document and stylus, completing a seamless cinematic loop. The animation symbolizes effortless modification, immediate transformation, creative control and the precision of intelligent editing.",
+        "retain": false,
+        "speed": 55,
+        "duration": 16,
+        "depth": 95,
+        "glow": 55,
+        "particles": 25,
+        "movement": 80,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 29,
+      "name": "Quick Forms",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Rose Gold",
+        "colors": [
+          "#502923",
+          "#cb887c",
+          "#ffe1ce",
+          "#b26977"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, three-dimensional metallic form emerges from darkness, suspended within an extraordinary cinematic environment. Its architecture consists of individually sculpted input fields, crystalline checkboxes, precision-engineered toggle switches, rotating selection mechanisms and luminous typography. Each component floats independently before gracefully aligning into a sophisticated dimensional interface. Streams of luminous particles approach the sculpture, transforming into perfectly formed letters, numbers and symbolic information as they enter the individual fields. Metallic checkboxes activate in synchronized sequences, toggle switches rotate into position and intricate pathways illuminate as information travels through the structure. The camera moves between the translucent interface layers, revealing extraordinary metallic reflections, microscopic mechanical details and interconnected crystalline circuitry. Once the form is completed, a monumental sculptural checkmark emerges from its centre, surrounded by expanding rings of luminous energy. The completed information transforms into an elegant metallic sphere before separating into individual components and reconstructing the original empty form in a seamless cinematic loop. The animation symbolizes effortless interaction, intelligent information collection, precision and the transformation of human input into organized digital intelligence.",
+        "retain": false,
+        "speed": 45,
+        "duration": 18,
+        "depth": 95,
+        "glow": 55,
+        "particles": 30,
+        "movement": 70,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 30,
+      "name": "Quick License",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Champagne Bronze",
+        "colors": [
+          "#493523",
+          "#b89968",
+          "#fff1ce",
+          "#967346"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, precision-engineered metallic key floats within a dark cinematic environment, its extraordinary architecture composed of intricately machined mechanical components, translucent crystalline circuitry and individually engraved alphanumeric characters. Surrounding the key are concentric authentication rings that rotate independently, revealing sophisticated locking mechanisms and luminous verification pathways. The key gradually separates into hundreds of suspended metallic fragments, which rearrange themselves into a unique dimensional license code. Individual characters illuminate in synchronized sequences before converging into the original key sculpture. The key moves toward a monumental floating crystalline shield, whose mechanical layers open and align as the key enters its central authentication mechanism. A radiant pulse of energy travels through the shield, activating intricate internal circuitry and revealing a sculptural verification checkmark. The camera moves elegantly around and through the interconnected architecture, revealing extraordinary metallic reflections, microscopic engraved details and exceptional dimensional depth. The shield separates into luminous fragments as the key withdraws and returns to its original suspended position, completing a seamless cinematic loop. The animation symbolizes authorized access, digital ownership, intelligent license management, authenticity and protection.",
+        "retain": false,
+        "speed": 35,
+        "duration": 20,
+        "depth": 95,
+        "glow": 50,
+        "particles": 25,
+        "movement": 60,
+        "reflect": 95,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 31,
+      "name": "Quick Plugin Pages",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Orchid Chrome",
+        "colors": [
+          "#37143e",
+          "#b65bc9",
+          "#ffd3fa",
+          "#7951bd"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, precision-engineered metallic plugin module floats within a dark cinematic environment. Its intricately sculpted exterior gradually unfolds like an extraordinary mechanical origami structure, revealing hundreds of translucent crystalline panels, polished architectural components and luminous digital pathways. Individual interface elements emerge from the central module, rotating independently before assembling into beautifully structured three-dimensional plugin pages. Sculptural headings, navigation elements, configuration panels and geometric content blocks materialize across their reflective surfaces. Each completed page separates from the central sculpture and takes its place within a magnificent floating architectural gallery. Luminous streams of energy travel between the pages, creating an interconnected digital ecosystem suspended in darkness. The camera glides through the gallery, passing between the layered interfaces and revealing extraordinary metallic reflections, microscopic mechanical details and sophisticated crystalline textures. The individual pages gradually fold inward, transforming into flowing ribbons of liquid metal that converge and reconstruct the original plugin module in a seamless cinematic loop. The animation symbolizes modular architecture, effortless page creation, intelligent organization and the transformation of individual plugin functionality into sophisticated digital experiences.",
+        "retain": false,
+        "speed": 45,
+        "duration": 20,
+        "depth": 95,
+        "glow": 55,
+        "particles": 25,
+        "movement": 75,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 32,
+      "name": "Quick Questions",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Golden Lime",
+        "colors": [
+          "#303b05",
+          "#9bbd16",
+          "#f6ff9a",
+          "#657b09"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, three-dimensional metallic question mark floats within a dark cinematic environment, sculpted from intricately machined architectural segments, polished metallic ribbons and translucent crystalline components. Its individual sections rotate independently, revealing an extraordinary internal network of luminous pathways and microscopic engraved symbols. The question mark gradually separates into hundreds of suspended fragments, which transform into sculptural speech bubbles containing abstract questions and flowing typography. Each question sends a luminous pulse through the surrounding darkness, activating interconnected pathways and revealing dimensional answer panels. The floating questions and answers begin arranging themselves into an elegant architectural sphere, symbolizing the organization and exchange of knowledge. The camera travels through the interconnected structures, revealing spectacular metallic reflections, intricate crystalline textures and extraordinary three-dimensional depth. At the centre of the sphere, a radiant sculptural light bulb gradually materializes, representing the moment of understanding and discovery. The light bulb dissolves into luminous particles as the surrounding speech bubbles collapse into flowing metallic ribbons, reconstructing the original monumental question mark in a seamless cinematic loop. The animation symbolizes curiosity, conversation, knowledge, clarity and the transformation of uncertainty into understanding.",
+        "retain": false,
+        "speed": 40,
+        "duration": 18,
+        "depth": 95,
+        "glow": 60,
+        "particles": 30,
+        "movement": 70,
+        "reflect": 95,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 33,
+      "name": "Quick Quotes",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Burnished Copper",
+        "colors": [
+          "#36140e",
+          "#b65c36",
+          "#ffd0a0",
+          "#81351d"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental pair of three-dimensional metallic quotation marks floats within a dark cinematic environment. Each sculpture is composed of intricately machined metallic layers, flowing polished contours and translucent crystalline components. The quotation marks slowly rotate and separate into hundreds of suspended architectural fragments, releasing streams of luminous typography, numerical characters and sculptural symbols. Individual fragments gracefully align into a series of floating crystalline document panels, surrounded by concentric metallic rings and elegant pathways of light. Words and numerical values materialize across the reflective surfaces as the panels assemble into a sophisticated dimensional composition. A precision-engineered metallic pen emerges from darkness, tracing a luminous signature across the central document. The camera travels between the floating layers, revealing extraordinary metallic reflections, engraved details and exceptional three-dimensional depth. The completed composition radiates a subtle pulse of energy before its individual components dissolve into flowing ribbons of liquid metal. The ribbons converge and reconstruct the original monumental quotation marks, completing a seamless cinematic loop. The animation symbolizes clarity, communication, precision and the transformation of individual expressions into beautifully structured information.",
+        "retain": false,
+        "speed": 40,
+        "duration": 18,
+        "depth": 95,
+        "glow": 50,
+        "particles": 25,
+        "movement": 65,
+        "reflect": 95,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 34,
+      "name": "Quick Schedule",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Midnight Cobalt",
+        "colors": [
+          "#080f31",
+          "#294ca5",
+          "#9bb7ff",
+          "#28266a"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, precision-engineered metallic clock floats within a dark cinematic environment, its extraordinary dimensional architecture composed of concentric rotating rings, intricately machined gears, sculptural numerals and translucent crystalline mechanisms. The clock face gradually separates into multiple suspended layers, revealing an intricate internal universe of synchronized mechanical movement. Individual numerals detach from the surrounding rings and transform into floating metallic calendar tiles, each containing elegantly engraved dates and luminous scheduling markers. The tiles orbit the central mechanism before aligning into a magnificent three-dimensional calendar structure. Streams of light travel between individual dates as scheduled events materialize into polished crystalline blocks and move effortlessly into their designated positions. The camera travels through the rotating clockwork and between the suspended calendar layers, revealing microscopic mechanical details, extraordinary metallic reflections and exceptional dimensional depth. The entire structure reaches a moment of perfect synchronization as the clock hands align and a radiant pulse of energy travels through the calendar. The individual dates, gears and architectural components dissolve into flowing metallic ribbons before reconstructing the original monumental clock in a seamless cinematic loop. The animation symbolizes the mastery of time, intelligent scheduling, precision, organization and the seamless coordination of events.",
+        "retain": false,
+        "speed": 40,
+        "duration": 20,
+        "depth": 95,
+        "glow": 55,
+        "particles": 25,
+        "movement": 70,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 35,
+      "name": "Quick SEO",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Emerald Jade",
+        "colors": [
+          "#032c22",
+          "#149b65",
+          "#b1ffd4",
+          "#076b55"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental three-dimensional metallic search interface floats within a dark cinematic environment, surrounded by thousands of suspended crystalline website fragments, engraved keywords and interconnected digital pathways. A concentrated beam of luminous energy emerges from the central search mechanism, travelling through the surrounding architecture and activating individual website structures. The scattered components begin organizing themselves into extraordinary ascending platforms, each representing a different position within a dimensional search landscape. Precision-engineered metallic columns rise from the platforms as luminous analytical curves weave between them. Individual keywords transform into flowing streams of energy, illuminating interconnected pathways and drawing the surrounding structures toward a magnificent central tower. A sculptural metallic arrow emerges from the tower, ascending through concentric architectural rings as reflections sweep across its polished surfaces. The camera dynamically travels through the interconnected search ecosystem before rising alongside the monumental tower, revealing extraordinary metallic reflections, microscopic engraved details and exceptional three-dimensional depth. At its summit, a radiant crystalline beacon illuminates the surrounding digital landscape. The tower, platforms and luminous pathways dissolve into suspended metallic fragments before reconstructing the original search interface in a seamless cinematic loop. The animation symbolizes discoverability, search visibility, intelligent optimization and the pursuit of sustainable digital growth.",
+        "retain": false,
+        "speed": 45,
+        "duration": 20,
+        "depth": 95,
+        "glow": 60,
+        "particles": 30,
+        "movement": 75,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 36,
+      "name": "Quick Site",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Electric Sapphire",
+        "colors": [
+          "#081a50",
+          "#245fe8",
+          "#a5dfff",
+          "#292ba0"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, precision-engineered metallic architectural foundation floats within a dark cinematic environment. Hundreds of individually sculpted geometric modules, translucent crystalline panels and intricately machined digital components emerge from the surrounding darkness, moving toward the foundation along luminous pathways. The components interlock in perfectly synchronized sequences, constructing an extraordinary three-dimensional architectural representation of a website. Metallic navigation structures unfold, sculptural typography rises from polished surfaces and crystalline content panels assemble into interconnected floors. The entire structure gradually expands into a magnificent floating digital metropolis, with individual buildings representing interconnected website pages. Streams of luminous energy travel between the architectural structures, activating their internal circuitry and illuminating their extraordinary dimensional construction. The camera dynamically flies through the metropolis, passing between towering metallic structures and penetrating translucent interface layers, revealing microscopic mechanical details and spectacular reflections. The entire city gracefully folds inward, transforming into a single exquisitely polished browser-shaped sculpture. Its architectural components dissolve into suspended metallic fragments that return to the original foundation, completing a seamless cinematic loop. The animation symbolizes rapid website creation, intelligent architecture, interconnected functionality and the transformation of an empty foundation into a complete digital world.",
+        "retain": false,
+        "speed": 50,
+        "duration": 22,
+        "depth": 100,
+        "glow": 60,
+        "particles": 30,
+        "movement": 80,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 37,
+      "name": "Quick Traffic",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Peacock Metal",
+        "colors": [
+          "#063b36",
+          "#159ca7",
+          "#b2ffe4",
+          "#2947a3"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "An extraordinary three-dimensional metallic highway system floats within a dark cinematic environment. Its architecture consists of intricately sculpted interconnected pathways, elevated crystalline bridges and sweeping ribbons of polished liquid metal. Thousands of luminous particles emerge from distant points in the surrounding darkness, accelerating along the suspended highways in synchronized streams. Individual particles represent digital visitors, travelling through elaborate intersections, branching pathways and rotating architectural gateways. As the streams converge, the highway system gradually transforms into a monumental metallic globe surrounded by interconnected orbital routes. Luminous pulses travel across its surface, revealing an extraordinary network of digital activity. Individual streams rise from the globe and transform into sculptural analytical graphs, dimensional traffic visualizations and flowing curves of reflective metal. The camera dynamically follows the streams of light through the intricate highway system, sweeping beneath suspended bridges and orbiting the luminous globe before travelling through its interconnected internal architecture. The analytical structures dissolve into thousands of illuminated particles, which return to their original pathways and reconstruct the floating highway system in a seamless cinematic loop. The animation symbolizes digital movement, audience activity, connectivity, traffic intelligence and the extraordinary flow of visitors across the digital world.",
+        "retain": false,
+        "speed": 60,
+        "duration": 20,
+        "depth": 100,
+        "glow": 70,
+        "particles": 55,
+        "movement": 85,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 38,
+      "name": "Quick Variations",
+      "palette": {
+        "name": "Arctic Titanium",
+        "colors": [
+          "#202d3b",
+          "#859dad",
+          "#f0faff",
+          "#536775"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Royal Amethyst",
+        "colors": [
+          "#261044",
+          "#8641ca",
+          "#e5bcff",
+          "#53218c"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, precision-sculpted metallic cube floats within a dark cinematic environment, its surface composed of intricately machined geometric panels, polished reflective contours and translucent crystalline components. The cube gradually separates into multiple suspended architectural layers, revealing an extraordinary luminous central nucleus. Individual fragments emerge from the nucleus and independently transform into a collection of distinct three-dimensional sculptures, each possessing a unique shape, surface texture, dimensional structure and metallic finish. Perfectly formed spheres, crystalline polyhedrons, sculptural rings and geometric objects orbit the central nucleus in synchronized formations. Streams of luminous energy travel between the individual sculptures as their surfaces continuously transform between polished metal, brushed textures, translucent crystal and flowing liquid chrome. The camera moves dynamically through the extraordinary collection, revealing microscopic engraved details, spectacular metallic reflections and the subtle differences between each individual variation. The sculptures gradually align into a magnificent symmetrical architectural formation, demonstrating the extraordinary possibilities that emerge from a single original design. Each variation dissolves into flowing ribbons of liquid metal, converging toward the luminous nucleus and reconstructing the original monumental cube in a seamless cinematic loop. The animation symbolizes diversity, customization, limitless combinations and the transformation of a single product into an extraordinary collection of possibilities.",
+        "retain": false,
+        "speed": 50,
+        "duration": 20,
+        "depth": 100,
+        "glow": 55,
+        "particles": 30,
+        "movement": 80,
+        "reflect": 100,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 39,
+      "name": "Personal Assistant",
+      "palette": {
+        "name": "Champagne Bronze",
+        "colors": [
+          "#493523",
+          "#b89968",
+          "#fff1ce",
+          "#967346"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Glacial Mint",
+        "colors": [
+          "#103b38",
+          "#65d7b7",
+          "#e1fff3",
+          "#328b90"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "An exquisitely sculpted metallic human hand emerges from darkness, floating effortlessly within a sophisticated cinematic environment. Its individual fingers are composed of precision-engineered metallic joints, flowing polished contours and translucent crystalline components. The hand gracefully opens its palm, revealing a radiant sphere of luminous energy. Hundreds of suspended objects emerge from the surrounding darkness, including metallic calendars, sculptural clocks, document panels, envelopes, checklists and miniature architectural representations of everyday responsibilities. Initially scattered in an extraordinary chaotic arrangement, the objects gradually respond to the subtle movements of the hand, travelling along elegant luminous pathways and organizing themselves into perfectly synchronized orbital formations. Individual tasks transform into sculptural checkmarks as the surrounding architecture becomes increasingly balanced and harmonious. The camera moves gracefully between the floating objects and around the open hand, revealing extraordinary metallic reflections, intricate mechanical details and exceptional three-dimensional depth. The entire collection gradually converges into a single radiant crystalline sphere resting above the palm. The hand gently closes around the sphere as the surrounding illumination fades, before reopening to begin the seamless cinematic loop. The animation symbolizes personalized support, trust, intelligent organization, reclaimed time and the effortless management of everyday responsibilities.",
+        "retain": false,
+        "speed": 35,
+        "duration": 22,
+        "depth": 95,
+        "glow": 50,
+        "particles": 25,
+        "movement": 60,
+        "reflect": 95,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 40,
+      "name": "RTB Advocacy",
+      "palette": {
+        "name": "Midnight Cobalt",
+        "colors": [
+          "#080f31",
+          "#294ca5",
+          "#9bb7ff",
+          "#28266a"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Solar Gold",
+        "colors": [
+          "#4c2005",
+          "#e89b17",
+          "#fff2a0",
+          "#a85c09"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, precision-engineered metallic scale of justice emerges from darkness, suspended within an extraordinary cinematic environment. Its architectural structure consists of intricately machined metallic components, polished sculptural contours and translucent crystalline mechanisms. The two suspended weighing platforms initially rest at unequal heights, surrounded by floating documents, engraved legal symbols and fragmented architectural representations of residential buildings. A beautifully sculpted metallic house gradually materializes between the scales, its individual walls and roof composed of hundreds of interconnected geometric components. Streams of luminous energy travel through the surrounding documents, organizing scattered information into perfectly aligned dimensional structures. Individual metallic fragments move toward the weighing platforms as the scale gradually approaches equilibrium. Curved crystalline shields emerge around the house, assembling into an elegant protective architectural enclosure. The camera moves gracefully through the floating documents, around the monumental scales and toward the protected residential structure, revealing extraordinary metallic reflections, microscopic engraved details and exceptional three-dimensional depth. As the scales reach perfect balance, a radiant pulse of golden light illuminates the entire sculpture. The protective enclosure, house and surrounding documents dissolve into flowing metallic ribbons before reconstructing the original scales in a seamless cinematic loop. The animation symbolizes fairness, residential tenancy rights, informed advocacy, housing security and the pursuit of justice.",
+        "retain": false,
+        "speed": 30,
+        "duration": 22,
+        "depth": 95,
+        "glow": 50,
+        "particles": 20,
+        "movement": 55,
+        "reflect": 95,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 41,
+      "name": "Web Design",
+      "palette": {
+        "name": "Orchid Chrome",
+        "colors": [
+          "#37143e",
+          "#b65bc9",
+          "#ffd3fa",
+          "#7951bd"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Peacock Metal",
+        "colors": [
+          "#063b36",
+          "#159ca7",
+          "#b2ffe4",
+          "#2947a3"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental blank metallic canvas floats within a dark cinematic environment. A concentrated point of luminous energy appears at its centre, releasing extraordinary flowing ribbons of liquid chrome that trace an intricate architectural design grid. Individual lines rise from the canvas and transform into three-dimensional sculptural typography, translucent crystalline image panels, precision-engineered navigation elements and beautifully layered interface components. Each element moves independently before assembling into a magnificent dimensional website composition. The completed interface gradually separates into multiple floating architectural layers, revealing the extraordinary relationship between typography, imagery, colour, spacing and interactive functionality. The layers gracefully transform into desktop, tablet and mobile compositions, continuously adapting their proportions while preserving their visual harmony. The camera dynamically travels through the suspended interfaces, revealing microscopic engraved details, spectacular metallic reflections and exceptional crystalline depth. The entire composition unfolds into an enormous sculptural ribbon of interconnected digital experiences, before dissolving into flowing liquid metal that reconstructs the original blank canvas in a seamless cinematic loop. The animation symbolizes creative vision, responsive design, exceptional craftsmanship and the transformation of imagination into immersive digital experiences.",
+        "retain": false,
+        "speed": 45,
+        "duration": 22,
+        "depth": 100,
+        "glow": 60,
+        "particles": 30,
+        "movement": 80,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 42,
+      "name": "WordPress Management",
+      "palette": {
+        "name": "Electric Sapphire",
+        "colors": [
+          "#081a50",
+          "#245fe8",
+          "#a5dfff",
+          "#292ba0"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Emerald Jade",
+        "colors": [
+          "#032c22",
+          "#149b65",
+          "#b1ffd4",
+          "#076b55"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, precision-engineered metallic WordPress emblem floats within a dark cinematic environment, suspended at the centre of an extraordinary mechanical maintenance chamber. The emblem gradually separates into concentric architectural layers, revealing an intricate internal ecosystem of website modules, database cylinders, crystalline interface panels and luminous circuitry. Individual components detach from the central structure and travel along elegant orbital pathways, passing through sophisticated mechanical inspection rings. Streams of emerald energy scan their surfaces, illuminating microscopic details and transforming fragmented or outdated components into beautifully polished, precision-engineered replacements. Sculptural gears rotate in perfect synchronization as translucent protective shields assemble around the interconnected architecture. Luminous pulses travel through the entire system, symbolizing continuous monitoring, maintenance and optimization. The camera dynamically travels through the rotating mechanisms and between suspended website layers, revealing extraordinary metallic reflections, intricate crystalline textures and exceptional three-dimensional depth. The restored components converge around the central nucleus, reconstructing the monumental WordPress emblem within a radiant protective sphere. The sphere gradually separates into flowing metallic ribbons, returning the sculpture to its original suspended formation in a seamless cinematic loop. The animation symbolizes intelligent maintenance, reliability, protection, continuous improvement and the extraordinary engineering required to keep a digital ecosystem operating harmoniously.",
+        "retain": false,
+        "speed": 40,
+        "duration": 22,
+        "depth": 100,
+        "glow": 60,
+        "particles": 30,
+        "movement": 70,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 43,
+      "name": "Graphic Design",
+      "palette": {
+        "name": "Magenta Rose",
+        "colors": [
+          "#430d32",
+          "#d3328b",
+          "#ffc1df",
+          "#9d205b"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Burnished Copper",
+        "colors": [
+          "#36140e",
+          "#b65c36",
+          "#ffd0a0",
+          "#81351d"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental sculptural droplet of polished liquid metal floats within a dark cinematic environment. Its surface begins to ripple before erupting into extraordinary flowing metallic ribbons, precision-cut geometric fragments and translucent crystalline forms. The individual components move independently through the surrounding darkness, gradually transforming into dimensional typography, abstract symbols, sculptural brushstrokes and intricately layered visual compositions. A precision-engineered metallic drawing instrument emerges from the sculpture, tracing luminous curves through the air as the suspended fragments respond to its movements. Each curve transforms into an extraordinary three-dimensional graphic element, revealing the intricate relationship between colour, form, proportion, contrast and visual identity. The floating compositions continuously rearrange themselves, evolving between sophisticated abstract artworks, monumental typographic sculptures and beautifully balanced geometric identities. The camera moves dynamically through the evolving artwork, revealing microscopic surface textures, spectacular metallic reflections and exceptional dimensional depth. The individual elements ultimately converge into a magnificent sculptural emblem surrounded by flowing ribbons of luminous energy. The emblem gracefully melts into a suspended metallic droplet, completing a seamless cinematic loop. The animation symbolizes artistic expression, visual communication, creative experimentation and the transformation of imagination into distinctive visual identities.",
+        "retain": false,
+        "speed": 50,
+        "duration": 22,
+        "depth": 100,
+        "glow": 55,
+        "particles": 35,
+        "movement": 85,
+        "reflect": 100,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 44,
+      "name": "Resume Building",
+      "palette": {
+        "name": "Champagne Bronze",
+        "colors": [
+          "#493523",
+          "#b89968",
+          "#fff1ce",
+          "#967346"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Platinum Lavender",
+        "colors": [
+          "#373044",
+          "#a69abf",
+          "#faf0ff",
+          "#77708d"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, exquisitely polished metallic sheet of paper floats within a dark cinematic environment. Hundreds of individually sculpted letters, fragments of typography, architectural symbols and crystalline representations of professional achievements emerge from the surrounding darkness. Initially suspended in an extraordinary chaotic arrangement, the fragments gradually converge toward the metallic document, aligning into beautifully structured sections of professional experience, education, accomplishments and skills. Each achievement transforms into a luminous dimensional sculpture before returning to its designated position within the document. The completed resume gradually separates into multiple translucent architectural layers, revealing the intricate relationship between typography, visual hierarchy and professional storytelling. The individual layers gracefully unfold into a magnificent ascending staircase composed of polished metallic platforms, each representing a milestone in a professional journey. At its summit, a radiant doorway slowly opens, revealing an extraordinary luminous horizon. The camera moves elegantly through the suspended typography, ascends the architectural staircase and approaches the open doorway, revealing spectacular metallic reflections, intricate engraved details and exceptional three-dimensional depth. The doorway and staircase dissolve into flowing metallic ribbons, which converge to reconstruct the original floating sheet of paper in a seamless cinematic loop. The animation symbolizes professional identity, personal achievement, career progression, confidence and the transformation of experience into new opportunities.",
+        "retain": false,
+        "speed": 35,
+        "duration": 22,
+        "depth": 95,
+        "glow": 50,
+        "particles": 25,
+        "movement": 65,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 45,
+      "name": "Custom Software",
+      "palette": {
+        "name": "Midnight Cobalt",
+        "colors": [
+          "#080f31",
+          "#294ca5",
+          "#9bb7ff",
+          "#28266a"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Golden Lime",
+        "colors": [
+          "#303b05",
+          "#9bbd16",
+          "#f6ff9a",
+          "#657b09"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, precision-engineered metallic machine floats within a dark cinematic environment, its architecture initially composed of thousands of disconnected mechanical components, crystalline processors and intricately engraved fragments of programming code. A radiant central nucleus gradually activates, releasing streams of luminous energy that travel through the surrounding darkness. Individual components respond to the energy, rotating independently and interlocking with extraordinary precision to construct a sophisticated three-dimensional computational engine. Entire architectural layers emerge from the machine, revealing interconnected databases, sculptural algorithms, translucent application interfaces and flowing networks of digital intelligence. The machine continuously reconfigures itself, transforming between entirely different functional structures as though adapting to an invisible set of unique requirements. Metallic pathways extend from its central architecture, connecting newly formed modules and activating their intricate internal circuitry. The camera dynamically travels through the evolving machine, penetrating its crystalline processors and sweeping between its interconnected architectural layers, revealing microscopic mechanical details, spectacular metallic reflections and exceptional three-dimensional depth. The entire system reaches a moment of perfect synchronization, forming a magnificent self-contained digital engine surrounded by luminous orbital rings. A concentrated pulse of energy causes the architecture to gracefully separate into thousands of suspended metallic fragments, returning to its original formation in a seamless cinematic loop. The animation symbolizes bespoke engineering, intelligent problem-solving, adaptability and the transformation of complex requirements into extraordinary functional software.",
+        "retain": false,
+        "speed": 45,
+        "duration": 24,
+        "depth": 100,
+        "glow": 65,
+        "particles": 35,
+        "movement": 80,
+        "reflect": 100,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 46,
+      "name": "Intelligent Productivity Suite",
+      "palette": {
+        "name": "Peacock Metal",
+        "colors": [
+          "#063b36",
+          "#159ca7",
+          "#b2ffe4",
+          "#2947a3"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Royal Amethyst",
+        "colors": [
+          "#261044",
+          "#8641ca",
+          "#e5bcff",
+          "#53218c"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "An extraordinary three-dimensional metallic sphere floats within a dark cinematic environment, surrounded by hundreds of disconnected objects representing everyday digital work. Sculptural calendars, clocks, documents, checklists, analytical graphs and translucent application interfaces drift independently through the surrounding darkness. A radiant crystalline intelligence gradually awakens within the central sphere, releasing intricate streams of luminous energy that connect the individual objects. Each object responds to the emerging intelligence, rotating, transforming and moving into perfectly synchronized orbital formations. The sphere separates into concentric architectural layers, revealing an extraordinary internal universe of interconnected workflows, precision-engineered mechanisms and luminous neural pathways. Individual tasks travel through the architecture, transforming from fragmented information into beautifully organized dimensional structures. The surrounding objects gradually interlock to form a magnificent floating command centre, with each component communicating seamlessly through flowing streams of light. The camera dynamically travels between the suspended interfaces, penetrates the crystalline intelligence and emerges above the complete architectural ecosystem, revealing spectacular metallic reflections, microscopic engraved details and exceptional three-dimensional depth. The entire system reaches a moment of perfect harmony as a radiant pulse of energy travels through every connected component. The architecture gracefully separates into flowing ribbons of liquid metal, reconstructing the original sphere and releasing the surrounding objects into their initial formation in a seamless cinematic loop. The animation symbolizes intelligent productivity, unified digital workflows, effortless organization, interconnected intelligence and the transformation of complexity into clarity.",
+        "retain": false,
+        "speed": 45,
+        "duration": 24,
+        "depth": 100,
+        "glow": 65,
+        "particles": 35,
+        "movement": 75,
+        "reflect": 95,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 47,
+      "name": "SEO Auditor",
+      "palette": {
+        "name": "Emerald Jade",
+        "colors": [
+          "#032c22",
+          "#149b65",
+          "#b1ffd4",
+          "#076b55"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Solar Gold",
+        "colors": [
+          "#4c2005",
+          "#e89b17",
+          "#fff2a0",
+          "#a85c09"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "A monumental, precision-engineered metallic satellite emerges from darkness, suspended above an extraordinary three-dimensional digital planet. The planet's surface is composed of thousands of interconnected architectural structures representing websites, individual pages and intricate networks of digital content. The satellite gradually unfolds its crystalline scanning instruments and concentric metallic antenna arrays, projecting a concentrated beam of golden energy across the planetary surface. As the beam travels across the digital landscape, entire architectural layers become translucent, revealing hidden structural details, fragmented pathways, metadata, interconnected links and previously invisible technical irregularities. Individual discoveries rise from the planet as sculptural diagnostic panels, luminous numerical indicators and precision-engineered analytical graphs. The satellite collects these floating discoveries through elegant streams of energy, organizing them into a magnificent three-dimensional diagnostic sphere. The camera dynamically follows the scanning beam across the digital landscape, travels through the internal architecture of individual websites and ascends toward the orbiting satellite, revealing spectacular metallic reflections, microscopic engraved details and extraordinary crystalline depth. The diagnostic sphere unfolds into a beautifully structured architectural roadmap of potential improvements, surrounded by rotating analytical rings. The roadmap dissolves into luminous particles that return to the planetary surface as the satellite retracts its scanning instruments, completing a seamless cinematic loop. The animation symbolizes comprehensive digital discovery, technical precision, search intelligence, transparency and the ability to reveal opportunities hidden beneath the surface of a website.",
+        "retain": false,
+        "speed": 45,
+        "duration": 24,
+        "depth": 100,
+        "glow": 65,
+        "particles": 40,
+        "movement": 75,
+        "reflect": 100,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 48,
+      "name": "Wild Chemistry",
+      "palette": {
+        "name": "Royal Amethyst",
+        "colors": [
+          "#261044",
+          "#8641ca",
+          "#e5bcff",
+          "#53218c"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Golden Lime",
+        "colors": [
+          "#303b05",
+          "#9bbd16",
+          "#f6ff9a",
+          "#657b09"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "Two extraordinary masses of reflective liquid metal float opposite one another within a dark cinematic environment. Each possesses a distinct sculptural identity, with intricately rippling surfaces, translucent crystalline structures and luminous internal energy. As the masses approach one another, individual metallic droplets detach and accelerate through the surrounding darkness. The first contact triggers a spectacular abstract reaction, releasing flowing ribbons of liquid chrome, suspended crystalline fragments and expanding waves of luminous energy. The interacting materials transform into an extraordinary three-dimensional molecular sculpture, composed of polished metallic spheres connected by intricately engineered architectural bonds. Individual molecular structures continuously separate, recombine and evolve into increasingly elaborate geometric formations. Brilliant streams of light travel through the interconnected architecture as the surrounding liquid metal twists into organic tendrils and impossible sculptural shapes. The camera dynamically travels through the evolving molecular structures, revealing microscopic crystalline details, spectacular metallic reflections and extraordinary dimensional depth. The entire composition expands into a magnificent suspended sculpture resembling an organic explosion frozen in time. Its individual fragments gradually liquefy, flowing backward through the surrounding darkness and separating into the original two metallic masses, completing a seamless cinematic loop. The animation symbolizes curiosity, experimentation, unpredictable creative energy, transformation and the extraordinary possibilities that emerge when contrasting elements collide.",
+        "retain": false,
+        "speed": 60,
+        "duration": 22,
+        "depth": 100,
+        "glow": 75,
+        "particles": 50,
+        "movement": 90,
+        "reflect": 100,
+        "camera": "Cinematic fly-through",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    },
+    {
+      "page": 49,
+      "name": "Art & Process",
+      "palette": {
+        "name": "Platinum Lavender",
+        "colors": [
+          "#373044",
+          "#a69abf",
+          "#faf0ff",
+          "#77708d"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75
+      },
+      "animationPalette": {
+        "name": "Rose Gold",
+        "colors": [
+          "#502923",
+          "#cb887c",
+          "#ffe1ce",
+          "#b26977"
+        ],
+        "angle": 135,
+        "finish": "Polished",
+        "spread": 60,
+        "stops": [
+          0,
+          28,
+          52,
+          100
+        ],
+        "metallic": 80,
+        "highlight": 85,
+        "shadow": 75,
+        "mode": "independent"
+      },
+      "elements": {},
+      "animation": {
+        "concept": "An extraordinary, perfectly polished metallic human hand emerges from darkness, holding a delicate sculptural brush composed of flowing liquid chrome and translucent crystalline components. The brush moves gracefully through the surrounding empty space, leaving behind luminous three-dimensional strokes that remain suspended in the air. Each stroke possesses extraordinary physical depth, intricate surface textures and shifting metallic reflections. The individual strokes gradually intertwine, transforming into an evolving abstract sculpture that reveals the invisible stages of artistic creation. Rough geometric sketches become precision-engineered architectural frameworks, flowing ribbons of liquid metal become expressive organic forms, and scattered crystalline fragments assemble into beautifully balanced compositions. Portions of the sculpture continuously dissolve and reconstruct themselves, exposing unfinished structures, abandoned ideas and unexpected new directions. The camera moves intimately through the evolving artwork, revealing microscopic brush textures, extraordinary reflections and the intricate relationship between deliberate craftsmanship and spontaneous creative expression. The individual elements converge into a monumental, impossibly fluid metallic sculpture suspended within a luminous architectural frame. The completed artwork gradually unravels into its original individual brushstrokes, which flow backward into the sculptural brush as the hand returns to its opening position, completing a seamless cinematic loop. The animation celebrates the beauty of imperfection, creative exploration, artistic evolution and the extraordinary journey between an initial idea and its final expression.",
+        "retain": false,
+        "speed": 35,
+        "duration": 25,
+        "depth": 100,
+        "glow": 50,
+        "particles": 30,
+        "movement": 75,
+        "reflect": 100,
+        "camera": "Slow orbit",
+        "mouse": true,
+        "scroll": false,
+        "reduced": true
+      }
+    }
+  ]
+}

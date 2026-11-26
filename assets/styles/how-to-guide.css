@@ -1,0 +1,21 @@
+.guide { max-width: 48rem; padding-bottom: 4rem; }
+.guide h1 { font-size: clamp(2.25rem, 6vw, 4.2rem); line-height: 1.08; }
+.guide section { margin-top: 2.5rem; }
+.guide li { margin-bottom: .75rem; }
+.guide figure { margin: 1.5rem 0 0; }
+.guide figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: .75rem;
+}
+.guide figcaption { margin-top: .5rem; color: var(--muted); }
+.guide pre {
+  overflow: auto;
+  padding: 1rem;
+  background: var(--card-background);
+  border: 1px solid var(--line);
+  border-radius: .75rem;
+}
+.guide a:not(.button) { text-decoration: underline; text-underline-offset: .2em; }

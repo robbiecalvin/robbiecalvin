@@ -40,6 +40,29 @@ test('account, order, payment, and entitlement boundaries',async t=>{
    const response=await fetch(base+icon);assert.equal(response.status,200);assert.match(response.headers.get('content-type'),/^image\//);
   }
  });
+ await t.test('discovery files and Quick Add guide assets are public with matching MIME types',async()=>{
+  const legacyHome=await fetch(base+'/home/?utm_source=example',{redirect:'manual'});
+  assert.equal(legacyHome.status,308);
+  assert.equal(legacyHome.headers.get('location'),'/?utm_source=example');
+  const guide='/wp-plugins/quick-add/bulk-add-woocommerce-products-from-json/';
+  const robots=await fetch(base+'/robots.txt');
+  assert.equal(robots.status,200);
+  assert.match(robots.headers.get('content-type'),/^text\/plain/);
+  assert.match(await robots.text(),/Sitemap: https:\/\/robbiecalvin\.com\/sitemap\.xml/);
+  const sitemap=await fetch(base+'/sitemap.xml');
+  assert.equal(sitemap.status,200);
+  assert.match(sitemap.headers.get('content-type'),/^application\/xml/);
+  assert((await sitemap.text()).includes('https://robbiecalvin.com'+guide));
+  for(const [route,type] of [
+   [guide,'text/html'],
+   ['/assets/data/quick-add-sample-products.json','application/json'],
+   ['/assets/images/speechflow-project-plan.webm','video/webm']
+  ]){
+   const response=await fetch(base+route,{method:'HEAD'});
+   assert.equal(response.status,200,route);
+   assert(response.headers.get('content-type').startsWith(type),route);
+  }
+ });
  await t.test('server prices and service scope approval; other users cannot see or pay the order',async()=>{
   const r=await api('/api/orders',{method:'POST',cookie:customer,body:{product:'personal-assistant',plan:'five',quantity:1,total:1,brief:'Five hours of administrative support.'}});assert.equal(r.response.status,201);order=r.data.order;assert.equal(order.totalCents,10000);
   assert.equal((await api(`/api/orders/${order.id}/checkout`,{method:'POST',cookie:customer,body:{}})).response.status,409);

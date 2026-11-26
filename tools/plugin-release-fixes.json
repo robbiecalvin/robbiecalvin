@@ -232,5 +232,31 @@
       "before": "    public static function deactivate(): void\n    {\n        qsit_write_dropin_config();\n    }",
       "after": "    public static function deactivate(): void\n    {\n        $settings = qsit_get_settings();\n        $settings['page_cache_enabled'] = 0;\n        qsit_write_dropin_config_from_settings($settings);\n    }"
     }
+  ],
+  "quick-add/assets/js/admin.js": [
+    {
+      "before": "\t\t$('#qadd_input_mode').val(mode);",
+      "after": "\t\tvar isJsonMode = mode === 'json';\n\t\t$('#qadd_input_mode').val(mode);\n\t\t// Hidden controls must not participate in native form validation.\n\t\t$('#qa-table-mode :input').prop('disabled', isJsonMode);\n\t\t$('#qadd_json_input').prop('disabled', !isJsonMode);"
+    }
+  ],
+  "quick-add/includes/class-qa-bulk.php": [
+    {
+      "before": "<input type=\"hidden\" name=\"action\" value=\"qadd_create_products\" />",
+      "after": "<input type=\"hidden\" name=\"action\" value=\"qa_create_products\" />"
+    },
+    {
+      "before": "wp_json_encode( $results['failures'] )",
+      "after": "rawurlencode( (string) wp_json_encode( $results['failures'] ) )"
+    },
+    {
+      "before": "<input type=\"hidden\" name=\"action\" value=\"qadd_save_template\" />",
+      "after": "<input type=\"hidden\" name=\"action\" value=\"qa_save_template\" />"
+    }
+  ],
+  "quick-add/includes/class-qa-templates.php": [
+    {
+      "before": "<input type=\"hidden\" name=\"action\" value=\"qadd_delete_template\" />",
+      "after": "<input type=\"hidden\" name=\"action\" value=\"qa_delete_template\" />"
+    }
   ]
 }

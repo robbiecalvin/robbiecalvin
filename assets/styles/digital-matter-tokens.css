@@ -1,0 +1,314 @@
+:root { --surface-dark: #08090d; --text-primary: #ededf2; --text-secondary: #b5b5c0;
+  --metal-solar-gold: linear-gradient(135deg, #4c2005 0%, #e89b17 28%, #fff2a0 52%, #a85c09 100%);
+  --metal-burnished-copper: linear-gradient(135deg, #36140e 0%, #b65c36 28%, #ffd0a0 52%, #81351d 100%);
+  --metal-golden-lime: linear-gradient(135deg, #303b05 0%, #9bbd16 28%, #f6ff9a 52%, #657b09 100%);
+  --metal-emerald-jade: linear-gradient(135deg, #032c22 0%, #149b65 28%, #b1ffd4 52%, #076b55 100%);
+  --metal-glacial-mint: linear-gradient(135deg, #103b38 0%, #65d7b7 28%, #e1fff3 52%, #328b90 100%);
+  --metal-arctic-titanium: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --metal-electric-sapphire: linear-gradient(135deg, #081a50 0%, #245fe8 28%, #a5dfff 52%, #292ba0 100%);
+  --metal-royal-amethyst: linear-gradient(135deg, #261044 0%, #8641ca 28%, #e5bcff 52%, #53218c 100%);
+  --metal-orchid-chrome: linear-gradient(135deg, #37143e 0%, #b65bc9 28%, #ffd3fa 52%, #7951bd 100%);
+  --metal-magenta-rose: linear-gradient(135deg, #430d32 0%, #d3328b 28%, #ffc1df 52%, #9d205b 100%);
+  --metal-crimson-ruby: linear-gradient(135deg, #400810 0%, #c41b39 28%, #ffb4a9 52%, #800b27 100%);
+  --metal-champagne-bronze: linear-gradient(135deg, #493523 0%, #b89968 28%, #fff1ce 52%, #967346 100%);
+  --metal-peacock-metal: linear-gradient(135deg, #063b36 0%, #159ca7 28%, #b2ffe4 52%, #2947a3 100%);
+  --metal-midnight-cobalt: linear-gradient(135deg, #080f31 0%, #294ca5 28%, #9bb7ff 52%, #28266a 100%);
+  --metal-platinum-lavender: linear-gradient(135deg, #373044 0%, #a69abf 28%, #faf0ff 52%, #77708d 100%);
+  --metal-rose-gold: linear-gradient(135deg, #502923 0%, #cb887c 28%, #ffe1ce 52%, #b26977 100%);
+}
+/* Reference tokens; bind data-design-page to verified routes. */
+[data-design-page="homepage"] {
+  --page-metal: linear-gradient(135deg, #373044 0%, #a69abf 28%, #faf0ff 52%, #77708d 100%);
+  --hero-metal: linear-gradient(135deg, #493523 0%, #b89968 28%, #fff1ce 52%, #967346 100%);
+  --page-accent: #faf0ff;
+  --hero-loop-duration: 12s;
+}
+[data-design-page="applications"] {
+  --page-metal: linear-gradient(135deg, #400810 0%, #c41b39 30%, #ffb4a9 75%, #800b27 100%);
+  --hero-metal: linear-gradient(135deg, #081a50 0%, #245fe8 28%, #a5dfff 52%, #292ba0 100%);
+  --page-accent: #ffb4a9;
+  --hero-loop-duration: 12s;
+}
+[data-design-page="websites"] {
+  --page-metal: linear-gradient(135deg, #502923 0%, #cb887c 28%, #ffe1ce 52%, #b26977 100%);
+  --hero-metal: linear-gradient(135deg, #4c2005 0%, #e89b17 28%, #fff2a0 52%, #a85c09 100%);
+  --page-accent: #ffe1ce;
+  --hero-loop-duration: 15s;
+}
+[data-design-page="services"] {
+  --page-metal: linear-gradient(135deg, #032c22 0%, #149b65 28%, #b1ffd4 52%, #076b55 100%);
+  --hero-metal: linear-gradient(135deg, #303b05 0%, #9bbd16 28%, #f6ff9a 52%, #657b09 100%);
+  --page-accent: #b1ffd4;
+  --hero-loop-duration: 15s;
+}
+[data-design-page="lab"] {
+  --page-metal: linear-gradient(135deg, #430d32 0%, #d3328b 28%, #ffc1df 52%, #9d205b 100%);
+  --hero-metal: linear-gradient(135deg, #36140e 0%, #b65c36 28%, #ffd0a0 52%, #81351d 100%);
+  --page-accent: #ffc1df;
+  --hero-loop-duration: 18s;
+}
+[data-design-page="creative"] {
+  --page-metal: linear-gradient(135deg, #261044 0%, #8641ca 28%, #e5bcff 52%, #53218c 100%);
+  --hero-metal: linear-gradient(135deg, #400810 0%, #c41b39 28%, #ffb4a9 52%, #800b27 100%);
+  --page-accent: #e5bcff;
+  --hero-loop-duration: 20s;
+}
+[data-design-page="about"] {
+  --page-metal: linear-gradient(135deg, #493523 0%, #b89968 28%, #fff1ce 52%, #967346 100%);
+  --hero-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --page-accent: #fff1ce;
+  --hero-loop-duration: 20s;
+}
+[data-design-page="contact"] {
+  --page-metal: linear-gradient(135deg, #373044 0%, #a69abf 28%, #faf0ff 52%, #77708d 100%);
+  --hero-metal: linear-gradient(135deg, #4c2005 0%, #e89b17 28%, #fff2a0 52%, #a85c09 100%);
+  --page-accent: #faf0ff;
+  --hero-loop-duration: 16s;
+}
+[data-design-page="codex-master"] {
+  --page-metal: linear-gradient(135deg, #400810 0%, #c41b39 28%, #ffb4a9 52%, #800b27 100%);
+  --hero-metal: linear-gradient(135deg, #080f31 0%, #294ca5 28%, #9bb7ff 52%, #28266a 100%);
+  --page-accent: #ffb4a9;
+  --hero-loop-duration: 20s;
+}
+[data-design-page="myra"] {
+  --page-metal: linear-gradient(135deg, #502923 0%, #cb887c 28%, #ffe1ce 52%, #b26977 100%);
+  --hero-metal: linear-gradient(135deg, #303b05 0%, #9bbd16 28%, #f6ff9a 52%, #657b09 100%);
+  --page-accent: #ffe1ce;
+  --hero-loop-duration: 15s;
+}
+[data-design-page="badehaus-x"] {
+  --page-metal: linear-gradient(135deg, #373044 0%, #a69abf 28%, #faf0ff 52%, #77708d 100%);
+  --hero-metal: linear-gradient(135deg, #400810 0%, #c41b39 28%, #ffb4a9 52%, #800b27 100%);
+  --page-accent: #faf0ff;
+  --hero-loop-duration: 22s;
+}
+[data-design-page="speechflow"] {
+  --page-metal: linear-gradient(135deg, #4c2005 0%, #e89b17 28%, #fff2a0 52%, #a85c09 100%);
+  --hero-metal: linear-gradient(135deg, #103b38 0%, #65d7b7 28%, #e1fff3 52%, #328b90 100%);
+  --page-accent: #fff2a0;
+  --hero-loop-duration: 16s;
+}
+[data-design-page="quickwoo-desktop"] {
+  --page-metal: linear-gradient(135deg, #493523 0%, #b89968 28%, #fff1ce 52%, #967346 100%);
+  --hero-metal: linear-gradient(135deg, #081a50 0%, #245fe8 28%, #a5dfff 52%, #292ba0 100%);
+  --page-accent: #fff1ce;
+  --hero-loop-duration: 18s;
+}
+[data-design-page="kimix"] {
+  --page-metal: linear-gradient(135deg, #430d32 0%, #d3328b 28%, #ffc1df 52%, #9d205b 100%);
+  --hero-metal: linear-gradient(135deg, #032c22 0%, #149b65 28%, #b1ffd4 52%, #076b55 100%);
+  --page-accent: #ffc1df;
+  --hero-loop-duration: 16s;
+}
+[data-design-page="wordpress-plugins-catalogue"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #081a50 0%, #245fe8 28%, #a5dfff 52%, #292ba0 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 20s;
+}
+[data-design-page="launchboard"] {
+  --page-metal: linear-gradient(135deg, #303b05 0%, #9bbd16 28%, #f6ff9a 52%, #657b09 100%);
+  --hero-metal: linear-gradient(135deg, #4c2005 0%, #e89b17 28%, #fff2a0 52%, #a85c09 100%);
+  --page-accent: #f6ff9a;
+  --hero-loop-duration: 18s;
+}
+[data-design-page="meetdiscreet"] {
+  --page-metal: linear-gradient(135deg, #032c22 0%, #149b65 28%, #b1ffd4 52%, #076b55 100%);
+  --hero-metal: linear-gradient(135deg, #400810 0%, #c41b39 28%, #ffb4a9 52%, #800b27 100%);
+  --page-accent: #b1ffd4;
+  --hero-loop-duration: 20s;
+}
+[data-design-page="typing-school"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #493523 0%, #b89968 28%, #fff1ce 52%, #967346 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 16s;
+}
+[data-design-page="fobfather"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #36140e 0%, #b65c36 28%, #ffd0a0 52%, #81351d 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 16s;
+}
+[data-design-page="crystal-eye"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #37143e 0%, #b65bc9 28%, #ffd3fa 52%, #7951bd 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 20s;
+}
+[data-design-page="trusted-cash-loans"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #4c2005 0%, #e89b17 28%, #fff2a0 52%, #a85c09 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 20s;
+}
+[data-design-page="quick-accountant"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #032c22 0%, #149b65 28%, #b1ffd4 52%, #076b55 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 18s;
+}
+[data-design-page="quick-add"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #081a50 0%, #245fe8 28%, #a5dfff 52%, #292ba0 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 15s;
+}
+[data-design-page="quick-audit"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #400810 0%, #c41b39 28%, #ffb4a9 52%, #800b27 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 18s;
+}
+[data-design-page="quick-code"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #063b36 0%, #159ca7 28%, #b2ffe4 52%, #2947a3 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 18s;
+}
+[data-design-page="quick-core"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #261044 0%, #8641ca 28%, #e5bcff 52%, #53218c 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 20s;
+}
+[data-design-page="quick-course-builder"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #103b38 0%, #65d7b7 28%, #e1fff3 52%, #328b90 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 22s;
+}
+[data-design-page="quick-edit"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #430d32 0%, #d3328b 28%, #ffc1df 52%, #9d205b 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 16s;
+}
+[data-design-page="quick-forms"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #502923 0%, #cb887c 28%, #ffe1ce 52%, #b26977 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 18s;
+}
+[data-design-page="quick-license"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #493523 0%, #b89968 28%, #fff1ce 52%, #967346 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 20s;
+}
+[data-design-page="quick-plugin-pages"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #37143e 0%, #b65bc9 28%, #ffd3fa 52%, #7951bd 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 20s;
+}
+[data-design-page="quick-questions"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #303b05 0%, #9bbd16 28%, #f6ff9a 52%, #657b09 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 18s;
+}
+[data-design-page="quick-quotes"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #36140e 0%, #b65c36 28%, #ffd0a0 52%, #81351d 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 18s;
+}
+[data-design-page="quick-schedule"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #080f31 0%, #294ca5 28%, #9bb7ff 52%, #28266a 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 20s;
+}
+[data-design-page="quick-seo"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #032c22 0%, #149b65 28%, #b1ffd4 52%, #076b55 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 20s;
+}
+[data-design-page="quick-site"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #081a50 0%, #245fe8 28%, #a5dfff 52%, #292ba0 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 22s;
+}
+[data-design-page="quick-traffic"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #063b36 0%, #159ca7 28%, #b2ffe4 52%, #2947a3 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 20s;
+}
+[data-design-page="quick-variations"] {
+  --page-metal: linear-gradient(135deg, #202d3b 0%, #859dad 28%, #f0faff 52%, #536775 100%);
+  --hero-metal: linear-gradient(135deg, #261044 0%, #8641ca 28%, #e5bcff 52%, #53218c 100%);
+  --page-accent: #f0faff;
+  --hero-loop-duration: 20s;
+}
+[data-design-page="personal-assistant"] {
+  --page-metal: linear-gradient(135deg, #493523 0%, #b89968 28%, #fff1ce 52%, #967346 100%);
+  --hero-metal: linear-gradient(135deg, #103b38 0%, #65d7b7 28%, #e1fff3 52%, #328b90 100%);
+  --page-accent: #fff1ce;
+  --hero-loop-duration: 22s;
+}
+[data-design-page="rtb-advocacy"] {
+  --page-metal: linear-gradient(135deg, #080f31 0%, #294ca5 28%, #9bb7ff 52%, #28266a 100%);
+  --hero-metal: linear-gradient(135deg, #4c2005 0%, #e89b17 28%, #fff2a0 52%, #a85c09 100%);
+  --page-accent: #9bb7ff;
+  --hero-loop-duration: 22s;
+}
+[data-design-page="web-design"] {
+  --page-metal: linear-gradient(135deg, #37143e 0%, #b65bc9 28%, #ffd3fa 52%, #7951bd 100%);
+  --hero-metal: linear-gradient(135deg, #063b36 0%, #159ca7 28%, #b2ffe4 52%, #2947a3 100%);
+  --page-accent: #ffd3fa;
+  --hero-loop-duration: 22s;
+}
+[data-design-page="wordpress-management"] {
+  --page-metal: linear-gradient(135deg, #081a50 0%, #245fe8 28%, #a5dfff 52%, #292ba0 100%);
+  --hero-metal: linear-gradient(135deg, #032c22 0%, #149b65 28%, #b1ffd4 52%, #076b55 100%);
+  --page-accent: #a5dfff;
+  --hero-loop-duration: 22s;
+}
+[data-design-page="graphic-design"] {
+  --page-metal: linear-gradient(135deg, #430d32 0%, #d3328b 28%, #ffc1df 52%, #9d205b 100%);
+  --hero-metal: linear-gradient(135deg, #36140e 0%, #b65c36 28%, #ffd0a0 52%, #81351d 100%);
+  --page-accent: #ffc1df;
+  --hero-loop-duration: 22s;
+}
+[data-design-page="resume-building"] {
+  --page-metal: linear-gradient(135deg, #493523 0%, #b89968 28%, #fff1ce 52%, #967346 100%);
+  --hero-metal: linear-gradient(135deg, #373044 0%, #a69abf 28%, #faf0ff 52%, #77708d 100%);
+  --page-accent: #fff1ce;
+  --hero-loop-duration: 22s;
+}
+[data-design-page="custom-software"] {
+  --page-metal: linear-gradient(135deg, #080f31 0%, #294ca5 28%, #9bb7ff 52%, #28266a 100%);
+  --hero-metal: linear-gradient(135deg, #303b05 0%, #9bbd16 28%, #f6ff9a 52%, #657b09 100%);
+  --page-accent: #9bb7ff;
+  --hero-loop-duration: 24s;
+}
+[data-design-page="intelligent-productivity-suite"] {
+  --page-metal: linear-gradient(135deg, #063b36 0%, #159ca7 28%, #b2ffe4 52%, #2947a3 100%);
+  --hero-metal: linear-gradient(135deg, #261044 0%, #8641ca 28%, #e5bcff 52%, #53218c 100%);
+  --page-accent: #b2ffe4;
+  --hero-loop-duration: 24s;
+}
+[data-design-page="seo-auditor"] {
+  --page-metal: linear-gradient(135deg, #032c22 0%, #149b65 28%, #b1ffd4 52%, #076b55 100%);
+  --hero-metal: linear-gradient(135deg, #4c2005 0%, #e89b17 28%, #fff2a0 52%, #a85c09 100%);
+  --page-accent: #b1ffd4;
+  --hero-loop-duration: 24s;
+}
+[data-design-page="wild-chemistry"] {
+  --page-metal: linear-gradient(135deg, #261044 0%, #8641ca 28%, #e5bcff 52%, #53218c 100%);
+  --hero-metal: linear-gradient(135deg, #303b05 0%, #9bbd16 28%, #f6ff9a 52%, #657b09 100%);
+  --page-accent: #e5bcff;
+  --hero-loop-duration: 22s;
+}
+[data-design-page="art-process"] {
+  --page-metal: linear-gradient(135deg, #373044 0%, #a69abf 28%, #faf0ff 52%, #77708d 100%);
+  --hero-metal: linear-gradient(135deg, #502923 0%, #cb887c 28%, #ffe1ce 52%, #b26977 100%);
+  --page-accent: #faf0ff;
+  --hero-loop-duration: 25s;
+}
+@media (prefers-reduced-motion: reduce) { [data-decorative-motion] { animation: none !important; transition: none !important; } }

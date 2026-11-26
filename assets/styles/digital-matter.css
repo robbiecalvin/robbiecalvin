@@ -1,0 +1,243 @@
+body[data-design-page] {
+  --bg: var(--surface-dark);
+  --text: var(--text-primary);
+  --muted: var(--text-secondary);
+  --accent: var(--page-accent);
+  --line: color-mix(in srgb, var(--page-accent) 21%, transparent);
+  --card-background: color-mix(in srgb, var(--page-accent) 9%, var(--surface-dark));
+  --card-highlight: color-mix(in srgb, var(--page-accent) 16%, var(--surface-dark));
+  background: radial-gradient(ellipse at 90% 0%, var(--card-background), transparent 42rem), var(--bg);
+}
+
+[data-design-page] :is(header, footer) {
+  background: color-mix(in srgb, var(--card-background) 94%, transparent);
+  border-color: var(--line);
+}
+
+[data-design-page] :is(h1, h1 em) {
+  color: var(--page-accent);
+  overflow-wrap: anywhere;
+}
+
+@supports (background-clip: text) {
+  [data-design-page] h1 {
+    background: var(--page-metal);
+    background-clip: text;
+    color: transparent;
+  }
+
+  [data-design-page] h1 em {
+    color: inherit;
+  }
+}
+
+[data-design-page] :is(.button, .motion-button, input, select, textarea) {
+  border-color: var(--line);
+}
+
+[data-design-page] .button.primary {
+  background: var(--page-accent);
+  color: var(--surface-dark);
+}
+
+[data-design-page] :is(.button, .motion-button, input, select, textarea):hover {
+  border-color: var(--page-accent);
+}
+
+[data-design-page] .button.primary:hover {
+  background: var(--text-primary);
+  color: var(--surface-dark);
+}
+
+[data-design-page] :focus-visible {
+  outline: 2px solid var(--page-accent);
+  outline-offset: 4px;
+}
+
+[data-design-page] :is(.project-card, .project-group, .about-copy, .page-finale, .license-quote) {
+  background-color: var(--card-background);
+  border-color: var(--line);
+}
+
+[data-design-page="homepage"] .hero {
+  background: radial-gradient(ellipse at right, var(--card-background), var(--surface-dark) 72%);
+}
+
+[data-design-page="homepage"] .art {
+  background: transparent;
+  width: 100%;
+  aspect-ratio: auto;
+}
+
+.cinematic-stage {
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+  aspect-ratio: 1;
+}
+
+.cinematic-stage :is(img, canvas) {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.cinematic-stage canvas,
+.cinematic-stage[data-rendering] img {
+  visibility: hidden;
+}
+
+.cinematic-stage[data-rendering] canvas {
+  visibility: visible;
+}
+
+.cinematic-motion {
+  position: absolute;
+  inset: auto .5rem .5rem auto;
+  min-height: 44px;
+  padding-inline: .85rem;
+  color: var(--text-primary);
+  background: var(--surface-dark);
+  border: 1px solid var(--line);
+  border-radius: 100px;
+}
+
+.cinematic-motion:disabled {
+  opacity: .8;
+  cursor: default;
+}
+
+@media (forced-colors: active) {
+  [data-design-page] :is(h1, h1 em) {
+    background: none;
+    color: CanvasText;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:has(body[data-design-page]) {
+    scroll-behavior: auto;
+  }
+}
+
+.portfolio-hero {
+  min-height: min(74vh, 44rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  padding-block: clamp(2rem, 5vw, 5rem);
+  gap: clamp(1rem, 4vw, 4rem);
+}
+
+.portfolio-hero h1 {
+  font-size: clamp(3rem, 7vw, 7rem);
+  letter-spacing: -.045em;
+}
+
+.portfolio-nav {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 760px) {
+  .portfolio-hero {
+    min-height: 0;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .portfolio-hero .cinematic-stage {
+    width: min(100%, 28rem);
+    justify-self: center;
+  }
+
+  nav .portfolio-nav a:last-child {
+    display: inline;
+  }
+}
+
+@media (max-width: 620px) {
+  nav:has(.portfolio-nav) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .65rem;
+    padding-block: .85rem;
+  }
+
+  nav .portfolio-nav {
+    justify-content: flex-start;
+    gap: .35rem .9rem;
+  }
+
+  nav .portfolio-nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+  }
+}
+
+body[data-page][data-design-page] .hero:has(> .cinematic-stage) {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1rem, 4vw, 3rem);
+  background: radial-gradient(ellipse at right, var(--card-background), var(--surface-dark) 78%);
+}
+
+body[data-page][data-design-page] .hero:has(> .cinematic-stage) .hero-copy {
+  width: 100%;
+}
+
+body[data-palette][data-design-page] {
+  --accent: var(--page-accent);
+  --card-background: color-mix(in srgb, var(--page-accent) 9%, var(--surface-dark));
+  --card-highlight: color-mix(in srgb, var(--page-accent) 16%, var(--surface-dark));
+}
+
+@media (max-width: 760px) {
+  body[data-page][data-design-page] .hero:has(> .cinematic-stage) {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
+  }
+
+  body[data-page][data-design-page] .hero > .cinematic-stage {
+    width: min(100%, 28rem);
+    justify-self: center;
+  }
+}
+
+[data-design-page="intelligent-productivity-suite"] {
+  color: var(--text-primary);
+  min-height: 100vh;
+  color-scheme: dark;
+}
+
+[data-design-page="intelligent-productivity-suite"] :is(form, li) {
+  background: var(--card-background);
+  border-color: var(--line);
+}
+
+[data-design-page="intelligent-productivity-suite"] :is(a, li button) {
+  color: var(--page-accent);
+}
+
+[data-design-page="intelligent-productivity-suite"] li button {
+  background: var(--surface-dark);
+}
+
+.demo-hero {
+  min-height: 0;
+  padding-block: 1.5rem;
+  gap: 1rem;
+}
+
+.demo-hero h1 {
+  font-size: clamp(2rem, 8vw, 3.5rem);
+}
+
+@media (max-width: 760px) {
+  body[data-scene-id] .hero:has(> .cinematic-stage) {
+    min-height: 0;
+  }
+}

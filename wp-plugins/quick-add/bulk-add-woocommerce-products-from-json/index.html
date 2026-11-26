@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="theme-color" content="#08090d">
+<title>Bulk Add WooCommerce Products From JSON | Quick Add</title>
+<meta name="description" content="Create WooCommerce products in batches from a JSON array with Quick Add. Copy a two-product example, preview the rows, and check the results in WordPress.">
+<link rel="canonical" href="https://robbiecalvin.com/wp-plugins/quick-add/bulk-add-woocommerce-products-from-json/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Bulk Add WooCommerce Products From JSON">
+<meta property="og:description" content="A Quick Add walkthrough with a downloadable JSON example for two draft products.">
+<meta property="og:url" content="https://robbiecalvin.com/wp-plugins/quick-add/bulk-add-woocommerce-products-from-json/">
+<meta property="og:image" content="https://robbiecalvin.com/assets/images/quick-add-json-preview.png">
+<meta property="og:image:alt" content="Quick Add showing two validated rows in its JSON preview">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/styles/overview.css">
+<link rel="stylesheet" href="/assets/styles/digital-matter-tokens.css">
+<link rel="stylesheet" href="/assets/styles/digital-matter.css">
+<link rel="stylesheet" href="/assets/styles/how-to-guide.css">
+</head>
+<body data-design-page="quick-add">
+<a class="skip-link" href="#guide">Skip to content</a>
+<header>
+<nav class="wrap" aria-label="Main navigation">
+<a class="logo" href="/">robbiecalvin<span>.</span></a>
+<div class="nav-links">
+<a href="/wp-plugins/">QuickWoo Plugins</a>
+<a href="/wp-plugins/quick-add/">Quick Add</a>
+<a href="/contact/">Contact</a>
+</div>
+</nav>
+</header>
+<main class="wrap guide" id="guide">
+<article aria-labelledby="title">
+<p><a href="/wp-plugins/quick-add/">Quick Add</a> / Guide</p>
+<h1 id="title">How to bulk add WooCommerce products from JSON</h1>
+<p class="intro">Quick Add creates new WooCommerce products from a JSON array pasted into WordPress. This example creates a tote and a notebook in one batch, with a unique SKU and stock quantity for each.</p>
+
+<section aria-labelledby="sample">
+<h2 id="sample">Start with a two-product JSON example</h2>
+<p>Use one object per product. Include <code>product_name</code> and <code>regular_price</code> in each object. The example also supplies optional <code>sku</code> and <code>stock_quantity</code> values. Replace the demo SKUs with unique values before reusing the example on the same store.</p>
+<pre tabindex="0" aria-label="Example JSON array"><code>[
+  {
+    "product_name": "Demo Canvas Tote",
+    "regular_price": "18.00",
+    "sku": "DEMO-TOTE-001",
+    "stock_quantity": 12
+  },
+  {
+    "product_name": "Demo Notebook",
+    "regular_price": "9.50",
+    "sku": "DEMO-NOTE-001",
+    "stock_quantity": 20
+  }
+]</code></pre>
+<p><a href="/assets/data/quick-add-sample-products.json" download="sample-products.json">Download the example JSON</a></p>
+</section>
+
+<section aria-labelledby="steps">
+<h2 id="steps">Paste and preview the batch in WordPress</h2>
+<ol>
+<li>Activate WooCommerce and Quick Add on a staging store. This walkthrough was tested with Quick Add 1.0.2. Sign in with an account that can manage WooCommerce.</li>
+<li>In <strong>Quick Add → Settings</strong>, set <strong>Default Product Status</strong> to <strong>Draft</strong> so you can review the new products before publishing.</li>
+<li>Open <strong>Quick Add → Bulk Add</strong>, choose <strong>JSON Paste Mode</strong>, and paste the array into <strong>Paste JSON Array of Products</strong>.</li>
+<li>Click <strong>Validate &amp; Preview JSON</strong>. Check the preview for the expected names, prices, and SKUs. The preview checks JSON syntax and required fields. WooCommerce catalogue checks run when you submit.</li>
+<li>Click <strong>Create Products</strong>. Review the success count and any row errors, then open <strong>Products</strong> to confirm the drafts, prices, SKUs, and stock quantities.</li>
+</ol>
+<figure>
+<img src="/assets/images/quick-add-json-preview.webp" alt="The JSON preview marks both demonstration rows valid and shows their product names, prices and SKUs." width="1078" height="431" loading="lazy" decoding="async">
+<figcaption>The preview in Quick Add 1.0.2 on a disposable WooCommerce store.</figcaption>
+</figure>
+</section>
+
+<section aria-labelledby="results">
+<h2 id="results">Check the products in WooCommerce</h2>
+<p>In the test store, both rows appeared under <strong>Products → Drafts</strong>. The notebook showed a price of 9.50 and a stock count of 20. The tote showed 18.00 and a stock count of 12.</p>
+<figure>
+<img src="/assets/images/quick-add-draft-products.webp" alt="WooCommerce Drafts showing Demo Notebook and Demo Canvas Tote with their expected SKUs, stock counts and prices." width="1080" height="393" loading="lazy" decoding="async">
+<figcaption>The two sample products after creation.</figcaption>
+</figure>
+</section>
+
+<section aria-labelledby="errors">
+<h2 id="errors">If some rows fail</h2>
+<ul>
+<li><strong>Invalid JSON</strong> usually means a syntax issue. Check for the outer square brackets, double quotes, and trailing commas.</li>
+<li><strong>Duplicate SKU</strong> means a SKU repeats in the batch or already exists in the catalogue. Use a unique SKU for each new product.</li>
+<li><strong>Some products were created</strong> means you should review the results and retry only the unsuccessful rows. Quick Add creates new products, so resubmitting successful rows without SKUs can create duplicates.</li>
+</ul>
+</section>
+
+<section aria-labelledby="get-plugin">
+<h2 id="get-plugin">Try it on a staging store</h2>
+<p>The <a href="/wp-plugins/quick-add/#download">Quick Add product page</a> has the plugin ZIP and release details.</p>
+</section>
+</article>
+</main>
+<footer class="wrap">
+<a href="/">Robbie Calvin</a>
+<span><a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/legal/">Legal &amp; copyright</a></span>
+</footer>
+</body>
+</html>

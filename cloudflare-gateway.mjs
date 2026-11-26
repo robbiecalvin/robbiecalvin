@@ -1,8 +1,8 @@
 const ORIGIN='https://robbiecalvin.com';
 const API='https://fzjcoxmrwquofkqdryqh.supabase.co/functions/v1/rc-payments';
-const types={html:'text/html; charset=utf-8',css:'text/css; charset=utf-8',js:'text/javascript; charset=utf-8',mjs:'text/javascript; charset=utf-8',zip:'application/zip',json:'application/json; charset=utf-8',svg:'image/svg+xml',png:'image/png',webp:'image/webp',jpg:'image/jpeg',jpeg:'image/jpeg',ico:'image/x-icon',xml:'application/xml; charset=utf-8',txt:'text/plain; charset=utf-8',woff2:'font/woff2'};
+const types={html:'text/html; charset=utf-8',css:'text/css; charset=utf-8',js:'text/javascript; charset=utf-8',mjs:'text/javascript; charset=utf-8',zip:'application/zip',json:'application/json; charset=utf-8',svg:'image/svg+xml',png:'image/png',webp:'image/webp',webm:'video/webm',jpg:'image/jpeg',jpeg:'image/jpeg',ico:'image/x-icon',xml:'application/xml; charset=utf-8',txt:'text/plain; charset=utf-8',woff2:'font/woff2'};
 const secure={'X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin','X-Frame-Options':'SAMEORIGIN','Permissions-Policy':'camera=(), microphone=(), geolocation=()','Strict-Transport-Security':'max-age=15552000'};
-const csp="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' https: data: blob:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://checkout.stripe.com; frame-ancestors 'self'; upgrade-insecure-requests";
+const csp="default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com/beacon.min.js https://static.cloudflareinsights.com/beacon.min.js/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' https: data: blob:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://checkout.stripe.com; frame-ancestors 'self'; upgrade-insecure-requests";
 export default {async fetch(req,env){
  const u=new URL(req.url);
  if(u.hostname==='www.robbiecalvin.com'){u.hostname='robbiecalvin.com';u.protocol='https:';return new Response(null,{status:308,headers:{...secure,Location:u.href}});}
@@ -26,6 +26,7 @@ export default {async fetch(req,env){
  let path;
  try{path=decodeURIComponent(u.pathname);}catch{return new Response('Bad path',{status:400,headers:secure});}
  if(path.includes('\\')||path.includes('\0')||path.split('/').some(x=>x.startsWith('.'))||path.includes('//'))return new Response('Not found',{status:404,headers:secure});
+ if(path==='/home'||path==='/home/'){u.pathname='/';return Response.redirect(u.href,308);}
  if(!path.split('/').pop().includes('.')){
   if(!path.endsWith('/')){u.pathname+='/';return Response.redirect(u.href,308);}
   path+='index.html';
