@@ -1,4 +1,4 @@
-"""Validate the supplied Course 01 archive and produce a private runtime bundle."""
+"""Validate AI Unlocked course archives and produce private bundles."""
 import argparse
 import base64
 import hashlib
@@ -8,6 +8,10 @@ import os
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
+COURSES = {
+    "C01": {"price": 0, "question_counts": [5] + [10] * 9},
+    "C02": {"price": 3900, "question_counts": [10] * 10},
+}
 
 def normalize(source, assessment_id, expected_pass):
     threshold = source.get("pass_percentage", source.get("passing_score"))
@@ -30,13 +34,22 @@ def import_course(archive_path):
             return archive.read(name).decode("utf-8")
         def parse(name):
             return json.loads(content(name))
+        def pdf(name):
+            data = archive.read(name)
+            if not data.startswith(b"%PDF-"):
+                raise ValueError(f"{name} is not a PDF")
+            return base64.b64encode(data).decode("ascii")
         manifest = parse("course-manifest.json")
-        if (manifest["id"], manifest["price_cents"], manifest["currency"], manifest["pass_percentage"]) != ("C01", 0, "CAD", 80):
+        course_id = manifest["id"]
+        config = COURSES.get(course_id)
+        if not config or (manifest["price_cents"], manifest["currency"], manifest["pass_percentage"]) != (config["price"], "CAD", 80):
             raise ValueError("Unexpected course manifest")
+        if course_id == "C02" and manifest.get("publication_status") != "draft":
+            raise ValueError("Course 02 must be imported as a draft")
         lessons = []
         assessments = {}
         for number, lesson in enumerate(manifest["lessons"], 1):
-            expected_id = f"01.{number:02}"
+            expected_id = f"{course_id[1:]}.{number:02}"
             if lesson["id"] != expected_id or lesson["preview"] != (number == 1):
                 raise ValueError(f"Unexpected lesson {lesson['id']}")
             markdown = content(lesson["content"])
@@ -45,31 +58,40 @@ def import_course(archive_path):
         assessments["final"] = normalize(parse(manifest["final_exam"]), "final", manifest["pass_percentage"])
         if len(lessons) != 10 or len(assessments["final"]["questions"]) != 50:
             raise ValueError("Expected ten lessons and a 50-question exam")
-        if [len(assessments[lesson["id"]]["questions"]) for lesson in lessons] != [5] + [10] * 9:
+        if [len(assessments[lesson["id"]]["questions"]) for lesson in lessons] != config["question_counts"]:
             raise ValueError("Unexpected lesson question counts")
-        workbook = archive.read("Workbook.pdf")
-        if not workbook.startswith(b"%PDF-"):
-            raise ValueError("Workbook is not a PDF")
         bundle = {
             "title": manifest["title"], "manifest": manifest, "lessons": lessons,
             "assessments": assessments, "syllabus": content("Syllabus.md"),
-            "rubric": content("Capstone-rubric.md"), "workbookMarkdown": content("Workbook.md"),
-            "workbookPdf": base64.b64encode(workbook).decode("ascii"),
+            "rubric": content(manifest.get("capstone_rubric", "Capstone-rubric.md")),
+            "workbookMarkdown": content("Workbook.md"),
+            "workbookPdf": pdf(manifest.get("workbook", "Workbook.pdf")),
         }
+        if course_id == "C02":
+            bundle.update(
+                promptLibraryMarkdown=content("Prompt-library.md"),
+                promptLibraryPdf=pdf(manifest["prompt_library"]),
+                certificateTemplateMarkdown=content("Certificate-template.md"),
+                certificateTemplatePdf=pdf(manifest["certificate_template"]),
+            )
         payload = json.dumps(bundle, ensure_ascii=False, sort_keys=True)
         return {**bundle, "version": hashlib.sha256(payload.encode()).hexdigest()[:16]}
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("archive", type=Path)
-    parser.add_argument("--output", type=Path, default=ROOT / ".local-data/ai-unlocked/course-01.json")
+    parser.add_argument("--output", type=Path)
     args = parser.parse_args()
-    output = args.output.resolve()
+    bundle = import_course(args.archive)
+    course_id = bundle["manifest"]["id"]
+    default = ROOT / ".local-data" / "ai-unlocked" / f"course-{course_id[1:]}.json"
+    output = (args.output or default).resolve()
     if output.is_relative_to(ROOT) and not output.is_relative_to(ROOT / ".local-data"):
         parser.error("Private course bundles must stay outside the repository or in ignored .local-data/")
-    bundle = import_course(args.archive)
+    if output.exists() and json.loads(output.read_text(encoding="utf-8"))["manifest"]["id"] != course_id:
+        parser.error("Refusing to replace a private bundle for a different course")
     output.parent.mkdir(parents=True, exist_ok=True)
     with os.fdopen(os.open(output, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o600), "w", encoding="utf-8") as stream:
         os.fchmod(stream.fileno(), 0o600)
         json.dump(bundle, stream, ensure_ascii=False)
-    print(f"Imported {len(bundle['lessons'])} lessons and {sum(len(item['questions']) for item in bundle['assessments'].values())} questions. Version {bundle['version']}.")
+    print(f"Imported {course_id}: {len(bundle['lessons'])} lessons and {sum(len(item['questions']) for item in bundle['assessments'].values())} questions. Version {bundle['version']}.")

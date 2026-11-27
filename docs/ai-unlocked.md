@@ -53,3 +53,15 @@ For future paid courses, use server-owned one-time CAD prices, a publication che
 ## Rollback
 
 Restore the previous static site and Edge Function together. Stop serving the Academy routes while retaining learning rows and private course storage so progress is recoverable. Back up both before considering any destructive rollback. Removing the private runtime file makes previews and course activities unavailable while preserving learner records. Review a storage deletion or schema drop separately.
+
+## Course 02 draft import
+
+Import the supplied prompt engineering archive for editorial review:
+
+```sh
+python3 tools/import-ai-unlocked.py /path/to/AIU-C02-Master.zip
+```
+
+The importer writes a private `.local-data/ai-unlocked/course-02.json` bundle. It validates all ten lesson and assessment paths, ten questions per lesson, the 50-question final, and the 80% thresholds. It includes the actual Markdown, workbook, prompt library, capstone rubric, and certificate template. Leave the generated bundle out of Git and public site assets.
+
+Course 02 remains Coming Soon at a proposed one-time price of $39 CAD. The current academy API serves Course 01 only. Course 02 preview, enrollment, resource downloads, and checkout remain closed. The archived lesson preview flag records editorial intent and grants no access.
