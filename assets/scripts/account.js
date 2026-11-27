@@ -51,7 +51,15 @@
   }
   function bind(id,handler){document.getElementById(id).addEventListener('submit',async event=>{event.preventDefault();const button=event.target.querySelector('button');button.disabled=true;try{await handler(new FormData(event.target));}catch(error){message(error.message);}finally{button.disabled=false;}});}
   bind('register-form',async data=>{const r=await request('/api/auth/register','POST',Object.fromEntries(data));message(r.message);document.getElementById('register-form').reset();});
-  bind('login-form',async data=>{await request('/api/auth/login','POST',Object.fromEntries(data));document.getElementById('login-form').reset();await refresh();});
+  bind('login-form',async data=>{
+    await request('/api/auth/login','POST',Object.fromEntries(data));
+    document.getElementById('login-form').reset();
+    if(new URLSearchParams(location.search).get('next')==='ai-unlocked'){
+      location.assign('/ai-lessons/course/');
+      return;
+    }
+    await refresh();
+  });
   bind('forgot-form',async data=>{const r=await request('/api/auth/forgot','POST',Object.fromEntries(data));message(r.message);});
   bind('reset-form',async data=>{const r=await request('/api/auth/reset','POST',{token:resetToken,password:data.get('password')});document.getElementById('reset-form').reset();document.getElementById('reset-section').hidden=true;resetToken='';dashboard.hidden=true;auth.hidden=false;message(r.message);});
   bind('profile-form',async data=>{await request('/api/me','PATCH',{name:data.get('name')});await refresh();});

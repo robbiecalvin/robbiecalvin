@@ -6,6 +6,7 @@ globalThis.Deno={env:{get:k=>env[k]},serve:()=>{}};
 let source=await readFile(new URL('./index.ts',import.meta.url),'utf8');
 source=source.replace("import Stripe from 'npm:stripe@23.0.0';","class Stripe { static createSubtleCryptoProvider(){return {}} }");
 source=source.replace("'./core.mjs'",JSON.stringify(new URL('./core.mjs',import.meta.url).href));
+source=source.replace("'../_shared/academy.mjs'",JSON.stringify(new URL('../_shared/academy.mjs',import.meta.url).href));
 const {handler}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
 function req(path,method='GET',body,headers={}){return new Request('https://supabase.test/functions/v1/rc-payments'+path,{method,headers:{...(body?{'Content-Type':'application/json'}:{}),...headers},body:body?JSON.stringify(body):undefined});}
 test('health exposes sandbox status without credentials or live checkout',async()=>{
@@ -35,3 +36,31 @@ test('signed-in customer cannot approve another user order or set admin through 
  }finally{globalThis.fetch=previous;}
 });
 
+
+test('academy preview omits assessment keys and rejects anonymous enrollment', async () => {
+ const previous=globalThis.fetch;
+ globalThis.fetch=async(url)=>{
+  if(String(url).includes('/storage/v1/object/authenticated/ai-unlocked-private/course-01.json')){
+   return Response.json({lessons:[{id:'01.01',title:'Fixture',markdown:'# Fixture'}],assessments:{private:{correct_index:0}}});
+  }
+  throw Error('Unexpected URL: '+url);
+ };
+ try{
+  const preview=await handler(req('/academy/preview'));
+  assert.equal(preview.status,200);
+  assert.deepEqual(await preview.json(),{lesson:{id:'01.01',title:'Fixture',markdown:'# Fixture'}});
+  assert.equal((await handler(req('/academy/C01/enroll','POST',{}, {Origin:'https://robbiecalvin.com'}))).status,401);
+  assert.equal((await handler(req('/academy/C01/enroll','POST',{}))).status,403);
+ }finally{globalThis.fetch=previous;}
+});
+
+test('academy reviewer authority comes from account app metadata', async () => {
+ const previous=globalThis.fetch;
+ globalThis.fetch=async(url)=>{
+  if(String(url).endsWith('/auth/v1/user'))return Response.json({id:'fixture',user_metadata:{rc_academy_admin:true},app_metadata:{}});
+  throw Error('Unexpected URL');
+ };
+ try{
+  assert.equal((await handler(req('/academy/review','GET',undefined,{Authorization:'Bearer fixture'}))).status,403);
+ }finally{globalThis.fetch=previous;}
+});
