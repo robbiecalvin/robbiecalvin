@@ -20,6 +20,9 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48 64x64">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/styles/page-depth.css">
+<link rel="stylesheet" href="/assets/styles/academy.css">
+<script type="module" src="/assets/scripts/academy.mjs"></script>
 </head>
 <body data-palette="orange">
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -85,6 +88,12 @@
 </form>
 </section>
 <div id="dashboard" hidden>
+<section class="page-route" id="my-learning" data-academy="account" aria-labelledby="learning-title">
+  <h2 id="learning-title">My Learning</h2>
+  <p id="learning-status" role="status">Loading learning progress…</p>
+  <div id="academy-workspace"></div>
+  <a class="button" href="/ai-lessons/">Browse AI Unlocked</a>
+</section>
 <section class="content">
 <div class="section-head">
 <h2>Your profile</h2>

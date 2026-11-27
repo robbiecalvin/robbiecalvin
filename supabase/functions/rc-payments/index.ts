@@ -1,5 +1,6 @@
 import Stripe from 'npm:stripe@23.0.0';
 import {services,quote,paidSessionMatches} from './core.mjs';
+import {academyRequest} from '../_shared/academy.mjs';
 const origin='https://robbiecalvin.com';
 const base=Deno.env.get('SUPABASE_URL');
 const serviceKey=Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
@@ -13,6 +14,23 @@ async function db(path,method='GET',body){
  const response=await fetch(base+'/rest/v1/'+path,{method,headers:{apikey:serviceKey,Authorization:'Bearer '+serviceKey,'Content-Type':'application/json',Prefer:'return=representation'},body:body===undefined?undefined:JSON.stringify(body)});
  if(!response.ok)fail(503,'Order storage temporarily unavailable');
  return response.status===204?null:await response.json();
+}
+const learningTable='rc_learning_c01';
+const learningStore={
+ async get(id){return (await db(learningTable+'?user_id=eq.'+id+'&select=state,revision'))[0];},
+ async insert(id,state){
+  const response=await fetch(base+'/rest/v1/'+learningTable+'?on_conflict=user_id',{method:'POST',headers:{apikey:serviceKey,Authorization:'Bearer '+serviceKey,'Content-Type':'application/json',Prefer:'resolution=ignore-duplicates,return=minimal'},body:JSON.stringify({user_id:id,state})});
+  if(!response.ok)fail(503,'Learning storage is unavailable.');
+ },
+ async update(id,revision,state){return (await db(learningTable+'?user_id=eq.'+id+'&revision=eq.'+revision,'PATCH',{state,revision:revision+1})).length===1;},
+ async findCertificate(id){return (await db(learningTable+'?certificate_id=eq.'+id+'&select=state&limit=1'))[0]?.state.certificate;},
+ async list(){return await db(learningTable+'?pending_review=eq.true&select=user_id,state&order=user_id&limit=100');},
+};
+async function loadAcademyBundle(){
+ const response=await fetch(base+'/storage/v1/object/authenticated/ai-unlocked-private/course-01.json',{headers:{apikey:serviceKey,Authorization:'Bearer '+serviceKey},signal:AbortSignal.timeout(12000)});
+ if(response.status===404)return null;
+ if(!response.ok)fail(503,'Course materials are unavailable.');
+ return await response.json();
 }
 async function boundedBody(req,limit){
  const reader=req.body?.getReader();if(!reader)return '';
@@ -81,6 +99,20 @@ export async function handler(req){
   if(path==='/health'&&req.method==='GET')return Response.json({mode:'sandbox',livePayments:false,checkoutReady:enabled,orders:true,accounts:true,registrationReady:Deno.env.get('RC_AUTH_EMAIL_READY')==='true'},{headers});
   const authResult=await authRoute(path,req,headers);if(authResult)return authResult;
   if(path==='/catalog'&&req.method==='GET')return Response.json({services,applications:{},mode:'sandbox'},{headers});
+  if(path.startsWith('/academy/')){
+   if(req.method!=='GET'&&requestOrigin!==origin)fail(403,'Origin denied');
+   const publicRead=req.method==='GET'&&(path==='/academy/preview'||path.startsWith('/academy/verify/'));
+   const account=publicRead?null:await user(req,headers);
+   return await academyRequest({
+    path,method:req.method,headers,store:learningStore,loadBundle:loadAcademyBundle,
+    actor:account&&{id:account.id,admin:account.app_metadata?.rc_academy_admin===true},
+    body:async()=>{
+     if(!(req.headers.get('content-type')||'').startsWith('application/json'))fail(415,'JSON required');
+     try{return JSON.parse(await boundedBody(req,100000));}
+     catch(error){if(error.status)throw error;fail(400,'Invalid JSON');}
+    }
+   });
+  }
   const u=await user(req,headers);
   if(path==='/me'&&req.method==='GET')return Response.json({user:{id:u.id,name:u.user_metadata?.name||u.email.split('@')[0],email:u.email,verified:!!u.email_confirmed_at},admin:isAdmin(u)},{headers});
   if(path==='/me'&&req.method==='PATCH'){let b;try{b=JSON.parse(await boundedBody(req,2048));}catch{fail(400,'Invalid JSON');}const name=String(b.name||'').trim();if(name.length<1||name.length>100)fail(400,'Name must be 1–100 characters');await authCall('/user','PUT',{data:{name}},u.__access);return Response.json({updated:true},{headers});}

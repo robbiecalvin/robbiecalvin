@@ -7,6 +7,8 @@ import {createReadStream} from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {services,applications,digitalProducts,quickwooLicenses} from './catalog.mjs';
+import {academyRequest} from '../supabase/functions/_shared/academy.mjs';
+import {localAcademy} from './academy-store.mjs';
 const scrypt=promisify(scryptCallback);
 const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const hash=value=>createHash('sha256').update(value).digest('hex');
@@ -32,6 +34,7 @@ export async function createApp(options={}) {
   CREATE TABLE IF NOT EXISTS events(id TEXT PRIMARY KEY);
   CREATE TABLE IF NOT EXISTS entitlements(user_id TEXT NOT NULL REFERENCES users(id),product TEXT NOT NULL,order_id TEXT NOT NULL REFERENCES orders(id),active INTEGER NOT NULL DEFAULT 1,PRIMARY KEY(user_id,product,order_id));
   CREATE TABLE IF NOT EXISTS activity(id TEXT PRIMARY KEY,user_id TEXT NOT NULL REFERENCES users(id),product TEXT NOT NULL,kind TEXT NOT NULL,created_at INTEGER NOT NULL);`);
+  const academy=localAcademy(db,env.ACADEMY_BUNDLE_PATH||path.join(ROOT,".local-data/ai-unlocked/course-01.json"));
   const admins=new Set((env.ADMIN_EMAILS||'').split(',').map(s=>s.trim().toLowerCase()).filter(Boolean));
   const mailReady=Boolean(options.sendMail || (env.EMAIL_API_KEY&&env.EMAIL_FROM) || (local&&env.MAIL_MODE==='file'));
   const paymentsReady=Boolean(env.STRIPE_SECRET_KEY&&env.STRIPE_WEBHOOK_SECRET);
@@ -105,7 +108,7 @@ export async function createApp(options={}) {
         if(requestOrigin===origin){res.setHeader('Access-Control-Allow-Origin',origin);res.setHeader('Access-Control-Allow-Credentials','true');res.setHeader('Vary','Origin');}
         if(req.method==='OPTIONS'){res.setHeader('Access-Control-Allow-Methods','GET,POST,PATCH');res.setHeader('Access-Control-Allow-Headers','Content-Type');res.writeHead(204);return res.end();}
         if(req.method!=='GET'&&route!=='/api/stripe/webhook'&&requestOrigin!==origin)fail(403,'A matching Origin header is required.');
-        if(route==='/api/health'&&req.method==='GET')return json(res,200,{accounts:mailReady,payments:paymentsReady});
+        if(route==='/api/health'&&req.method==='GET')return json(res,200,{accounts:mailReady,registrationReady:mailReady,payments:paymentsReady});
         if(route==='/api/catalog'&&req.method==='GET')return json(res,200,{services,applications,pluginLicenses:quickwooLicenses,digitalProducts:Object.values(digitalProducts).map(({file,...product})=>product)});
         if(route==='/api/stripe/webhook'&&req.method==='POST')return await webhook(req,res);
         if(route==='/api/auth/register'&&req.method==='POST'){
@@ -130,6 +133,16 @@ export async function createApp(options={}) {
         if(route==='/api/auth/reset'&&req.method==='POST'){
           rate(req,'reset',10);const data=await body(req);const row=db.prepare("SELECT * FROM tokens WHERE digest=? AND purpose='reset' AND expires>?").get(hash(String(data.token||'')),Date.now());if(!row)fail(400,'This reset link has expired or was already used.');const encoded=await password(data.password);
           db.exec('BEGIN IMMEDIATE');try{const freshToken=db.prepare("SELECT 1 FROM tokens WHERE digest=? AND purpose='reset' AND expires>?").get(hash(String(data.token||'')),Date.now());if(!freshToken)fail(400,'This reset link has expired or was already used.');db.prepare('UPDATE users SET password=? WHERE id=?').run(encoded,row.user_id);db.prepare('DELETE FROM sessions WHERE user_id=?').run(row.user_id);db.prepare("DELETE FROM tokens WHERE user_id=? AND purpose='reset'").run(row.user_id);db.exec('COMMIT');}catch(error){db.exec('ROLLBACK');throw error;}clearSession(req,res);return json(res,200,{message:'Password changed. Please sign in again.'});
+        }
+        if(route.startsWith('/api/academy/')){
+          const publicRead=req.method==='GET'&&(route==='/api/academy/preview'||route.startsWith('/api/academy/verify/'));
+          const account=publicRead?null:user(req);
+          const response=await academyRequest({
+            ...academy,path:route.slice(4),method:req.method,
+            actor:account&&{id:account.id,admin:admins.has(account.email)},body:()=>body(req),
+          });
+          res.writeHead(response.status,Object.fromEntries(response.headers));
+          return res.end(Buffer.from(await response.arrayBuffer()));
         }
         const u=user(req);if(!u)fail(401,'Please sign in.');
         if(route==='/api/me'&&req.method==='GET')return json(res,200,{user:publicUser(u),admin:admins.has(u.email)});
