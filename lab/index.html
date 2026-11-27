@@ -13,28 +13,38 @@
 <link rel="stylesheet" href="/assets/styles/digital-matter-tokens.css">
 <link rel="stylesheet" href="/assets/styles/digital-matter.css">
 <script type="module" src="/assets/scripts/digital-matter-portfolio.mjs"></script>
+<link rel="stylesheet" href="/assets/styles/page-depth.css">
+<script type="module" src="/assets/scripts/page-depth.mjs"></script>
+<link rel="stylesheet" href="/assets/styles/portfolio-shell.css">
+<script type="module" src="/assets/scripts/portfolio-shell.mjs"></script>
 </head>
-<body data-design-page="lab">
+<body data-design-page="lab" class="portfolio-page">
 <a class="skip-link" href="#content">Skip to content</a>
-<header>
-  <nav class="wrap" aria-label="Main navigation">
-    <a class="logo" href="/">Robbie<span>.</span></a>
-    <div class="nav-links portfolio-nav">
-      <a href="/applications/">Applications</a>
-      <a href="/websites/">Websites</a>
-      <a href="/services/">Services</a>
-      <a href="/lab/" aria-current="page">Lab</a>
-      <a href="/creative/">Creative</a>
-      <a href="/about/">About me</a>
-      <a href="/contact/">Contact</a>
+<header class="home-toolbar">
+  <div class="wrap home-toolbar-inner">
+    <a class="wordmark" href="/">Robbie Calvin<span>.</span></a>
+    <details class="home-menu" open>
+      <summary>Menu</summary>
+      <nav aria-label="Main navigation">
+        <a href="/technical-portfolio/">AI &amp; Technical Portfolio</a>
+        <a href="/ai-lessons/">AI Lessons</a>
+        <a href="/applications/">Applications</a>
+        <a href="/websites/">Websites</a>
+        <a href="/creative/">Creative</a>
+        <a href="/wp-plugins/">Plugins</a>
+        <a href="/services/">Services</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
       <a href="/account/">Account</a>
-    </div>
-  </nav>
+      </nav>
+    </details>
+  </div>
 </header>
 <main class="wrap" id="content">
   <section class="portfolio-hero" aria-labelledby="title">
     <div>
-      <h1 id="title">Lab</h1>
+      <h1 id="title">Experiments &amp; prototypes</h1>
+      <p class="intro">I use the lab to explore how AI-assisted development, browser interfaces, and conventional engineering patterns work in practice.</p>
       <div class="actions"><a class="button primary" href="#projects">Explore lab</a></div>
     </div>
     <div class="cinematic-stage" data-cinematic-stage>
@@ -49,6 +59,11 @@
       <article class="card">
         <p class="kicker">Task manager demo</p>
         <h3><a href="/productivity-suite/">Intelligent Productivity Suite</a></h3>
+      </article>
+      <article class="card">
+        <p class="kicker">Local SEO workspace</p>
+        <h3><a href="/seo-master/">SEO Master</a></h3>
+        <p>Plan an SEO project from a structured brief, analyze supplied evidence, and export the work for review.</p>
       </article>
       <article class="card">
         <p class="kicker">AI workflows</p>
@@ -70,11 +85,81 @@
       </article>
     </div>
   </section>
+<section class="page-route" aria-labelledby="page-route-title">
+  <h2 id="page-route-title">Follow an experiment into a working build</h2>
+  <p>Start with the project whose approach you want to understand.</p>
+  <div class="page-route-grid">
+    <article>
+      <div class="page-route-media"><img src="/assets/images/digital-matter-launchboard.webp" alt="" loading="lazy"></div>
+      <h3>Rails application structure</h3>
+      <p>See how a job board implements routes, models, and tests.</p>
+      <a href="/launchboard/">Explore Launchboard</a>
+    </article>
+    <article>
+      <div class="page-route-media"><img src="/assets/images/digital-matter-intelligent-productivity-suite.webp" alt="" loading="lazy"></div>
+      <h3>Local software evaluation</h3>
+      <p>Try a standalone task manager built as part of a broader desktop experiment.</p>
+      <a href="/productivity-suite/">Try the browser demo</a>
+    </article>
+    <article>
+      <div class="page-route-media"><img src="/assets/images/digital-matter-seo-auditor.webp" alt="" loading="lazy"></div>
+      <h3>Search diagnostics</h3>
+      <p>See how a crawler turns a site’s pages into CSV and HTML findings.</p>
+      <a href="/seo-auditor/">Explore SEO Auditor</a>
+    </article>
+  </div>
+</section>
 </main>
-<footer class="wrap">
-  <a href="/">Robbie Calvin</a>
-  <a href="/contact/">Contact</a>
-  <span><a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/legal/">Legal &amp; copyright</a></span>
+<footer class="portfolio-footer">
+  <div class="portfolio-footer-inner">
+    <div class="portfolio-footer-feature">
+      <div>
+        <h2>What are you building?</h2>
+        <p>Tell me what you’re working on, or see how I’ve approached similar projects.</p>
+      </div>
+      <div class="portfolio-footer-actions">
+        <a class="portfolio-footer-primary" href="/contact/">Tell me about your project</a>
+        <a href="/technical-portfolio/">Explore the AI portfolio</a>
+      </div>
+    </div>
+
+    <div class="portfolio-footer-directory">
+      <div class="portfolio-footer-identity">
+        <a class="portfolio-footer-wordmark" href="/">Robbie Calvin<span>.</span></a>
+        <p>AI creations, software, and design from Vancouver, BC.</p>
+        <div class="portfolio-footer-social">
+          <a href="https://github.com/robbiecalvin">GitHub</a>
+          <a href="https://www.linkedin.com/in/robbie-calvin-50710b386/">LinkedIn</a>
+        </div>
+      </div>
+      <nav aria-label="Explore the portfolio">
+        <h3>Explore</h3>
+        <a href="/applications/">Applications</a>
+        <a href="/websites/">Websites</a>
+        <a href="/creative/">Creative</a>
+        <a href="/lab/">Lab</a>
+      </nav>
+      <nav aria-label="Learn and work with Robbie">
+        <h3>Learn &amp; build</h3>
+        <a href="/ai-lessons/">AI Lessons</a>
+        <a href="/wp-plugins/">QuickWoo Plugins</a>
+        <a href="/services/">Services</a>
+        <a href="/about/">About Robbie</a>
+      </nav>
+      <nav aria-label="Account and policies">
+        <h3>Site information</h3>
+        <a href="/account/">Account</a>
+        <a href="/terms/">Terms</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/legal/">Legal &amp; Copyright</a>
+      </nav>
+    </div>
+
+    <div class="portfolio-footer-bottom">
+      <small>© <span id="year">2026</span> Robbie Calvin</small>
+      <a href="#">Back to top</a>
+    </div>
+  </div>
 </footer>
 </body>
 </html>

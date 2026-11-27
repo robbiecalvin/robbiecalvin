@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#08090d">
-<title>Websites | Robbie Calvin</title>
-<meta name="description" content="Explore independent websites from Robbie Calvin, including Typing School, FobFather, Crystal Eye, and Trusted Cash Loans.">
+<title>Website Portfolio &amp; Live Projects | Robbie Calvin</title>
+<meta name="description" content="Visit websites built by Robbie Calvin, including FobFather for Vancouver RFID fob copying and Typing School for guided typing practice.">
 <link rel="canonical" href="https://robbiecalvin.com/websites/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/styles/overview.css">
@@ -13,29 +13,46 @@
 <link rel="stylesheet" href="/assets/styles/digital-matter-tokens.css">
 <link rel="stylesheet" href="/assets/styles/digital-matter.css">
 <script type="module" src="/assets/scripts/digital-matter-portfolio.mjs"></script>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Website Portfolio &amp; Live Projects | Robbie Calvin">
+<meta property="og:description" content="Visit websites built by Robbie Calvin, including FobFather for Vancouver RFID fob copying and Typing School for guided typing practice.">
+<meta property="og:url" content="https://robbiecalvin.com/websites/">
+<meta property="og:image" content="https://robbiecalvin.com/assets/images/digital-matter-fobfather.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/styles/portfolio-showcase.css">
+<link rel="stylesheet" href="/assets/styles/page-depth.css">
+<script type="module" src="/assets/scripts/page-depth.mjs"></script>
+<link rel="stylesheet" href="/assets/styles/portfolio-shell.css">
+<script type="module" src="/assets/scripts/portfolio-shell.mjs"></script>
 </head>
-<body data-design-page="websites">
+<body data-design-page="websites" class="portfolio-page">
 <a class="skip-link" href="#content">Skip to content</a>
-<header>
-  <nav class="wrap" aria-label="Main navigation">
-    <a class="logo" href="/">Robbie<span>.</span></a>
-    <div class="nav-links portfolio-nav">
-      <a href="/applications/">Applications</a>
-      <a href="/websites/" aria-current="page">Websites</a>
-      <a href="/services/">Services</a>
-      <a href="/lab/">Lab</a>
-      <a href="/creative/">Creative</a>
-      <a href="/about/">About me</a>
-      <a href="/contact/">Contact</a>
+<header class="home-toolbar">
+  <div class="wrap home-toolbar-inner">
+    <a class="wordmark" href="/">Robbie Calvin<span>.</span></a>
+    <details class="home-menu" open>
+      <summary>Menu</summary>
+      <nav aria-label="Main navigation">
+        <a href="/technical-portfolio/">AI &amp; Technical Portfolio</a>
+        <a href="/ai-lessons/">AI Lessons</a>
+        <a href="/applications/">Applications</a>
+        <a href="/websites/">Websites</a>
+        <a href="/creative/">Creative</a>
+        <a href="/wp-plugins/">Plugins</a>
+        <a href="/services/">Services</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
       <a href="/account/">Account</a>
-    </div>
-  </nav>
+      </nav>
+    </details>
+  </div>
 </header>
 <main class="wrap" id="content">
   <section class="portfolio-hero" aria-labelledby="title">
     <div>
-      <h1 id="title">Websites</h1>
-      <div class="actions"><a class="button primary" href="#projects">Explore websites</a></div>
+      <h1 id="title">Website Portfolio &amp; Live Projects</h1>
+      <p class="intro">Visit the sites and see how each helps people do something specific, from booking a local service to practicing a skill.</p>
+      <div class="actions"><a class="button primary" href="#featured-title">Featured website</a><a class="button" href="#projects">Browse all websites</a></div>
     </div>
     <div class="cinematic-stage" data-cinematic-stage>
       <img src="/assets/images/digital-matter-websites.webp" alt="" width="640" height="640">
@@ -43,13 +60,22 @@
       <button class="cinematic-motion" type="button" aria-pressed="false" hidden>Pause motion</button>
     </div>
   </section>
+  <section class="showcase-feature" aria-labelledby="featured-title">
+    <div class="showcase-media"><img src="/assets/images/digital-matter-fobfather.webp" alt="" loading="lazy"></div>
+    <div class="showcase-copy">
+      <p class="kicker">Featured website</p>
+      <h2 id="featured-title">FobFather</h2>
+      <p>A local service site for apartment RFID fob copying by appointment in downtown Vancouver. Visit the live website or read about the project below.</p>
+      <a class="button primary" href="https://fobfather.ca/">Visit FobFather</a>
+    </div>
+  </section>
   <section class="content" id="projects" aria-labelledby="projects-title">
-    <h2 id="projects-title">Projects</h2>
+    <h2 id="projects-title">All websites</h2>
     <div class="grid">
       <article class="card">
         <p class="kicker">Learning &amp; practice</p>
         <h3><a href="/typing-school/">Typing School</a></h3>
-        <p>Targeted typing practice, rhythm analysis, games, and local progress tracking.</p>
+        <p>Practice weak keys and timing, replay a session, or try a typing game. Progress stays in the browser.</p>
       </article>
       <article class="card">
         <p class="kicker">Vancouver fob copying</p>
@@ -60,7 +86,7 @@
       <article class="card">
         <p class="kicker">Website</p>
         <h3><a href="https://robbiecalvin.github.io/crystaleye/">Crystal Eye</a></h3>
-        <p>Explore Crystal Eye online.</p>
+        <p>Browse astrology, tarot, and numerology, including a series of numerology research guides.</p>
         <a href="/crystal-eye/">Project overview ↗</a>
       </article>
       <article class="card">
@@ -71,11 +97,86 @@
       </article>
     </div>
   </section>
+  <section class="showcase-next" aria-labelledby="next-title">
+    <h2 id="next-title">Have a service customers need to find?</h2>
+    <p>I build websites that help visitors understand what you offer and take the next step.</p>
+    <a class="button primary" href="/web-design/#pricing">See web design pricing</a>
+  </section>
+<section class="page-route" aria-labelledby="page-route-title">
+  <h2 id="page-route-title">See the job each website does</h2>
+  <p>Explore different approaches to appointment requests, practice tools, and content libraries.</p>
+  <div class="page-route-grid">
+    <article>
+      <div class="page-route-media"><img src="/assets/images/fobfather-hero.webp" alt="" loading="lazy"></div>
+      <h3>Get to an appointment</h3>
+      <p>Follow the path from a local service listing to an appointment request.</p>
+      <a href="/fobfather/">See FobFather</a>
+    </article>
+    <article>
+      <div class="page-route-media"><img src="/assets/images/previews/typing-school.webp" alt="Typing School practice interface" loading="lazy" data-page-preview></div>
+      <h3>Learn through practice</h3>
+      <p>See how an interactive site gives learners feedback and saves progress locally.</p>
+      <a href="/typing-school/">See Typing School</a>
+    </article>
+    <article>
+      <div class="page-route-media"><img src="/assets/images/previews/crystaleye.webp" alt="Crystal Eye website preview" loading="lazy" data-page-preview></div>
+      <h3>Explore a subject library</h3>
+      <p>See how Crystal Eye organizes reading material alongside merchandise and service requests.</p>
+      <a href="/crystal-eye/">See Crystal Eye</a>
+    </article>
+  </div>
+</section>
 </main>
-<footer class="wrap">
-  <a href="/">Robbie Calvin</a>
-  <a href="/contact/">Contact</a>
-  <span><a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/legal/">Legal &amp; copyright</a></span>
+<footer class="portfolio-footer">
+  <div class="portfolio-footer-inner">
+    <div class="portfolio-footer-feature">
+      <div>
+        <h2>What are you building?</h2>
+        <p>Tell me what you’re working on, or see how I’ve approached similar projects.</p>
+      </div>
+      <div class="portfolio-footer-actions">
+        <a class="portfolio-footer-primary" href="/contact/">Tell me about your project</a>
+        <a href="/technical-portfolio/">Explore the AI portfolio</a>
+      </div>
+    </div>
+
+    <div class="portfolio-footer-directory">
+      <div class="portfolio-footer-identity">
+        <a class="portfolio-footer-wordmark" href="/">Robbie Calvin<span>.</span></a>
+        <p>AI creations, software, and design from Vancouver, BC.</p>
+        <div class="portfolio-footer-social">
+          <a href="https://github.com/robbiecalvin">GitHub</a>
+          <a href="https://www.linkedin.com/in/robbie-calvin-50710b386/">LinkedIn</a>
+        </div>
+      </div>
+      <nav aria-label="Explore the portfolio">
+        <h3>Explore</h3>
+        <a href="/applications/">Applications</a>
+        <a href="/websites/">Websites</a>
+        <a href="/creative/">Creative</a>
+        <a href="/lab/">Lab</a>
+      </nav>
+      <nav aria-label="Learn and work with Robbie">
+        <h3>Learn &amp; build</h3>
+        <a href="/ai-lessons/">AI Lessons</a>
+        <a href="/wp-plugins/">QuickWoo Plugins</a>
+        <a href="/services/">Services</a>
+        <a href="/about/">About Robbie</a>
+      </nav>
+      <nav aria-label="Account and policies">
+        <h3>Site information</h3>
+        <a href="/account/">Account</a>
+        <a href="/terms/">Terms</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/legal/">Legal &amp; Copyright</a>
+      </nav>
+    </div>
+
+    <div class="portfolio-footer-bottom">
+      <small>© <span id="year">2026</span> Robbie Calvin</small>
+      <a href="#">Back to top</a>
+    </div>
+  </div>
 </footer>
 </body>
 </html>

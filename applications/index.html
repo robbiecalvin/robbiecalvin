@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#08090d">
-<title>Applications | Robbie Calvin</title>
-<meta name="description" content="Explore Robbie Calvin’s applications for voice-assisted visual thinking, audio editing, beverage recommendations, and WordPress and WooCommerce operations.">
+<title>Web &amp; Desktop Applications | Robbie Calvin</title>
+<meta name="description" content="Explore web and desktop apps by Robbie Calvin, including SpeechFlow for visual thinking, QuickWoo Desktop for commerce, and KIMIX for audio editing.">
 <link rel="canonical" href="https://robbiecalvin.com/applications/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/styles/overview.css">
@@ -13,29 +13,46 @@
 <link rel="stylesheet" href="/assets/styles/digital-matter-tokens.css">
 <link rel="stylesheet" href="/assets/styles/digital-matter.css">
 <script type="module" src="/assets/scripts/digital-matter-portfolio.mjs"></script>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Web &amp; Desktop Applications | Robbie Calvin">
+<meta property="og:description" content="Explore web and desktop apps by Robbie Calvin, including SpeechFlow for visual thinking, QuickWoo Desktop for commerce, and KIMIX for audio editing.">
+<meta property="og:url" content="https://robbiecalvin.com/applications/">
+<meta property="og:image" content="https://robbiecalvin.com/assets/images/speechflow-workspace-640.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/styles/portfolio-showcase.css">
+<link rel="stylesheet" href="/assets/styles/page-depth.css">
+<script type="module" src="/assets/scripts/page-depth.mjs"></script>
+<link rel="stylesheet" href="/assets/styles/portfolio-shell.css">
+<script type="module" src="/assets/scripts/portfolio-shell.mjs"></script>
 </head>
-<body data-design-page="applications">
+<body data-design-page="applications" class="portfolio-page">
 <a class="skip-link" href="#content">Skip to content</a>
-<header>
-  <nav class="wrap" aria-label="Main navigation">
-    <a class="logo" href="/">Robbie<span>.</span></a>
-    <div class="nav-links portfolio-nav">
-      <a href="/applications/" aria-current="page">Applications</a>
-      <a href="/websites/">Websites</a>
-      <a href="/services/">Services</a>
-      <a href="/lab/">Lab</a>
-      <a href="/creative/">Creative</a>
-      <a href="/about/">About me</a>
-      <a href="/contact/">Contact</a>
+<header class="home-toolbar">
+  <div class="wrap home-toolbar-inner">
+    <a class="wordmark" href="/">Robbie Calvin<span>.</span></a>
+    <details class="home-menu" open>
+      <summary>Menu</summary>
+      <nav aria-label="Main navigation">
+        <a href="/technical-portfolio/">AI &amp; Technical Portfolio</a>
+        <a href="/ai-lessons/">AI Lessons</a>
+        <a href="/applications/">Applications</a>
+        <a href="/websites/">Websites</a>
+        <a href="/creative/">Creative</a>
+        <a href="/wp-plugins/">Plugins</a>
+        <a href="/services/">Services</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
       <a href="/account/">Account</a>
-    </div>
-  </nav>
+      </nav>
+    </details>
+  </div>
 </header>
 <main class="wrap" id="content">
   <section class="portfolio-hero" aria-labelledby="title">
     <div>
-      <h1 id="title">Applications</h1>
-      <div class="actions"><a class="button primary" href="#projects">Explore applications</a></div>
+      <h1 id="title">Web &amp; Desktop Applications</h1>
+      <p class="intro">Explore the apps in my AI creations portfolio. Some use AI-assisted development, some explore AI workflows, and others focus on a specific interaction such as voice input or audio editing.</p>
+      <div class="actions"><a class="button primary" href="#featured-title">Featured app</a><a class="button" href="#projects">Browse all apps</a></div>
     </div>
     <div class="cinematic-stage" data-cinematic-stage>
       <img src="/assets/images/digital-matter-applications.webp" alt="" width="640" height="640">
@@ -43,18 +60,27 @@
       <button class="cinematic-motion" type="button" aria-pressed="false" hidden>Pause motion</button>
     </div>
   </section>
+  <section class="showcase-feature" aria-labelledby="featured-title">
+    <div class="showcase-media"><img src="/assets/images/speechflow-workspace-640.webp" alt="SpeechFlow showing connected ideas on its canvas" loading="lazy"></div>
+    <div class="showcase-copy">
+      <p class="kicker">SpeechFlow</p>
+      <h2 id="featured-title">Map your next idea</h2>
+      <p>Speak or type your thoughts, connect them on a canvas, and present them in sequence. Start with SpeechFlow if you want to see an app in action.</p>
+      <a class="button primary" href="/speechflow/">Explore SpeechFlow</a>
+    </div>
+  </section>
   <section class="content" id="projects" aria-labelledby="projects-title">
-    <h2 id="projects-title">Projects</h2>
+    <h2 id="projects-title">All apps</h2>
     <div class="grid">
       <article class="card">
         <p class="kicker">AI workflows</p>
         <h3><a href="/codex-master/">Codex Master</a></h3>
-        <p>Structured Codex workflows and website blueprints for more intentional builds.</p>
+        <p>Define how agents find context, route tasks, and collect evidence before they mark engineering work complete.</p>
       </article>
       <article class="card">
         <p class="kicker">Virtual sommelier</p>
         <h3><a href="/myra/">Myra</a></h3>
-        <p>Wine and beer recommendations with guided discovery and top-three results.</p>
+        <p>Compare three wine or beer recommendations after answering guided questions or describing your occasion in your own words.</p>
       </article>
       <article class="card">
         <p class="kicker">18+ social discovery</p>
@@ -74,7 +100,7 @@
       <article class="card">
         <p class="kicker">Audio &amp; creativity</p>
         <h3><a href="/kimix/">KIMIX</a></h3>
-        <p>Play local audio, arrange multitrack edits, and build your mix.</p>
+        <p>Queue local tracks, edit clips on a multitrack timeline, and export the result from the Python desktop app.</p>
       </article>
       <article class="card">
         <p class="kicker">WordPress plugin suite</p>
@@ -95,11 +121,86 @@
       </article>
     </div>
   </section>
+  <section class="showcase-next" aria-labelledby="next-title">
+    <h2 id="next-title">Need an app for your own workflow?</h2>
+    <p>Tell me what your team does repeatedly and where the current tools slow you down.</p>
+    <a class="button primary" href="/custom-software/">Explore custom software</a>
+  </section>
+<section class="page-route" aria-labelledby="page-route-title">
+  <h2 id="page-route-title">Choose an app by what you want to do</h2>
+  <p>Each project page explains how to get started and where the app runs.</p>
+  <div class="page-route-grid">
+    <article>
+      <div class="page-route-media"><img src="/assets/images/speechflow-workspace-640.webp" alt="SpeechFlow showing a connected idea map" loading="lazy" data-page-preview></div>
+      <h3>Map an idea</h3>
+      <p>Capture thoughts and connect them into a plan you can present.</p>
+      <a href="/speechflow/">Explore SpeechFlow</a>
+    </article>
+    <article>
+      <div class="page-route-media"><img src="/assets/images/showcase/kimix-desktop.webp" alt="KIMIX multitrack audio editor" loading="lazy" data-page-preview></div>
+      <h3>Edit local audio</h3>
+      <p>Arrange tracks and clips in a native desktop editor.</p>
+      <a href="/kimix/">Explore KIMIX</a>
+    </article>
+    <article>
+      <div class="page-route-media"><img src="/assets/images/showcase/myra-desktop.webp" alt="Myra desktop recommendation interface" loading="lazy" data-page-preview></div>
+      <h3>Compare drink recommendations</h3>
+      <p>Try guided or free-form discovery in your browser.</p>
+      <a href="/myra/">Explore Myra</a>
+    </article>
+  </div>
+</section>
 </main>
-<footer class="wrap">
-  <a href="/">Robbie Calvin</a>
-  <a href="/contact/">Contact</a>
-  <span><a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/legal/">Legal &amp; copyright</a></span>
+<footer class="portfolio-footer">
+  <div class="portfolio-footer-inner">
+    <div class="portfolio-footer-feature">
+      <div>
+        <h2>What are you building?</h2>
+        <p>Tell me what you’re working on, or see how I’ve approached similar projects.</p>
+      </div>
+      <div class="portfolio-footer-actions">
+        <a class="portfolio-footer-primary" href="/contact/">Tell me about your project</a>
+        <a href="/technical-portfolio/">Explore the AI portfolio</a>
+      </div>
+    </div>
+
+    <div class="portfolio-footer-directory">
+      <div class="portfolio-footer-identity">
+        <a class="portfolio-footer-wordmark" href="/">Robbie Calvin<span>.</span></a>
+        <p>AI creations, software, and design from Vancouver, BC.</p>
+        <div class="portfolio-footer-social">
+          <a href="https://github.com/robbiecalvin">GitHub</a>
+          <a href="https://www.linkedin.com/in/robbie-calvin-50710b386/">LinkedIn</a>
+        </div>
+      </div>
+      <nav aria-label="Explore the portfolio">
+        <h3>Explore</h3>
+        <a href="/applications/">Applications</a>
+        <a href="/websites/">Websites</a>
+        <a href="/creative/">Creative</a>
+        <a href="/lab/">Lab</a>
+      </nav>
+      <nav aria-label="Learn and work with Robbie">
+        <h3>Learn &amp; build</h3>
+        <a href="/ai-lessons/">AI Lessons</a>
+        <a href="/wp-plugins/">QuickWoo Plugins</a>
+        <a href="/services/">Services</a>
+        <a href="/about/">About Robbie</a>
+      </nav>
+      <nav aria-label="Account and policies">
+        <h3>Site information</h3>
+        <a href="/account/">Account</a>
+        <a href="/terms/">Terms</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/legal/">Legal &amp; Copyright</a>
+      </nav>
+    </div>
+
+    <div class="portfolio-footer-bottom">
+      <small>© <span id="year">2026</span> Robbie Calvin</small>
+      <a href="#">Back to top</a>
+    </div>
+  </div>
 </footer>
 </body>
 </html>

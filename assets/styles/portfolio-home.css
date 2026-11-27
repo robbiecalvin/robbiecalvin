@@ -57,6 +57,7 @@ h3 { font-size: clamp(1.28rem, 2.25vw, 1.65rem); letter-spacing: -.035em; }
 .work-card h3 a, .directory-grid h3 a { text-decoration: none; }
 .work-card p:not(.eyebrow) { color: var(--muted); margin-top: .65rem; max-width: 55ch; }
 .work-card > a { margin-top: auto; }
+.offer-card .actions { align-items: center; margin-top: auto; padding-top: .5rem; }
 .directory { --line: #a5ac98; background: #edeedc; color: #1b291e; padding-block: clamp(2.75rem, 6vw, 5rem); }
 .directory a:hover { color: #385928; }
 .directory-grid article > p { margin-block: .75rem; }

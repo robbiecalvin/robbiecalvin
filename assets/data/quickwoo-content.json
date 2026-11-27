@@ -12,7 +12,12 @@
       "WordPress 6.0+",
       "PHP 7.4+"
     ],
-    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-add/quick-add.php"
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-add/quick-add.php",
+    "workflow": {
+      "title": "Create a new set of WooCommerce products",
+      "summary": "Use Quick Add for new arrivals, seasonal lines, or supplier inventory. Prepare a structured list with product names, SKUs, prices, and categories before creating the products.",
+      "related": "quick-edit"
+    }
   },
   "quick-edit": {
     "headline": "A clearer way to change the catalog.",
@@ -27,7 +32,12 @@
       "WordPress 6.0+",
       "PHP 7.4+"
     ],
-    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-edit/quick-edit.php"
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-edit/quick-edit.php",
+    "workflow": {
+      "title": "Update products already in your catalog",
+      "summary": "Use the bulk editor when you need to change existing WooCommerce products. If you are adding a new product line, start with Quick Add instead.",
+      "related": "quick-add"
+    }
   },
   "quick-variations": {
     "headline": "Let the attributes do the multiplying.",
@@ -42,7 +52,12 @@
       "WordPress 6.0+",
       "PHP 7.4+"
     ],
-    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-variations/quick-variations.php"
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-variations/quick-variations.php",
+    "workflow": {
+      "title": "Set up a product with several options",
+      "summary": "Configure the attributes for a WooCommerce variable product, then generate combinations such as sizes and colors. Review the generated options before publishing.",
+      "related": "quick-add"
+    }
   },
   "quick-images": {
     "headline": "Give the catalog a consistent look.",
@@ -52,9 +67,14 @@
       "Process a batch of images",
       "Save results to the Media Library"
     ],
-    "fit": "For repeatable image preparation. Available formats and text rendering depend on the server\u2019s image libraries.",
+    "fit": "For repeatable image preparation. Available formats and text rendering depend on the server’s image libraries.",
     "requirements": [],
-    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-images/quick-images.php"
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-images/quick-images.php",
+    "workflow": {
+      "title": "Work through a product image backlog",
+      "summary": "Start with one group of WooCommerce products and review its images before moving on to the rest of your catalog.",
+      "related": "quick-edit"
+    }
   },
   "quick-ship": {
     "headline": "Make shipping rules easier to follow.",
@@ -64,9 +84,14 @@
       "Apply shipping presets and rules",
       "Work with shipment records"
     ],
-    "fit": "For giving a store\u2019s shipping setup a more structured starting point.",
+    "fit": "For giving a store’s shipping setup a more structured starting point.",
     "requirements": [],
-    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-ship/quick-ship.php"
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-ship/quick-ship.php",
+    "workflow": {
+      "title": "Review the shipping workflow for your store",
+      "summary": "Use a test order to work through the shipping steps that apply to your store before using the workflow for live orders.",
+      "related": "quick-variations"
+    }
   },
   "quick-points": {
     "headline": "Give returning customers a reason to stay.",
@@ -78,7 +103,12 @@
     ],
     "fit": "For stores building a rewards workflow around their own customers.",
     "requirements": [],
-    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-points/quick-points.php"
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-points/quick-points.php",
+    "workflow": {
+      "title": "Plan a store loyalty program",
+      "summary": "Decide which customer actions should earn points and how rewards should work. Test earning and redemption on your WooCommerce setup before announcing the program.",
+      "related": "quick-ship"
+    }
   },
   "quick-forms": {
     "headline": "A form should lead somewhere useful.",
@@ -90,7 +120,12 @@
     ],
     "fit": "For keeping form creation and the resulting enquiries in the WordPress workflow.",
     "requirements": [],
-    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-forms/quick-forms.php"
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-forms/quick-forms.php",
+    "workflow": {
+      "title": "Collect inquiries on a WordPress page",
+      "summary": "Build a self-hosted form and embed it with a shortcode. Before publishing, submit a test entry and check that the expected notification reaches you.",
+      "related": "quick-quotes"
+    }
   },
   "quick-schedule": {
     "headline": "Give appointments a little structure.",
@@ -102,7 +137,12 @@
     ],
     "fit": "For organizing appointment-based work and its related administrative tasks.",
     "requirements": [],
-    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-schedule/quick-schedule.php"
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-schedule/quick-schedule.php",
+    "workflow": {
+      "title": "Take consultation requests",
+      "summary": "Set up the appointment choices customers should see. If you charge a consultation fee, test the request and payment flow on your own setup before taking bookings.",
+      "related": "quick-quotes"
+    }
   },
   "quick-importer": {
     "headline": "Move the data. Keep the structure.",
@@ -114,7 +154,12 @@
     ],
     "fit": "For moving repeatable content and product data without rebuilding the process each time.",
     "requirements": [],
-    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-importer/quick-importer.php"
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-importer/quick-importer.php",
+    "workflow": {
+      "title": "Plan a structured WordPress import",
+      "summary": "Start with a sample file so you can review how the incoming data maps to the destination before importing a larger batch.",
+      "related": "quick-add"
+    }
   },
   "quick-quotes": {
     "headline": "Turn an enquiry into a clearer quote.",
@@ -126,7 +171,12 @@
     ],
     "fit": "For work that needs a defined proposal before it becomes an order.",
     "requirements": [],
-    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-quotes/quick-quotes.php"
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-quotes/quick-quotes.php",
+    "workflow": {
+      "title": "Collect requests for custom jobs",
+      "summary": "Use a quote request when the price depends on customer choices or project details. Ask for the information you need to estimate the work.",
+      "related": "quick-forms"
+    }
   },
   "quick-accountant": {
     "headline": "Keep the small numbers in view.",
@@ -141,7 +191,12 @@
       "WordPress 6.0+",
       "PHP 7.4+"
     ],
-    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-accountant/quick-accountant.php"
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-accountant/quick-accountant.php",
+    "workflow": {
+      "title": "Review income and expenses in WordPress",
+      "summary": "Track income and expenses alongside budgets and reports. Start here if you want to review the figures you record in WordPress from a single dashboard.",
+      "related": "quick-quotes"
+    }
   },
   "quick-mail": {
     "headline": "Keep the message and the delivery together.",
@@ -153,7 +208,12 @@
     ],
     "fit": "For managing site email workflows. Delivery requires an appropriately configured mail provider.",
     "requirements": [],
-    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-mail/quick-mail.php"
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-mail/quick-mail.php",
+    "workflow": {
+      "title": "Review your WordPress email workflow",
+      "summary": "Start with a test submission or notification and verify it reaches the intended inbox before routing customer mail through a new setup.",
+      "related": "quick-forms"
+    }
   },
   "quick-site": {
     "headline": "Give the site some breathing room.",
@@ -168,7 +228,12 @@
       "WordPress 5.8+",
       "PHP 7.4+"
     ],
-    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-site/quick-site.php"
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-site/quick-site.php",
+    "workflow": {
+      "title": "Review site performance and maintenance",
+      "summary": "Start by checking your current cache behavior. Review the caching and cleanup settings on a staging copy before changing a live WordPress site.",
+      "related": "quick-traffic"
+    }
   },
   "quick-seo": {
     "headline": "Work on the details that search engines read.",
@@ -180,7 +245,12 @@
     ],
     "fit": "For hands-on SEO administration. Search rankings and indexing outcomes are not guaranteed.",
     "requirements": [],
-    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-seo/quick-seo.php"
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-seo/quick-seo.php",
+    "workflow": {
+      "title": "Update search metadata across many pages",
+      "summary": "Start with a small batch of WordPress or WooCommerce pages. Review titles, descriptions, canonicals, and structured data on staging before rolling out bulk changes.",
+      "related": "quick-audit"
+    }
   },
   "quick-audit": {
     "headline": "Look at the site in front of you.",
@@ -192,7 +262,12 @@
     ],
     "fit": "For reviewing your own site. It is not presented as a competitor-research or external-site auditing service.",
     "requirements": [],
-    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-audit/quick-audit.php"
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-audit/quick-audit.php",
+    "workflow": {
+      "title": "Review a WordPress site before launch",
+      "summary": "Use Quick Audit to identify issues worth checking on staging, such as missing metadata, broken links, and images without alt text. Use the report to decide what to fix before going live.",
+      "related": "quick-seo"
+    }
   },
   "quick-traffic": {
     "headline": "See the traffic. Keep the context.",
@@ -204,7 +279,12 @@
     ],
     "fit": "For understanding site activity within a self-hosted WordPress workflow.",
     "requirements": [],
-    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-traffic/quick-traffic.php"
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-traffic/quick-traffic.php",
+    "workflow": {
+      "title": "Monitor activity inside WordPress",
+      "summary": "Use the WordPress admin analytics screen to review activity, and decide which traffic you want to exclude before comparing results over time.",
+      "related": "quick-audit"
+    }
   },
   "quick-code": {
     "headline": "A place for the small pieces of code.",
@@ -216,7 +296,12 @@
     ],
     "fit": "For authorized site administrators. Test custom snippets carefully before applying them to a live site.",
     "requirements": [],
-    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-code/quick-code.php"
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-code/quick-code.php",
+    "workflow": {
+      "title": "Centralize site snippets",
+      "summary": "Keep administrator-managed HTML, CSS, and JavaScript snippets in one WordPress tool. Review the change on staging before using it on a live site.",
+      "related": "quick-site"
+    }
   },
   "quick-course-builder": {
     "headline": "Give knowledge a path to follow.",
@@ -231,7 +316,12 @@
       "WordPress 6.2+",
       "PHP 8.0+"
     ],
-    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-course-builder/quick-course-builder.php"
+    "source": "https://github.com/robbiecalvin/QuickWoo-Desktop/blob/d8514efa7d9049656bb86f7de330af607c80ac9d/quickplugins/quick-course-builder/quick-course-builder.php",
+    "workflow": {
+      "title": "Outline a course in WordPress",
+      "summary": "Break your material into modules, decide where learners should take a test, and plan any completion certificate before setting up the course.",
+      "related": "quick-forms"
+    }
   },
   "quick-connector": {
     "headline": "One bridge between the site and the desktop.",
@@ -254,7 +344,7 @@
     "features": [
       "Generate license records",
       "Handle activation and product scope",
-      "Support the suite\u2019s entitlement infrastructure"
+      "Support the suite’s entitlement infrastructure"
     ],
     "fit": "Infrastructure, not a separately priced Pro plugin in this matrix. A standalone customer-facing price is not specified.",
     "requirements": [

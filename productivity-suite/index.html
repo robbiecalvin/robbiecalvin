@@ -11,9 +11,34 @@
 <link rel="stylesheet" href="/assets/styles/digital-matter-tokens.css">
 <link rel="stylesheet" href="/assets/styles/digital-matter.css">
 <script type="module" src="/assets/scripts/digital-matter-portfolio.mjs"></script>
+<link rel="stylesheet" href="/assets/styles/page-depth.css">
+<script type="module" src="/assets/scripts/page-depth.mjs"></script>
+<link rel="stylesheet" href="/assets/styles/portfolio-shell.css">
+<script type="module" src="/assets/scripts/portfolio-shell.mjs"></script>
 </head>
-<body data-design-page="intelligent-productivity-suite" data-scene-id="46">
-  <main>
+<body data-design-page="intelligent-productivity-suite" data-scene-id="46" class="portfolio-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+<header class="home-toolbar">
+  <div class="wrap home-toolbar-inner">
+    <a class="wordmark" href="/">Robbie Calvin<span>.</span></a>
+    <details class="home-menu" open>
+      <summary>Menu</summary>
+      <nav aria-label="Main navigation">
+        <a href="/technical-portfolio/">AI &amp; Technical Portfolio</a>
+        <a href="/ai-lessons/">AI Lessons</a>
+        <a href="/applications/">Applications</a>
+        <a href="/websites/">Websites</a>
+        <a href="/creative/">Creative</a>
+        <a href="/wp-plugins/">Plugins</a>
+        <a href="/services/">Services</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      <a href="/account/">Account</a>
+      </nav>
+    </details>
+  </div>
+</header>
+  <main id="main-content">
     <nav aria-label="Portfolio"><a href="/">Robbie Calvin</a> <a href="https://github.com/robbiecalvin/robbiecalvin/blob/main/docs/productivity-suite-case-study.md">Case study</a></nav>
     <section class="portfolio-hero demo-hero">
 <div>
@@ -38,6 +63,78 @@
       <p id="status" role="status"></p>
       <ul id="tasks"></ul>
     </section>
-  </main>
+    <section aria-labelledby="suite-project">
+      <h2 id="suite-project">About the Intelligent Productivity Suite</h2>
+      <p>The desktop project turns an application brief into a plan, generates code, and evaluates the result against an explicit application contract. The repository includes an Ollama client, a Docker runner, and a repair controller with a limited number of attempts.</p>
+      <p>The task manager above is a standalone browser demo. It stores tasks in your browser and runs without Ollama. Model-assisted generation belongs to the separate desktop project.</p>
+    </section>
+  <section class="page-route" aria-labelledby="page-route-title">
+  <h2 id="page-route-title">From a task demo to the engineering behind it</h2>
+  <p>The browser task manager shows the output of a workflow built around explicit application contracts.</p>
+  <div class="page-route-grid">
+    <article>
+      <h3>Try the core task flow</h3>
+      <p>Add, complete, and refresh the page to see how the browser demo keeps tasks locally.</p>
+      <a href="#main-content">Return to the task manager</a>
+    </article>
+    <article>
+      <h3>Compare other engineering projects</h3>
+      <p>Explore the broader portfolio for tests, reporting, and interaction design.</p>
+      <a href="/technical-portfolio/">Browse the technical portfolio</a>
+    </article>
+  </div>
+</section>
+</main>
+<footer class="portfolio-footer">
+  <div class="portfolio-footer-inner">
+    <div class="portfolio-footer-feature">
+      <div>
+        <h2>What are you building?</h2>
+        <p>Tell me what you’re working on, or see how I’ve approached similar projects.</p>
+      </div>
+      <div class="portfolio-footer-actions">
+        <a class="portfolio-footer-primary" href="/contact/">Tell me about your project</a>
+        <a href="/technical-portfolio/">Explore the AI portfolio</a>
+      </div>
+    </div>
+
+    <div class="portfolio-footer-directory">
+      <div class="portfolio-footer-identity">
+        <a class="portfolio-footer-wordmark" href="/">Robbie Calvin<span>.</span></a>
+        <p>AI creations, software, and design from Vancouver, BC.</p>
+        <div class="portfolio-footer-social">
+          <a href="https://github.com/robbiecalvin">GitHub</a>
+          <a href="https://www.linkedin.com/in/robbie-calvin-50710b386/">LinkedIn</a>
+        </div>
+      </div>
+      <nav aria-label="Explore the portfolio">
+        <h3>Explore</h3>
+        <a href="/applications/">Applications</a>
+        <a href="/websites/">Websites</a>
+        <a href="/creative/">Creative</a>
+        <a href="/lab/">Lab</a>
+      </nav>
+      <nav aria-label="Learn and work with Robbie">
+        <h3>Learn &amp; build</h3>
+        <a href="/ai-lessons/">AI Lessons</a>
+        <a href="/wp-plugins/">QuickWoo Plugins</a>
+        <a href="/services/">Services</a>
+        <a href="/about/">About Robbie</a>
+      </nav>
+      <nav aria-label="Account and policies">
+        <h3>Site information</h3>
+        <a href="/account/">Account</a>
+        <a href="/terms/">Terms</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/legal/">Legal &amp; Copyright</a>
+      </nav>
+    </div>
+
+    <div class="portfolio-footer-bottom">
+      <small>© <span id="year">2026</span> Robbie Calvin</small>
+      <a href="#">Back to top</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

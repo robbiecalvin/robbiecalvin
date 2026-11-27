@@ -17,7 +17,7 @@ const {chromium}=require('playwright');const assert=require('node:assert/strict'
     for(const billing of ['monthly','annual'])for(const sites of [1,5,10,25]){
      await page.selectOption('#license-billing',billing);await page.selectOption('#license-sites',String(sites));
      const shown=await page.locator('[data-price-id]').evaluateAll(es=>es.map(e=>({id:e.dataset.priceId,amount:e.querySelector('[data-price-amount]').textContent})));
-     for(const s of shown){const item=[...catalog.products,...catalog.bundles].find(p=>p.id===s.id);assert.equal(s.amount,new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(item.prices[billing][catalog.siteLimits.indexOf(sites)]/100));priceChecks++;}
+     for(const s of shown){const item=[...catalog.products,...catalog.bundles].find(p=>p.id===s.id);assert.equal(s.amount,new Intl.NumberFormat('en-CA',{style:'currency',currency:catalog.currency}).format(item.prices[billing][catalog.siteLimits.indexOf(sites)]/100));priceChecks++;}
     }
    }
    const link=page.locator('[data-plugin-download]');

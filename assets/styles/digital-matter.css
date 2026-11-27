@@ -241,3 +241,18 @@ body[data-palette][data-design-page] {
     min-height: 0;
   }
 }
+
+.portrait-stage {
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: radial-gradient(ellipse at 50% 40%, var(--card-highlight), var(--surface-dark) 75%);
+}
+
+.portrait-stage img.cinematic-portrait {
+  inset: auto 0 0;
+  width: 100%;
+  height: 88%;
+  object-position: center bottom;
+}

@@ -4,12 +4,25 @@ for(const width of [1440,820,390,320]){
  await p.setViewportSize({width,height:1000});
  await p.goto(base+'/');
  assert.equal(await p.locator('h1').count(),1);
- assert.equal(await p.locator('#work .work-card').count(),4);
- for(const id of ['applications','sites','lab','creative','services','technical-portfolio']){
-  assert.equal(await p.locator('#'+id).count(),1,id);
+ assert.equal(await p.locator('main > section').count(),8);
+ assert.equal(await p.locator('[data-home-carousel]').count(),5);
+ assert.equal(await p.locator('footer').count(),1);
+ for(const route of ['technical-portfolio','applications','websites','services','creative','wp-plugins','about','contact','ai-lessons','account']){
+  assert.equal(await p.locator(`header nav a[href="/${route}/"]`).count(),1,route);
  }
- const image=p.locator('.hero-project img');
- assert(await image.evaluate(img=>img.complete&&img.naturalWidth>0));
+ const apps=p.locator('#applications');
+ const appImage=apps.locator('.showcase-slide:visible .showcase-desktop img');
+ await appImage.scrollIntoViewIfNeeded();
+ await p.waitForFunction(() => document.querySelector('#applications .showcase-slide:not([hidden]) .showcase-desktop img').naturalWidth > 0);
+ await apps.getByRole('button',{name:'Next Applications item'}).click();
+ assert.equal(await apps.getByRole('link',{name:'Explore QuickWoo Desktop',exact:true}).getAttribute('href'),'/quickwoo/');
+ await apps.getByRole('button',{name:'Previous Applications item'}).click();
+ assert.equal(await apps.getByRole('link',{name:'Explore Myra',exact:true}).getAttribute('href'),'/myra/');
+ const services=p.locator('#services');
+ await services.getByRole('button',{name:'Next Services item'}).click();
+ const service=services.locator('.showcase-slide:visible');
+ assert.equal(await service.locator('h3').innerText(),'WordPress management');
+ assert.equal(await service.locator('.showcase-amount').innerText(),'From $40 CAD / month');
  assert.equal(await p.locator('link[rel="canonical"]').getAttribute('href'),'https://robbiecalvin.com/');
  assert(!(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1)),'Homepage overflow '+width);
  if(artifacts)await p.screenshot({path:path.join(artifacts,'home-'+width+'.png')});
@@ -22,4 +35,4 @@ for(const width of [1440,820,390,320]){
  await p.selectOption('#license-billing','annual');await p.selectOption('#license-sites','25');assert.match(await p.locator('[data-price-detail]').innerText(),/Annual prepaid total/);assert.equal(await p.locator('.package-panel [data-plugin-download]').count(),1);
  await p.locator('#pricing').scrollIntoViewIfNeeded();if(artifacts)await p.screenshot({path:path.join(artifacts,'pricing-'+width+'.png')});
 }
-assert.deepEqual(errors,[]);console.log(JSON.stringify({visits,homeWidths:[1440,820,390,320],selectedWorkCards:4,heroScreenshot:'loaded',homepageAnchors:'passed',pricing:'passed',jsErrors:errors}));}finally{await b.close()}})().catch(e=>{console.error(e);process.exit(1)});
+assert.deepEqual(errors,[]);console.log(JSON.stringify({visits,homeWidths:[1440,820,390,320],heroCarousel:'passed',homepageNavigation:'passed',pricing:'passed',jsErrors:errors}));}finally{await b.close()}})().catch(e=>{console.error(e);process.exit(1)});

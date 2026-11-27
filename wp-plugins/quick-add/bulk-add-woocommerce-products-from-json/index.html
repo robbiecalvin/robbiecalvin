@@ -20,18 +20,32 @@
 <link rel="stylesheet" href="/assets/styles/digital-matter-tokens.css">
 <link rel="stylesheet" href="/assets/styles/digital-matter.css">
 <link rel="stylesheet" href="/assets/styles/how-to-guide.css">
+<link rel="stylesheet" href="/assets/styles/page-depth.css">
+<script type="module" src="/assets/scripts/page-depth.mjs"></script>
+<link rel="stylesheet" href="/assets/styles/portfolio-shell.css">
+<script type="module" src="/assets/scripts/portfolio-shell.mjs"></script>
 </head>
-<body data-design-page="quick-add">
+<body data-design-page="quick-add" class="portfolio-page">
 <a class="skip-link" href="#guide">Skip to content</a>
-<header>
-<nav class="wrap" aria-label="Main navigation">
-<a class="logo" href="/">robbiecalvin<span>.</span></a>
-<div class="nav-links">
-<a href="/wp-plugins/">QuickWoo Plugins</a>
-<a href="/wp-plugins/quick-add/">Quick Add</a>
-<a href="/contact/">Contact</a>
-</div>
-</nav>
+<header class="home-toolbar">
+  <div class="wrap home-toolbar-inner">
+    <a class="wordmark" href="/">Robbie Calvin<span>.</span></a>
+    <details class="home-menu" open>
+      <summary>Menu</summary>
+      <nav aria-label="Main navigation">
+        <a href="/technical-portfolio/">AI &amp; Technical Portfolio</a>
+        <a href="/ai-lessons/">AI Lessons</a>
+        <a href="/applications/">Applications</a>
+        <a href="/websites/">Websites</a>
+        <a href="/creative/">Creative</a>
+        <a href="/wp-plugins/">Plugins</a>
+        <a href="/services/">Services</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      <a href="/account/">Account</a>
+      </nav>
+    </details>
+  </div>
 </header>
 <main class="wrap guide" id="guide">
 <article aria-labelledby="title">
@@ -97,10 +111,73 @@
 <p>The <a href="/wp-plugins/quick-add/#download">Quick Add product page</a> has the plugin ZIP and release details.</p>
 </section>
 </article>
+<section class="page-route" aria-labelledby="page-route-title">
+  <h2 id="page-route-title">Choose what happens after the import</h2>
+  <p>Review the products you created and decide whether the next task is editing existing records or organizing product variations.</p>
+  <div class="page-route-grid">
+    <article>
+      <h3>Review the creation tool</h3>
+      <p>Compare Quick Add’s workflow and plan options for recurring batch creation.</p>
+      <a href="/wp-plugins/quick-add/#pricing">See Quick Add plans</a>
+    </article>
+    <article>
+      <h3>Change existing products</h3>
+      <p>Use the separate bulk editor when the catalog already contains the products.</p>
+      <a href="/wp-plugins/quick-edit/">Compare Quick Edit</a>
+    </article>
+  </div>
+</section>
 </main>
-<footer class="wrap">
-<a href="/">Robbie Calvin</a>
-<span><a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/legal/">Legal &amp; copyright</a></span>
+<footer class="portfolio-footer">
+  <div class="portfolio-footer-inner">
+    <div class="portfolio-footer-feature">
+      <div>
+        <h2>What are you building?</h2>
+        <p>Tell me what you’re working on, or see how I’ve approached similar projects.</p>
+      </div>
+      <div class="portfolio-footer-actions">
+        <a class="portfolio-footer-primary" href="/contact/">Tell me about your project</a>
+        <a href="/technical-portfolio/">Explore the AI portfolio</a>
+      </div>
+    </div>
+
+    <div class="portfolio-footer-directory">
+      <div class="portfolio-footer-identity">
+        <a class="portfolio-footer-wordmark" href="/">Robbie Calvin<span>.</span></a>
+        <p>AI creations, software, and design from Vancouver, BC.</p>
+        <div class="portfolio-footer-social">
+          <a href="https://github.com/robbiecalvin">GitHub</a>
+          <a href="https://www.linkedin.com/in/robbie-calvin-50710b386/">LinkedIn</a>
+        </div>
+      </div>
+      <nav aria-label="Explore the portfolio">
+        <h3>Explore</h3>
+        <a href="/applications/">Applications</a>
+        <a href="/websites/">Websites</a>
+        <a href="/creative/">Creative</a>
+        <a href="/lab/">Lab</a>
+      </nav>
+      <nav aria-label="Learn and work with Robbie">
+        <h3>Learn &amp; build</h3>
+        <a href="/ai-lessons/">AI Lessons</a>
+        <a href="/wp-plugins/">QuickWoo Plugins</a>
+        <a href="/services/">Services</a>
+        <a href="/about/">About Robbie</a>
+      </nav>
+      <nav aria-label="Account and policies">
+        <h3>Site information</h3>
+        <a href="/account/">Account</a>
+        <a href="/terms/">Terms</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/legal/">Legal &amp; Copyright</a>
+      </nav>
+    </div>
+
+    <div class="portfolio-footer-bottom">
+      <small>© <span id="year">2026</span> Robbie Calvin</small>
+      <a href="#">Back to top</a>
+    </div>
+  </div>
 </footer>
 </body>
 </html>

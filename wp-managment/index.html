@@ -119,26 +119,36 @@
 <link rel="stylesheet" href="/assets/styles/digital-matter-tokens.css">
 <link rel="stylesheet" href="/assets/styles/digital-matter.css">
 <script type="module" src="/assets/scripts/digital-matter-portfolio.mjs"></script>
+<link rel="stylesheet" href="/assets/styles/page-depth.css">
+<script type="module" src="/assets/scripts/page-depth.mjs"></script>
+<link rel="stylesheet" href="/assets/styles/portfolio-shell.css">
+<script type="module" src="/assets/scripts/portfolio-shell.mjs"></script>
 </head>
-<body data-design-page="wordpress-management" data-scene-id="42" data-palette="orange" data-page="wp-managment">
+<body data-design-page="wordpress-management" data-scene-id="42" data-palette="orange" data-page="wp-managment" class="portfolio-page">
 <a class="skip-link" href="#top">Skip to content</a>
-<header>
-<nav class="wrap" aria-label="Main navigation">
-<a class="logo" href="../">robbiecalvin<span>.</span>
-</a>
-<div class="nav-links">
-<a href="../#applications">Apps</a>
-<a href="../#services">Services</a>
-<a href="../#sites">Sites</a>
-<a href="../about/">About me</a>
-<a href="../contact/">Contact</a>
-<a href="../account/">Account</a>
-</div>
-</nav>
+<header class="home-toolbar">
+  <div class="wrap home-toolbar-inner">
+    <a class="wordmark" href="/">Robbie Calvin<span>.</span></a>
+    <details class="home-menu" open>
+      <summary>Menu</summary>
+      <nav aria-label="Main navigation">
+        <a href="/technical-portfolio/">AI &amp; Technical Portfolio</a>
+        <a href="/ai-lessons/">AI Lessons</a>
+        <a href="/applications/">Applications</a>
+        <a href="/websites/">Websites</a>
+        <a href="/creative/">Creative</a>
+        <a href="/wp-plugins/">Plugins</a>
+        <a href="/services/">Services</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      <a href="/account/">Account</a>
+      </nav>
+    </details>
+  </div>
 </header>
 <main class="wrap" id="top">
 <div class="breadcrumb">
-<a href="../">Home</a> / <a href="../#services">Services</a> / WordPress Management</div>
+<a href="../">Home</a> / <a href="/services/">Services</a> / WordPress Management</div>
 <section class="hero" aria-labelledby="title">
 <div class="hero-copy">
 <p class="eyebrow">Website support</p>
@@ -324,19 +334,73 @@
 </div>
 <a class="quiet-link" href="../">Back to the collection ↑</a>
 </section>
+<section class="page-route" aria-labelledby="page-route-title">
+  <h2 id="page-route-title">Prepare for ongoing site care</h2>
+  <p>Start with the current setup and the updates you need help keeping up with.</p>
+  <div class="page-route-grid">
+    <article>
+      <h3>Routine upkeep</h3>
+      <p>Use the checklist to review backups, updates, permissions, and recovery before handing over care.</p>
+      <a href="/wp-managment/maintenance-checklist/">Open the maintenance checklist</a>
+    </article>
+    <article>
+      <h3>Content plus maintenance</h3>
+      <p>If you also need recurring content changes, compare the care and content package with essential care.</p>
+      <a href="#pricing">Compare care plans</a>
+    </article>
+  </div>
+</section>
 </main>
-<footer class="wrap">
-<span>© <span id="year">2026</span> Robbie Calvin</span>
-<span>
-<a href="../about/">About me</a> · <a href="../contact/">Contact</a>
-</span>
-<a class="social-link" href="https://www.linkedin.com/in/robbie-calvin-50710b386/" aria-label="Robbie Calvin on LinkedIn">
-<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-<path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.4-.76 1.36-1.56 2.79-1.56 2.98 0 3.58 1.96 3.58 4.51v5.3Z"/>
-</svg>
-</a>
-<a href="#top">Back to top ↑</a>
-<span class="legal-links"><a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/legal/">Legal & copyright</a></span>
+<footer class="portfolio-footer">
+  <div class="portfolio-footer-inner">
+    <div class="portfolio-footer-feature">
+      <div>
+        <h2>What are you building?</h2>
+        <p>Tell me what you’re working on, or see how I’ve approached similar projects.</p>
+      </div>
+      <div class="portfolio-footer-actions">
+        <a class="portfolio-footer-primary" href="/contact/">Tell me about your project</a>
+        <a href="/technical-portfolio/">Explore the AI portfolio</a>
+      </div>
+    </div>
+
+    <div class="portfolio-footer-directory">
+      <div class="portfolio-footer-identity">
+        <a class="portfolio-footer-wordmark" href="/">Robbie Calvin<span>.</span></a>
+        <p>AI creations, software, and design from Vancouver, BC.</p>
+        <div class="portfolio-footer-social">
+          <a href="https://github.com/robbiecalvin">GitHub</a>
+          <a href="https://www.linkedin.com/in/robbie-calvin-50710b386/">LinkedIn</a>
+        </div>
+      </div>
+      <nav aria-label="Explore the portfolio">
+        <h3>Explore</h3>
+        <a href="/applications/">Applications</a>
+        <a href="/websites/">Websites</a>
+        <a href="/creative/">Creative</a>
+        <a href="/lab/">Lab</a>
+      </nav>
+      <nav aria-label="Learn and work with Robbie">
+        <h3>Learn &amp; build</h3>
+        <a href="/ai-lessons/">AI Lessons</a>
+        <a href="/wp-plugins/">QuickWoo Plugins</a>
+        <a href="/services/">Services</a>
+        <a href="/about/">About Robbie</a>
+      </nav>
+      <nav aria-label="Account and policies">
+        <h3>Site information</h3>
+        <a href="/account/">Account</a>
+        <a href="/terms/">Terms</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/legal/">Legal &amp; Copyright</a>
+      </nav>
+    </div>
+
+    <div class="portfolio-footer-bottom">
+      <small>© <span id="year">2026</span> Robbie Calvin</small>
+      <a href="#">Back to top</a>
+    </div>
+  </div>
 </footer>
 </body>
 </html>
