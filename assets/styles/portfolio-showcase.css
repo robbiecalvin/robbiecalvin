@@ -1,0 +1,82 @@
+nav .portfolio-nav a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.portfolio-nav a[aria-current="page"] {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: .4em;
+}
+
+.portfolio-hero h1,
+body[data-page="plugin-suite"] .hero h1 {
+  font-size: clamp(2.4rem, 6vw, 5.25rem);
+  overflow-wrap: anywhere;
+}
+
+.showcase-feature,
+.showcase-next {
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  background: radial-gradient(ellipse at top left, color-mix(in srgb, var(--accent) 12%, transparent), transparent 70%), #ffffff04;
+}
+
+.showcase-feature {
+  display: grid;
+  overflow: hidden;
+}
+
+.showcase-copy,
+.showcase-next {
+  padding: clamp(1.25rem, 5vw, 4rem);
+}
+
+.showcase-copy p:not(.kicker),
+.showcase-next p {
+  max-width: 56ch;
+  color: var(--muted);
+}
+
+.showcase-media {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: .85rem;
+  background: #101116;
+}
+
+.showcase-feature .showcase-media {
+  border-radius: 0;
+}
+
+.showcase-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.showcase-projects .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.showcase-projects .showcase-media {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.showcase-projects .button {
+  margin-top: auto;
+}
+
+.showcase-next {
+  margin-block: clamp(2rem, 6vw, 5rem);
+}
+
+@media (min-width: 761px) {
+  .showcase-feature { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); align-items: center; }
+  .showcase-projects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

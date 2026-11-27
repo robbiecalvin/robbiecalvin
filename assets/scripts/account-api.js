@@ -5,7 +5,7 @@
     if(!config.enabled)throw Error('Accounts are being prepared. The account service is not connected to this site yet.');
     const response=await fetch((config.apiBaseUrl||'')+path,{method,credentials:'include',headers:body?{'Content-Type':'application/json'}:{},body:body?JSON.stringify(body):undefined,signal:AbortSignal.timeout(15000)});
     let data;try{data=await response.json();}catch{throw Error('The account service is unavailable.');}
-    if(!response.ok)throw Error(data.error||'This request could not be completed.');return data;
+    if(!response.ok)throw Object.assign(Error(data.error||'This request could not be completed.'),{status:response.status});return data;
   };
   document.querySelectorAll('[data-track-app]').forEach(link=>link.addEventListener('click',async event=>{
     if(!config.enabled||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;

@@ -1,4 +1,4 @@
-"""Import exact USD amounts from the owner-supplied XLSX; no spreadsheet macros execute.
+"""Import the owner-supplied price points into the approved CAD catalogue.
 Usage: python3 tools/import-quickwoo-pricing.py path/to/workbook.xlsx
 """
 import sys,json,re,zipfile,hashlib
@@ -36,6 +36,6 @@ with zipfile.ZipFile(path) as z:
  all_ids=[p['id'] for p in products]
  bundles.extend([{'id':'full-quickwoo-suite','name':'Full QuickWoo Suite','palette':'red','includes':all_ids,'desktop':False,'prices':price(rows[30]),'sourceRow':30},{'id':'plus-desktop','name':'Full Suite + QuickWoo Desktop','palette':'orange','includes':all_ids,'desktop':True,'prices':price(rows[31]),'sourceRow':31}])
  if len(products)!=18 or len(bundles)!=6:raise ValueError('Unexpected product counts; review workbook.')
- data={'currency':'USD','siteLimits':[1,5,10,25],'billingPeriods':['monthly','annual'],'annualDiscountPercent':20,'annualPrepaid':True,'lifetimeOffered':False,'status':'proposed-launch','source':{'filename':path.name,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()},'categories':categories,'products':products,'bundles':bundles,'infrastructure':[{'id':'quick-connector','name':'Quick Connector','separatelyPriced':False},{'id':'quick-license','name':'Quick License','separatelyPriced':False}]}
+ data={'currency':'CAD','siteLimits':[1,5,10,25],'billingPeriods':['monthly','annual'],'annualDiscountPercent':20,'annualPrepaid':True,'lifetimeOffered':False,'status':'proposed-launch','source':{'filename':path.name,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()},'categories':categories,'products':products,'bundles':bundles,'infrastructure':[{'id':'quick-connector','name':'Quick Connector','separatelyPriced':False},{'id':'quick-license','name':'Quick License','separatelyPriced':False}]}
  (root/'assets/data/quickwoo-catalog.json').write_text(json.dumps(data,indent=2)+'\n')
- print(f'Imported {len(products)} plugins, {len(bundles)} bundles, 192 exact prices; currency USD.')
+ print(f'Imported {len(products)} plugins, {len(bundles)} bundles, 192 exact price points in CAD.')

@@ -1,0 +1,207 @@
+.page-route,
+.page-outline {
+  --route-accent: var(--page-accent, var(--accent, #e5bcff));
+  --route-line: color-mix(in srgb, var(--route-accent) 32%, transparent);
+  --route-base: var(--surface-dark, #111116);
+}
+
+.page-route {
+  margin-block: clamp(1.25rem, 5vw, 4rem);
+  padding: clamp(1.1rem, 4vw, 2.75rem);
+  border: 1px solid var(--route-line);
+  border-radius: 1rem;
+  background:
+    radial-gradient(ellipse at 95% 0, color-mix(in srgb, var(--route-accent) 15%, transparent), transparent 65%),
+    var(--route-base);
+  color: var(--text-primary, #ededf2);
+}
+
+.page-route h2 {
+  margin: 0 0 .6rem;
+  color: var(--route-accent);
+  font: 500 clamp(1.65rem, 4vw, 2.65rem)/1.12 "Space Grotesk", system-ui, sans-serif;
+  letter-spacing: -.035em;
+}
+
+.page-route h3 {
+  margin: 0 0 .45rem;
+  font: 600 1.15rem/1.2 "Space Grotesk", system-ui, sans-serif;
+}
+
+.page-route p {
+  max-width: 65ch;
+  margin: 0 0 .9rem;
+  color: var(--text-secondary, #b5b5c0);
+  line-height: 1.6;
+}
+
+.page-route-grid {
+  display: grid;
+  gap: .65rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+}
+
+.page-route-grid article {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  min-width: 0;
+  padding: .9rem;
+  border: 1px solid var(--route-line);
+  border-radius: .7rem;
+  background: color-mix(in srgb, var(--route-accent) 6%, var(--route-base));
+}
+
+.page-route-grid a,
+.page-outline a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: .35rem;
+  color: inherit;
+  font-size: .92rem;
+  text-underline-offset: .2em;
+  overflow-wrap: anywhere;
+}
+
+.page-route-grid a { margin-top: auto; }
+.page-route-grid a:hover,
+.page-outline a:hover,
+.page-outline a[aria-current] { color: var(--route-accent); }
+
+.page-outline {
+  margin: .75rem 0 1.5rem;
+  padding: 0 .8rem;
+  border: 1px solid var(--route-line);
+  border-radius: .7rem;
+}
+
+.page-outline summary {
+  min-height: 44px;
+  padding: .55rem 0;
+  color: var(--route-accent);
+  font: 600 1rem/1.5 "Space Grotesk", system-ui, sans-serif;
+  cursor: pointer;
+}
+
+.page-outline nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 .85rem;
+  padding-bottom: .4rem;
+  min-height: 0;
+  justify-content: start;
+}
+
+.page-outline a[aria-current] { text-decoration: underline; }
+
+[data-page-waypoint] { scroll-margin-top: 6.5rem; }
+
+.page-image-button {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.page-image-button::after {
+  position: absolute;
+  inset: auto .5rem .5rem auto;
+  display: grid;
+  min-width: 2rem;
+  min-height: 2rem;
+  place-items: center;
+  border: 1px solid #ffffff55;
+  border-radius: .4rem;
+  background: #0a0a10;
+  color: #f5f1ff;
+  content: "+";
+}
+
+.page-preview {
+  width: fit-content;
+  max-width: min(94vw, 74rem);
+  max-height: 92dvh;
+  padding: .8rem;
+  border: 1px solid #ffffff50;
+  border-radius: 1rem;
+  background: #111116;
+  color: #ededf2;
+}
+
+.page-preview::backdrop { background: #05050be8; }
+.page-preview form { display: flex; justify-content: flex-end; margin: 0 0 .5rem; }
+
+.page-preview button {
+  min-height: 44px;
+  padding-inline: .8rem;
+  border: 1px solid #ffffff50;
+  border-radius: .45rem;
+  background: #191921;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.page-preview img { display: block; max-width: 100%; max-height: 76dvh; object-fit: contain; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .page-route-grid article { transition: border-color .2s ease, transform .2s ease; }
+  .page-route-grid article:is(:hover, :focus-within) {
+    border-color: var(--route-accent);
+    transform: translateY(-2px);
+  }
+}
+
+@media print {
+  .page-outline,
+  .page-image-button::after { display: none; }
+}
+
+.showcase-media > .page-image-button { height: 100%; }
+
+.page-route-media {
+  width: 100%;
+  margin-bottom: .8rem;
+  overflow: hidden;
+  border-radius: .5rem;
+  background: var(--route-base);
+}
+
+.page-route-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+}
+
+.page-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: .75rem;
+}
+
+.page-gallery figure {
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: 100%;
+  margin: 0;
+}
+
+.page-gallery img {
+  display: block;
+  max-width: 100%;
+  max-height: min(55vh, 24rem);
+  object-fit: contain;
+  border-radius: .55rem;
+}
+
+.page-gallery figcaption {
+  padding-top: .35rem;
+  color: var(--text-secondary, #b5b5c0);
+  font-size: .9rem;
+}

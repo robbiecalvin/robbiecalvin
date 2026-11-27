@@ -14,19 +14,31 @@
 <meta property="og:url" content="https://robbiecalvin.com/launchboard/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/styles/portfolio-home.css">
+<link rel="stylesheet" href="/assets/styles/page-depth.css">
+<script type="module" src="/assets/scripts/page-depth.mjs"></script>
+<link rel="stylesheet" href="/assets/styles/portfolio-shell.css">
+<script type="module" src="/assets/scripts/portfolio-shell.mjs"></script>
 </head>
-<body>
+<body class="portfolio-page">
 <a class="skip-link" href="#top">Skip to content</a>
-<header class="site-header">
-  <div class="wrap masthead">
+<header class="home-toolbar">
+  <div class="wrap home-toolbar-inner">
     <a class="wordmark" href="/">Robbie Calvin<span>.</span></a>
-    <nav aria-label="Main navigation">
-      <a href="/#work">Work</a>
-      <a href="/lab/">Lab</a>
-      <a href="/about/">About</a>
-      <a href="/contact/">Contact</a>
+    <details class="home-menu" open>
+      <summary>Menu</summary>
+      <nav aria-label="Main navigation">
+        <a href="/technical-portfolio/">AI &amp; Technical Portfolio</a>
+        <a href="/ai-lessons/">AI Lessons</a>
+        <a href="/applications/">Applications</a>
+        <a href="/websites/">Websites</a>
+        <a href="/creative/">Creative</a>
+        <a href="/wp-plugins/">Plugins</a>
+        <a href="/services/">Services</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
       <a href="/account/">Account</a>
-    </nav>
+      </nav>
+    </details>
   </div>
 </header>
 <main id="top">
@@ -46,15 +58,79 @@
       <article class="work-card"><h3>Request-level verification</h3><p>The request tests exercise the application through HTTP routes. The source repository contains the test suite and local setup instructions.</p></article>
     </div>
   </section>
+<section class="content" aria-labelledby="project-details-title">
+  <h2 id="project-details-title">Inside the Rails job board</h2>
+  <p class="intro">Launchboard is a portfolio application that shows a job board built with conventional Rails patterns.</p>
+  <p class="muted">RESTful routes connect the interface to Rails controllers, Active Record associations model the records, and request tests check the application flows. Seed data supports local exploration.</p>
+  <div class="actions"><a class="button" href="https://github.com/robbiecalvin/launchboard">Explore the Rails source</a></div>
+</section>
+<section class="page-route" aria-labelledby="page-route-title">
+  <h2 id="page-route-title">Follow a Rails request through the app</h2>
+  <p>Use this project as a small example of routes, controllers, and data relationships working together.</p>
+  <div class="page-route-grid">
+    <article>
+      <h3>Inspect the implementation</h3>
+      <p>Start with the routes and see how the app connects them to controller actions and models.</p>
+      <a href="https://github.com/robbiecalvin/launchboard">Browse the Rails repository</a>
+    </article>
+    <article>
+      <h3>Compare engineering approaches</h3>
+      <p>See other portfolio projects that use different approaches to state and tests.</p>
+      <a href="/technical-portfolio/">Explore technical projects</a>
+    </article>
+  </div>
+</section>
 </main>
-<footer class="wrap site-footer">
-  <a class="wordmark" href="/">Robbie Calvin<span>.</span></a>
-  <nav aria-label="Portfolio and legal links">
-    <a href="/lab/">Explore the lab</a>
-    <a href="/terms/">Terms</a>
-    <a href="/privacy/">Privacy</a>
-    <a href="/legal/">Legal &amp; copyright</a>
-  </nav>
+<footer class="portfolio-footer">
+  <div class="portfolio-footer-inner">
+    <div class="portfolio-footer-feature">
+      <div>
+        <h2>What are you building?</h2>
+        <p>Tell me what you’re working on, or see how I’ve approached similar projects.</p>
+      </div>
+      <div class="portfolio-footer-actions">
+        <a class="portfolio-footer-primary" href="/contact/">Tell me about your project</a>
+        <a href="/technical-portfolio/">Explore the AI portfolio</a>
+      </div>
+    </div>
+
+    <div class="portfolio-footer-directory">
+      <div class="portfolio-footer-identity">
+        <a class="portfolio-footer-wordmark" href="/">Robbie Calvin<span>.</span></a>
+        <p>AI creations, software, and design from Vancouver, BC.</p>
+        <div class="portfolio-footer-social">
+          <a href="https://github.com/robbiecalvin">GitHub</a>
+          <a href="https://www.linkedin.com/in/robbie-calvin-50710b386/">LinkedIn</a>
+        </div>
+      </div>
+      <nav aria-label="Explore the portfolio">
+        <h3>Explore</h3>
+        <a href="/applications/">Applications</a>
+        <a href="/websites/">Websites</a>
+        <a href="/creative/">Creative</a>
+        <a href="/lab/">Lab</a>
+      </nav>
+      <nav aria-label="Learn and work with Robbie">
+        <h3>Learn &amp; build</h3>
+        <a href="/ai-lessons/">AI Lessons</a>
+        <a href="/wp-plugins/">QuickWoo Plugins</a>
+        <a href="/services/">Services</a>
+        <a href="/about/">About Robbie</a>
+      </nav>
+      <nav aria-label="Account and policies">
+        <h3>Site information</h3>
+        <a href="/account/">Account</a>
+        <a href="/terms/">Terms</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/legal/">Legal &amp; Copyright</a>
+      </nav>
+    </div>
+
+    <div class="portfolio-footer-bottom">
+      <small>© <span id="year">2026</span> Robbie Calvin</small>
+      <a href="#">Back to top</a>
+    </div>
+  </div>
 </footer>
 </body>
 </html>

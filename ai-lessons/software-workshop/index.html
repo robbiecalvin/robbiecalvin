@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#08090d">
+<title>AI Software Workshop for Building Software | Robbie Calvin</title>
+<meta name="description" content="Three hands-on AI lessons for writing a useful brief, checking generated code, and improving a result with evidence. Work through the examples without an account.">
+<link rel="canonical" href="https://robbiecalvin.com/ai-lessons/software-workshop/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Software Workshop for Building Software | Robbie Calvin">
+<meta property="og:description" content="Practice briefing, checking, and iterating on AI-assisted software with three worked exercises.">
+<meta property="og:url" content="https://robbiecalvin.com/ai-lessons/software-workshop/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/styles/overview.css">
+<link rel="stylesheet" href="/assets/styles/digital-matter-tokens.css">
+<link rel="stylesheet" href="/assets/styles/digital-matter.css">
+<link rel="stylesheet" href="/assets/styles/portfolio-showcase.css">
+<link rel="stylesheet" href="/assets/styles/page-depth.css">
+<link rel="stylesheet" href="/assets/styles/portfolio-shell.css">
+<script type="module" src="/assets/scripts/page-depth.mjs"></script>
+<script type="module" src="/assets/scripts/portfolio-shell.mjs"></script>
+</head>
+<body class="portfolio-page" data-design-page="lab">
+<a class="skip-link" href="#content">Skip to content</a>
+<header class="home-toolbar">
+  <div class="wrap home-toolbar-inner">
+    <a class="wordmark" href="/">Robbie Calvin<span>.</span></a>
+    <details class="home-menu" open>
+      <summary>Menu</summary>
+      <nav aria-label="Main navigation">
+        <a href="/technical-portfolio/">AI &amp; Technical Portfolio</a>
+        <a href="/ai-lessons/">AI Lessons</a>
+        <a href="/applications/">Applications</a>
+        <a href="/websites/">Websites</a>
+        <a href="/creative/">Creative</a>
+        <a href="/wp-plugins/">Plugins</a>
+        <a href="/services/">Services</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      <a href="/account/">Account</a>
+      </nav>
+    </details>
+  </div>
+</header>
+<main class="wrap" id="content">
+  <section class="portfolio-hero" aria-labelledby="title">
+    <div>
+      <p class="kicker">AI-assisted software development</p>
+      <h1 id="title">AI Software Workshop</h1>
+      <p class="intro">Work through a small task manager example, from the first brief to a tested revision. You can explore the lessons here, then try the exercises with the coding assistant of your choice.</p>
+      <div class="actions">
+        <a class="button primary" href="#write-a-brief">Start the first lesson</a>
+        <a class="button" href="/technical-portfolio/">See the work behind it</a>
+      </div>
+    </div>
+    <div class="showcase-media">
+      <img src="/assets/images/digital-matter-codex-master.webp" alt="" width="640" height="640">
+    </div>
+  </section>
+
+  <section class="content" id="write-a-brief" aria-labelledby="brief-title">
+    <h2 id="brief-title">Write a brief you can test</h2>
+    <p class="intro">Specify the outcome, constraints, and evidence before asking for code. Use a concrete test so you know when the first version is ready.</p>
+    <details class="page-route">
+      <summary>Open the example prompt</summary>
+      <p>Build a small browser task list with a title field and a Complete action. Keep tasks in this browser, with no login or server. Reject titles containing only spaces. Show me how to test adding a task, completing it, and refreshing the page.</p>
+    </details>
+    <p><strong>Try it:</strong> Write a four-sentence brief for a notes app. Include how notes are saved and one input the app should reject.</p>
+    <p><strong>Check:</strong> Could someone else use your brief to tell whether the result meets both requirements?</p>
+  </section>
+
+  <section class="content" id="check-the-output" aria-labelledby="check-title">
+    <h2 id="check-title">Check the output yourself</h2>
+    <p class="intro">Turn the brief into observable steps. Record what you saw, including anything you could only infer from the code.</p>
+    <details class="page-route">
+      <summary>Open the worked test list</summary>
+      <ol>
+        <li>Submit a title containing only spaces. Confirm the list stays unchanged.</li>
+        <li>Add a valid task, mark it complete, and reload. Confirm the entry and completion state persist.</li>
+        <li>Repeat the main flow with the keyboard. Check that you can locate and operate the controls.</li>
+      </ol>
+    </details>
+    <p><strong>Try it:</strong> Run the steps on the task manager demo. Record the expected and observed result for each step.</p>
+    <a class="button" href="/productivity-suite/">Open the task manager demo</a>
+  </section>
+
+  <section class="content" id="revise-with-evidence" aria-labelledby="revise-title">
+    <h2 id="revise-title">Revise using a specific observation</h2>
+    <p class="intro">Give the assistant the smallest failing case you found, the expected result, and the behaviours it should preserve. Run the original checks again after the change.</p>
+    <details class="page-route">
+      <summary>Open a sample revision request</summary>
+      <p>When I submit three spaces, the task list adds an empty item. The expected result is no new item. Reject whitespace-only titles while preserving task completion and saving on reload. After the fix, repeat the original three checks.</p>
+    </details>
+    <p><strong>Try it:</strong> Write a revision request from one of your observations. If your checks passed, add one new testable requirement and describe how to verify it.</p>
+    <a class="button" href="/codex-master/">See the coding-agent workflow</a>
+  </section>
+
+  <section class="page-route" aria-labelledby="next-project">
+    <h2 id="next-project">Apply the lessons to your own project</h2>
+    <p>Choose a small tool you would use yourself. Write its brief, build one workflow, and keep a short record of what you checked.</p>
+    <div class="page-route-grid">
+      <article><h3>Compare real projects</h3><p>See how I describe implementation choices, demos, and available evidence.</p><a href="/technical-portfolio/">Explore technical case studies</a></article>
+      <article><h3>Get help scoping a build</h3><p>Bring the work you do today and the result you need.</p><a href="/custom-software/">Explore custom software</a></article>
+    </div>
+  </section>
+</main>
+<footer class="portfolio-footer">
+  <div class="portfolio-footer-inner">
+    <div class="portfolio-footer-feature">
+      <div>
+        <h2>What are you building?</h2>
+        <p>Tell me what you’re working on, or see how I’ve approached similar projects.</p>
+      </div>
+      <div class="portfolio-footer-actions">
+        <a class="portfolio-footer-primary" href="/contact/">Tell me about your project</a>
+        <a href="/technical-portfolio/">Explore the AI portfolio</a>
+      </div>
+    </div>
+
+    <div class="portfolio-footer-directory">
+      <div class="portfolio-footer-identity">
+        <a class="portfolio-footer-wordmark" href="/">Robbie Calvin<span>.</span></a>
+        <p>AI creations, software, and design from Vancouver, BC.</p>
+        <div class="portfolio-footer-social">
+          <a href="https://github.com/robbiecalvin">GitHub</a>
+          <a href="https://www.linkedin.com/in/robbie-calvin-50710b386/">LinkedIn</a>
+        </div>
+      </div>
+      <nav aria-label="Explore the portfolio">
+        <h3>Explore</h3>
+        <a href="/applications/">Applications</a>
+        <a href="/websites/">Websites</a>
+        <a href="/creative/">Creative</a>
+        <a href="/lab/">Lab</a>
+      </nav>
+      <nav aria-label="Learn and work with Robbie">
+        <h3>Learn &amp; build</h3>
+        <a href="/ai-lessons/">AI Lessons</a>
+        <a href="/wp-plugins/">QuickWoo Plugins</a>
+        <a href="/services/">Services</a>
+        <a href="/about/">About Robbie</a>
+      </nav>
+      <nav aria-label="Account and policies">
+        <h3>Site information</h3>
+        <a href="/account/">Account</a>
+        <a href="/terms/">Terms</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/legal/">Legal &amp; Copyright</a>
+      </nav>
+    </div>
+
+    <div class="portfolio-footer-bottom">
+      <small>© <span id="year">2026</span> Robbie Calvin</small>
+      <a href="#">Back to top</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

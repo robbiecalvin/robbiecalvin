@@ -16,7 +16,7 @@ class PluginReleaseTests(unittest.TestCase):
         standard = load('assets/data/quickwoo-pricing-standard.json')
         catalog = load('assets/data/quickwoo-catalog.json')
         self.assertFalse(catalog['promotion']['active'])
-        self.assertEqual(catalog['currency'], 'USD')
+        self.assertEqual(catalog['currency'], 'CAD')
         checked = 0
         for group in ('products', 'bundles'):
             self.assertEqual(len(catalog[group]), len(standard[group]))
